@@ -32,9 +32,11 @@ ENV/
 *.swo
 
 # Project Specific
-data/
+data/*
 *.txt
 *.csv
+!data/OANDA_*renko*.csv
+!data/OANDA_*1D*.csv
 !tvresults/*.csv
 *.log
 .claude/
