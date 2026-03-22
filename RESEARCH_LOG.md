@@ -276,3 +276,110 @@ requirement is too restrictive on Renko bars.
 - Params: n_entry=40, n_exit=5, regime=chop, chop_threshold=61.8, cooldown=12
 - Marginally beats raw R001 (+0.8% PF). Chop gate filters only 1 trade.
 - Squeeze regime mode performs identically to raw Donchian (no effective filtering)
+
+---
+
+## R016 — DI Crossover (Renko)
+
+**Status:** Complete — 32 runs (EURUSD 0.0004)
+
+**Winner:** PF 13.994, 846 trades, 63.5% WR, -0.15% DD
+- Params: adx_threshold=0, req_brick=True, cooldown=3
+- Uses +DI/-DI crossover as the **primary entry signal** (not just an ADX level gate)
+- Brick confirmation (req_brick=True) is essential — without it, PF drops to 9.3
+- No ADX gate needed (adx=0 beats adx=15/20/25) — DI cross is already directional
+- High trade count (846) with 63.5% WR — statistically robust
+- **New finding:** DI crossover is a Tier 1 entry signal on EURUSD Renko, competitive with Donchian family
+
+---
+
+## R017 — EMA Stack Momentum (Renko)
+
+**Status:** Complete — 24 runs (EURUSD 0.0004)
+
+**Winner:** PF 16.773, 348 trades, 67.0% WR, -0.14% DD
+- Params: require_ema200=True, adx_threshold=20, cooldown=30
+- Entry: EMA9 > EMA21 > EMA50 > EMA200 (longs) with brick confirmation
+- **Highest PF of any new strategy** — EMA200 requirement consistently improves PF (+2-3 PF over no-EMA200)
+- ADX gate helps: PF 16.8 (adx=20) vs PF 15.7 (adx=0 with ema200)
+- Fewer trades (348) but highest win rate (67%) and lowest DD (-0.14%)
+- Without EMA200: PF 15.3, 465 trades, 67.3% WR — still excellent
+
+---
+
+## R018 — Stochastic Trend Entry (Renko)
+
+**Status:** Complete — 72 runs (EURUSD 0.0004)
+
+**Winner:** PF 9.015, 107 trades, 52.3% WR, -0.31% DD
+- Params: os_level=30, ob_level=80, trend_filter=ema, adx_threshold=20, cooldown=20
+- Entry: Stoch %K crosses %D from oversold/overbought in trend direction
+- **EMA trend filter is essential** — Supertrend filter produces too few trades (<30)
+- "Both" filter (ST+EMA) restricts too heavily
+- Trade count is marginal (107) — on the edge of statistical significance
+- Wider oversold zone (30) works better than narrow (20) — more entry opportunities
+- **Verdict:** Viable but marginal. Much better than R007 (RSI mean-reversion, failed) because it trades WITH the trend, but trade count limits confidence.
+
+---
+
+## R019 — KAMA Slope + BB %B Confluence (Renko)
+
+**Status:** Complete — 54 runs (EURUSD 0.0004)
+
+**Winner:** PF 12.794, 414 trades, 60.9% WR, -0.16% DD
+- Params: bb_pctb_level=0.5, req_brick=True, adx_threshold=0, cooldown=20
+- Entry: KAMA slope turns positive + BB %B > 0.5 (longs), reverse for shorts
+- BB %B level 0.5 is optimal (0.4 and 0.6 are slightly worse)
+- Brick confirmation essential (req_brick=True always wins)
+- ADX gate doesn't help — KAMA slope + BB %B is already a strong dual filter
+- Good trade count (414) with solid WR (60.9%)
+
+---
+
+## R020 — Multi-Signal Voting Confluence (Renko)
+
+**Status:** Complete — 27 runs (EURUSD 0.0004)
+
+**Winner:** PF 13.289, 719 trades, 61.1% WR, -0.20% DD
+- Params: min_votes=5, adx_threshold=0, cooldown=20
+- Votes: brick direction + MACD hist + RSI>50 + Supertrend + KAMA slope
+- **5-of-5 unanimous agreement is ALWAYS best** — every weaker threshold (3, 4) is worse
+- ADX gate is unnecessary when all 5 signals agree
+- High trade count even at unanimous (719-1262 depending on cooldown)
+- **Key finding:** unanimous agreement across independent signals produces the cleanest entries. This is an ensemble approach that naturally filters noise.
+- Lower cooldown (cd=10) gives more trades (1099) with only slight PF reduction (13.25)
+
+---
+
+## R021 — Squeeze + Brick Count Hybrid (Renko)
+
+**Status:** DEAD — 108 runs, zero qualifying trades
+
+**Verdict:** The dual requirement (squeeze release + N consecutive bricks) is too restrictive on EURUSD 0.0004. Squeeze releases are rare events on Renko and requiring N directional bricks simultaneously produces zero trades across all 108 parameter combinations. Not viable.
+
+---
+
+## v3 Research Summary (R016-R021)
+
+### New Strategy Tier List (EURUSD 0.0004)
+
+**Tier 1 — PF 13+ (strong):**
+1. **R017 EMA Stack** — PF 16.77, 348 trades, 67.0% WR. New #1 on EURUSD. EMA alignment with EMA200 gate.
+2. **R016 DI Crossover** — PF 13.99, 846 trades, 63.5% WR. Highest trade count among Tier 1. DI cross entry.
+3. **R020 Vote Confluence** — PF 13.29, 719 trades, 61.1% WR. 5-of-5 unanimous voting. Robust ensemble.
+
+**Tier 2 — PF 9-13 (solid):**
+4. **R019 KAMA+BB%B** — PF 12.79, 414 trades, 60.9% WR. KAMA slope change + band position.
+5. **R018 Stoch Trend** — PF 9.02, 107 trades, 52.3% WR. Low trade count limits confidence.
+
+**Dead:**
+6. **R021 Squeeze+Bricks** — Zero trades. Dual requirement too restrictive.
+
+### Key Insights from v3
+
+- **EMA alignment is the best new entry signal** — R017 beats all previous EURUSD-specific strategies (R001-R015)
+- **DI crossover works as a primary signal** — not just a level gate. req_brick=True is essential.
+- **Unanimous voting (5/5) always beats partial** — confirms that signal quality > quantity
+- **Dual rare-event strategies don't work on Renko** — R021 (squeeze + bricks) joins R008 (stoch+CCI) as dead
+- **ADX gate is unnecessary** when entry signal is already directionally filtered (R016, R019, R020)
+- **Brick confirmation is universally helpful** across all new strategies

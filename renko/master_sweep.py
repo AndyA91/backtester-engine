@@ -35,6 +35,12 @@ STRATEGIES = [
     "r013_chop_gate",
     "r014_fisher_adx",
     "r015_squeeze",
+    "r016_di_crossover",
+    "r017_ema_stack",
+    "r018_stoch_trend",
+    "r019_kama_bb",
+    "r020_vote_confluence",
+    # r021_squeeze_bricks — DEAD: zero trades (dual requirement too restrictive)
     # --- EURAUD (0.0006 / 0.0007 brick) ---
     "ea001_baseline",
     "ea002_gate_sweep",
