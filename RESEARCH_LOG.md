@@ -1,5 +1,38 @@
 # Research Log
 
+> **Renko sweep v3** — 2026-03-22. New entry strategies (R022-R024) + exit optimization (R025).
+> Commission: OANDA spread-equivalent. Fixed qty: 1000 units (FX). $1,000 initial capital.
+
+## v3 — New Entries + Exit Optimization (EURUSD 0.0004)
+
+### R022-R025 Results (IS: 2023-01-23 to 2025-09-30)
+
+| Rank | Strategy | Best PF | Net | Trades | WR% | Max DD% | Best Params |
+|------|----------|---------|-----|--------|-----|---------|-------------|
+| 1 | R025 Exit Optimize | 14.951 | $1,380 | 831 | 65.3 | -0.22% | n=2, cd=20, exit_mode=0 (first-opposing) |
+| 2 | R024 Keltner Breakout | 14.723 | $829 | 517 | 66.9 | -0.15% | mult=2.0, atr=14, cd=30, ST=yes |
+| 3 | R022 Ichimoku Cloud | 14.371 | $887 | 508 | 61.0 | -0.22% | tenkan=9, cd=30, no gates |
+| 4 | R023 Williams %R | 13.938 | $613 | 377 | 64.7 | -0.16% | wpr=14, cd=30, ADX>20 |
+
+### Key Findings (v3)
+
+**New entry strategies (Option B):**
+- **R024 Keltner Channel breakout** is the best new entry — PF 14.7, **66.9% WR** (highest of any Renko strategy on EURUSD). ATR-based bands suit Renko better than BB std-dev.
+- **R022 Ichimoku Cloud** is extremely robust — all 36 combos PF 11.5-14.4. Cloud breakout + TK cross is a clean signal on Renko.
+- **R023 Williams %R** midline crosses work well — PF 13.9, 64.7% WR. Momentum shift detection without mean-reversion bias.
+- All 3 new strategies are completely different entry logic from the Donchian/brick-count family — good for portfolio diversification.
+
+**Exit optimization (Option D):**
+- **First-opposing-brick exit is already optimal on Renko.** R025 confirmed across 144 combos:
+  - Trailing stop (N opposing bricks): PF drops to 4-10 (worse with wider trail)
+  - Min-hold then first-opposing: PF drops to 5-8
+  - Min-hold + trailing combined: PF drops to 3-5
+  - Supertrend flip exit: PF drops to ~4
+  - KAMA slope reversal exit: PF drops to ~4
+- **Why:** Renko bricks already filter noise. The first opposing brick IS the signal — adding delay means holding through reversals. Unlike candle charts where whipsaws justify trailing stops, Renko's built-in noise filter makes immediate exits optimal.
+
+---
+
 > **Renko sweep v2** — 2026-03-22. 12 strategies swept across 6 instruments × 20 Renko files (~13,340 total runs).
 > Commission: OANDA spread-equivalent. Fixed qty: 1000 units (FX) / 0.01 BTC. $1,000 initial capital.
 
