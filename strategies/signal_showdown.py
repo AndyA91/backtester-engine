@@ -144,7 +144,8 @@ def run_signal_backtest(df_raw: pd.DataFrame, entry_fn, config: BacktestConfig) 
 
 def main():
     # Load data
-    data_file = "SYNTH_EURUSD, 1D.csv"
+    # Allow overriding data file from command line
+    data_file = sys.argv[1] if len(sys.argv) > 1 else "SYNTH_EURUSD, 1D.csv"
     print(f"=" * 70)
     print(f"SIGNAL SHOWDOWN — Testing {len(ENTRY_SIGNALS)} entry signals")
     print(f"Data: {data_file}")
@@ -154,12 +155,12 @@ def main():
 
     config = BacktestConfig(
         initial_capital=10000.0,
-        commission_pct=0.01,       # forex-typical: 0.01% (1 pip spread equivalent)
+        commission_pct=0.1,        # 0.1% commission (MEMORY.md standard)
         slippage_ticks=0,
         qty_type="percent_of_equity",
         qty_value=100.0,
         start_date="2018-01-01",
-        end_date="2025-12-31",
+        end_date="2069-12-31",
     )
 
     results = []
