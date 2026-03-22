@@ -1,6 +1,38 @@
 # Research Log
 
-## Leaderboard (Best Result Per Strategy, Sorted by PF)
+## Leaderboard by Instrument (Best Result Per Strategy, Sorted by PF)
+
+### EURUSD
+
+| Rank | Strategy | PF | Net | Trades | Win% | Max DD | Period | Params |
+|------|----------|----|-----|--------|------|--------|--------|--------|
+| — | — | — | — | — | — | — | — | — |
+
+### BTCUSD
+
+| Rank | Strategy | PF | Net | Trades | Win% | Max DD | Period | Params |
+|------|----------|----|-----|--------|------|--------|--------|--------|
+| — | — | — | — | — | — | — | — | — |
+
+### GBPJPY
+
+| Rank | Strategy | PF | Net | Trades | Win% | Max DD | Period | Params |
+|------|----------|----|-----|--------|------|--------|--------|--------|
+| — | — | — | — | — | — | — | — | — |
+
+### GBPUSD
+
+| Rank | Strategy | PF | Net | Trades | Win% | Max DD | Period | Params |
+|------|----------|----|-----|--------|------|--------|--------|--------|
+| — | — | — | — | — | — | — | — | — |
+
+### USDJPY
+
+| Rank | Strategy | PF | Net | Trades | Win% | Max DD | Period | Params |
+|------|----------|----|-----|--------|------|--------|--------|--------|
+| — | — | — | — | — | — | — | — | — |
+
+### EURAUD
 
 | Rank | Strategy | PF | Net | Trades | Win% | Max DD | Period | Params |
 |------|----------|----|-----|--------|------|--------|--------|--------|
