@@ -33,9 +33,9 @@ ENV/
 
 # Project Specific
 data/
-tvresults/
 *.txt
 *.csv
+!tvresults/*.csv
 *.log
 .claude/
 ai_context/
