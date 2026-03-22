@@ -1,0 +1,181 @@
+{
+  "top5": [
+    {
+      "pf": 11.782507,
+      "net": 1163.99322,
+      "trades": 469,
+      "win_rate": 66.311301,
+      "max_dd_pct": -0.234574,
+      "expectancy": 2.481862,
+      "avg_wl": 5.985968,
+      "params": {
+        "n_bricks": 2,
+        "cooldown": 30,
+        "session_start": 7,
+        "raff_gate": false,
+        "vp_gate": false,
+        "div_gate": true,
+        "do_gate": false
+      }
+    },
+    {
+      "pf": 11.545108,
+      "net": 831.111972,
+      "trades": 364,
+      "win_rate": 66.758242,
+      "max_dd_pct": -0.311555,
+      "expectancy": 2.283275,
+      "avg_wl": 5.748799,
+      "params": {
+        "n_bricks": 4,
+        "cooldown": 30,
+        "session_start": 13,
+        "raff_gate": false,
+        "vp_gate": false,
+        "div_gate": true,
+        "do_gate": false
+      }
+    },
+    {
+      "pf": 11.495502,
+      "net": 497.206074,
+      "trades": 209,
+      "win_rate": 63.157895,
+      "max_dd_pct": -0.325848,
+      "expectancy": 2.378976,
+      "avg_wl": 6.70571,
+      "params": {
+        "n_bricks": 5,
+        "cooldown": 30,
+        "session_start": 13,
+        "raff_gate": true,
+        "vp_gate": true,
+        "div_gate": true,
+        "do_gate": false
+      }
+    },
+    {
+      "pf": 11.487689,
+      "net": 1070.406432,
+      "trades": 445,
+      "win_rate": 64.94382,
+      "max_dd_pct": -0.312091,
+      "expectancy": 2.405408,
+      "avg_wl": 6.200967,
+      "params": {
+        "n_bricks": 4,
+        "cooldown": 30,
+        "session_start": 7,
+        "raff_gate": false,
+        "vp_gate": false,
+        "div_gate": true,
+        "do_gate": false
+      }
+    },
+    {
+      "pf": 11.401784,
+      "net": 811.076766,
+      "trades": 353,
+      "win_rate": 64.022663,
+      "max_dd_pct": -0.319547,
+      "expectancy": 2.297668,
+      "avg_wl": 6.407197,
+      "params": {
+        "n_bricks": 5,
+        "cooldown": 30,
+        "session_start": 7,
+        "raff_gate": false,
+        "vp_gate": true,
+        "div_gate": true,
+        "do_gate": false
+      }
+    }
+  ],
+  "baseline": {
+    "2_10": {
+      "pf": 8.28399106914255,
+      "net": 4574.468339999988,
+      "trades": 2340,
+      "win_rate": 59.82905982905983,
+      "max_dd_pct": -0.29299299267031603
+    },
+    "2_20": {
+      "pf": 8.36124820028499,
+      "net": 4478.893769999989,
+      "trades": 2273,
+      "win_rate": 59.74483062032556,
+      "max_dd_pct": -0.36253787208291444
+    },
+    "2_30": {
+      "pf": 8.405943340817737,
+      "net": 4411.169519999986,
+      "trades": 2233,
+      "win_rate": 59.69547693685625,
+      "max_dd_pct": -0.32465723538881514
+    },
+    "3_10": {
+      "pf": 8.666675201173712,
+      "net": 4308.318473999993,
+      "trades": 2162,
+      "win_rate": 60.96207215541165,
+      "max_dd_pct": -0.36690058444816104
+    },
+    "3_20": {
+      "pf": 8.694483879126542,
+      "net": 4105.578941999997,
+      "trades": 2051,
+      "win_rate": 60.799609946367625,
+      "max_dd_pct": -0.2635353294067169
+    },
+    "3_30": {
+      "pf": 8.499956454083184,
+      "net": 3941.8507080000077,
+      "trades": 1979,
+      "win_rate": 60.23244062657908,
+      "max_dd_pct": -0.35354544879286587
+    },
+    "4_10": {
+      "pf": 8.96854934064895,
+      "net": 3958.4475660000016,
+      "trades": 1946,
+      "win_rate": 61.8191161356629,
+      "max_dd_pct": -0.2775390895913357
+    },
+    "4_20": {
+      "pf": 9.113207683951073,
+      "net": 3746.9321160000036,
+      "trades": 1810,
+      "win_rate": 61.93370165745856,
+      "max_dd_pct": -0.28875389168361665
+    },
+    "4_30": {
+      "pf": 9.208971413274577,
+      "net": 3640.6504680000016,
+      "trades": 1721,
+      "win_rate": 61.53399186519466,
+      "max_dd_pct": -0.350191772393122
+    },
+    "5_10": {
+      "pf": 8.74226972911727,
+      "net": 3620.970221999997,
+      "trades": 1768,
+      "win_rate": 60.52036199095022,
+      "max_dd_pct": -0.3344702845266854
+    },
+    "5_20": {
+      "pf": 9.114397686209777,
+      "net": 3412.9515,
+      "trades": 1625,
+      "win_rate": 61.353846153846156,
+      "max_dd_pct": -0.33581441085384567
+    },
+    "5_30": {
+      "pf": 9.143032628454145,
+      "net": 3253.7416440000034,
+      "trades": 1532,
+      "win_rate": 61.48825065274151,
+      "max_dd_pct": -0.31550221088535724
+    }
+  },
+  "count": 576
+}

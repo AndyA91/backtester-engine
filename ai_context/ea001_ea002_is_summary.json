@@ -1,0 +1,163 @@
+{
+  "baseline_parity_ok": true,
+  "mismatches": [],
+  "ea001_top5": [
+    {
+      "pf": 9.170456,
+      "net": 3665.016204,
+      "trades": 1736,
+      "win_rate": 61.463134,
+      "max_dd_pct": -0.34425,
+      "expectancy": 2.111184,
+      "avg_wl": 5.749799,
+      "params": {
+        "n_bricks": 4,
+        "cooldown": 30
+      }
+    },
+    {
+      "pf": 9.095972,
+      "net": 3276.00492,
+      "trades": 1546,
+      "win_rate": 61.384217,
+      "max_dd_pct": -0.342693,
+      "expectancy": 2.11902,
+      "avg_wl": 5.722124,
+      "params": {
+        "n_bricks": 5,
+        "cooldown": 30
+      }
+    },
+    {
+      "pf": 9.095231,
+      "net": 3779.695368,
+      "trades": 1825,
+      "win_rate": 61.863014,
+      "max_dd_pct": -0.280373,
+      "expectancy": 2.071066,
+      "avg_wl": 5.60698,
+      "params": {
+        "n_bricks": 4,
+        "cooldown": 20
+      }
+    },
+    {
+      "pf": 9.093975,
+      "net": 3443.012346,
+      "trades": 1639,
+      "win_rate": 61.317877,
+      "max_dd_pct": -0.32712,
+      "expectancy": 2.100679,
+      "avg_wl": 5.736896,
+      "params": {
+        "n_bricks": 5,
+        "cooldown": 20
+      }
+    },
+    {
+      "pf": 8.942639,
+      "net": 3988.217898,
+      "trades": 1963,
+      "win_rate": 61.742231,
+      "max_dd_pct": -0.2705,
+      "expectancy": 2.031695,
+      "avg_wl": 5.541189,
+      "params": {
+        "n_bricks": 4,
+        "cooldown": 10
+      }
+    }
+  ],
+  "ea002_is_top5": [
+    {
+      "pf": 11.782507,
+      "net": 1163.99322,
+      "trades": 469,
+      "win_rate": 66.311301,
+      "max_dd_pct": -0.234574,
+      "expectancy": 2.481862,
+      "avg_wl": 5.985968,
+      "params": {
+        "n_bricks": 2,
+        "cooldown": 30,
+        "session_start": 7,
+        "raff_gate": false,
+        "vp_gate": false,
+        "div_gate": true,
+        "do_gate": false
+      }
+    },
+    {
+      "pf": 11.545108,
+      "net": 831.111972,
+      "trades": 364,
+      "win_rate": 66.758242,
+      "max_dd_pct": -0.311555,
+      "expectancy": 2.283275,
+      "avg_wl": 5.748799,
+      "params": {
+        "n_bricks": 4,
+        "cooldown": 30,
+        "session_start": 13,
+        "raff_gate": false,
+        "vp_gate": false,
+        "div_gate": true,
+        "do_gate": false
+      }
+    },
+    {
+      "pf": 11.495502,
+      "net": 497.206074,
+      "trades": 209,
+      "win_rate": 63.157895,
+      "max_dd_pct": -0.325848,
+      "expectancy": 2.378976,
+      "avg_wl": 6.70571,
+      "params": {
+        "n_bricks": 5,
+        "cooldown": 30,
+        "session_start": 13,
+        "raff_gate": true,
+        "vp_gate": true,
+        "div_gate": true,
+        "do_gate": false
+      }
+    },
+    {
+      "pf": 11.487689,
+      "net": 1070.406432,
+      "trades": 445,
+      "win_rate": 64.94382,
+      "max_dd_pct": -0.312091,
+      "expectancy": 2.405408,
+      "avg_wl": 6.200967,
+      "params": {
+        "n_bricks": 4,
+        "cooldown": 30,
+        "session_start": 7,
+        "raff_gate": false,
+        "vp_gate": false,
+        "div_gate": true,
+        "do_gate": false
+      }
+    },
+    {
+      "pf": 11.401784,
+      "net": 811.076766,
+      "trades": 353,
+      "win_rate": 64.022663,
+      "max_dd_pct": -0.319547,
+      "expectancy": 2.297668,
+      "avg_wl": 6.407197,
+      "params": {
+        "n_bricks": 5,
+        "cooldown": 30,
+        "session_start": 7,
+        "raff_gate": false,
+        "vp_gate": true,
+        "div_gate": true,
+        "do_gate": false
+      }
+    }
+  ]
+}

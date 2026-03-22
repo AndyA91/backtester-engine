@@ -1,0 +1,95 @@
+{
+  "top5": [
+    {
+      "pf": 10.624426,
+      "net": 142.74255,
+      "trades": 72,
+      "win_rate": 65.277778,
+      "max_dd_pct": -0.224207,
+      "expectancy": 1.982535,
+      "avg_wl": 5.65129,
+      "params": {
+        "n_bricks": 5,
+        "cooldown": 30,
+        "session_start": 13,
+        "raff_gate": false,
+        "vp_gate": true,
+        "div_gate": true,
+        "do_gate": false
+      }
+    },
+    {
+      "pf": 9.844494,
+      "net": 155.255046,
+      "trades": 82,
+      "win_rate": 63.414634,
+      "max_dd_pct": -0.243172,
+      "expectancy": 1.893354,
+      "avg_wl": 5.679516,
+      "params": {
+        "n_bricks": 4,
+        "cooldown": 30,
+        "session_start": 13,
+        "raff_gate": false,
+        "vp_gate": true,
+        "div_gate": true,
+        "do_gate": false
+      }
+    },
+    {
+      "pf": 9.818712,
+      "net": 173.445264,
+      "trades": 91,
+      "win_rate": 63.736264,
+      "max_dd_pct": -0.39345,
+      "expectancy": 1.905992,
+      "avg_wl": 5.586509,
+      "params": {
+        "n_bricks": 5,
+        "cooldown": 20,
+        "session_start": 13,
+        "raff_gate": false,
+        "vp_gate": true,
+        "div_gate": true,
+        "do_gate": false
+      }
+    },
+    {
+      "pf": 9.289455,
+      "net": 120.59043,
+      "trades": 66,
+      "win_rate": 60.606061,
+      "max_dd_pct": -0.331716,
+      "expectancy": 1.827128,
+      "avg_wl": 6.038146,
+      "params": {
+        "n_bricks": 4,
+        "cooldown": 30,
+        "session_start": 13,
+        "raff_gate": true,
+        "vp_gate": true,
+        "div_gate": true,
+        "do_gate": false
+      }
+    },
+    {
+      "pf": 9.111995,
+      "net": 189.495996,
+      "trades": 105,
+      "win_rate": 62.857143,
+      "max_dd_pct": -0.239257,
+      "expectancy": 1.804724,
+      "avg_wl": 5.384361,
+      "params": {
+        "n_bricks": 4,
+        "cooldown": 20,
+        "session_start": 13,
+        "raff_gate": false,
+        "vp_gate": true,
+        "div_gate": true,
+        "do_gate": false
+      }
+    }
+  ],
+  "count": 576
+}

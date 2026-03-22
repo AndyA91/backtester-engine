@@ -40,8 +40,8 @@ data/*
 !tvresults/*.csv
 *.log
 .claude/
-ai_context/
 *.pine
+!ai_context/**
 *.md
 !README.md
 !CLAUDE.md

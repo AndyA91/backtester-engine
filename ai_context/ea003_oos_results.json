@@ -1,0 +1,962 @@
+[
+  {
+    "trades": 2,
+    "params": {
+      "n_bricks": 2,
+      "session_start": 0,
+      "min_confluence": 4,
+      "strong_confirm": false
+    },
+    "pf": null,
+    "net": 4.211184000000138,
+    "win_rate": 100.0,
+    "max_dd_pct": -0.01486619999999448,
+    "expectancy": 2.105592000000069,
+    "avg_wl": null
+  },
+  {
+    "trades": 2,
+    "params": {
+      "n_bricks": 3,
+      "session_start": 0,
+      "min_confluence": 4,
+      "strong_confirm": false
+    },
+    "pf": null,
+    "net": 4.211184000000138,
+    "win_rate": 100.0,
+    "max_dd_pct": -0.01486619999999448,
+    "expectancy": 2.105592000000069,
+    "avg_wl": null
+  },
+  {
+    "trades": 1,
+    "params": {
+      "n_bricks": 4,
+      "session_start": 0,
+      "min_confluence": 4,
+      "strong_confirm": false
+    },
+    "pf": null,
+    "net": 2.708346000000114,
+    "win_rate": 100.0,
+    "max_dd_pct": -0.014596200000005409,
+    "expectancy": 2.708346000000114,
+    "avg_wl": null
+  },
+  {
+    "trades": 1,
+    "params": {
+      "n_bricks": 5,
+      "session_start": 0,
+      "min_confluence": 4,
+      "strong_confirm": false
+    },
+    "pf": null,
+    "net": 2.708346000000114,
+    "win_rate": 100.0,
+    "max_dd_pct": -0.014596200000005409,
+    "expectancy": 2.708346000000114,
+    "avg_wl": null
+  },
+  {
+    "trades": 124,
+    "params": {
+      "n_bricks": 5,
+      "session_start": 0,
+      "min_confluence": 3,
+      "strong_confirm": true
+    },
+    "pf": 5.683898734058913,
+    "net": 180.160872000001,
+    "win_rate": 54.03225806451613,
+    "max_dd_pct": -0.40780450046659045,
+    "expectancy": 1.4529102580645243,
+    "avg_wl": 4.835555639423254
+  },
+  {
+    "trades": 127,
+    "params": {
+      "n_bricks": 5,
+      "session_start": 0,
+      "min_confluence": 3,
+      "strong_confirm": false
+    },
+    "pf": 5.540371318846934,
+    "net": 182.8533480000004,
+    "win_rate": 53.54330708661418,
+    "max_dd_pct": -0.41473151093908434,
+    "expectancy": 1.4397901417322867,
+    "avg_wl": 4.807086879587781
+  },
+  {
+    "trades": 173,
+    "params": {
+      "n_bricks": 4,
+      "session_start": 0,
+      "min_confluence": 3,
+      "strong_confirm": true
+    },
+    "pf": 4.987077479928787,
+    "net": 219.32178000000172,
+    "win_rate": 52.601156069364166,
+    "max_dd_pct": -0.7251812303025617,
+    "expectancy": 1.2677559537572354,
+    "avg_wl": 4.493850036858907
+  },
+  {
+    "trades": 177,
+    "params": {
+      "n_bricks": 4,
+      "session_start": 0,
+      "min_confluence": 3,
+      "strong_confirm": false
+    },
+    "pf": 4.923521914016803,
+    "net": 222.92298000000102,
+    "win_rate": 52.54237288135594,
+    "max_dd_pct": -0.43105446767808314,
+    "expectancy": 1.2594518644067854,
+    "avg_wl": 4.447052051370015
+  },
+  {
+    "trades": 101,
+    "params": {
+      "n_bricks": 3,
+      "session_start": 13,
+      "min_confluence": 3,
+      "strong_confirm": false
+    },
+    "pf": 4.842943757263009,
+    "net": 124.36592999999797,
+    "win_rate": 49.504950495049506,
+    "max_dd_pct": -0.4123682555861894,
+    "expectancy": 1.2313458415841383,
+    "avg_wl": 4.939802632408269
+  },
+  {
+    "trades": 59,
+    "params": {
+      "n_bricks": 5,
+      "session_start": 13,
+      "min_confluence": 3,
+      "strong_confirm": false
+    },
+    "pf": 4.824751366233351,
+    "net": 76.50156000000024,
+    "win_rate": 49.152542372881356,
+    "max_dd_pct": -0.6129129022593393,
+    "expectancy": 1.2966366101694955,
+    "avg_wl": 4.991122103000018
+  },
+  {
+    "trades": 297,
+    "params": {
+      "n_bricks": 5,
+      "session_start": 0,
+      "min_confluence": 2,
+      "strong_confirm": false
+    },
+    "pf": 4.7354380175400586,
+    "net": 365.6358719999983,
+    "win_rate": 52.52525252525253,
+    "max_dd_pct": -0.8619657677630947,
+    "expectancy": 1.2310972121212065,
+    "avg_wl": 4.280107438930438
+  },
+  {
+    "trades": 297,
+    "params": {
+      "n_bricks": 5,
+      "session_start": 0,
+      "min_confluence": 2,
+      "strong_confirm": true
+    },
+    "pf": 4.7354380175400586,
+    "net": 365.6358719999983,
+    "win_rate": 52.52525252525253,
+    "max_dd_pct": -0.8619657677630947,
+    "expectancy": 1.2310972121212065,
+    "avg_wl": 4.280107438930438
+  },
+  {
+    "trades": 220,
+    "params": {
+      "n_bricks": 3,
+      "session_start": 0,
+      "min_confluence": 3,
+      "strong_confirm": true
+    },
+    "pf": 4.72506028741286,
+    "net": 267.9544860000003,
+    "win_rate": 50.90909090909091,
+    "max_dd_pct": -0.6764037036985603,
+    "expectancy": 1.2179749363636379,
+    "avg_wl": 4.556308134290972
+  },
+  {
+    "trades": 224,
+    "params": {
+      "n_bricks": 3,
+      "session_start": 0,
+      "min_confluence": 3,
+      "strong_confirm": false
+    },
+    "pf": 4.682518944810645,
+    "net": 271.5556859999996,
+    "win_rate": 50.89285714285714,
+    "max_dd_pct": -0.6744825740325624,
+    "expectancy": 1.2123021696428553,
+    "avg_wl": 4.518220034466412
+  },
+  {
+    "trades": 99,
+    "params": {
+      "n_bricks": 3,
+      "session_start": 13,
+      "min_confluence": 3,
+      "strong_confirm": true
+    },
+    "pf": 4.675769954976946,
+    "net": 118.95582599999841,
+    "win_rate": 48.484848484848484,
+    "max_dd_pct": -0.44195241933150786,
+    "expectancy": 1.201573999999984,
+    "avg_wl": 4.968005577163006
+  },
+  {
+    "trades": 306,
+    "params": {
+      "n_bricks": 5,
+      "session_start": 0,
+      "min_confluence": 1,
+      "strong_confirm": false
+    },
+    "pf": 4.616924322652613,
+    "net": 369.45395399999825,
+    "win_rate": 51.9607843137255,
+    "max_dd_pct": -0.9023084772502743,
+    "expectancy": 1.2073658627450923,
+    "avg_wl": 4.26847720396185
+  },
+  {
+    "trades": 306,
+    "params": {
+      "n_bricks": 5,
+      "session_start": 0,
+      "min_confluence": 1,
+      "strong_confirm": true
+    },
+    "pf": 4.616924322652613,
+    "net": 369.45395399999825,
+    "win_rate": 51.9607843137255,
+    "max_dd_pct": -0.9023084772502743,
+    "expectancy": 1.2073658627450923,
+    "avg_wl": 4.26847720396185
+  },
+  {
+    "trades": 58,
+    "params": {
+      "n_bricks": 5,
+      "session_start": 13,
+      "min_confluence": 3,
+      "strong_confirm": true
+    },
+    "pf": 4.599701585484642,
+    "net": 72.00018000000054,
+    "win_rate": 48.275862068965516,
+    "max_dd_pct": -0.7496398037769427,
+    "expectancy": 1.2413824137931129,
+    "avg_wl": 4.928251698733544
+  },
+  {
+    "trades": 78,
+    "params": {
+      "n_bricks": 4,
+      "session_start": 13,
+      "min_confluence": 3,
+      "strong_confirm": false
+    },
+    "pf": 4.578627183152129,
+    "net": 93.01282199999889,
+    "win_rate": 48.717948717948715,
+    "max_dd_pct": -0.3985218615776001,
+    "expectancy": 1.1924720769230628,
+    "avg_wl": 4.819607561212767
+  },
+  {
+    "trades": 394,
+    "params": {
+      "n_bricks": 4,
+      "session_start": 0,
+      "min_confluence": 2,
+      "strong_confirm": false
+    },
+    "pf": 4.410869212019014,
+    "net": 447.7951799999977,
+    "win_rate": 51.26903553299492,
+    "max_dd_pct": -0.6288890322973006,
+    "expectancy": 1.1365359898477099,
+    "avg_wl": 4.1925093500378745
+  },
+  {
+    "trades": 394,
+    "params": {
+      "n_bricks": 4,
+      "session_start": 0,
+      "min_confluence": 2,
+      "strong_confirm": true
+    },
+    "pf": 4.410869212019014,
+    "net": 447.7951799999977,
+    "win_rate": 51.26903553299492,
+    "max_dd_pct": -0.6288890322973006,
+    "expectancy": 1.1365359898477099,
+    "avg_wl": 4.1925093500378745
+  },
+  {
+    "trades": 76,
+    "params": {
+      "n_bricks": 4,
+      "session_start": 13,
+      "min_confluence": 3,
+      "strong_confirm": true
+    },
+    "pf": 4.370475824857907,
+    "net": 87.60271799999933,
+    "win_rate": 47.368421052631575,
+    "max_dd_pct": -0.6023670984369264,
+    "expectancy": 1.1526673421052542,
+    "avg_wl": 4.856084249842119
+  },
+  {
+    "trades": 406,
+    "params": {
+      "n_bricks": 4,
+      "session_start": 0,
+      "min_confluence": 1,
+      "strong_confirm": false
+    },
+    "pf": 4.344661572616594,
+    "net": 455.4814379999978,
+    "win_rate": 50.73891625615764,
+    "max_dd_pct": -0.6661104402233637,
+    "expectancy": 1.1218754630541818,
+    "avg_wl": 4.218118031666597
+  },
+  {
+    "trades": 406,
+    "params": {
+      "n_bricks": 4,
+      "session_start": 0,
+      "min_confluence": 1,
+      "strong_confirm": true
+    },
+    "pf": 4.344661572616594,
+    "net": 455.4814379999978,
+    "win_rate": 50.73891625615764,
+    "max_dd_pct": -0.6661104402233637,
+    "expectancy": 1.1218754630541818,
+    "avg_wl": 4.218118031666597
+  },
+  {
+    "trades": 494,
+    "params": {
+      "n_bricks": 3,
+      "session_start": 0,
+      "min_confluence": 2,
+      "strong_confirm": false
+    },
+    "pf": 4.306192545634579,
+    "net": 539.0518619999976,
+    "win_rate": 51.21457489878543,
+    "max_dd_pct": -0.7467969633652891,
+    "expectancy": 1.0911981012145702,
+    "avg_wl": 4.101946258885112
+  },
+  {
+    "trades": 494,
+    "params": {
+      "n_bricks": 3,
+      "session_start": 0,
+      "min_confluence": 2,
+      "strong_confirm": true
+    },
+    "pf": 4.306192545634579,
+    "net": 539.0518619999976,
+    "win_rate": 51.21457489878543,
+    "max_dd_pct": -0.7467969633652891,
+    "expectancy": 1.0911981012145702,
+    "avg_wl": 4.101946258885112
+  },
+  {
+    "trades": 278,
+    "params": {
+      "n_bricks": 2,
+      "session_start": 0,
+      "min_confluence": 3,
+      "strong_confirm": true
+    },
+    "pf": 4.292397429374735,
+    "net": 313.95836999999943,
+    "win_rate": 49.64028776978417,
+    "max_dd_pct": -0.5759988937953415,
+    "expectancy": 1.129346654676257,
+    "avg_wl": 4.3546060877714705
+  },
+  {
+    "trades": 507,
+    "params": {
+      "n_bricks": 3,
+      "session_start": 0,
+      "min_confluence": 1,
+      "strong_confirm": false
+    },
+    "pf": 4.257360568640403,
+    "net": 547.0409579999973,
+    "win_rate": 50.887573964497044,
+    "max_dd_pct": -0.8007856560408307,
+    "expectancy": 1.0789762485207048,
+    "avg_wl": 4.108847990664574
+  },
+  {
+    "trades": 507,
+    "params": {
+      "n_bricks": 3,
+      "session_start": 0,
+      "min_confluence": 1,
+      "strong_confirm": true
+    },
+    "pf": 4.257360568640403,
+    "net": 547.0409579999973,
+    "win_rate": 50.887573964497044,
+    "max_dd_pct": -0.8007856560408307,
+    "expectancy": 1.0789762485207048,
+    "avg_wl": 4.108847990664574
+  },
+  {
+    "trades": 646,
+    "params": {
+      "n_bricks": 2,
+      "session_start": 0,
+      "min_confluence": 2,
+      "strong_confirm": false
+    },
+    "pf": 4.205651655620894,
+    "net": 698.5424879999996,
+    "win_rate": 50.30959752321982,
+    "max_dd_pct": -0.44601806194478205,
+    "expectancy": 1.0813351207430335,
+    "avg_wl": 4.153889789090176
+  },
+  {
+    "trades": 646,
+    "params": {
+      "n_bricks": 2,
+      "session_start": 0,
+      "min_confluence": 2,
+      "strong_confirm": true
+    },
+    "pf": 4.205651655620894,
+    "net": 698.5424879999996,
+    "win_rate": 50.30959752321982,
+    "max_dd_pct": -0.44601806194478205,
+    "expectancy": 1.0813351207430335,
+    "avg_wl": 4.153889789090176
+  },
+  {
+    "trades": 286,
+    "params": {
+      "n_bricks": 2,
+      "session_start": 0,
+      "min_confluence": 3,
+      "strong_confirm": false
+    },
+    "pf": 4.190298702223805,
+    "net": 315.75391199999854,
+    "win_rate": 48.95104895104895,
+    "max_dd_pct": -0.4865133982507981,
+    "expectancy": 1.1040346573426523,
+    "avg_wl": 4.36988293231911
+  },
+  {
+    "trades": 135,
+    "params": {
+      "n_bricks": 2,
+      "session_start": 13,
+      "min_confluence": 3,
+      "strong_confirm": false
+    },
+    "pf": 4.130981676131129,
+    "net": 146.48260199999686,
+    "win_rate": 47.40740740740741,
+    "max_dd_pct": -0.4417383286631554,
+    "expectancy": 1.0850563111110878,
+    "avg_wl": 4.5828077969579715
+  },
+  {
+    "trades": 131,
+    "params": {
+      "n_bricks": 2,
+      "session_start": 13,
+      "min_confluence": 3,
+      "strong_confirm": true
+    },
+    "pf": 4.120576651889213,
+    "net": 142.26730799999746,
+    "win_rate": 47.32824427480916,
+    "max_dd_pct": -0.4151014449572894,
+    "expectancy": 1.086009984732805,
+    "avg_wl": 4.585803048070252
+  },
+  {
+    "trades": 672,
+    "params": {
+      "n_bricks": 2,
+      "session_start": 0,
+      "min_confluence": 1,
+      "strong_confirm": false
+    },
+    "pf": 4.108194540329581,
+    "net": 706.7456819999994,
+    "win_rate": 49.702380952380956,
+    "max_dd_pct": -0.41053468683644684,
+    "expectancy": 1.0517048839285705,
+    "avg_wl": 4.157394474944307
+  },
+  {
+    "trades": 672,
+    "params": {
+      "n_bricks": 2,
+      "session_start": 0,
+      "min_confluence": 1,
+      "strong_confirm": true
+    },
+    "pf": 4.108194540329581,
+    "net": 706.7456819999994,
+    "win_rate": 49.702380952380956,
+    "max_dd_pct": -0.41053468683644684,
+    "expectancy": 1.0517048839285705,
+    "avg_wl": 4.157394474944307
+  },
+  {
+    "trades": 142,
+    "params": {
+      "n_bricks": 5,
+      "session_start": 13,
+      "min_confluence": 1,
+      "strong_confirm": false
+    },
+    "pf": 4.0501696482759995,
+    "net": 155.37953999999644,
+    "win_rate": 45.07042253521127,
+    "max_dd_pct": -0.6464974760571081,
+    "expectancy": 1.0942221126760312,
+    "avg_wl": 4.936144258836374
+  },
+  {
+    "trades": 142,
+    "params": {
+      "n_bricks": 5,
+      "session_start": 13,
+      "min_confluence": 1,
+      "strong_confirm": true
+    },
+    "pf": 4.0501696482759995,
+    "net": 155.37953999999644,
+    "win_rate": 45.07042253521127,
+    "max_dd_pct": -0.6464974760571081,
+    "expectancy": 1.0942221126760312,
+    "avg_wl": 4.936144258836374
+  },
+  {
+    "trades": 139,
+    "params": {
+      "n_bricks": 5,
+      "session_start": 13,
+      "min_confluence": 2,
+      "strong_confirm": false
+    },
+    "pf": 4.012346458388289,
+    "net": 149.7358259999965,
+    "win_rate": 45.32374100719424,
+    "max_dd_pct": -0.6496539034681802,
+    "expectancy": 1.077236158273356,
+    "avg_wl": 4.840290965674761
+  },
+  {
+    "trades": 139,
+    "params": {
+      "n_bricks": 5,
+      "session_start": 13,
+      "min_confluence": 2,
+      "strong_confirm": true
+    },
+    "pf": 4.012346458388289,
+    "net": 149.7358259999965,
+    "win_rate": 45.32374100719424,
+    "max_dd_pct": -0.6496539034681802,
+    "expectancy": 1.077236158273356,
+    "avg_wl": 4.840290965674761
+  },
+  {
+    "trades": 302,
+    "params": {
+      "n_bricks": 2,
+      "session_start": 13,
+      "min_confluence": 2,
+      "strong_confirm": false
+    },
+    "pf": 3.9661066036225843,
+    "net": 319.1076119999938,
+    "win_rate": 46.35761589403973,
+    "max_dd_pct": -0.4277712726093722,
+    "expectancy": 1.0566477218542842,
+    "avg_wl": 4.58935192704899
+  },
+  {
+    "trades": 302,
+    "params": {
+      "n_bricks": 2,
+      "session_start": 13,
+      "min_confluence": 2,
+      "strong_confirm": true
+    },
+    "pf": 3.9661066036225843,
+    "net": 319.1076119999938,
+    "win_rate": 46.35761589403973,
+    "max_dd_pct": -0.4277712726093722,
+    "expectancy": 1.0566477218542842,
+    "avg_wl": 4.58935192704899
+  },
+  {
+    "trades": 313,
+    "params": {
+      "n_bricks": 2,
+      "session_start": 13,
+      "min_confluence": 1,
+      "strong_confirm": false
+    },
+    "pf": 3.9434478625055527,
+    "net": 327.65722799999355,
+    "win_rate": 45.68690095846645,
+    "max_dd_pct": -0.4267425439713106,
+    "expectancy": 1.0468282044728228,
+    "avg_wl": 4.6880149414401675
+  },
+  {
+    "trades": 313,
+    "params": {
+      "n_bricks": 2,
+      "session_start": 13,
+      "min_confluence": 1,
+      "strong_confirm": true
+    },
+    "pf": 3.9434478625055527,
+    "net": 327.65722799999355,
+    "win_rate": 45.68690095846645,
+    "max_dd_pct": -0.4267425439713106,
+    "expectancy": 1.0468282044728228,
+    "avg_wl": 4.6880149414401675
+  },
+  {
+    "trades": 230,
+    "params": {
+      "n_bricks": 3,
+      "session_start": 13,
+      "min_confluence": 1,
+      "strong_confirm": false
+    },
+    "pf": 3.827031154139349,
+    "net": 232.93365599999385,
+    "win_rate": 45.21739130434783,
+    "max_dd_pct": -0.5670674099394116,
+    "expectancy": 1.0127550260869298,
+    "avg_wl": 4.6365954367457505
+  },
+  {
+    "trades": 230,
+    "params": {
+      "n_bricks": 3,
+      "session_start": 13,
+      "min_confluence": 1,
+      "strong_confirm": true
+    },
+    "pf": 3.827031154139349,
+    "net": 232.93365599999385,
+    "win_rate": 45.21739130434783,
+    "max_dd_pct": -0.5670674099394116,
+    "expectancy": 1.0127550260869298,
+    "avg_wl": 4.6365954367457505
+  },
+  {
+    "trades": 224,
+    "params": {
+      "n_bricks": 3,
+      "session_start": 13,
+      "min_confluence": 2,
+      "strong_confirm": false
+    },
+    "pf": 3.7744853036392545,
+    "net": 223.4217659999942,
+    "win_rate": 45.535714285714285,
+    "max_dd_pct": -0.5714673243318329,
+    "expectancy": 0.9974185982142598,
+    "avg_wl": 4.514580461215579
+  },
+  {
+    "trades": 224,
+    "params": {
+      "n_bricks": 3,
+      "session_start": 13,
+      "min_confluence": 2,
+      "strong_confirm": true
+    },
+    "pf": 3.7744853036392545,
+    "net": 223.4217659999942,
+    "win_rate": 45.535714285714285,
+    "max_dd_pct": -0.5714673243318329,
+    "expectancy": 0.9974185982142598,
+    "avg_wl": 4.514580461215579
+  },
+  {
+    "trades": 180,
+    "params": {
+      "n_bricks": 4,
+      "session_start": 13,
+      "min_confluence": 1,
+      "strong_confirm": false
+    },
+    "pf": 3.7094117620564893,
+    "net": 180.48299399999377,
+    "win_rate": 43.333333333333336,
+    "max_dd_pct": -0.5378644054511418,
+    "expectancy": 1.0026832999999653,
+    "avg_wl": 4.85076922730464
+  },
+  {
+    "trades": 180,
+    "params": {
+      "n_bricks": 4,
+      "session_start": 13,
+      "min_confluence": 1,
+      "strong_confirm": true
+    },
+    "pf": 3.7094117620564893,
+    "net": 180.48299399999377,
+    "win_rate": 43.333333333333336,
+    "max_dd_pct": -0.5378644054511418,
+    "expectancy": 1.0026832999999653,
+    "avg_wl": 4.85076922730464
+  },
+  {
+    "trades": 174,
+    "params": {
+      "n_bricks": 4,
+      "session_start": 13,
+      "min_confluence": 2,
+      "strong_confirm": false
+    },
+    "pf": 3.640664544263587,
+    "net": 170.97110399999406,
+    "win_rate": 43.67816091954023,
+    "max_dd_pct": -0.5422196416126066,
+    "expectancy": 0.9825925517241038,
+    "avg_wl": 4.694541122866205
+  },
+  {
+    "trades": 174,
+    "params": {
+      "n_bricks": 4,
+      "session_start": 13,
+      "min_confluence": 2,
+      "strong_confirm": true
+    },
+    "pf": 3.640664544263587,
+    "net": 170.97110399999406,
+    "win_rate": 43.67816091954023,
+    "max_dd_pct": -0.5422196416126066,
+    "expectancy": 0.9825925517241038,
+    "avg_wl": 4.694541122866205
+  },
+  {
+    "trades": 0,
+    "params": {
+      "n_bricks": 2,
+      "session_start": 0,
+      "min_confluence": 4,
+      "strong_confirm": true
+    },
+    "pf": 0.0,
+    "net": 0.0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0
+  },
+  {
+    "trades": 0,
+    "params": {
+      "n_bricks": 2,
+      "session_start": 13,
+      "min_confluence": 4,
+      "strong_confirm": false
+    },
+    "pf": 0.0,
+    "net": 0.0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0
+  },
+  {
+    "trades": 0,
+    "params": {
+      "n_bricks": 2,
+      "session_start": 13,
+      "min_confluence": 4,
+      "strong_confirm": true
+    },
+    "pf": 0.0,
+    "net": 0.0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0
+  },
+  {
+    "trades": 0,
+    "params": {
+      "n_bricks": 3,
+      "session_start": 0,
+      "min_confluence": 4,
+      "strong_confirm": true
+    },
+    "pf": 0.0,
+    "net": 0.0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0
+  },
+  {
+    "trades": 0,
+    "params": {
+      "n_bricks": 3,
+      "session_start": 13,
+      "min_confluence": 4,
+      "strong_confirm": false
+    },
+    "pf": 0.0,
+    "net": 0.0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0
+  },
+  {
+    "trades": 0,
+    "params": {
+      "n_bricks": 3,
+      "session_start": 13,
+      "min_confluence": 4,
+      "strong_confirm": true
+    },
+    "pf": 0.0,
+    "net": 0.0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0
+  },
+  {
+    "trades": 0,
+    "params": {
+      "n_bricks": 4,
+      "session_start": 0,
+      "min_confluence": 4,
+      "strong_confirm": true
+    },
+    "pf": 0.0,
+    "net": 0.0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0
+  },
+  {
+    "trades": 0,
+    "params": {
+      "n_bricks": 4,
+      "session_start": 13,
+      "min_confluence": 4,
+      "strong_confirm": false
+    },
+    "pf": 0.0,
+    "net": 0.0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0
+  },
+  {
+    "trades": 0,
+    "params": {
+      "n_bricks": 4,
+      "session_start": 13,
+      "min_confluence": 4,
+      "strong_confirm": true
+    },
+    "pf": 0.0,
+    "net": 0.0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0
+  },
+  {
+    "trades": 0,
+    "params": {
+      "n_bricks": 5,
+      "session_start": 0,
+      "min_confluence": 4,
+      "strong_confirm": true
+    },
+    "pf": 0.0,
+    "net": 0.0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0
+  },
+  {
+    "trades": 0,
+    "params": {
+      "n_bricks": 5,
+      "session_start": 13,
+      "min_confluence": 4,
+      "strong_confirm": false
+    },
+    "pf": 0.0,
+    "net": 0.0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0
+  },
+  {
+    "trades": 0,
+    "params": {
+      "n_bricks": 5,
+      "session_start": 13,
+      "min_confluence": 4,
+      "strong_confirm": true
+    },
+    "pf": 0.0,
+    "net": 0.0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0
+  }
+]
