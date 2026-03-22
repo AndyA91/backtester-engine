@@ -18,7 +18,7 @@ import pandas as pd
 
 from engine import (
     load_tv_export,
-    BacktestConfig, run_backtest_long_short,
+    BacktestConfig, run_backtest, run_backtest_long_short,
 )
 
 # ── Entry signal imports ─────────────────────────────────────────────────────
@@ -98,8 +98,9 @@ ENTRY_SIGNALS = [
 ]
 
 
-def run_signal_backtest(df_raw: pd.DataFrame, entry_fn, config: BacktestConfig) -> dict | None:
-    """Run a single entry signal with opposite-signal exit through the engine."""
+def run_signal_backtest(df_raw: pd.DataFrame, entry_fn, config: BacktestConfig,
+                       long_only: bool = False) -> dict | None:
+    """Run a single entry signal through the engine."""
     try:
         df = df_raw.copy()
         signals = entry_fn(df)
@@ -107,19 +108,26 @@ def run_signal_backtest(df_raw: pd.DataFrame, entry_fn, config: BacktestConfig) 
         long_entry = signals["long_entry"]
         short_entry = signals["short_entry"]
 
-        # Use opposite signal as exit (reversal system)
-        df["long_entry"] = long_entry
-        df["short_entry"] = short_entry
-        df["long_exit"] = short_entry
-        df["short_exit"] = long_entry
+        if long_only:
+            # Long only: use short signal as exit instead
+            df["long_entry"] = long_entry
+            df["long_exit"] = short_entry
+            n_signals = np.sum(long_entry) + np.sum(short_entry)
+        else:
+            # Long+short reversal system
+            df["long_entry"] = long_entry
+            df["short_entry"] = short_entry
+            df["long_exit"] = short_entry
+            df["short_exit"] = long_entry
+            n_signals = np.sum(long_entry) + np.sum(short_entry)
 
-        n_long = np.sum(long_entry)
-        n_short = np.sum(short_entry)
-
-        if n_long + n_short < 2:
+        if n_signals < 2:
             return {"name": name, "error": "< 2 signals", "trades": 0}
 
-        kpis = run_backtest_long_short(df, config)
+        if long_only:
+            kpis = run_backtest(df, config)
+        else:
+            kpis = run_backtest_long_short(df, config)
 
         if kpis.get("total_trades", 0) == 0:
             return {"name": name, "error": "no trades", "trades": 0}
@@ -144,10 +152,15 @@ def run_signal_backtest(df_raw: pd.DataFrame, entry_fn, config: BacktestConfig) 
 
 def main():
     # Load data
-    # Allow overriding data file from command line
-    data_file = sys.argv[1] if len(sys.argv) > 1 else "SYNTH_EURUSD, 1D.csv"
+    # Parse args: signal_showdown.py [data_file] [--long-only]
+    args = [a for a in sys.argv[1:] if not a.startswith("--")]
+    flags = [a for a in sys.argv[1:] if a.startswith("--")]
+    data_file = args[0] if args else "SYNTH_EURUSD, 1D.csv"
+    long_only = "--long-only" in flags
+
+    mode_str = "LONG ONLY" if long_only else "LONG + SHORT"
     print(f"=" * 70)
-    print(f"SIGNAL SHOWDOWN — Testing {len(ENTRY_SIGNALS)} entry signals")
+    print(f"SIGNAL SHOWDOWN — Testing {len(ENTRY_SIGNALS)} entry signals ({mode_str})")
     print(f"Data: {data_file}")
     print(f"=" * 70)
 
@@ -165,7 +178,7 @@ def main():
 
     results = []
     for i, entry_fn in enumerate(ENTRY_SIGNALS):
-        r = run_signal_backtest(df, entry_fn, config)
+        r = run_signal_backtest(df, entry_fn, config, long_only=long_only)
         if r:
             status = "OK" if "error" not in r else f"SKIP ({r['error']})"
             print(f"  [{i+1:2d}/{len(ENTRY_SIGNALS)}] {r['name']:<30s} {status}")
