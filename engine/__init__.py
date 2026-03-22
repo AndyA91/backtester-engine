@@ -44,3 +44,9 @@ from engine.data import (
     read_tv_xlsx_dates,
     ensure_data_coverage,
 )
+
+from engine.walk_forward import (
+    run_walk_forward,
+    print_wfo_results,
+    WFOWindow,
+)
