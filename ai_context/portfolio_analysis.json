@@ -1,0 +1,408 @@
+{
+  "oos_period": {
+    "start": "2025-10-01",
+    "end": "2026-03-19"
+  },
+  "strategies": {
+    "GJ014": {
+      "pair": "GBPJPY",
+      "brick": 0.05
+    },
+    "GU001": {
+      "pair": "GBPUSD",
+      "brick": 0.0004
+    },
+    "EA021": {
+      "pair": "EURAUD",
+      "brick": 0.0006
+    },
+    "UJ001": {
+      "pair": "USDJPY",
+      "brick": 0.05
+    },
+    "R016": {
+      "pair": "EURUSD",
+      "brick": 0.0005
+    }
+  },
+  "strategy_summary": {
+    "GJ014": {
+      "trades": 17,
+      "wins": 17,
+      "win_rate": 100.0,
+      "net_pnl": 39.98,
+      "pf": "inf"
+    },
+    "GU001": {
+      "trades": 13,
+      "wins": 11,
+      "win_rate": 84.6,
+      "net_pnl": 36.25,
+      "pf": 54.31
+    },
+    "EA021": {
+      "trades": 19,
+      "wins": 13,
+      "win_rate": 68.4,
+      "net_pnl": 32.62,
+      "pf": 14.21
+    },
+    "UJ001": {
+      "trades": 19,
+      "wins": 16,
+      "win_rate": 84.2,
+      "net_pnl": 43.64,
+      "pf": 35.36
+    },
+    "R016": {
+      "trades": 26,
+      "wins": 18,
+      "win_rate": 69.2,
+      "net_pnl": 52.14,
+      "pf": 22.91
+    }
+  },
+  "correlation_matrix": {
+    "GJ014": {
+      "GJ014": 1.0,
+      "GU001": 0.1162,
+      "EA021": -0.0412,
+      "UJ001": -0.0585,
+      "R016": 0.0585
+    },
+    "GU001": {
+      "GJ014": 0.1162,
+      "GU001": 1.0,
+      "EA021": 0.1278,
+      "UJ001": -0.0269,
+      "R016": 0.6123
+    },
+    "EA021": {
+      "GJ014": -0.0412,
+      "GU001": 0.1278,
+      "EA021": 1.0,
+      "UJ001": -0.0236,
+      "R016": 0.1053
+    },
+    "UJ001": {
+      "GJ014": -0.0585,
+      "GU001": -0.0269,
+      "EA021": -0.0236,
+      "UJ001": 1.0,
+      "R016": -0.063
+    },
+    "R016": {
+      "GJ014": 0.0585,
+      "GU001": 0.6123,
+      "EA021": 0.1053,
+      "UJ001": -0.063,
+      "R016": 1.0
+    }
+  },
+  "trade_overlap_matrix": {
+    "GJ014": {
+      "GJ014": 1.0,
+      "GU001": 0.1667,
+      "EA021": 0.0667,
+      "UJ001": 0.069,
+      "R016": 0.1176
+    },
+    "GU001": {
+      "GJ014": 0.1667,
+      "GU001": 1.0,
+      "EA021": 0.2,
+      "UJ001": 0.1379,
+      "R016": 0.2941
+    },
+    "EA021": {
+      "GJ014": 0.0667,
+      "GU001": 0.2,
+      "EA021": 1.0,
+      "UJ001": 0.1333,
+      "R016": 0.2647
+    },
+    "UJ001": {
+      "GJ014": 0.069,
+      "GU001": 0.1379,
+      "EA021": 0.1333,
+      "UJ001": 1.0,
+      "R016": 0.2059
+    },
+    "R016": {
+      "GJ014": 0.1176,
+      "GU001": 0.2941,
+      "EA021": 0.2647,
+      "UJ001": 0.2059,
+      "R016": 1.0
+    }
+  },
+  "portfolio_metrics": {
+    "total_capital": 5000.0,
+    "total_return_usd": 175.21,
+    "total_return_pct": 3.5,
+    "profit_factor": 51.35,
+    "sharpe": 6.62,
+    "sortino": 122.31,
+    "max_drawdown_usd": -0.63,
+    "max_drawdown_pct": -0.01,
+    "active_days": 56,
+    "win_day_rate": 85.7
+  },
+  "optimal_subsets": {
+    "best_3": {
+      "best": {
+        "strategies": [
+          "GJ014",
+          "EA021",
+          "UJ001"
+        ],
+        "sharpe": 7.026,
+        "avg_corr": -0.0411,
+        "pf": 45.44,
+        "total_return_usd": 93.77,
+        "score": 7.315
+      },
+      "all": [
+        {
+          "strategies": [
+            "GJ014",
+            "EA021",
+            "UJ001"
+          ],
+          "sharpe": 7.026,
+          "avg_corr": -0.0411,
+          "pf": 45.44,
+          "total_return_usd": 93.77,
+          "score": 7.315
+        },
+        {
+          "strategies": [
+            "GJ014",
+            "UJ001",
+            "R016"
+          ],
+          "sharpe": 6.726,
+          "avg_corr": -0.021,
+          "pf": 54.14,
+          "total_return_usd": 111.59,
+          "score": 6.868
+        },
+        {
+          "strategies": [
+            "EA021",
+            "UJ001",
+            "R016"
+          ],
+          "sharpe": 6.437,
+          "avg_corr": 0.0062,
+          "pf": 37.7,
+          "total_return_usd": 107.91,
+          "score": 6.397
+        },
+        {
+          "strategies": [
+            "GJ014",
+            "EA021",
+            "R016"
+          ],
+          "sharpe": 6.635,
+          "avg_corr": 0.0409,
+          "pf": 63.12,
+          "total_return_usd": 123.62,
+          "score": 6.364
+        },
+        {
+          "strategies": [
+            "GJ014",
+            "GU001",
+            "UJ001"
+          ],
+          "sharpe": 5.613,
+          "avg_corr": 0.0103,
+          "pf": 46.8,
+          "total_return_usd": 89.31,
+          "score": 5.556
+        },
+        {
+          "strategies": [
+            "GJ014",
+            "GU001",
+            "EA021"
+          ],
+          "sharpe": 5.661,
+          "avg_corr": 0.0676,
+          "pf": 59.58,
+          "total_return_usd": 101.34,
+          "score": 5.279
+        },
+        {
+          "strategies": [
+            "GU001",
+            "EA021",
+            "UJ001"
+          ],
+          "sharpe": 5.41,
+          "avg_corr": 0.0258,
+          "pf": 31.69,
+          "total_return_usd": 85.63,
+          "score": 5.271
+        },
+        {
+          "strategies": [
+            "GU001",
+            "UJ001",
+            "R016"
+          ],
+          "sharpe": 4.754,
+          "avg_corr": 0.1741,
+          "pf": 40.19,
+          "total_return_usd": 103.45,
+          "score": 3.926
+        },
+        {
+          "strategies": [
+            "GJ014",
+            "GU001",
+            "R016"
+          ],
+          "sharpe": 4.989,
+          "avg_corr": 0.2624,
+          "pf": 81.51,
+          "total_return_usd": 119.16,
+          "score": 3.68
+        },
+        {
+          "strategies": [
+            "GU001",
+            "EA021",
+            "R016"
+          ],
+          "sharpe": 4.822,
+          "avg_corr": 0.2818,
+          "pf": 46.64,
+          "total_return_usd": 115.48,
+          "score": 3.463
+        }
+      ]
+    },
+    "best_4": {
+      "best": {
+        "strategies": [
+          "GJ014",
+          "EA021",
+          "UJ001",
+          "R016"
+        ],
+        "sharpe": 7.629,
+        "avg_corr": -0.0038,
+        "pf": 50.53,
+        "total_return_usd": 145.63,
+        "score": 7.658
+      },
+      "all": [
+        {
+          "strategies": [
+            "GJ014",
+            "EA021",
+            "UJ001",
+            "R016"
+          ],
+          "sharpe": 7.629,
+          "avg_corr": -0.0038,
+          "pf": 50.53,
+          "total_return_usd": 145.63,
+          "score": 7.658
+        },
+        {
+          "strategies": [
+            "GJ014",
+            "GU001",
+            "EA021",
+            "UJ001"
+          ],
+          "sharpe": 6.654,
+          "avg_corr": 0.0156,
+          "pf": 45.21,
+          "total_return_usd": 123.35,
+          "score": 6.55
+        },
+        {
+          "strategies": [
+            "GJ014",
+            "GU001",
+            "UJ001",
+            "R016"
+          ],
+          "sharpe": 5.828,
+          "avg_corr": 0.1064,
+          "pf": 54.47,
+          "total_return_usd": 141.17,
+          "score": 5.208
+        },
+        {
+          "strategies": [
+            "GU001",
+            "EA021",
+            "UJ001",
+            "R016"
+          ],
+          "sharpe": 5.643,
+          "avg_corr": 0.122,
+          "pf": 40.51,
+          "total_return_usd": 137.49,
+          "score": 4.955
+        },
+        {
+          "strategies": [
+            "GJ014",
+            "GU001",
+            "EA021",
+            "R016"
+          ],
+          "sharpe": 5.847,
+          "avg_corr": 0.1632,
+          "pf": 61.55,
+          "total_return_usd": 153.2,
+          "score": 4.893
+        }
+      ]
+    }
+  },
+  "capital_allocation": {
+    "GJ014": {
+      "daily_vol": 0.001184,
+      "inv_vol_weight": 0.1953,
+      "inv_vol_capital": 976.34,
+      "equal_weight": 0.2,
+      "equal_capital": 1000.0
+    },
+    "GU001": {
+      "daily_vol": 0.001434,
+      "inv_vol_weight": 0.1612,
+      "inv_vol_capital": 806.07,
+      "equal_weight": 0.2,
+      "equal_capital": 1000.0
+    },
+    "EA021": {
+      "daily_vol": 0.001127,
+      "inv_vol_weight": 0.205,
+      "inv_vol_capital": 1024.99,
+      "equal_weight": 0.2,
+      "equal_capital": 1000.0
+    },
+    "UJ001": {
+      "daily_vol": 0.000776,
+      "inv_vol_weight": 0.2978,
+      "inv_vol_capital": 1488.92,
+      "equal_weight": 0.2,
+      "equal_capital": 1000.0
+    },
+    "R016": {
+      "daily_vol": 0.001642,
+      "inv_vol_weight": 0.1407,
+      "inv_vol_capital": 703.67,
+      "equal_weight": 0.2,
+      "equal_capital": 1000.0
+    }
+  }
+}

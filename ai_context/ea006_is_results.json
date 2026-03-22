@@ -1,0 +1,722 @@
+[
+  {
+    "pf": 0.0,
+    "net": 0.0,
+    "trades": 0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0,
+    "params": {
+      "n_bricks": 2,
+      "require_both_divs": false,
+      "cooldown": 0,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 0.0,
+    "net": 0.0,
+    "trades": 0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0,
+    "params": {
+      "n_bricks": 2,
+      "require_both_divs": false,
+      "cooldown": 0,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 0.0,
+    "net": 0.0,
+    "trades": 0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0,
+    "params": {
+      "n_bricks": 2,
+      "require_both_divs": false,
+      "cooldown": 10,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 0.0,
+    "net": 0.0,
+    "trades": 0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0,
+    "params": {
+      "n_bricks": 2,
+      "require_both_divs": false,
+      "cooldown": 10,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 0.0,
+    "net": 0.0,
+    "trades": 0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0,
+    "params": {
+      "n_bricks": 2,
+      "require_both_divs": false,
+      "cooldown": 20,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 0.0,
+    "net": 0.0,
+    "trades": 0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0,
+    "params": {
+      "n_bricks": 2,
+      "require_both_divs": false,
+      "cooldown": 20,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 0.0,
+    "net": 0.0,
+    "trades": 0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0,
+    "params": {
+      "n_bricks": 2,
+      "require_both_divs": true,
+      "cooldown": 0,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 0.0,
+    "net": 0.0,
+    "trades": 0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0,
+    "params": {
+      "n_bricks": 2,
+      "require_both_divs": true,
+      "cooldown": 0,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 0.0,
+    "net": 0.0,
+    "trades": 0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0,
+    "params": {
+      "n_bricks": 2,
+      "require_both_divs": true,
+      "cooldown": 10,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 0.0,
+    "net": 0.0,
+    "trades": 0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0,
+    "params": {
+      "n_bricks": 2,
+      "require_both_divs": true,
+      "cooldown": 10,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 0.0,
+    "net": 0.0,
+    "trades": 0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0,
+    "params": {
+      "n_bricks": 2,
+      "require_both_divs": true,
+      "cooldown": 20,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 0.0,
+    "net": 0.0,
+    "trades": 0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0,
+    "params": {
+      "n_bricks": 2,
+      "require_both_divs": true,
+      "cooldown": 20,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 0.0,
+    "net": 0.0,
+    "trades": 0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0,
+    "params": {
+      "n_bricks": 3,
+      "require_both_divs": false,
+      "cooldown": 0,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 0.0,
+    "net": 0.0,
+    "trades": 0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0,
+    "params": {
+      "n_bricks": 3,
+      "require_both_divs": false,
+      "cooldown": 0,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 0.0,
+    "net": 0.0,
+    "trades": 0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0,
+    "params": {
+      "n_bricks": 3,
+      "require_both_divs": false,
+      "cooldown": 10,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 0.0,
+    "net": 0.0,
+    "trades": 0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0,
+    "params": {
+      "n_bricks": 3,
+      "require_both_divs": false,
+      "cooldown": 10,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 0.0,
+    "net": 0.0,
+    "trades": 0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0,
+    "params": {
+      "n_bricks": 3,
+      "require_both_divs": false,
+      "cooldown": 20,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 0.0,
+    "net": 0.0,
+    "trades": 0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0,
+    "params": {
+      "n_bricks": 3,
+      "require_both_divs": false,
+      "cooldown": 20,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 0.0,
+    "net": 0.0,
+    "trades": 0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0,
+    "params": {
+      "n_bricks": 3,
+      "require_both_divs": true,
+      "cooldown": 0,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 0.0,
+    "net": 0.0,
+    "trades": 0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0,
+    "params": {
+      "n_bricks": 3,
+      "require_both_divs": true,
+      "cooldown": 0,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 0.0,
+    "net": 0.0,
+    "trades": 0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0,
+    "params": {
+      "n_bricks": 3,
+      "require_both_divs": true,
+      "cooldown": 10,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 0.0,
+    "net": 0.0,
+    "trades": 0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0,
+    "params": {
+      "n_bricks": 3,
+      "require_both_divs": true,
+      "cooldown": 10,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 0.0,
+    "net": 0.0,
+    "trades": 0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0,
+    "params": {
+      "n_bricks": 3,
+      "require_both_divs": true,
+      "cooldown": 20,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 0.0,
+    "net": 0.0,
+    "trades": 0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0,
+    "params": {
+      "n_bricks": 3,
+      "require_both_divs": true,
+      "cooldown": 20,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 0.0,
+    "net": 0.0,
+    "trades": 0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0,
+    "params": {
+      "n_bricks": 4,
+      "require_both_divs": false,
+      "cooldown": 0,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 0.0,
+    "net": 0.0,
+    "trades": 0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0,
+    "params": {
+      "n_bricks": 4,
+      "require_both_divs": false,
+      "cooldown": 0,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 0.0,
+    "net": 0.0,
+    "trades": 0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0,
+    "params": {
+      "n_bricks": 4,
+      "require_both_divs": false,
+      "cooldown": 10,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 0.0,
+    "net": 0.0,
+    "trades": 0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0,
+    "params": {
+      "n_bricks": 4,
+      "require_both_divs": false,
+      "cooldown": 10,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 0.0,
+    "net": 0.0,
+    "trades": 0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0,
+    "params": {
+      "n_bricks": 4,
+      "require_both_divs": false,
+      "cooldown": 20,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 0.0,
+    "net": 0.0,
+    "trades": 0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0,
+    "params": {
+      "n_bricks": 4,
+      "require_both_divs": false,
+      "cooldown": 20,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 0.0,
+    "net": 0.0,
+    "trades": 0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0,
+    "params": {
+      "n_bricks": 4,
+      "require_both_divs": true,
+      "cooldown": 0,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 0.0,
+    "net": 0.0,
+    "trades": 0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0,
+    "params": {
+      "n_bricks": 4,
+      "require_both_divs": true,
+      "cooldown": 0,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 0.0,
+    "net": 0.0,
+    "trades": 0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0,
+    "params": {
+      "n_bricks": 4,
+      "require_both_divs": true,
+      "cooldown": 10,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 0.0,
+    "net": 0.0,
+    "trades": 0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0,
+    "params": {
+      "n_bricks": 4,
+      "require_both_divs": true,
+      "cooldown": 10,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 0.0,
+    "net": 0.0,
+    "trades": 0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0,
+    "params": {
+      "n_bricks": 4,
+      "require_both_divs": true,
+      "cooldown": 20,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 0.0,
+    "net": 0.0,
+    "trades": 0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0,
+    "params": {
+      "n_bricks": 4,
+      "require_both_divs": true,
+      "cooldown": 20,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 0.0,
+    "net": 0.0,
+    "trades": 0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0,
+    "params": {
+      "n_bricks": 5,
+      "require_both_divs": false,
+      "cooldown": 0,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 0.0,
+    "net": 0.0,
+    "trades": 0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0,
+    "params": {
+      "n_bricks": 5,
+      "require_both_divs": false,
+      "cooldown": 0,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 0.0,
+    "net": 0.0,
+    "trades": 0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0,
+    "params": {
+      "n_bricks": 5,
+      "require_both_divs": false,
+      "cooldown": 10,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 0.0,
+    "net": 0.0,
+    "trades": 0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0,
+    "params": {
+      "n_bricks": 5,
+      "require_both_divs": false,
+      "cooldown": 10,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 0.0,
+    "net": 0.0,
+    "trades": 0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0,
+    "params": {
+      "n_bricks": 5,
+      "require_both_divs": false,
+      "cooldown": 20,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 0.0,
+    "net": 0.0,
+    "trades": 0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0,
+    "params": {
+      "n_bricks": 5,
+      "require_both_divs": false,
+      "cooldown": 20,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 0.0,
+    "net": 0.0,
+    "trades": 0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0,
+    "params": {
+      "n_bricks": 5,
+      "require_both_divs": true,
+      "cooldown": 0,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 0.0,
+    "net": 0.0,
+    "trades": 0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0,
+    "params": {
+      "n_bricks": 5,
+      "require_both_divs": true,
+      "cooldown": 0,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 0.0,
+    "net": 0.0,
+    "trades": 0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0,
+    "params": {
+      "n_bricks": 5,
+      "require_both_divs": true,
+      "cooldown": 10,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 0.0,
+    "net": 0.0,
+    "trades": 0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0,
+    "params": {
+      "n_bricks": 5,
+      "require_both_divs": true,
+      "cooldown": 10,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 0.0,
+    "net": 0.0,
+    "trades": 0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0,
+    "params": {
+      "n_bricks": 5,
+      "require_both_divs": true,
+      "cooldown": 20,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 0.0,
+    "net": 0.0,
+    "trades": 0,
+    "win_rate": 0.0,
+    "max_dd_pct": 0.0,
+    "expectancy": 0.0,
+    "avg_wl": 0.0,
+    "params": {
+      "n_bricks": 5,
+      "require_both_divs": true,
+      "cooldown": 20,
+      "session_start": 13
+    }
+  }
+]

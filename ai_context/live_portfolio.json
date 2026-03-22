@@ -1,0 +1,66 @@
+{
+  "status": "LIVE",
+  "live_date": "2026-03-20",
+  "platform": "TradingView",
+  "broker": "OANDA",
+  "strategies": {
+    "GJ014": {
+      "pair": "GBPJPY",
+      "brick_size": 0.05,
+      "pine_file": "renko/strategies/gj014_mk_htf.pine",
+      "config": "n=5, cd=30, s13, a25, mk_regime, htf_adx40@0.15",
+      "tv_oos_pf": "inf",
+      "tv_oos_trades": 17,
+      "tv_oos_wr": 100.0
+    },
+    "GU001": {
+      "pair": "GBPUSD",
+      "brick_size": 0.0004,
+      "pine_file": "renko/strategies/gu001_escgo_htf.pine",
+      "config": "n=5, cd=30, s12, a25, escgo_cross+sto_tso, htf_adx40@0.0008",
+      "tv_oos_pf": 54.31,
+      "tv_oos_trades": 13,
+      "tv_oos_wr": 84.6
+    },
+    "EA021": {
+      "pair": "EURAUD",
+      "brick_size": 0.0006,
+      "pine_file": "renko/strategies/ea021_escgo_htf.pine",
+      "config": "n=5, cd=20, s14, a20, escgo_cross+macd_lc, htf_adx30@0.0012",
+      "tv_oos_pf": 14.21,
+      "tv_oos_trades": 19,
+      "tv_oos_wr": 68.4
+    },
+    "UJ001": {
+      "pair": "USDJPY",
+      "brick_size": 0.05,
+      "pine_file": "renko/strategies/uj001_stoch_macd.pine",
+      "config": "n=5, cd=30, s13, a30, stoch_cross+macd_lc (no HTF)",
+      "tv_oos_pf": 35.36,
+      "tv_oos_trades": 19,
+      "tv_oos_wr": 84.2
+    },
+    "R016": {
+      "pair": "EURUSD",
+      "brick_size": 0.0005,
+      "pine_file": "renko/strategies/r016_stoch_htf.pine",
+      "config": "n=5, cd=20, s12, a25, stoch_cross, htf_adx35@0.0008",
+      "tv_oos_pf": 22.91,
+      "tv_oos_trades": 26,
+      "tv_oos_wr": 69.2
+    }
+  },
+  "portfolio_metrics": {
+    "total_capital": 5000.0,
+    "total_return_pct": 3.5,
+    "profit_factor": 51.35,
+    "sharpe": 6.62,
+    "sortino": 122.31,
+    "max_drawdown_pct": -0.01
+  },
+  "notes": [
+    "R015 (EURUSD 0.0004) dropped in favor of R016 (2x trade count on same pair)",
+    "All Pine scripts have R002 position check bug fix applied",
+    "OOS validation period: 2025-10-01 to 2026-03-19"
+  ]
+}

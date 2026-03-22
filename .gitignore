@@ -40,8 +40,8 @@ data/*
 !tvresults/*.csv
 *.log
 .claude/
-ai_context/
 *.pine
+!ai_context/**
 *.md
 !README.md
 !CLAUDE.md
@@ -52,6 +52,8 @@ ai_context/
 !MEMORY.md
 !OPTIMIZATION_PLAN_MTF_KAMA.md
 !PROJECT_MAP.md
+!strategy_details.md
+!phase_details.md
 
 # Workspace
 *.code-workspace

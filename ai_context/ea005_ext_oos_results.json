@@ -1,0 +1,3458 @@
+[
+  {
+    "pf": 9.329628212483893,
+    "net": 125.52261600000111,
+    "trades": 64,
+    "win_rate": 56.25,
+    "max_dd_pct": -0.32945059313475306,
+    "expectancy": 1.9612908750000173,
+    "avg_wl": 7.256377498598583,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.6,
+      "n_inside": 2,
+      "cooldown": 5,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 9.126893714683394,
+    "net": 159.0486899999995,
+    "trades": 82,
+    "win_rate": 57.3170731707317,
+    "max_dd_pct": -0.3733015649353582,
+    "expectancy": 1.9396181707317013,
+    "avg_wl": 6.796622979019549,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.6,
+      "n_inside": 1,
+      "cooldown": 5,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 9.061048408100287,
+    "net": 153.01972199999935,
+    "trades": 74,
+    "win_rate": 58.108108108108105,
+    "max_dd_pct": -0.5364785605427982,
+    "expectancy": 2.0678340810810725,
+    "avg_wl": 6.5323837360723,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.6,
+      "n_inside": 1,
+      "cooldown": 10,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 7.7884440987953925,
+    "net": 116.68610399999956,
+    "trades": 73,
+    "win_rate": 60.273972602739725,
+    "max_dd_pct": -0.6198863614816488,
+    "expectancy": 1.5984397808219117,
+    "avg_wl": 5.133292701478782,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.6,
+      "n_inside": 3,
+      "cooldown": 20,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 7.766408049560596,
+    "net": 122.05415999999774,
+    "trades": 64,
+    "win_rate": 53.125,
+    "max_dd_pct": -0.4120923873600789,
+    "expectancy": 1.9070962499999646,
+    "avg_wl": 6.852712984906408,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.6,
+      "n_inside": 1,
+      "cooldown": 5,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 7.4600228316887485,
+    "net": 105.32199000000044,
+    "trades": 65,
+    "win_rate": 60.0,
+    "max_dd_pct": -0.573882859028479,
+    "expectancy": 1.6203383076923146,
+    "avg_wl": 4.973348554459165,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.6,
+      "n_inside": 3,
+      "cooldown": 30,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 7.0388342440025635,
+    "net": 102.4321919999989,
+    "trades": 61,
+    "win_rate": 57.377049180327866,
+    "max_dd_pct": -0.19478070144945459,
+    "expectancy": 1.679216262295064,
+    "avg_wl": 5.228848295544762,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.6,
+      "n_inside": 1,
+      "cooldown": 5,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 6.984549186552369,
+    "net": 113.71671599999952,
+    "trades": 71,
+    "win_rate": 53.52112676056338,
+    "max_dd_pct": -0.6132740644917098,
+    "expectancy": 1.601643887323937,
+    "avg_wl": 6.065529556742847,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.6,
+      "n_inside": 2,
+      "cooldown": 20,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 6.965142660126216,
+    "net": 131.10967199999922,
+    "trades": 81,
+    "win_rate": 56.79012345679012,
+    "max_dd_pct": -0.7113587785042018,
+    "expectancy": 1.6186379259259163,
+    "avg_wl": 5.299565067487339,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.6,
+      "n_inside": 1,
+      "cooldown": 20,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 6.833028014833867,
+    "net": 116.71080599999964,
+    "trades": 63,
+    "win_rate": 49.2063492063492,
+    "max_dd_pct": -0.42131704456914965,
+    "expectancy": 1.8525524761904704,
+    "avg_wl": 7.053448273376895,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.7,
+      "n_inside": 1,
+      "cooldown": 20,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 6.811322302832376,
+    "net": 147.4607459999975,
+    "trades": 92,
+    "win_rate": 56.52173913043478,
+    "max_dd_pct": -0.5563847559607332,
+    "expectancy": 1.6028341956521468,
+    "avg_wl": 5.239478694486443,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.8,
+      "n_inside": 3,
+      "cooldown": 10,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 6.694959774358985,
+    "net": 118.82137199999933,
+    "trades": 66,
+    "win_rate": 50.0,
+    "max_dd_pct": -0.4122425503477683,
+    "expectancy": 1.800323818181808,
+    "avg_wl": 6.694959774358986,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.7,
+      "n_inside": 3,
+      "cooldown": 5,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 6.653517915472706,
+    "net": 169.00937399999904,
+    "trades": 104,
+    "win_rate": 52.88461538461539,
+    "max_dd_pct": -0.9773391163580138,
+    "expectancy": 1.6250901346153754,
+    "avg_wl": 5.92767959742114,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.6,
+      "n_inside": 3,
+      "cooldown": 5,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 6.543499180025297,
+    "net": 182.19072599999802,
+    "trades": 116,
+    "win_rate": 56.03448275862068,
+    "max_dd_pct": -0.6477636792236532,
+    "expectancy": 1.5706097068965348,
+    "avg_wl": 5.134130125866001,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.8,
+      "n_inside": 1,
+      "cooldown": 10,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 6.49470056552437,
+    "net": 94.3240079999996,
+    "trades": 60,
+    "win_rate": 51.66666666666667,
+    "max_dd_pct": -0.650935622562559,
+    "expectancy": 1.5720667999999933,
+    "avg_wl": 6.07568762581312,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.6,
+      "n_inside": 3,
+      "cooldown": 20,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 6.463726010329362,
+    "net": 107.45456399999966,
+    "trades": 60,
+    "win_rate": 48.333333333333336,
+    "max_dd_pct": -0.45768249673448147,
+    "expectancy": 1.7909093999999943,
+    "avg_wl": 6.909500217938283,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.7,
+      "n_inside": 3,
+      "cooldown": 10,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 6.397622913706077,
+    "net": 141.54928199999802,
+    "trades": 84,
+    "win_rate": 51.19047619047619,
+    "max_dd_pct": -0.9237101973809861,
+    "expectancy": 1.6851104999999764,
+    "avg_wl": 6.100059057254631,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.7,
+      "n_inside": 3,
+      "cooldown": 10,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 6.277301572136053,
+    "net": 119.63736599999983,
+    "trades": 81,
+    "win_rate": 54.32098765432099,
+    "max_dd_pct": -0.5201260121352721,
+    "expectancy": 1.4770045185185163,
+    "avg_wl": 5.278639958387136,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.7,
+      "n_inside": 2,
+      "cooldown": 10,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 6.2533997477683805,
+    "net": 116.06857199999968,
+    "trades": 79,
+    "win_rate": 53.16455696202531,
+    "max_dd_pct": -0.24179624531065474,
+    "expectancy": 1.4692224303797428,
+    "avg_wl": 5.508947396843573,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.6,
+      "n_inside": 1,
+      "cooldown": 30,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 6.220191550954321,
+    "net": 173.19994199999965,
+    "trades": 110,
+    "win_rate": 50.90909090909091,
+    "max_dd_pct": -0.3915924188446039,
+    "expectancy": 1.574544927272724,
+    "avg_wl": 5.998041852705953,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.6,
+      "n_inside": 2,
+      "cooldown": 10,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 6.176612521334511,
+    "net": 121.79998799999993,
+    "trades": 84,
+    "win_rate": 57.14285714285714,
+    "max_dd_pct": -0.6002530221951776,
+    "expectancy": 1.4499998571428563,
+    "avg_wl": 4.632459391000883,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.8,
+      "n_inside": 1,
+      "cooldown": 20,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 6.134207887595986,
+    "net": 157.66470599999752,
+    "trades": 98,
+    "win_rate": 53.06122448979592,
+    "max_dd_pct": -1.0402825227566475,
+    "expectancy": 1.6088235306122196,
+    "avg_wl": 5.42641466979645,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.7,
+      "n_inside": 2,
+      "cooldown": 10,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 6.129692346793095,
+    "net": 117.58802999999776,
+    "trades": 76,
+    "win_rate": 55.26315789473685,
+    "max_dd_pct": -0.6807277736802816,
+    "expectancy": 1.5472109210526022,
+    "avg_wl": 4.962131899784887,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.7,
+      "n_inside": 2,
+      "cooldown": 20,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 6.1093410761597635,
+    "net": 176.83744199999694,
+    "trades": 118,
+    "win_rate": 53.38983050847458,
+    "max_dd_pct": -0.9492936843252029,
+    "expectancy": 1.4986223898304825,
+    "avg_wl": 5.333551733155349,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.7,
+      "n_inside": 2,
+      "cooldown": 5,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 6.087375171673853,
+    "net": 116.35035600000063,
+    "trades": 82,
+    "win_rate": 53.65853658536586,
+    "max_dd_pct": -0.6448794250699507,
+    "expectancy": 1.4189067804878126,
+    "avg_wl": 5.257278557354691,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.6,
+      "n_inside": 2,
+      "cooldown": 20,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 6.0747220996126075,
+    "net": 117.75292799999643,
+    "trades": 70,
+    "win_rate": 50.0,
+    "max_dd_pct": -0.5737439100984797,
+    "expectancy": 1.6821846857142346,
+    "avg_wl": 6.0747220996126075,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.7,
+      "n_inside": 1,
+      "cooldown": 5,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 6.069722240267935,
+    "net": 127.35937199999988,
+    "trades": 93,
+    "win_rate": 53.76344086021505,
+    "max_dd_pct": -0.413635950131261,
+    "expectancy": 1.3694556129032245,
+    "avg_wl": 5.219961126630424,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.7,
+      "n_inside": 2,
+      "cooldown": 5,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 6.061053881274485,
+    "net": 119.39746799999882,
+    "trades": 72,
+    "win_rate": 47.22222222222222,
+    "max_dd_pct": -0.5710225390385676,
+    "expectancy": 1.6582981666666503,
+    "avg_wl": 6.7741190437773655,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.7,
+      "n_inside": 2,
+      "cooldown": 5,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 6.047881752646811,
+    "net": 117.33238800000012,
+    "trades": 75,
+    "win_rate": 53.333333333333336,
+    "max_dd_pct": -0.3450501001547287,
+    "expectancy": 1.5644318400000017,
+    "avg_wl": 5.29189653356596,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.6,
+      "n_inside": 3,
+      "cooldown": 5,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 6.046947643224385,
+    "net": 146.03600399999735,
+    "trades": 95,
+    "win_rate": 51.578947368421055,
+    "max_dd_pct": -0.9770476378795425,
+    "expectancy": 1.5372210947368141,
+    "avg_wl": 5.676726358945341,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.7,
+      "n_inside": 3,
+      "cooldown": 5,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 6.0275660899868315,
+    "net": 106.23730799999957,
+    "trades": 68,
+    "win_rate": 52.94117647058824,
+    "max_dd_pct": -0.4659182225243242,
+    "expectancy": 1.5623133529411701,
+    "avg_wl": 5.35783652443274,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.6,
+      "n_inside": 3,
+      "cooldown": 10,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 6.026785734895781,
+    "net": 130.6586879999988,
+    "trades": 90,
+    "win_rate": 53.333333333333336,
+    "max_dd_pct": -0.8455597495401381,
+    "expectancy": 1.4517631999999865,
+    "avg_wl": 5.273437518033809,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.6,
+      "n_inside": 3,
+      "cooldown": 10,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 5.898555401077182,
+    "net": 147.8336699999984,
+    "trades": 91,
+    "win_rate": 49.45054945054945,
+    "max_dd_pct": -0.559025404966419,
+    "expectancy": 1.6245458241758064,
+    "avg_wl": 6.029634409990009,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.7,
+      "n_inside": 1,
+      "cooldown": 5,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 5.898096237882458,
+    "net": 111.00051000000003,
+    "trades": 78,
+    "win_rate": 52.56410256410257,
+    "max_dd_pct": -0.5519028607806513,
+    "expectancy": 1.423083461538462,
+    "avg_wl": 5.322672214674413,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.7,
+      "n_inside": 3,
+      "cooldown": 5,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 5.896921339469691,
+    "net": 105.02835599999958,
+    "trades": 72,
+    "win_rate": 54.166666666666664,
+    "max_dd_pct": -0.49965813740260506,
+    "expectancy": 1.4587271666666608,
+    "avg_wl": 4.98970267185897,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.7,
+      "n_inside": 3,
+      "cooldown": 10,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 5.896192889112731,
+    "net": 90.41912999999859,
+    "trades": 63,
+    "win_rate": 53.96825396825397,
+    "max_dd_pct": -0.2886195618682075,
+    "expectancy": 1.4352242857142634,
+    "avg_wl": 5.02910569953733,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.7,
+      "n_inside": 1,
+      "cooldown": 5,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 5.889011681222687,
+    "net": 194.93563199999969,
+    "trades": 123,
+    "win_rate": 51.21951219512195,
+    "max_dd_pct": -0.5718106284511346,
+    "expectancy": 1.5848425365853633,
+    "avg_wl": 5.608582553545418,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.7,
+      "n_inside": 3,
+      "cooldown": 5,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 5.850793917134257,
+    "net": 93.66553199999737,
+    "trades": 62,
+    "win_rate": 54.83870967741935,
+    "max_dd_pct": -0.8021264518468885,
+    "expectancy": 1.5107343870967318,
+    "avg_wl": 4.818300872934094,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.7,
+      "n_inside": 2,
+      "cooldown": 30,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 5.844832480733044,
+    "net": 106.80108599999865,
+    "trades": 72,
+    "win_rate": 56.94444444444444,
+    "max_dd_pct": -0.5227561421040338,
+    "expectancy": 1.483348416666648,
+    "avg_wl": 4.419263582993277,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.8,
+      "n_inside": 3,
+      "cooldown": 20,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 5.808969374260438,
+    "net": 195.64252200000044,
+    "trades": 131,
+    "win_rate": 50.38167938931297,
+    "max_dd_pct": -0.5453410466313038,
+    "expectancy": 1.493454366412217,
+    "avg_wl": 5.720954686771643,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.6,
+      "n_inside": 2,
+      "cooldown": 5,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 5.8045237164429295,
+    "net": 99.98878799999946,
+    "trades": 65,
+    "win_rate": 49.23076923076923,
+    "max_dd_pct": -0.8782219658526904,
+    "expectancy": 1.5382890461538379,
+    "avg_wl": 5.985915082581771,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.6,
+      "n_inside": 1,
+      "cooldown": 30,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 5.792891959462026,
+    "net": 127.47023999999907,
+    "trades": 77,
+    "win_rate": 48.05194805194805,
+    "max_dd_pct": -0.5488953478271781,
+    "expectancy": 1.6554576623376502,
+    "avg_wl": 6.262585902121109,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.7,
+      "n_inside": 1,
+      "cooldown": 10,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 5.783761487775327,
+    "net": 107.12765999999907,
+    "trades": 65,
+    "win_rate": 44.61538461538462,
+    "max_dd_pct": -0.6027619909632256,
+    "expectancy": 1.6481178461538317,
+    "avg_wl": 7.179841846893509,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.7,
+      "n_inside": 2,
+      "cooldown": 10,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 5.767563911612695,
+    "net": 75.11353199999972,
+    "trades": 60,
+    "win_rate": 56.666666666666664,
+    "max_dd_pct": -0.20329287765255355,
+    "expectancy": 1.2518921999999955,
+    "avg_wl": 4.410490050056767,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.6,
+      "n_inside": 1,
+      "cooldown": 30,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 5.756278246688233,
+    "net": 157.91011199999647,
+    "trades": 107,
+    "win_rate": 53.271028037383175,
+    "max_dd_pct": -0.8865324826903945,
+    "expectancy": 1.4757954392523034,
+    "avg_wl": 5.049366883059855,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.8,
+      "n_inside": 3,
+      "cooldown": 5,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 5.728396037192266,
+    "net": 156.55079999999853,
+    "trades": 104,
+    "win_rate": 48.07692307692308,
+    "max_dd_pct": -0.9901617869567395,
+    "expectancy": 1.5052961538461398,
+    "avg_wl": 6.186667720167647,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.6,
+      "n_inside": 2,
+      "cooldown": 5,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 5.7134006518119245,
+    "net": 162.3121259999983,
+    "trades": 106,
+    "win_rate": 50.943396226415096,
+    "max_dd_pct": -0.8465688008676947,
+    "expectancy": 1.5312464716980971,
+    "avg_wl": 5.501793220263335,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.7,
+      "n_inside": 3,
+      "cooldown": 10,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 5.631165565165307,
+    "net": 118.84610999999965,
+    "trades": 68,
+    "win_rate": 48.529411764705884,
+    "max_dd_pct": -0.5787841223783533,
+    "expectancy": 1.7477369117647008,
+    "avg_wl": 5.972448326690477,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.8,
+      "n_inside": 3,
+      "cooldown": 5,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 5.618816337813921,
+    "net": 139.14346799999961,
+    "trades": 90,
+    "win_rate": 46.666666666666664,
+    "max_dd_pct": -1.0811576769582811,
+    "expectancy": 1.546038533333329,
+    "avg_wl": 6.421504386073052,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.6,
+      "n_inside": 2,
+      "cooldown": 10,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 5.586530195706126,
+    "net": 88.60978199999909,
+    "trades": 61,
+    "win_rate": 47.540983606557376,
+    "max_dd_pct": -0.8347407937804061,
+    "expectancy": 1.4526193770491653,
+    "avg_wl": 6.164447112503312,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.6,
+      "n_inside": 2,
+      "cooldown": 30,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 5.560188034190897,
+    "net": 152.54838599999704,
+    "trades": 103,
+    "win_rate": 52.42718446601942,
+    "max_dd_pct": -0.7347860958032011,
+    "expectancy": 1.4810522912621071,
+    "avg_wl": 5.045355808802851,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.8,
+      "n_inside": 2,
+      "cooldown": 10,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 5.541271166904367,
+    "net": 98.69376600000118,
+    "trades": 71,
+    "win_rate": 52.112676056338024,
+    "max_dd_pct": -0.711053561297009,
+    "expectancy": 1.3900530422535378,
+    "avg_wl": 5.091978910128337,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.6,
+      "n_inside": 2,
+      "cooldown": 30,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 5.526346536364152,
+    "net": 114.59381400000078,
+    "trades": 78,
+    "win_rate": 51.28205128205128,
+    "max_dd_pct": -0.6193067149272174,
+    "expectancy": 1.4691514615384715,
+    "avg_wl": 5.2500292095459455,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.6,
+      "n_inside": 2,
+      "cooldown": 10,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 5.526122545056313,
+    "net": 116.2926899999968,
+    "trades": 84,
+    "win_rate": 55.952380952380956,
+    "max_dd_pct": -0.8181552158997993,
+    "expectancy": 1.3844367857142477,
+    "avg_wl": 4.350351790789012,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.8,
+      "n_inside": 3,
+      "cooldown": 10,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 5.520795398026183,
+    "net": 194.6959199999958,
+    "trades": 140,
+    "win_rate": 52.142857142857146,
+    "max_dd_pct": -0.7623530557571156,
+    "expectancy": 1.3906851428571128,
+    "avg_wl": 5.067031392708962,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.7,
+      "n_inside": 1,
+      "cooldown": 5,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 5.488618791576166,
+    "net": 130.0831619999974,
+    "trades": 94,
+    "win_rate": 55.319148936170215,
+    "max_dd_pct": -0.7306388714207548,
+    "expectancy": 1.3838634255318873,
+    "avg_wl": 4.433115177811519,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.8,
+      "n_inside": 2,
+      "cooldown": 10,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 5.467960605779976,
+    "net": 90.37583399999887,
+    "trades": 67,
+    "win_rate": 53.73134328358209,
+    "max_dd_pct": -0.5350865428838797,
+    "expectancy": 1.3488930447761025,
+    "avg_wl": 4.708521632754979,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.8,
+      "n_inside": 1,
+      "cooldown": 30,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 5.4661494947350775,
+    "net": 125.31458999999995,
+    "trades": 94,
+    "win_rate": 50.0,
+    "max_dd_pct": -0.5010173187889181,
+    "expectancy": 1.3331339361702124,
+    "avg_wl": 5.4661494947350775,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.6,
+      "n_inside": 1,
+      "cooldown": 20,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 5.461449532020687,
+    "net": 144.32284199999862,
+    "trades": 114,
+    "win_rate": 55.26315789473685,
+    "max_dd_pct": -0.30346466836623776,
+    "expectancy": 1.2659898421052511,
+    "avg_wl": 4.421173430683413,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.7,
+      "n_inside": 1,
+      "cooldown": 5,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 5.460752468842813,
+    "net": 161.19627599999848,
+    "trades": 112,
+    "win_rate": 51.78571428571429,
+    "max_dd_pct": -1.3744110670138425,
+    "expectancy": 1.4392524642857007,
+    "avg_wl": 5.084148850301929,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.7,
+      "n_inside": 1,
+      "cooldown": 10,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 5.44160762517386,
+    "net": 144.93161999999802,
+    "trades": 106,
+    "win_rate": 56.60377358490566,
+    "max_dd_pct": -0.6672505541146571,
+    "expectancy": 1.3672794339622454,
+    "avg_wl": 4.171899179299959,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.8,
+      "n_inside": 1,
+      "cooldown": 10,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 5.418111796915069,
+    "net": 87.97517399999883,
+    "trades": 63,
+    "win_rate": 52.38095238095239,
+    "max_dd_pct": -0.6424569837506802,
+    "expectancy": 1.3964313333333147,
+    "avg_wl": 4.925556179013698,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.8,
+      "n_inside": 2,
+      "cooldown": 30,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 5.369236452650102,
+    "net": 143.91355199999973,
+    "trades": 90,
+    "win_rate": 47.77777777777778,
+    "max_dd_pct": -0.6398246738192709,
+    "expectancy": 1.5990394666666636,
+    "avg_wl": 5.868700308710577,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.8,
+      "n_inside": 1,
+      "cooldown": 5,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 5.364026888075452,
+    "net": 231.7264499999995,
+    "trades": 170,
+    "win_rate": 49.411764705882355,
+    "max_dd_pct": -0.427026662883857,
+    "expectancy": 1.3630967647058794,
+    "avg_wl": 5.49174181398201,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.6,
+      "n_inside": 1,
+      "cooldown": 5,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 5.354734753410577,
+    "net": 110.24113799999718,
+    "trades": 73,
+    "win_rate": 50.68493150684932,
+    "max_dd_pct": -0.6842897666104074,
+    "expectancy": 1.5101525753424272,
+    "avg_wl": 5.210012192507589,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.8,
+      "n_inside": 1,
+      "cooldown": 5,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 5.332618900259689,
+    "net": 95.4296399999983,
+    "trades": 68,
+    "win_rate": 51.470588235294116,
+    "max_dd_pct": -0.7987276780318998,
+    "expectancy": 1.4033770588235044,
+    "avg_wl": 5.02789782024485,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.7,
+      "n_inside": 3,
+      "cooldown": 20,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 5.315865320417356,
+    "net": 78.34569599999918,
+    "trades": 65,
+    "win_rate": 56.92307692307692,
+    "max_dd_pct": -0.3043967655770744,
+    "expectancy": 1.2053183999999875,
+    "avg_wl": 4.022816999234756,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.7,
+      "n_inside": 2,
+      "cooldown": 20,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 5.2789560293720665,
+    "net": 171.88312199999785,
+    "trades": 122,
+    "win_rate": 48.36065573770492,
+    "max_dd_pct": -0.6818783962599115,
+    "expectancy": 1.4088780491803103,
+    "avg_wl": 5.636851353397291,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.7,
+      "n_inside": 2,
+      "cooldown": 10,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 5.232295870533944,
+    "net": 194.28627599999845,
+    "trades": 141,
+    "win_rate": 50.35460992907801,
+    "max_dd_pct": -0.8879776100287595,
+    "expectancy": 1.377916851063819,
+    "avg_wl": 5.158601562498255,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.7,
+      "n_inside": 1,
+      "cooldown": 10,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 5.231540878505877,
+    "net": 149.50452000000007,
+    "trades": 115,
+    "win_rate": 53.91304347826087,
+    "max_dd_pct": -0.32936160522233937,
+    "expectancy": 1.3000393043478267,
+    "avg_wl": 4.472123654206636,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.6,
+      "n_inside": 1,
+      "cooldown": 5,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 5.182938030115127,
+    "net": 125.01412200000134,
+    "trades": 91,
+    "win_rate": 50.54945054945055,
+    "max_dd_pct": -0.4132951533498733,
+    "expectancy": 1.3737815604395751,
+    "avg_wl": 5.070265464243059,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.6,
+      "n_inside": 2,
+      "cooldown": 5,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 5.1802440493263955,
+    "net": 93.66444600000165,
+    "trades": 60,
+    "win_rate": 46.666666666666664,
+    "max_dd_pct": -0.5664678003145961,
+    "expectancy": 1.5610741000000274,
+    "avg_wl": 5.92027891351588,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.8,
+      "n_inside": 1,
+      "cooldown": 20,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 5.147852695874204,
+    "net": 99.80788799999702,
+    "trades": 66,
+    "win_rate": 51.515151515151516,
+    "max_dd_pct": -0.7433051139701692,
+    "expectancy": 1.512240727272682,
+    "avg_wl": 4.845037831411015,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.8,
+      "n_inside": 2,
+      "cooldown": 5,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 5.144419844699577,
+    "net": 104.99305799999891,
+    "trades": 78,
+    "win_rate": 53.84615384615385,
+    "max_dd_pct": -0.8477133186572737,
+    "expectancy": 1.3460648461538323,
+    "avg_wl": 4.409502724028209,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.8,
+      "n_inside": 2,
+      "cooldown": 20,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 5.1286820819970185,
+    "net": 77.2067100000005,
+    "trades": 63,
+    "win_rate": 55.55555555555556,
+    "max_dd_pct": -0.42286853840938127,
+    "expectancy": 1.2255033333333412,
+    "avg_wl": 4.102945665597615,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.6,
+      "n_inside": 2,
+      "cooldown": 20,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 5.128159746890327,
+    "net": 113.34371999999934,
+    "trades": 84,
+    "win_rate": 51.19047619047619,
+    "max_dd_pct": -0.8723349466575745,
+    "expectancy": 1.3493299999999921,
+    "avg_wl": 4.889640688895428,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.7,
+      "n_inside": 1,
+      "cooldown": 20,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 5.113365406132303,
+    "net": 194.65921799999603,
+    "trades": 146,
+    "win_rate": 51.369863013698634,
+    "max_dd_pct": -0.8161865939037467,
+    "expectancy": 1.333282315068466,
+    "avg_wl": 4.840652584471913,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.8,
+      "n_inside": 1,
+      "cooldown": 5,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 5.111692264824554,
+    "net": 116.8704119999967,
+    "trades": 92,
+    "win_rate": 54.347826086956516,
+    "max_dd_pct": -0.7619988426346862,
+    "expectancy": 1.2703305652173555,
+    "avg_wl": 4.293821502452625,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.8,
+      "n_inside": 3,
+      "cooldown": 5,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 5.109398334777953,
+    "net": 243.0100019999997,
+    "trades": 180,
+    "win_rate": 50.0,
+    "max_dd_pct": -0.6601137218838005,
+    "expectancy": 1.350055566666665,
+    "avg_wl": 5.109398334777953,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.7,
+      "n_inside": 1,
+      "cooldown": 5,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 5.081589861711124,
+    "net": 184.3276919999971,
+    "trades": 135,
+    "win_rate": 46.666666666666664,
+    "max_dd_pct": -0.9683398775610128,
+    "expectancy": 1.3653903111110897,
+    "avg_wl": 5.807531270526999,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.6,
+      "n_inside": 1,
+      "cooldown": 5,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 5.057983483555442,
+    "net": 109.88692199999826,
+    "trades": 82,
+    "win_rate": 46.34146341463415,
+    "max_dd_pct": -1.2739627543829561,
+    "expectancy": 1.340084414634125,
+    "avg_wl": 5.856612454643144,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.6,
+      "n_inside": 3,
+      "cooldown": 5,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 4.945964810127502,
+    "net": 132.3924779999967,
+    "trades": 106,
+    "win_rate": 53.77358490566038,
+    "max_dd_pct": -0.5948666481547038,
+    "expectancy": 1.2489856415094027,
+    "avg_wl": 4.251794310460484,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.8,
+      "n_inside": 2,
+      "cooldown": 5,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 4.9345872414696395,
+    "net": 169.55485199999586,
+    "trades": 128,
+    "win_rate": 50.78125,
+    "max_dd_pct": -0.9030429464542281,
+    "expectancy": 1.3246472812499677,
+    "avg_wl": 4.78275378788596,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.8,
+      "n_inside": 2,
+      "cooldown": 5,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 4.9114847118601475,
+    "net": 164.0935739999984,
+    "trades": 132,
+    "win_rate": 49.24242424242424,
+    "max_dd_pct": -0.6230437308757817,
+    "expectancy": 1.2431331363636242,
+    "avg_wl": 5.062607318378921,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.6,
+      "n_inside": 1,
+      "cooldown": 10,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 4.893824445330222,
+    "net": 145.3861919999982,
+    "trades": 105,
+    "win_rate": 44.761904761904766,
+    "max_dd_pct": -1.6944752636556826,
+    "expectancy": 1.384630399999983,
+    "avg_wl": 6.039187613386231,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.6,
+      "n_inside": 1,
+      "cooldown": 10,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 4.853144856872578,
+    "net": 124.47559799999904,
+    "trades": 81,
+    "win_rate": 46.913580246913575,
+    "max_dd_pct": -0.6227349583737137,
+    "expectancy": 1.536735777777766,
+    "avg_wl": 5.491716548566338,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.8,
+      "n_inside": 2,
+      "cooldown": 5,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 4.851643873119007,
+    "net": 81.7117619999973,
+    "trades": 64,
+    "win_rate": 53.125,
+    "max_dd_pct": -0.2360525147029107,
+    "expectancy": 1.2767462812499577,
+    "avg_wl": 4.280862240987359,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.8,
+      "n_inside": 1,
+      "cooldown": 5,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 4.845818279590115,
+    "net": 184.5150539999987,
+    "trades": 128,
+    "win_rate": 50.78125,
+    "max_dd_pct": -0.8978604729853515,
+    "expectancy": 1.44152385937499,
+    "avg_wl": 4.69671617867965,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.8,
+      "n_inside": 3,
+      "cooldown": 5,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 4.835318633708483,
+    "net": 84.63277199999641,
+    "trades": 68,
+    "win_rate": 54.41176470588235,
+    "max_dd_pct": -0.7301279314279487,
+    "expectancy": 1.2445995882352412,
+    "avg_wl": 4.051212909323323,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.8,
+      "n_inside": 3,
+      "cooldown": 20,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 4.833562598319186,
+    "net": 117.85030800000054,
+    "trades": 93,
+    "win_rate": 50.53763440860215,
+    "max_dd_pct": -0.45967330225859215,
+    "expectancy": 1.2672076129032317,
+    "avg_wl": 4.7307208409081385,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.6,
+      "n_inside": 1,
+      "cooldown": 10,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 4.815530427444121,
+    "net": 193.41774599999863,
+    "trades": 146,
+    "win_rate": 46.57534246575342,
+    "max_dd_pct": -0.6093776352398108,
+    "expectancy": 1.3247790821917715,
+    "avg_wl": 5.523696666774138,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.7,
+      "n_inside": 2,
+      "cooldown": 5,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 4.8152100158569136,
+    "net": 148.97815199999627,
+    "trades": 124,
+    "win_rate": 54.03225806451613,
+    "max_dd_pct": -0.5335980216915539,
+    "expectancy": 1.2014367096773892,
+    "avg_wl": 4.096521953788717,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.8,
+      "n_inside": 1,
+      "cooldown": 5,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 4.796873596604869,
+    "net": 83.70115199999762,
+    "trades": 67,
+    "win_rate": 50.74626865671642,
+    "max_dd_pct": -0.8645226905009987,
+    "expectancy": 1.249270925373099,
+    "avg_wl": 4.655789079057667,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.7,
+      "n_inside": 1,
+      "cooldown": 30,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 4.782685291939943,
+    "net": 108.60341400000017,
+    "trades": 74,
+    "win_rate": 44.5945945945946,
+    "max_dd_pct": -0.6389710995672202,
+    "expectancy": 1.467613702702705,
+    "avg_wl": 5.942124150592051,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.8,
+      "n_inside": 1,
+      "cooldown": 10,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 4.780491869743045,
+    "net": 79.89280199999862,
+    "trades": 62,
+    "win_rate": 51.61290322580645,
+    "max_dd_pct": -0.6469336267013674,
+    "expectancy": 1.2885935806451392,
+    "avg_wl": 4.481711127884105,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.8,
+      "n_inside": 3,
+      "cooldown": 30,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 4.740114479529758,
+    "net": 94.58529599999898,
+    "trades": 71,
+    "win_rate": 43.66197183098591,
+    "max_dd_pct": -1.311391511477842,
+    "expectancy": 1.3321872676056195,
+    "avg_wl": 6.116276747780333,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.6,
+      "n_inside": 3,
+      "cooldown": 10,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 4.6789480349817945,
+    "net": 116.60246999999947,
+    "trades": 95,
+    "win_rate": 54.736842105263165,
+    "max_dd_pct": -0.8746825003150448,
+    "expectancy": 1.227394421052626,
+    "avg_wl": 3.8691301058503296,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.8,
+      "n_inside": 1,
+      "cooldown": 20,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 4.633798947050325,
+    "net": 229.2488099999978,
+    "trades": 174,
+    "win_rate": 50.0,
+    "max_dd_pct": -0.7936294614432081,
+    "expectancy": 1.3175218965517115,
+    "avg_wl": 4.633798947050325,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.8,
+      "n_inside": 1,
+      "cooldown": 5,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 4.615277731379281,
+    "net": 94.15126799999871,
+    "trades": 80,
+    "win_rate": 50.0,
+    "max_dd_pct": -0.2991393457827633,
+    "expectancy": 1.176890849999984,
+    "avg_wl": 4.615277731379281,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.7,
+      "n_inside": 1,
+      "cooldown": 30,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 4.498012592808696,
+    "net": 109.75031999999916,
+    "trades": 88,
+    "win_rate": 52.27272727272727,
+    "max_dd_pct": -1.0120047478355978,
+    "expectancy": 1.2471627272727177,
+    "avg_wl": 4.1068810629992445,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.8,
+      "n_inside": 2,
+      "cooldown": 20,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 4.482213594476837,
+    "net": 110.29218599999952,
+    "trades": 96,
+    "win_rate": 51.041666666666664,
+    "max_dd_pct": -0.9788594008384012,
+    "expectancy": 1.148876937499995,
+    "avg_wl": 4.299266100824722,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.7,
+      "n_inside": 1,
+      "cooldown": 10,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 4.470501128386098,
+    "net": 89.33482199999933,
+    "trades": 70,
+    "win_rate": 47.14285714285714,
+    "max_dd_pct": -0.6543135458142566,
+    "expectancy": 1.2762117428571333,
+    "avg_wl": 5.012380053038958,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.7,
+      "n_inside": 3,
+      "cooldown": 30,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 4.439807067135865,
+    "net": 83.11040999999899,
+    "trades": 75,
+    "win_rate": 54.666666666666664,
+    "max_dd_pct": -0.5104649532798613,
+    "expectancy": 1.1081387999999865,
+    "avg_wl": 3.681791226405351,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.7,
+      "n_inside": 1,
+      "cooldown": 20,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 4.423751517443527,
+    "net": 98.31665399999956,
+    "trades": 80,
+    "win_rate": 46.25,
+    "max_dd_pct": -0.8443782018344037,
+    "expectancy": 1.2289581749999945,
+    "avg_wl": 5.141116628380315,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.7,
+      "n_inside": 3,
+      "cooldown": 20,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 4.40081507510646,
+    "net": 88.4614439999983,
+    "trades": 79,
+    "win_rate": 51.89873417721519,
+    "max_dd_pct": -0.7564529522096617,
+    "expectancy": 1.119765113924029,
+    "avg_wl": 4.078804215952329,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.8,
+      "n_inside": 1,
+      "cooldown": 20,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 4.39132338338454,
+    "net": 86.35205999999864,
+    "trades": 74,
+    "win_rate": 45.94594594594595,
+    "max_dd_pct": -0.49108053200313034,
+    "expectancy": 1.1669197297297114,
+    "avg_wl": 5.166262803981812,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.7,
+      "n_inside": 2,
+      "cooldown": 30,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 4.327041564862133,
+    "net": 83.43397799999678,
+    "trades": 74,
+    "win_rate": 52.702702702702695,
+    "max_dd_pct": -0.8150465070112639,
+    "expectancy": 1.1274861891891457,
+    "avg_wl": 3.883242430004479,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.8,
+      "n_inside": 2,
+      "cooldown": 20,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 4.315696355201017,
+    "net": 194.04470999999702,
+    "trades": 152,
+    "win_rate": 48.68421052631579,
+    "max_dd_pct": -0.9417247880601397,
+    "expectancy": 1.2766099342105068,
+    "avg_wl": 4.548977239265937,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.8,
+      "n_inside": 2,
+      "cooldown": 5,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 4.297511141789983,
+    "net": 61.85391599999941,
+    "trades": 60,
+    "win_rate": 53.333333333333336,
+    "max_dd_pct": -0.6094907138428186,
+    "expectancy": 1.0308985999999902,
+    "avg_wl": 3.7603222490662356,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.7,
+      "n_inside": 1,
+      "cooldown": 30,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 4.254415011037505,
+    "net": 161.05886399999855,
+    "trades": 136,
+    "win_rate": 50.0,
+    "max_dd_pct": -1.066690884583017,
+    "expectancy": 1.1842563529411658,
+    "avg_wl": 4.254415011037504,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.8,
+      "n_inside": 1,
+      "cooldown": 10,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 4.175486787975414,
+    "net": 74.76440400000064,
+    "trades": 73,
+    "win_rate": 50.68493150684932,
+    "max_dd_pct": -0.4502052175833851,
+    "expectancy": 1.024169917808228,
+    "avg_wl": 4.062635793705808,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.6,
+      "n_inside": 1,
+      "cooldown": 20,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 4.091456476217812,
+    "net": 92.42580599999926,
+    "trades": 68,
+    "win_rate": 42.64705882352941,
+    "max_dd_pct": -0.8619672206845792,
+    "expectancy": 1.3592030294117539,
+    "avg_wl": 5.502303536982575,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.8,
+      "n_inside": 2,
+      "cooldown": 10,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 4.053605574516662,
+    "net": 106.98789599999934,
+    "trades": 97,
+    "win_rate": 46.391752577319586,
+    "max_dd_pct": -0.742933637312447,
+    "expectancy": 1.1029679999999933,
+    "avg_wl": 4.684166441663698,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.7,
+      "n_inside": 1,
+      "cooldown": 20,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 3.893869888156577,
+    "net": 124.9199939999989,
+    "trades": 107,
+    "win_rate": 48.598130841121495,
+    "max_dd_pct": -1.314090497933097,
+    "expectancy": 1.167476579439242,
+    "avg_wl": 4.118516227857918,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.8,
+      "n_inside": 3,
+      "cooldown": 10,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 3.8743512169862653,
+    "net": 80.73027000000047,
+    "trades": 71,
+    "win_rate": 47.88732394366197,
+    "max_dd_pct": -0.8577150522726925,
+    "expectancy": 1.137046056338035,
+    "avg_wl": 4.216205736132112,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.8,
+      "n_inside": 3,
+      "cooldown": 30,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 3.80281067425754,
+    "net": 91.43905799999857,
+    "trades": 87,
+    "win_rate": 42.5287356321839,
+    "max_dd_pct": -0.8750748089335745,
+    "expectancy": 1.0510236551723973,
+    "avg_wl": 5.138933343591271,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.7,
+      "n_inside": 2,
+      "cooldown": 20,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 3.773483459771869,
+    "net": 62.12986799999906,
+    "trades": 63,
+    "win_rate": 52.38095238095239,
+    "max_dd_pct": -0.6091824890916029,
+    "expectancy": 0.9861883809523659,
+    "avg_wl": 3.4304395088835173,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.8,
+      "n_inside": 1,
+      "cooldown": 30,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 3.7609741565362245,
+    "net": 87.58080599999965,
+    "trades": 80,
+    "win_rate": 48.75,
+    "max_dd_pct": -1.1665694070577828,
+    "expectancy": 1.0947600749999957,
+    "avg_wl": 3.953844626102185,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.8,
+      "n_inside": 3,
+      "cooldown": 20,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 3.7312347701194906,
+    "net": 81.64850999999996,
+    "trades": 76,
+    "win_rate": 46.05263157894737,
+    "max_dd_pct": -0.4680875047654654,
+    "expectancy": 1.0743224999999994,
+    "avg_wl": 4.370875016425689,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.8,
+      "n_inside": 2,
+      "cooldown": 30,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 3.4735848995929475,
+    "net": 124.61342399999728,
+    "trades": 122,
+    "win_rate": 46.72131147540984,
+    "max_dd_pct": -1.3370926146974516,
+    "expectancy": 1.021421508196699,
+    "avg_wl": 3.9611055872551155,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.8,
+      "n_inside": 2,
+      "cooldown": 10,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 3.337467253865908,
+    "net": 74.12073600000026,
+    "trades": 79,
+    "win_rate": 45.56962025316456,
+    "max_dd_pct": -0.5432802382420496,
+    "expectancy": 0.9382371645569654,
+    "avg_wl": 3.9864192198953905,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.8,
+      "n_inside": 1,
+      "cooldown": 30,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 12.811584419438333,
+    "net": 96.4791240000003,
+    "trades": 45,
+    "win_rate": 62.22222222222222,
+    "max_dd_pct": -0.4273826862646856,
+    "expectancy": 2.14398053333334,
+    "avg_wl": 7.778461968944702,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.6,
+      "n_inside": 3,
+      "cooldown": 20,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 12.629125525815397,
+    "net": 101.64674399999832,
+    "trades": 40,
+    "win_rate": 67.5,
+    "max_dd_pct": -0.20317256414558424,
+    "expectancy": 2.541168599999958,
+    "avg_wl": 6.0806900679851905,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.7,
+      "n_inside": 2,
+      "cooldown": 30,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 12.595420034851267,
+    "net": 87.79572000000068,
+    "trades": 42,
+    "win_rate": 64.28571428571429,
+    "max_dd_pct": -0.3762669265943546,
+    "expectancy": 2.090374285714302,
+    "avg_wl": 6.997455574917371,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.6,
+      "n_inside": 3,
+      "cooldown": 30,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 12.222981491705323,
+    "net": 101.85293400000236,
+    "trades": 45,
+    "win_rate": 64.44444444444444,
+    "max_dd_pct": -0.2559919324295841,
+    "expectancy": 2.263398533333386,
+    "avg_wl": 6.743713926458109,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.6,
+      "n_inside": 2,
+      "cooldown": 30,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 12.213665193336068,
+    "net": 101.34941999999832,
+    "trades": 41,
+    "win_rate": 65.85365853658537,
+    "max_dd_pct": -0.2310653522838496,
+    "expectancy": 2.471937073170691,
+    "avg_wl": 6.333011581729814,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.7,
+      "n_inside": 2,
+      "cooldown": 20,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 11.99951363666752,
+    "net": 119.54731200000109,
+    "trades": 52,
+    "win_rate": 65.38461538461539,
+    "max_dd_pct": -0.47384069369594245,
+    "expectancy": 2.29898676923079,
+    "avg_wl": 6.352683690000452,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.6,
+      "n_inside": 1,
+      "cooldown": 30,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 11.503704547285906,
+    "net": 85.22224799999965,
+    "trades": 35,
+    "win_rate": 62.857142857142854,
+    "max_dd_pct": -0.3155670408624212,
+    "expectancy": 2.4349213714285614,
+    "avg_wl": 6.797643596123489,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.6,
+      "n_inside": 2,
+      "cooldown": 30,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 11.005835224341832,
+    "net": 75.8768099999998,
+    "trades": 36,
+    "win_rate": 63.888888888888886,
+    "max_dd_pct": -0.19191222300825114,
+    "expectancy": 2.107689166666661,
+    "avg_wl": 6.220689474627992,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.6,
+      "n_inside": 3,
+      "cooldown": 20,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 10.713644224391471,
+    "net": 84.62392799999965,
+    "trades": 37,
+    "win_rate": 59.45945945945946,
+    "max_dd_pct": -0.34396137480261674,
+    "expectancy": 2.2871331891891797,
+    "avg_wl": 7.304757425721458,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.6,
+      "n_inside": 2,
+      "cooldown": 20,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 10.703404019279564,
+    "net": 102.75573000000011,
+    "trades": 50,
+    "win_rate": 57.99999999999999,
+    "max_dd_pct": -0.5866707694065331,
+    "expectancy": 2.0551146000000022,
+    "avg_wl": 7.75074084154727,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.6,
+      "n_inside": 3,
+      "cooldown": 10,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 10.596102836968617,
+    "net": 86.69668199999853,
+    "trades": 36,
+    "win_rate": 61.111111111111114,
+    "max_dd_pct": -0.2058554447432165,
+    "expectancy": 2.4082411666666257,
+    "avg_wl": 6.742974532616394,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.7,
+      "n_inside": 3,
+      "cooldown": 20,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 10.596102836968617,
+    "net": 86.69668199999853,
+    "trades": 36,
+    "win_rate": 61.111111111111114,
+    "max_dd_pct": -0.2058554447432165,
+    "expectancy": 2.4082411666666257,
+    "avg_wl": 6.742974532616394,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.7,
+      "n_inside": 3,
+      "cooldown": 30,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 10.534560439821462,
+    "net": 72.29786399999956,
+    "trades": 34,
+    "win_rate": 61.76470588235294,
+    "max_dd_pct": -0.1920915606362219,
+    "expectancy": 2.1264077647058697,
+    "avg_wl": 6.521394557984714,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.6,
+      "n_inside": 2,
+      "cooldown": 30,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 10.534560439821462,
+    "net": 72.29786399999956,
+    "trades": 34,
+    "win_rate": 61.76470588235294,
+    "max_dd_pct": -0.1920915606362219,
+    "expectancy": 2.1264077647058697,
+    "avg_wl": 6.521394557984714,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.6,
+      "n_inside": 3,
+      "cooldown": 30,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 10.132759117306119,
+    "net": 102.15935400000012,
+    "trades": 52,
+    "win_rate": 55.769230769230774,
+    "max_dd_pct": -0.6405486806157004,
+    "expectancy": 1.964602961538464,
+    "avg_wl": 8.036326196484163,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.6,
+      "n_inside": 3,
+      "cooldown": 5,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 10.100763631137974,
+    "net": 88.1531999999998,
+    "trades": 41,
+    "win_rate": 60.97560975609756,
+    "max_dd_pct": -0.24366677758954786,
+    "expectancy": 2.150078048780483,
+    "avg_wl": 6.464488723928304,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.6,
+      "n_inside": 3,
+      "cooldown": 10,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 10.09531622109407,
+    "net": 90.30770399999922,
+    "trades": 38,
+    "win_rate": 60.526315789473685,
+    "max_dd_pct": -0.450925982757278,
+    "expectancy": 2.376518526315769,
+    "avg_wl": 6.583901883322218,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.6,
+      "n_inside": 1,
+      "cooldown": 30,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 10.067342302504413,
+    "net": 125.79800400000083,
+    "trades": 59,
+    "win_rate": 59.32203389830508,
+    "max_dd_pct": -0.5228918597154866,
+    "expectancy": 2.132169559322048,
+    "avg_wl": 6.903320436003026,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.6,
+      "n_inside": 1,
+      "cooldown": 20,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 9.8589552922461,
+    "net": 101.53930800000231,
+    "trades": 48,
+    "win_rate": 58.333333333333336,
+    "max_dd_pct": -0.4445908267161748,
+    "expectancy": 2.1154022500000482,
+    "avg_wl": 7.042110923032927,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.6,
+      "n_inside": 2,
+      "cooldown": 20,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 9.779851574279705,
+    "net": 87.83535600000002,
+    "trades": 42,
+    "win_rate": 59.523809523809526,
+    "max_dd_pct": -0.19191222300825114,
+    "expectancy": 2.0913180000000002,
+    "avg_wl": 6.650299070510201,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.6,
+      "n_inside": 3,
+      "cooldown": 5,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 9.640773449895082,
+    "net": 98.68212599999966,
+    "trades": 44,
+    "win_rate": 59.09090909090909,
+    "max_dd_pct": -0.5011017983941697,
+    "expectancy": 2.242775590909083,
+    "avg_wl": 6.674381619158133,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.6,
+      "n_inside": 1,
+      "cooldown": 20,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 9.526590754477374,
+    "net": 123.40567200000108,
+    "trades": 59,
+    "win_rate": 55.932203389830505,
+    "max_dd_pct": -0.3036534111944123,
+    "expectancy": 2.091621559322052,
+    "avg_wl": 7.5057987762549,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.6,
+      "n_inside": 2,
+      "cooldown": 10,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 9.39287875085251,
+    "net": 80.98461599999914,
+    "trades": 37,
+    "win_rate": 62.16216216216216,
+    "max_dd_pct": -0.4060700535985025,
+    "expectancy": 2.188773405405382,
+    "avg_wl": 5.717404457040658,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.8,
+      "n_inside": 3,
+      "cooldown": 30,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 9.298059539769921,
+    "net": 67.7756459999998,
+    "trades": 35,
+    "win_rate": 62.857142857142854,
+    "max_dd_pct": -0.1861448964029338,
+    "expectancy": 1.9364470285714228,
+    "avg_wl": 5.494307909864045,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.7,
+      "n_inside": 2,
+      "cooldown": 30,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 9.279986953191713,
+    "net": 97.17561599999827,
+    "trades": 43,
+    "win_rate": 55.81395348837209,
+    "max_dd_pct": -0.39398672070139007,
+    "expectancy": 2.2598980465115877,
+    "avg_wl": 7.34665633794344,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.7,
+      "n_inside": 3,
+      "cooldown": 10,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 9.148133533666963,
+    "net": 86.35649399999913,
+    "trades": 41,
+    "win_rate": 63.41463414634146,
+    "max_dd_pct": -0.21548692500378538,
+    "expectancy": 2.106255951219491,
+    "avg_wl": 5.277769346346324,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.6,
+      "n_inside": 1,
+      "cooldown": 30,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 9.076858810753214,
+    "net": 68.67832199999965,
+    "trades": 36,
+    "win_rate": 61.111111111111114,
+    "max_dd_pct": -0.31842198200913857,
+    "expectancy": 1.907731166666657,
+    "avg_wl": 5.776182879570226,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.6,
+      "n_inside": 2,
+      "cooldown": 20,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 8.959897316029323,
+    "net": 86.91983399999943,
+    "trades": 43,
+    "win_rate": 58.139534883720934,
+    "max_dd_pct": -0.2800738880250318,
+    "expectancy": 2.0213914883720796,
+    "avg_wl": 6.4511260675411135,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.6,
+      "n_inside": 2,
+      "cooldown": 10,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 8.892584749270995,
+    "net": 111.51829199999776,
+    "trades": 51,
+    "win_rate": 58.82352941176471,
+    "max_dd_pct": -0.5483373195517669,
+    "expectancy": 2.1866331764705444,
+    "avg_wl": 6.224809324489697,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.7,
+      "n_inside": 2,
+      "cooldown": 10,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 8.636536850039008,
+    "net": 88.08658199999961,
+    "trades": 47,
+    "win_rate": 57.446808510638306,
+    "max_dd_pct": -0.207047095900877,
+    "expectancy": 1.8741825957446725,
+    "avg_wl": 6.397434703732598,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.6,
+      "n_inside": 2,
+      "cooldown": 5,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 8.436795218420752,
+    "net": 80.68653599999892,
+    "trades": 38,
+    "win_rate": 63.1578947368421,
+    "max_dd_pct": -0.4335621339462337,
+    "expectancy": 2.123329894736814,
+    "avg_wl": 4.921463877412105,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.8,
+      "n_inside": 3,
+      "cooldown": 20,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 8.423208336457263,
+    "net": 96.22856399999849,
+    "trades": 46,
+    "win_rate": 58.69565217391305,
+    "max_dd_pct": -0.4268511126852866,
+    "expectancy": 2.091925304347793,
+    "avg_wl": 5.9274429034328895,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.8,
+      "n_inside": 3,
+      "cooldown": 10,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 8.35564291356025,
+    "net": 97.2242399999987,
+    "trades": 51,
+    "win_rate": 52.94117647058824,
+    "max_dd_pct": -0.33894004671708294,
+    "expectancy": 1.9063576470587982,
+    "avg_wl": 7.427238145386887,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.6,
+      "n_inside": 2,
+      "cooldown": 5,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 8.318059663327459,
+    "net": 112.13153999999705,
+    "trades": 57,
+    "win_rate": 56.14035087719298,
+    "max_dd_pct": -0.6017663112239909,
+    "expectancy": 1.9672199999999482,
+    "avg_wl": 6.498484111974577,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.7,
+      "n_inside": 2,
+      "cooldown": 5,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 8.299406742269529,
+    "net": 96.58345799999775,
+    "trades": 47,
+    "win_rate": 53.191489361702125,
+    "max_dd_pct": -0.4218831381631384,
+    "expectancy": 2.0549671914893137,
+    "avg_wl": 7.303477933197187,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.7,
+      "n_inside": 3,
+      "cooldown": 5,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 7.716619119335414,
+    "net": 88.81126199999915,
+    "trades": 45,
+    "win_rate": 51.11111111111111,
+    "max_dd_pct": -0.5872080074406243,
+    "expectancy": 1.9735835999999811,
+    "avg_wl": 7.381113940233876,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.6,
+      "n_inside": 2,
+      "cooldown": 10,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 7.6633903791021725,
+    "net": 78.78218399999925,
+    "trades": 48,
+    "win_rate": 56.25,
+    "max_dd_pct": -0.23645871030802218,
+    "expectancy": 1.6412954999999843,
+    "avg_wl": 5.96041473930169,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.7,
+      "n_inside": 2,
+      "cooldown": 5,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 7.645213750170195,
+    "net": 55.87477799999989,
+    "trades": 31,
+    "win_rate": 54.83870967741935,
+    "max_dd_pct": -0.40896233131194,
+    "expectancy": 1.8024121935483837,
+    "avg_wl": 6.296058382493102,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.6,
+      "n_inside": 3,
+      "cooldown": 30,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 7.6169392457970435,
+    "net": 68.0873519999996,
+    "trades": 40,
+    "win_rate": 55.00000000000001,
+    "max_dd_pct": -0.23873182682585684,
+    "expectancy": 1.70218379999999,
+    "avg_wl": 6.232041201106672,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.7,
+      "n_inside": 3,
+      "cooldown": 5,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 7.399251514219535,
+    "net": 67.78462199999967,
+    "trades": 39,
+    "win_rate": 56.41025641025641,
+    "max_dd_pct": -0.28754586466635307,
+    "expectancy": 1.7380672307692224,
+    "avg_wl": 5.717603442806005,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.7,
+      "n_inside": 3,
+      "cooldown": 10,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 7.381266573474976,
+    "net": 55.574105999999894,
+    "trades": 32,
+    "win_rate": 53.125,
+    "max_dd_pct": -0.43738300488298587,
+    "expectancy": 1.7366908124999967,
+    "avg_wl": 6.512882270713214,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.6,
+      "n_inside": 3,
+      "cooldown": 20,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 7.326641372336729,
+    "net": 59.388713999999595,
+    "trades": 35,
+    "win_rate": 57.14285714285714,
+    "max_dd_pct": -0.20477704569548982,
+    "expectancy": 1.6968203999999885,
+    "avg_wl": 5.494981029252547,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.7,
+      "n_inside": 3,
+      "cooldown": 20,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 7.32511734417676,
+    "net": 76.69753799999938,
+    "trades": 45,
+    "win_rate": 55.55555555555556,
+    "max_dd_pct": -0.31300547070067675,
+    "expectancy": 1.7043897333333196,
+    "avg_wl": 5.860093875341407,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.7,
+      "n_inside": 2,
+      "cooldown": 10,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 7.301729465028014,
+    "net": 77.95282199999936,
+    "trades": 41,
+    "win_rate": 58.536585365853654,
+    "max_dd_pct": -0.4898098577867298,
+    "expectancy": 1.901288341463399,
+    "avg_wl": 5.17205837106151,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.8,
+      "n_inside": 2,
+      "cooldown": 30,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 7.24187299470559,
+    "net": 81.21802799999999,
+    "trades": 44,
+    "win_rate": 56.81818181818182,
+    "max_dd_pct": -0.4336627787940835,
+    "expectancy": 1.8458642727272725,
+    "avg_wl": 5.503823475976248,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.8,
+      "n_inside": 1,
+      "cooldown": 30,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 7.199115843909778,
+    "net": 104.34551399999873,
+    "trades": 53,
+    "win_rate": 50.943396226415096,
+    "max_dd_pct": -0.8738165759677683,
+    "expectancy": 1.9687832830188439,
+    "avg_wl": 6.932481923764971,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.6,
+      "n_inside": 1,
+      "cooldown": 10,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 6.945720597485073,
+    "net": 55.809767999999394,
+    "trades": 33,
+    "win_rate": 54.54545454545454,
+    "max_dd_pct": -0.23392602178871577,
+    "expectancy": 1.6912050909090726,
+    "avg_wl": 5.788100497904226,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.7,
+      "n_inside": 3,
+      "cooldown": 30,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 6.933581550474458,
+    "net": 62.93656199999932,
+    "trades": 39,
+    "win_rate": 56.41025641025641,
+    "max_dd_pct": -0.3188855894273839,
+    "expectancy": 1.6137579999999825,
+    "avg_wl": 5.357767561730262,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.7,
+      "n_inside": 2,
+      "cooldown": 20,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 6.925795299136108,
+    "net": 87.79507799999794,
+    "trades": 44,
+    "win_rate": 56.81818181818182,
+    "max_dd_pct": -0.3423140785147231,
+    "expectancy": 1.995342681818135,
+    "avg_wl": 5.263604427343442,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.7,
+      "n_inside": 1,
+      "cooldown": 30,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 6.916943835491496,
+    "net": 94.68815399999855,
+    "trades": 49,
+    "win_rate": 53.06122448979592,
+    "max_dd_pct": -0.47576580762402343,
+    "expectancy": 1.9324113061224193,
+    "avg_wl": 6.118834931396324,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.7,
+      "n_inside": 1,
+      "cooldown": 20,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 6.874324257150162,
+    "net": 68.77791599999924,
+    "trades": 42,
+    "win_rate": 50.0,
+    "max_dd_pct": -0.40375024262157844,
+    "expectancy": 1.6375694285714104,
+    "avg_wl": 6.874324257150162,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.6,
+      "n_inside": 3,
+      "cooldown": 5,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 6.870348760487583,
+    "net": 78.20533799999924,
+    "trades": 44,
+    "win_rate": 59.09090909090909,
+    "max_dd_pct": -0.35563664852776083,
+    "expectancy": 1.7773940454545283,
+    "avg_wl": 4.756395295722173,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.7,
+      "n_inside": 1,
+      "cooldown": 30,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 6.790973249571959,
+    "net": 106.6530839999987,
+    "trades": 59,
+    "win_rate": 54.23728813559322,
+    "max_dd_pct": -0.47621642910921264,
+    "expectancy": 1.8076793898304864,
+    "avg_wl": 5.72988367932634,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.8,
+      "n_inside": 1,
+      "cooldown": 10,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 6.7038117578067835,
+    "net": 93.37367999999996,
+    "trades": 51,
+    "win_rate": 49.01960784313725,
+    "max_dd_pct": -0.5850255839673287,
+    "expectancy": 1.8308564705882346,
+    "avg_wl": 6.971964228119055,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.7,
+      "n_inside": 3,
+      "cooldown": 20,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 6.63641436487629,
+    "net": 88.90771800000033,
+    "trades": 48,
+    "win_rate": 50.0,
+    "max_dd_pct": -0.4236405192198544,
+    "expectancy": 1.8522441250000068,
+    "avg_wl": 6.63641436487629,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.7,
+      "n_inside": 3,
+      "cooldown": 30,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 6.62520429670775,
+    "net": 90.40947600000014,
+    "trades": 49,
+    "win_rate": 48.97959183673469,
+    "max_dd_pct": -0.42305799999488886,
+    "expectancy": 1.8450913469387784,
+    "avg_wl": 6.9012544757372405,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.7,
+      "n_inside": 2,
+      "cooldown": 30,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 6.618017717064981,
+    "net": 95.45616599999985,
+    "trades": 54,
+    "win_rate": 48.148148148148145,
+    "max_dd_pct": -0.5835061585836324,
+    "expectancy": 1.767706777777775,
+    "avg_wl": 7.127096002993056,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.7,
+      "n_inside": 2,
+      "cooldown": 20,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 6.504724733401798,
+    "net": 105.08500800000051,
+    "trades": 56,
+    "win_rate": 48.214285714285715,
+    "max_dd_pct": -0.5605595544960024,
+    "expectancy": 1.8765180000000092,
+    "avg_wl": 6.986556195135265,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.7,
+      "n_inside": 1,
+      "cooldown": 30,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 6.504389226146574,
+    "net": 86.52318599999992,
+    "trades": 56,
+    "win_rate": 57.14285714285714,
+    "max_dd_pct": -0.3924270885826526,
+    "expectancy": 1.5450568928571415,
+    "avg_wl": 4.87829191960993,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.6,
+      "n_inside": 3,
+      "cooldown": 20,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 6.493833880913588,
+    "net": 69.81916799999988,
+    "trades": 46,
+    "win_rate": 56.52173913043478,
+    "max_dd_pct": -0.21218089359445638,
+    "expectancy": 1.5178079999999974,
+    "avg_wl": 4.99525683147199,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.6,
+      "n_inside": 3,
+      "cooldown": 30,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 6.4137820410348505,
+    "net": 88.39310399999918,
+    "trades": 52,
+    "win_rate": 53.84615384615385,
+    "max_dd_pct": -0.3527653598870937,
+    "expectancy": 1.699867384615369,
+    "avg_wl": 5.497527463744158,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.6,
+      "n_inside": 1,
+      "cooldown": 10,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 6.381603144562635,
+    "net": 98.88876599999814,
+    "trades": 55,
+    "win_rate": 54.54545454545454,
+    "max_dd_pct": -0.5872901459614994,
+    "expectancy": 1.7979775636363298,
+    "avg_wl": 5.318002620468863,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.8,
+      "n_inside": 2,
+      "cooldown": 10,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 6.284578621923052,
+    "net": 70.44556799999923,
+    "trades": 44,
+    "win_rate": 54.54545454545454,
+    "max_dd_pct": -0.3664800873930613,
+    "expectancy": 1.601035636363619,
+    "avg_wl": 5.2371488516025435,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.6,
+      "n_inside": 1,
+      "cooldown": 20,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 6.076268553227675,
+    "net": 60.97028999999978,
+    "trades": 38,
+    "win_rate": 47.368421052631575,
+    "max_dd_pct": -0.715716213360092,
+    "expectancy": 1.604481315789468,
+    "avg_wl": 6.751409503586306,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.6,
+      "n_inside": 3,
+      "cooldown": 10,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 6.0697689982228535,
+    "net": 105.45038399999794,
+    "trades": 59,
+    "win_rate": 50.847457627118644,
+    "max_dd_pct": -0.7926652148274679,
+    "expectancy": 1.7872946440677617,
+    "avg_wl": 5.867443364948759,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.7,
+      "n_inside": 1,
+      "cooldown": 10,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 6.048031348302224,
+    "net": 92.64532799999773,
+    "trades": 54,
+    "win_rate": 53.70370370370371,
+    "max_dd_pct": -0.6730671322975559,
+    "expectancy": 1.7156542222221802,
+    "avg_wl": 5.213820127846746,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.8,
+      "n_inside": 3,
+      "cooldown": 5,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 6.008123602636425,
+    "net": 65.00891999999959,
+    "trades": 50,
+    "win_rate": 57.99999999999999,
+    "max_dd_pct": -0.2238910576931312,
+    "expectancy": 1.3001783999999919,
+    "avg_wl": 4.350710195012583,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.6,
+      "n_inside": 2,
+      "cooldown": 30,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 5.974153827419188,
+    "net": 61.76215799999811,
+    "trades": 39,
+    "win_rate": 56.41025641025641,
+    "max_dd_pct": -0.32419338207506665,
+    "expectancy": 1.5836450769230284,
+    "avg_wl": 4.616391593914827,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.8,
+      "n_inside": 3,
+      "cooldown": 10,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 5.945774134770058,
+    "net": 79.13221799999984,
+    "trades": 49,
+    "win_rate": 53.06122448979592,
+    "max_dd_pct": -0.5989819558142623,
+    "expectancy": 1.6149432244897926,
+    "avg_wl": 5.259723273065821,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.8,
+      "n_inside": 1,
+      "cooldown": 20,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 5.837710274436125,
+    "net": 49.80134399999851,
+    "trades": 33,
+    "win_rate": 57.57575757575758,
+    "max_dd_pct": -0.3840429278060852,
+    "expectancy": 1.5091316363635912,
+    "avg_wl": 4.301470728531881,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.8,
+      "n_inside": 3,
+      "cooldown": 30,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 5.823804726701589,
+    "net": 75.56104199999928,
+    "trades": 45,
+    "win_rate": 55.55555555555556,
+    "max_dd_pct": -0.7108401211545594,
+    "expectancy": 1.6791342666666507,
+    "avg_wl": 4.65904378136127,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.8,
+      "n_inside": 2,
+      "cooldown": 20,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 5.807190049410824,
+    "net": 78.46724400000137,
+    "trades": 45,
+    "win_rate": 51.11111111111111,
+    "max_dd_pct": -0.4906674151501985,
+    "expectancy": 1.7437165333333637,
+    "avg_wl": 5.554703525523396,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.8,
+      "n_inside": 3,
+      "cooldown": 30,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 5.581829433146243,
+    "net": 62.37215999999813,
+    "trades": 43,
+    "win_rate": 55.81395348837209,
+    "max_dd_pct": -0.4092128064540133,
+    "expectancy": 1.4505153488371658,
+    "avg_wl": 4.418948301240776,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.8,
+      "n_inside": 3,
+      "cooldown": 5,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 5.449469249831013,
+    "net": 49.804697999998666,
+    "trades": 35,
+    "win_rate": 57.14285714285714,
+    "max_dd_pct": -0.3837234278668955,
+    "expectancy": 1.4229913714285334,
+    "avg_wl": 4.0871019373732596,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.8,
+      "n_inside": 3,
+      "cooldown": 20,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 5.4029692712449044,
+    "net": 63.772421999999,
+    "trades": 52,
+    "win_rate": 57.692307692307686,
+    "max_dd_pct": -0.3358890903450121,
+    "expectancy": 1.2263927307692115,
+    "avg_wl": 3.962177465579597,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.7,
+      "n_inside": 2,
+      "cooldown": 30,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 5.366887010103658,
+    "net": 87.11837400000212,
+    "trades": 54,
+    "win_rate": 48.148148148148145,
+    "max_dd_pct": -0.651787463272676,
+    "expectancy": 1.6133032222222614,
+    "avg_wl": 5.779724472419324,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.8,
+      "n_inside": 1,
+      "cooldown": 30,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 5.128947610703251,
+    "net": 79.91760600000104,
+    "trades": 50,
+    "win_rate": 48.0,
+    "max_dd_pct": -0.73686655520753,
+    "expectancy": 1.5983521200000208,
+    "avg_wl": 5.556359911595188,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.8,
+      "n_inside": 3,
+      "cooldown": 20,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 4.936447291215624,
+    "net": 95.15712599999992,
+    "trades": 59,
+    "win_rate": 45.76271186440678,
+    "max_dd_pct": -0.7801555683218349,
+    "expectancy": 1.6128326440677954,
+    "avg_wl": 5.8506041969962945,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.8,
+      "n_inside": 3,
+      "cooldown": 10,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 4.917637535191623,
+    "net": 62.894465999999056,
+    "trades": 47,
+    "win_rate": 51.06382978723404,
+    "max_dd_pct": -0.4436971817930331,
+    "expectancy": 1.3381801276595544,
+    "avg_wl": 4.712735971225305,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.7,
+      "n_inside": 1,
+      "cooldown": 20,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 4.884436233698547,
+    "net": 75.16481999999917,
+    "trades": 56,
+    "win_rate": 50.0,
+    "max_dd_pct": -0.5482462778252145,
+    "expectancy": 1.3422289285714137,
+    "avg_wl": 4.884436233698548,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.7,
+      "n_inside": 1,
+      "cooldown": 10,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 4.804529929638266,
+    "net": 76.96658400000135,
+    "trades": 50,
+    "win_rate": 46.0,
+    "max_dd_pct": -0.6563417988195324,
+    "expectancy": 1.539331680000027,
+    "avg_wl": 5.640100352184052,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.8,
+      "n_inside": 2,
+      "cooldown": 30,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 4.781328048289158,
+    "net": 65.20571999999912,
+    "trades": 57,
+    "win_rate": 56.14035087719298,
+    "max_dd_pct": -0.293546157343033,
+    "expectancy": 1.1439599999999845,
+    "avg_wl": 3.7354125377259044,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.7,
+      "n_inside": 3,
+      "cooldown": 20,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 4.768922436176361,
+    "net": 65.01420599999722,
+    "trades": 48,
+    "win_rate": 52.083333333333336,
+    "max_dd_pct": -0.3497353130819145,
+    "expectancy": 1.354462624999942,
+    "avg_wl": 4.387408641282252,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.8,
+      "n_inside": 2,
+      "cooldown": 10,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 4.709727801220627,
+    "net": 48.26947199999807,
+    "trades": 38,
+    "win_rate": 55.26315789473685,
+    "max_dd_pct": -0.4697285875222162,
+    "expectancy": 1.270249263157844,
+    "avg_wl": 3.8126367914643167,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.8,
+      "n_inside": 2,
+      "cooldown": 30,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 4.704138368461733,
+    "net": 68.32801799999713,
+    "trades": 53,
+    "win_rate": 52.83018867924528,
+    "max_dd_pct": -0.2946835544790187,
+    "expectancy": 1.2892078867923986,
+    "avg_wl": 4.200123543269404,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.8,
+      "n_inside": 2,
+      "cooldown": 5,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 4.69153840976541,
+    "net": 72.72874799999809,
+    "trades": 56,
+    "win_rate": 51.78571428571429,
+    "max_dd_pct": -0.3278252033068162,
+    "expectancy": 1.2987276428571088,
+    "avg_wl": 4.3679840366781395,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.8,
+      "n_inside": 1,
+      "cooldown": 10,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 4.67429382621281,
+    "net": 65.31791399999953,
+    "trades": 51,
+    "win_rate": 43.13725490196079,
+    "max_dd_pct": -0.9357573332517768,
+    "expectancy": 1.2807434117646967,
+    "avg_wl": 6.1615691345532495,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.6,
+      "n_inside": 3,
+      "cooldown": 30,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 4.478003911770782,
+    "net": 52.695911999999176,
+    "trades": 43,
+    "win_rate": 53.48837209302325,
+    "max_dd_pct": -0.5046995623931374,
+    "expectancy": 1.2254863255813762,
+    "avg_wl": 3.893916445018071,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.8,
+      "n_inside": 1,
+      "cooldown": 30,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 4.415247478843975,
+    "net": 69.11892599999774,
+    "trades": 58,
+    "win_rate": 46.55172413793103,
+    "max_dd_pct": -0.9026498088553252,
+    "expectancy": 1.1917056206896162,
+    "avg_wl": 5.06935821645049,
+    "params": {
+      "pvt_length": 15,
+      "va_pct": 0.7,
+      "n_inside": 3,
+      "cooldown": 30,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 4.36649706510375,
+    "net": 78.39340200000079,
+    "trades": 55,
+    "win_rate": 43.63636363636363,
+    "max_dd_pct": -0.6547128174128445,
+    "expectancy": 1.4253345818181962,
+    "avg_wl": 5.640058709092343,
+    "params": {
+      "pvt_length": 10,
+      "va_pct": 0.8,
+      "n_inside": 2,
+      "cooldown": 20,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 3.673480592130751,
+    "net": 57.41258399999771,
+    "trades": 59,
+    "win_rate": 50.847457627118644,
+    "max_dd_pct": -0.5199868491236581,
+    "expectancy": 0.9730946440677578,
+    "avg_wl": 3.5510312390597263,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.8,
+      "n_inside": 2,
+      "cooldown": 30,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 3.6690496282683993,
+    "net": 41.97744599999822,
+    "trades": 41,
+    "win_rate": 51.21951219512195,
+    "max_dd_pct": -0.5577835364433867,
+    "expectancy": 1.02384014634142,
+    "avg_wl": 3.494332979303237,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.8,
+      "n_inside": 2,
+      "cooldown": 20,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 3.6598569665522356,
+    "net": 54.72593999999721,
+    "trades": 56,
+    "win_rate": 50.0,
+    "max_dd_pct": -0.5766815109520427,
+    "expectancy": 0.9772489285713787,
+    "avg_wl": 3.6598569665522356,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.8,
+      "n_inside": 3,
+      "cooldown": 30,
+      "session_start": 0
+    }
+  },
+  {
+    "pf": 3.655012432085731,
+    "net": 46.68663599999926,
+    "trades": 47,
+    "win_rate": 48.93617021276596,
+    "max_dd_pct": -0.5354253846685264,
+    "expectancy": 0.9933326808510481,
+    "avg_wl": 3.813926016089458,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.8,
+      "n_inside": 1,
+      "cooldown": 20,
+      "session_start": 13
+    }
+  },
+  {
+    "pf": 3.6532675601900433,
+    "net": 42.52124999999883,
+    "trades": 47,
+    "win_rate": 51.06382978723404,
+    "max_dd_pct": -0.37332982597271674,
+    "expectancy": 0.9047074468084857,
+    "avg_wl": 3.5010480785154585,
+    "params": {
+      "pvt_length": 20,
+      "va_pct": 0.7,
+      "n_inside": 3,
+      "cooldown": 30,
+      "session_start": 0
+    }
+  }
+]
