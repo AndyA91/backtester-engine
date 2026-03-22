@@ -33,6 +33,8 @@ STRATEGIES = [
     "r011_0005_optimize",
     "r012_macd_lc",
     "r013_chop_gate",
+    "r014_fisher_adx",
+    "r015_squeeze",
     # --- EURAUD (0.0006 / 0.0007 brick) ---
     "ea001_baseline",
     "ea002_gate_sweep",
@@ -52,6 +54,7 @@ STRATEGIES = [
     "ea016_mcp_ddl_cross",
     "ea017_baseline_0007",
     "ea018_vp_div_0007",
+    "ea019_fisher_adx",
     # --- GBPJPY (0.05 brick) ---
     "gj001_brick_count",
     "gj007_combined",
@@ -59,8 +62,17 @@ STRATEGIES = [
     "gj009_session_adx",
     "gj010_macd_lc",
     "gj011_sto_tso",
+    "gj012_fisher_adx",
+    "gj013_trail_exit",
+    "gj014_squeeze",
+    # --- GBPUSD (0.0004 brick) ---
+    "gu001_brick_count",
+    # --- USDJPY (0.05 brick) ---
+    "uj001_brick_count",
     # --- BTCUSD (150 brick) ---
     "btc001_fisher_adx",
+    "btc002_brick_count",
+    "btc003_squeeze",
 ]
 
 
