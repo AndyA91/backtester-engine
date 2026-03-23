@@ -45,7 +45,7 @@ PARAM_GRID = {
     "ribbon":           list(RIBBONS.keys()),
     "cooldown":         [3, 5],
     "adx_gate":         [0, 25],
-    "entry_mode":       ["fresh_only", "resume", "pullback_2"],
+    "entry_mode":       ["fresh_only", "resume", "resume_1", "pullback_2"],
     "exit_on_brick":    [True, False],   # exit on opposing brick, or only on alignment break
 }
 
@@ -92,6 +92,10 @@ def generate_signals(
     opposing_count_long = 0
     opposing_count_short = 0
 
+    # Track resume count per trend for resume_1 mode
+    resume_used_long = 0
+    resume_used_short = 0
+
     for i in range(warmup, n):
         b_up = bool(brick_up[i])
         bull = bool(bull_align[i])
@@ -105,6 +109,7 @@ def generate_signals(
             pass
         else:
             opposing_count_long = 0  # alignment broke, reset
+            resume_used_long = 0
 
         if bear and b_up:
             opposing_count_short += 1
@@ -112,6 +117,7 @@ def generate_signals(
             pass
         else:
             opposing_count_short = 0
+            resume_used_short = 0
 
         # ── Exits ───────────────────────────────────────────────────────
         if exit_on_brick:
@@ -153,6 +159,9 @@ def generate_signals(
         elif entry_mode == "resume":
             long_trigger  = fresh_long or resume_long
             short_trigger = fresh_short or resume_short
+        elif entry_mode == "resume_1":
+            long_trigger  = fresh_long or (resume_long and resume_used_long < 1)
+            short_trigger = fresh_short or (resume_short and resume_used_short < 1)
         elif entry_mode == "pullback_2":
             # Re-enter after 2+ opposing bricks then resume
             pb2_long  = bull and b_up and (i >= 1 and not brick_up[i - 1]) and opposing_count_long == 0
@@ -188,15 +197,23 @@ def generate_signals(
         if adx_gate > 0 and not np.isnan(adx[i]) and adx[i] < adx_gate:
             continue
 
-        # Reset opposing count on entry
+        # Reset opposing count on entry; track resume usage
         if long_trigger:
             long_entry[i] = True
             last_trade_bar = i
             opposing_count_long = 0
+            if fresh_long:
+                resume_used_long = 0
+            else:
+                resume_used_long += 1
         elif short_trigger:
             short_entry[i] = True
             last_trade_bar = i
             opposing_count_short = 0
+            if fresh_short:
+                resume_used_short = 0
+            else:
+                resume_used_short += 1
 
     df["long_entry"]  = long_entry
     df["long_exit"]   = long_exit
