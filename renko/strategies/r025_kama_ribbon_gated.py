@@ -1,13 +1,18 @@
 """
 R025: KAMA Ribbon resume_1 + selectivity gates
 
-Builds on R024 resume_1 (one re-entry per trend) and adds the same
-Renko-native gates that make the live portfolio strategies selective:
+Builds on R024 resume_1 (one re-entry per trend) and adds Renko-native
+gates to improve selectivity:
 
-  1. Session filter — skip Asian session (low-momentum noise)
-  2. Volume ratio cap — skip volume spikes (news/erratic bars)
-  3. Supertrend confirmation — st_dir must agree with trade direction
-  4. Choppiness filter — skip ranging markets (chop > threshold)
+  Phase 1 gates (from first sweep):
+    1. Session filter — skip Asian session (low-momentum noise)
+    2. Volume ratio cap — skip volume spikes (news/erratic bars)
+    3. Supertrend confirmation — st_dir must agree with trade direction
+
+  Phase 2 gates (momentum):
+    4. Stoch cross — stoch_k vs stoch_d directional agreement
+    5. MACD histogram — macd_hist sign must match trade direction
+    6. RSI filter — skip overbought longs / oversold shorts
 
 All indicators are already computed by add_renko_indicators() and
 pre-shifted to prevent lookahead bias.
@@ -18,13 +23,13 @@ import pandas as pd
 
 from indicators.kama import calc_kama
 
-DESCRIPTION = "KAMA ribbon resume_1 + session/volume/supertrend/chop gates"
+DESCRIPTION = "KAMA ribbon resume_1 + session/volume/ST/stoch/MACD/RSI gates"
 
 HYPOTHESIS = (
     "R024 resume_1 has edge (PF 5-14 OOS) but takes too many low-quality trades. "
-    "The live portfolio strategies achieve 3-8x higher PF through gate stacking. "
-    "Adding session, volume, supertrend, and choppiness filters should cut noise "
-    "trades while preserving the core KAMA ribbon signal."
+    "Phase 1 gating (ADX+session+vol+ST) lifted OOS PF to 9-15. Phase 2 adds "
+    "momentum gates (stoch cross, MACD histogram, RSI extremes) to filter entries "
+    "where momentum disagrees with the KAMA ribbon signal."
 )
 
 RIBBONS = {
@@ -39,9 +44,12 @@ PARAM_GRID = {
     "session_start": [0, 13],          # 0=all hours, 13=London/NY only
     "vol_max":       [0, 1.5],         # 0=no filter, 1.5=skip spikes
     "st_gate":       [False, True],    # require supertrend agreement
-    "chop_max":      [0, 50],          # 0=no filter, 50=skip choppy
+    "stoch_gate":    [False, True],    # require stoch_k vs stoch_d agreement
+    "macd_gate":     [False, True],    # require macd_hist sign matches direction
+    "rsi_gate":      [0, 70],          # 0=off, 70=skip longs if RSI>70 / shorts if RSI<30
 }
-# 2 × 2 × 2 × 2 × 2 × 2 × 2 = 128 combos
+# 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 × 2 = 512 combos (full grid)
+# Focused sweep script will lock ADX=25 to reduce to 256
 
 _KAMA_CACHE = {}
 
@@ -60,7 +68,9 @@ def generate_signals(
     session_start: int = 13,
     vol_max: float = 1.5,
     st_gate: bool = True,
-    chop_max: float = 0,
+    stoch_gate: bool = False,
+    macd_gate: bool = False,
+    rsi_gate: int = 0,
 ) -> pd.DataFrame:
     n = len(df)
     lengths = RIBBONS[ribbon]
@@ -71,8 +81,11 @@ def generate_signals(
     # Pre-extract gate arrays
     entry_hours = df.index.hour
     vol_ratio = df["vol_ratio"].values if "vol_ratio" in df.columns else np.zeros(n)
-    st_dir = df["st_dir"].values if "st_dir" in df.columns else np.ones(n)
-    chop = df["chop"].values if "chop" in df.columns else np.zeros(n)
+    st_dir    = df["st_dir"].values if "st_dir" in df.columns else np.ones(n)
+    stoch_k   = df["stoch_k"].values if "stoch_k" in df.columns else np.full(n, np.nan)
+    stoch_d   = df["stoch_d"].values if "stoch_d" in df.columns else np.full(n, np.nan)
+    macd_hist = df["macd_hist"].values if "macd_hist" in df.columns else np.full(n, np.nan)
+    rsi       = df["rsi"].values if "rsi" in df.columns else np.full(n, np.nan)
 
     kama_fast = _get_kama(df["Close"], lengths[0])
     kama_mid  = _get_kama(df["Close"], lengths[1])
@@ -145,16 +158,39 @@ def generate_signals(
         if vol_max > 0 and not np.isnan(vol_ratio[i]) and vol_ratio[i] > vol_max:
             continue
 
-        # Choppiness filter
-        if chop_max > 0 and not np.isnan(chop[i]) and chop[i] > chop_max:
-            continue
-
         # Supertrend direction gate
         if st_gate and not np.isnan(st_dir[i]):
             if long_trigger and st_dir[i] < 0:
                 continue  # ST bearish, skip long
             if short_trigger and st_dir[i] > 0:
                 continue  # ST bullish, skip short
+
+        # Stochastic cross gate: K vs D directional agreement (NaN → pass)
+        if stoch_gate:
+            sk = stoch_k[i]; sd = stoch_d[i]
+            if not (np.isnan(sk) or np.isnan(sd)):
+                if long_trigger and sk < sd:
+                    continue   # stoch bearish cross, skip long
+                if short_trigger and sk > sd:
+                    continue   # stoch bullish cross, skip short
+
+        # MACD histogram gate: sign must match direction (NaN → pass)
+        if macd_gate:
+            mh = macd_hist[i]
+            if not np.isnan(mh):
+                if long_trigger and mh < 0:
+                    continue   # MACD histogram negative, skip long
+                if short_trigger and mh > 0:
+                    continue   # MACD histogram positive, skip short
+
+        # RSI extreme filter: skip longs in overbought / shorts in oversold (NaN → pass)
+        if rsi_gate > 0:
+            rv = rsi[i]
+            if not np.isnan(rv):
+                if long_trigger and rv > rsi_gate:
+                    continue   # overbought, skip long
+                if short_trigger and rv < (100 - rsi_gate):
+                    continue   # oversold, skip short
 
         # ── Fire entry ────────────────────────────────────────────────
         if long_trigger:
