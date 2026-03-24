@@ -37,6 +37,7 @@ data/*
 *.csv
 !data/OANDA_*renko*.csv
 !data/OANDA_*1D*.csv
+!data/CBOT_MINI_MYM*renko*.csv
 !tvresults/*.csv
 *.log
 .claude/
