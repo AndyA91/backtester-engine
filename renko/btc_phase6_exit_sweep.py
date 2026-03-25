@@ -47,6 +47,8 @@ import json
 import math
 import sys
 from concurrent.futures import ProcessPoolExecutor, as_completed
+
+from renko.config import MAX_WORKERS
 from pathlib import Path
 
 import numpy as np
@@ -521,7 +523,7 @@ def main():
         for exits, label in groups:
             all_results.extend(_sweep_exit_group(exits, label))
     else:
-        with ProcessPoolExecutor(max_workers=len(groups)) as pool:
+        with ProcessPoolExecutor(max_workers=MAX_WORKERS) as pool:
             futures = {
                 pool.submit(_sweep_exit_group, exits, label): label
                 for exits, label in groups

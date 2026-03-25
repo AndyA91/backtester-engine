@@ -33,6 +33,8 @@ import json
 import math
 import sys
 from concurrent.futures import ProcessPoolExecutor, as_completed
+
+from renko.config import MAX_WORKERS
 from pathlib import Path
 
 import numpy as np
@@ -780,7 +782,7 @@ def main():
         all_results.extend(_sweep_solo_entries("solo"))
         all_results.extend(_sweep_combined_entries("combined"))
     else:
-        with ProcessPoolExecutor(max_workers=2) as pool:
+        with ProcessPoolExecutor(max_workers=MAX_WORKERS) as pool:
             futures = {
                 pool.submit(_sweep_solo_entries, "solo"): "solo",
                 pool.submit(_sweep_combined_entries, "combined"): "combined",

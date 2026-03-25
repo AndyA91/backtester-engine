@@ -11,6 +11,8 @@ import itertools
 import math
 import sys
 from concurrent.futures import ProcessPoolExecutor, as_completed
+
+from renko.config import MAX_WORKERS
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -131,7 +133,7 @@ def main():
     print()
 
     all_results = {}
-    with ProcessPoolExecutor(max_workers=len(INSTRUMENTS)) as pool:
+    with ProcessPoolExecutor(max_workers=MAX_WORKERS) as pool:
         futures = {pool.submit(run_instrument, n, c): n for n, c in INSTRUMENTS.items()}
         for fut in as_completed(futures):
             name, results = fut.result()
@@ -160,7 +162,7 @@ def main():
             if p["session_start"] > 0:  gates.append(f"s{p['session_start']}")
             if p["vol_max"] > 0:        gates.append(f"vol{p['vol_max']}")
             if p["st_gate"]:             gates.append("ST")
-            if p["chop_max"] > 0:       gates.append(f"chop{p['chop_max']}")
+
             gate_str = "+".join(gates) if gates else "none"
 
             print(f"  {'':4}{fmt_pf(r['oos_pf']):>8} {r['oos_trades']:>6} {r['oos_wr']:>6.1f}% "
@@ -174,7 +176,7 @@ def main():
 
     # ── IS/OOS decay analysis for best combos ───────────────────────────────
     print("\n" + "=" * 100)
-    print("  IS → OOS DECAY (best OOS PF combo per pair)")
+    print("  IS -> OOS DECAY (best OOS PF combo per pair)")
     print("=" * 100)
     print(f"  {'Pair':<8} {'IS PF':>7} {'OOS PF':>8} {'Decay':>8} {'IS T':>5} {'OOS T':>6} {'Live PF':>8}")
     print(f"  {'-'*55}")
@@ -207,7 +209,6 @@ def main():
         ("Session s13", "session_start", 13, 0),
         ("Vol max 1.5",  "vol_max",       1.5, 0),
         ("Supertrend",   "st_gate",       True, False),
-        ("Chop max 50",  "chop_max",      50, 0),
         ("ADX 25",       "adx_gate",      25, 0),
     ]:
         on_pfs  = [r["oos_pf"] for r in qualified_all if r["params"][param_key] == on_val and not math.isinf(r["oos_pf"])]

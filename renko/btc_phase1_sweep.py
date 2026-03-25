@@ -24,6 +24,8 @@ import json
 import math
 import sys
 from concurrent.futures import ProcessPoolExecutor, as_completed
+
+from renko.config import MAX_WORKERS
 from pathlib import Path
 
 import numpy as np

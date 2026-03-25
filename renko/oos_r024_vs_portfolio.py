@@ -11,6 +11,8 @@ import io
 import math
 import sys
 from concurrent.futures import ProcessPoolExecutor, as_completed
+
+from renko.config import MAX_WORKERS
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -138,7 +140,7 @@ def main():
     print()
 
     all_results = {}
-    with ProcessPoolExecutor(max_workers=len(PAIRS)) as pool:
+    with ProcessPoolExecutor(max_workers=MAX_WORKERS) as pool:
         futures = {pool.submit(run_pair, name, cfg): name for name, cfg in PAIRS.items()}
         for fut in as_completed(futures):
             name, results = fut.result()

@@ -30,6 +30,8 @@ import json
 import math
 import sys
 from concurrent.futures import ProcessPoolExecutor, as_completed
+
+from renko.config import MAX_WORKERS
 from pathlib import Path
 
 import numpy as np
@@ -840,7 +842,7 @@ def main():
         for part, sname, fn in tasks:
             all_results.extend(fn(sname))
     else:
-        with ProcessPoolExecutor(max_workers=6) as pool:
+        with ProcessPoolExecutor(max_workers=MAX_WORKERS) as pool:
             futures = {}
             for part, sname, fn in tasks:
                 futures[pool.submit(fn, sname)] = (part, sname)
