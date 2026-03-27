@@ -30,6 +30,8 @@ import json
 import math
 import sys
 from concurrent.futures import ProcessPoolExecutor, as_completed
+
+from renko.config import MAX_WORKERS
 from pathlib import Path
 
 import numpy as np
@@ -443,7 +445,7 @@ def main():
         for p6 in P6_GATES:
             all_results.extend(_sweep_p6_gate(p6))
     else:
-        with ProcessPoolExecutor(max_workers=len(P6_GATES)) as pool:
+        with ProcessPoolExecutor(max_workers=MAX_WORKERS) as pool:
             futures = {pool.submit(_sweep_p6_gate, p6): p6 for p6 in P6_GATES}
             for future in as_completed(futures):
                 p6 = futures[future]

@@ -35,6 +35,8 @@ import json
 import math
 import sys
 from concurrent.futures import ProcessPoolExecutor, as_completed
+
+from renko.config import MAX_WORKERS
 from pathlib import Path
 
 import numpy as np
@@ -589,7 +591,7 @@ def main():
         for name, config in INSTRUMENTS.items():
             all_results.extend(run_instrument_sweep(name, config))
     else:
-        with ProcessPoolExecutor(max_workers=len(INSTRUMENTS)) as pool:
+        with ProcessPoolExecutor(max_workers=MAX_WORKERS) as pool:
             futures = {
                 pool.submit(run_instrument_sweep, name, config): name
                 for name, config in INSTRUMENTS.items()

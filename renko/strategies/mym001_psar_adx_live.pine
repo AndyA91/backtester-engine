@@ -1,0 +1,273 @@
+// ============================================================================
+// MYM001 LIVE: MYM Futures Renko — ADX + PSAR Direction [Renko MYM]
+//
+// Same strategy as MYM001, with pre-placed STOPMARKET entry orders.
+// Instead of market orders AFTER a brick forms (150-200 pt slippage),
+// this places stop orders at the next brick boundary BEFORE it forms.
+// When price reaches the boundary, the brick forms and the stop fills
+// simultaneously — zero slippage.
+//
+// TV Alert setup:
+//   Condition: "Any alert() function call"
+//   Message:   {{message}}
+//   Webhook:   Your CrossTrade webhook URL
+//
+// Backtest note: strategy.entry(stop=X) makes the backtester fill at the
+// brick boundary too, so backtest results reflect realistic execution.
+// Entries are 1 brick delayed vs original (pre-place on brick N, fill N+1).
+//
+// Original MYM001 config: n=9, cd=45, ADX>=50, PSAR, brick 14
+// ============================================================================
+//@version=5
+strategy("MYM001 LIVE ADX+PSAR [Renko MYM]",
+     overlay             = true,
+     initial_capital     = 1000,
+     default_qty_type    = strategy.fixed,
+     default_qty_value   = 1,
+     commission_type     = strategy.commission.cash_per_contract,
+     commission_value    = 0.95,
+     calc_on_order_fills = false,
+     margin_long         = 0,
+     margin_short        = 0,
+     pyramiding          = 1)
+
+// ── Inputs ────────────────────────────────────────────────────────────────────
+n_bricks      = input.int(9,   "N Bricks",              minval=1, maxval=20,
+     tooltip="N consecutive bricks for R001 momentum signal; also N-brick lookback for R002 initiation signal")
+cd_bars       = input.int(45,  "Cooldown (bricks)",     minval=0,
+     tooltip="Minimum bricks between R001 entries. R002 entries are exempt from cooldown.")
+adx_threshold = input.int(50,  "Renko ADX Threshold (0=off)", minval=0, maxval=100,
+     tooltip="Renko chart ADX(14) must be >= this value to allow entry. 0 = no gate.")
+use_psar      = input.bool(true, "Use PSAR Direction Gate",
+     tooltip="Parabolic SAR: close > SAR = long ok, close < SAR = short ok. NaN = pass.")
+vol_max       = input.float(1.5, "Vol Max (0=off)", minval=0, step=0.1,
+     tooltip="Skip entry if brick vol_ratio (volume/EMA20vol) exceeds this value. 0 = no gate.")
+close_hour    = input.int(15,  "Forced Close Hour ET",  minval=0, maxval=23,
+     tooltip="Force close all positions at this ET hour + close_minute.")
+close_minute  = input.int(45,  "Forced Close Minute ET", minval=0, maxval=59,
+     tooltip="Force close all positions at close_hour:close_minute ET.")
+cutoff_minute = input.int(30,  "Entry Cutoff Minute ET", minval=0, maxval=59,
+     tooltip="No new entries after close_hour:cutoff_minute ET.")
+
+liveMode  = input.bool(false, "Live Mode (disable date gate)",
+     tooltip="Check for live/forward trading — ignores Start/End Date and trades all bars")
+startDate = input.time(timestamp("2025-03-07 00:00 +0000"), "Start Date")
+endDate   = input.time(timestamp("2025-12-31 23:59 +0000"), "End Date")
+
+// ── CrossTrade Pre-place Inputs ─────────────────────────────────────────────
+ct_key  = input.string("", "CT Key",     tooltip="CrossTrade webhook secret key. Leave blank to disable CT alerts.",  group="CrossTrade")
+ct_acct = input.string("", "CT Account", tooltip="CrossTrade account ID (e.g., Sim101).", group="CrossTrade")
+ct_inst = input.string("MYM1!", "CT Instrument", tooltip="Instrument name as used in your CrossTrade alerts (e.g., MYM1! or MYM 06-26).", group="CrossTrade")
+
+// ── Date gate ─────────────────────────────────────────────────────────────────
+inRange = liveMode or (time >= startDate and time <= endDate)
+
+// ── ET time (DST-aware via timezone string) ──────────────────────────────────
+et_hour = hour(time, "America/New_York")
+et_min  = minute(time, "America/New_York")
+
+// Forced close: exit all positions at close_hour:close_minute ET
+force_close = et_hour > close_hour or (et_hour == close_hour and et_min >= close_minute)
+
+// Entry cutoff: no new entries after close_hour:cutoff_minute ET
+entry_cutoff = et_hour > close_hour or (et_hour == close_hour and et_min >= cutoff_minute)
+
+// ── Renko ADX(14) ─────────────────────────────────────────────────────────────
+[_rDIp, _rDIm, renko_adx] = ta.dmi(14, 14)
+adx_ok     = adx_threshold <= 0 or na(renko_adx[1]) or renko_adx[1] >= adx_threshold
+// Pre-place: current ADX (becomes [1] on next brick)
+pre_adx_ok = adx_threshold <= 0 or na(renko_adx)    or renko_adx    >= adx_threshold
+
+// ── Brick volume ratio gate ──────────────────────────────────────────────────
+vol_ema_ratio = ta.ema(volume, 20)
+vol_ratio     = vol_ema_ratio > 0 ? volume / vol_ema_ratio : 1.0
+vol_ok        = vol_max <= 0 or vol_ratio <= vol_max
+
+// ── PSAR direction gate ──────────────────────────────────────────────────────
+psar_val  = ta.sar(0.02, 0.02, 0.2)
+psar_bull = close > psar_val
+
+psar_long      = use_psar ? (na(psar_val[1]) or psar_bull[1])     : true
+psar_short     = use_psar ? (na(psar_val[1]) or not psar_bull[1]) : true
+// Pre-place: current PSAR (becomes [1] on next brick)
+pre_psar_long  = use_psar ? (na(psar_val) or psar_bull)           : true
+pre_psar_short = use_psar ? (na(psar_val) or not psar_bull)       : true
+
+// ── Brick-space indicators (comment tagging) ─────────────────────────────────
+rsi_b     = ta.rsi(close, 14)
+[_bbm, bb_u, bb_l] = ta.bb(close, 20, 2)
+bb_pct    = (bb_u - bb_l) > 0 ? (close - bb_l) / (bb_u - bb_l) : 0.5
+[_ml, _ms, macd_h] = ta.macd(close, 12, 26, 9)
+[_stv, st_d]       = ta.supertrend(3.0, 10)
+
+chop_hi      = ta.highest(high, 14)
+chop_lo      = ta.lowest(low,  14)
+chop_rng     = chop_hi - chop_lo
+chop_tr_sum  = ta.sma(ta.tr(true), 14) * 14
+chop_b       = chop_rng > 0 ? 100.0 * math.log10(chop_tr_sum / chop_rng) / math.log10(14) : na
+
+cmf_mfv   = ((close - low) - (high - close)) / (high - low) * volume
+cmf_b     = ta.sma(cmf_mfv, 20) / ta.sma(volume, 20)
+mfi_b     = ta.mfi(hlc3, 14)
+stoch_k   = ta.stoch(close, high, low, 14)
+[kc_u, _kcm, kc_l] = ta.kc(close, 20, 1.5)
+sq_on     = bb_u < kc_u and bb_l > kc_l
+
+f_tag(sig) =>
+    "[" + sig + " rA:" + str.tostring(renko_adx[1], "#") + " R:" + str.tostring(rsi_b, "#") + " V:" + str.tostring(vol_ratio, "#.##") + " B:" + str.tostring(bb_pct, "#.##") + " M:" + (macd_h >= 0 ? "+" : "-") + " ST:" + (st_d == -1 ? "U" : "D") + " CH:" + str.tostring(chop_b, "#") + " CF:" + (cmf_b >= 0 ? "+" : "-") + " MI:" + str.tostring(mfi_b, "#") + " SK:" + str.tostring(stoch_k, "#") + " PS:" + (psar_bull ? "U" : "D") + " SQ:" + (sq_on ? "1" : "0") + " ET:" + str.tostring(et_hour) + ":" + str.tostring(et_min, "00") + "]"
+
+// ── Brick direction & size ────────────────────────────────────────────────────
+brick_up   = close > open
+brick_size = math.abs(close - open)
+
+// Next brick boundary prices
+next_up_close = close + brick_size
+next_dn_close = close - brick_size
+
+// ── R001: N consecutive same-direction bricks (including current) ─────────────
+all_up   = true
+all_down = true
+for j = 0 to n_bricks - 1
+    if not (close[j] > open[j])
+        all_up   := false
+    if close[j] > open[j]
+        all_down := false
+
+// ── R001 pre-place: N-1 consecutive same-direction (next brick completes N) ──
+pre_r001_up   = n_bricks >= 2
+pre_r001_down = n_bricks >= 2
+if n_bricks >= 2
+    for j = 0 to n_bricks - 2
+        if not (close[j] > open[j])
+            pre_r001_up := false
+        if close[j] > open[j]
+            pre_r001_down := false
+
+// ── R002: N bricks BEFORE current bar all same direction ─────────────────────
+prev_all_up   = true
+prev_all_down = true
+for j = 1 to n_bricks
+    if not (close[j] > open[j])
+        prev_all_up   := false
+    if close[j] > open[j]
+        prev_all_down := false
+
+// ── R002 pre-place: N bricks including current (next opposing = reversal) ────
+// N consecutive DOWN bricks → next UP brick triggers R002 Long
+// N consecutive UP bricks   → next DOWN brick triggers R002 Short
+pre_r002_long  = true
+pre_r002_short = true
+for j = 0 to n_bricks - 1
+    if close[j] > open[j]
+        pre_r002_long := false
+    if not (close[j] > open[j])
+        pre_r002_short := false
+
+// ── Cooldown tracker (R001 only) ─────────────────────────────────────────────
+var int last_r001_bar = na
+can_r001_trade = na(last_r001_bar) or (bar_index - last_r001_bar >= cd_bars)
+
+// ── Pre-place pending order tracking ─────────────────────────────────────────
+var bool has_pending = false
+
+// ── CrossTrade command builders ──────────────────────────────────────────────
+f_ct_place(action, stop_price) =>
+    "key=" + ct_key + "; command=place; account=" + ct_acct +
+    "; instrument=" + ct_inst + "; action=" + action +
+    "; qty=1; order_type=stopmarket; stop_price=" + str.tostring(stop_price, "#") +
+    "; tif=day;"
+
+f_ct_cancel() =>
+    "key=" + ct_key + "; command=cancelall; account=" + ct_acct + ";"
+
+f_ct_flatten() =>
+    "key=" + ct_key + "; command=flatten; account=" + ct_acct +
+    "; instrument=" + ct_inst + ";"
+
+ct_enabled = ct_key != ""
+
+// ── Cancel stale pre-placed orders on each new brick ────────────────────────
+// If we had a pending stop that didn't fill (still flat), cancel it
+if has_pending and strategy.position_size == 0
+    strategy.cancel_all()
+    if ct_enabled
+        alert(f_ct_cancel(), alert.freq_all)
+    has_pending := false
+
+// Detect fill: pending order was filled (position opened)
+if has_pending and strategy.position_size != 0
+    has_pending := false
+
+// ── Forced close — before all other exit/entry logic ────────────────────────
+if strategy.position_size > 0 and force_close
+    strategy.close("Long",  comment=f_tag("FClL"))
+    if ct_enabled
+        alert(f_ct_flatten(), alert.freq_all)
+
+if strategy.position_size < 0 and force_close
+    strategy.close("Short", comment=f_tag("FClS"))
+    if ct_enabled
+        alert(f_ct_flatten(), alert.freq_all)
+
+// ── Exits: first opposing brick ─────────────────────────────────────────────
+if not force_close and strategy.position_size > 0 and not brick_up
+    strategy.close("Long",  comment=f_tag("ExitL"))
+    if ct_enabled
+        alert(f_ct_flatten(), alert.freq_all)
+
+if not force_close and strategy.position_size < 0 and brick_up
+    strategy.close("Short", comment=f_tag("ExitS"))
+    if ct_enabled
+        alert(f_ct_flatten(), alert.freq_all)
+
+// ── Entries: Pre-placed STOPMARKET orders ───────────────────────────────────
+// Pre-place stop at next brick boundary. Fills when that brick forms.
+// Only one pre-placed order at a time. R002 (reversal) has priority over R001.
+if inRange and not force_close and not entry_cutoff and strategy.position_size == 0 and not has_pending
+
+    // ── Long pre-placement ──────────────────────────────────────────────────
+    if pre_adx_ok and pre_psar_long
+        if pre_r002_long  // N down bricks → anticipate up reversal
+            strategy.entry("Long", strategy.long, stop=next_up_close, comment=f_tag("R002L"))
+            if ct_enabled
+                alert(f_ct_place("buy", next_up_close), alert.freq_all)
+            has_pending := true
+        else if can_r001_trade and pre_r001_up  // N-1 up bricks → anticipate Nth
+            strategy.entry("Long", strategy.long, stop=next_up_close, comment=f_tag("R001L"))
+            if ct_enabled
+                alert(f_ct_place("buy", next_up_close), alert.freq_all)
+            has_pending := true
+            last_r001_bar := bar_index
+
+    // ── Short pre-placement (only if no long was placed) ────────────────────
+    if not has_pending and pre_adx_ok and pre_psar_short
+        if pre_r002_short  // N up bricks → anticipate down reversal
+            strategy.entry("Short", strategy.short, stop=next_dn_close, comment=f_tag("R002S"))
+            if ct_enabled
+                alert(f_ct_place("sell", next_dn_close), alert.freq_all)
+            has_pending := true
+        else if can_r001_trade and pre_r001_down  // N-1 down bricks → anticipate Nth
+            strategy.entry("Short", strategy.short, stop=next_dn_close, comment=f_tag("R001S"))
+            if ct_enabled
+                alert(f_ct_place("sell", next_dn_close), alert.freq_all)
+            has_pending := true
+            last_r001_bar := bar_index
+
+// ── Visual markers ──────────────────────────────────────────────────────────
+isNewTrade = strategy.opentrades > 0 and strategy.opentrades[1] == 0
+plotshape(isNewTrade and strategy.position_size > 0,
+     title="Long Entry", location=location.belowbar, style=shape.triangleup,
+     color=color.new(color.green, 0), size=size.small)
+plotshape(isNewTrade and strategy.position_size < 0,
+     title="Short Entry", location=location.abovebar, style=shape.triangledown,
+     color=color.new(color.red, 0), size=size.small)
+
+// ── Data window inspection ──────────────────────────────────────────────────
+plot(renko_adx[1],           "Renko ADX(14) [1]",  display=display.data_window)
+plot(vol_ratio,              "Vol Ratio",           display=display.data_window)
+plot(psar_bull[1] ? 1 : -1,  "PSAR dir [1]",        display=display.data_window)
+plot(et_hour + et_min / 60.0, "ET Time",             display=display.data_window)
+plot(force_close ? 1 : 0,    "Force Close",          display=display.data_window)
+plot(entry_cutoff ? 1 : 0,   "Entry Cutoff",         display=display.data_window)
+plot(has_pending ? 1 : 0,    "Pending Stop",          display=display.data_window)
+plot(brick_size,             "Brick Size",            display=display.data_window)

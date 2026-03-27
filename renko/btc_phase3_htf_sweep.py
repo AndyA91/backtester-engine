@@ -27,6 +27,8 @@ import json
 import math
 import sys
 from concurrent.futures import ProcessPoolExecutor, as_completed
+
+from renko.config import MAX_WORKERS
 from pathlib import Path
 
 import numpy as np
@@ -484,7 +486,7 @@ def main():
         for name, config in LTF_CONFIGS.items():
             all_results.extend(_sweep_ltf_config(name, config))
     else:
-        with ProcessPoolExecutor(max_workers=len(LTF_CONFIGS)) as pool:
+        with ProcessPoolExecutor(max_workers=MAX_WORKERS) as pool:
             futures = {
                 pool.submit(_sweep_ltf_config, name, config): name
                 for name, config in LTF_CONFIGS.items()

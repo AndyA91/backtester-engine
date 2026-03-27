@@ -28,6 +28,8 @@ import math
 import sys
 import traceback
 from concurrent.futures import ProcessPoolExecutor, as_completed
+
+from renko.config import MAX_WORKERS
 from pathlib import Path
 
 import numpy as np
@@ -388,7 +390,7 @@ def run_gate_stacking():
 
     all_results = []
 
-    with ProcessPoolExecutor(max_workers=len(INSTRUMENTS)) as pool:
+    with ProcessPoolExecutor(max_workers=MAX_WORKERS) as pool:
         futures = {
             pool.submit(run_gate_stacking_worker, name, config): name
             for name, config in INSTRUMENTS.items()

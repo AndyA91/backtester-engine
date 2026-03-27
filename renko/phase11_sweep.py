@@ -29,6 +29,8 @@ import json
 import math
 import sys
 from concurrent.futures import ProcessPoolExecutor, as_completed
+
+from renko.config import MAX_WORKERS
 from pathlib import Path
 
 import numpy as np
@@ -1096,7 +1098,7 @@ def main():
             for nm, cfg in EXISTING_INSTRUMENTS.items():
                 stage_a_results.extend(run_stage_a(nm, cfg))
         else:
-            with ProcessPoolExecutor(max_workers=4) as pool:
+            with ProcessPoolExecutor(max_workers=MAX_WORKERS) as pool:
                 futures = {
                     pool.submit(run_stage_a, nm, cfg): nm
                     for nm, cfg in EXISTING_INSTRUMENTS.items()
@@ -1146,7 +1148,7 @@ def main():
             for nm, cfg in EXISTING_INSTRUMENTS.items():
                 stage_b_results.extend(run_stage_b(nm, cfg, htf_winners[nm]))
         else:
-            with ProcessPoolExecutor(max_workers=4) as pool:
+            with ProcessPoolExecutor(max_workers=MAX_WORKERS) as pool:
                 futures = {
                     pool.submit(run_stage_b, nm, cfg, htf_winners[nm]): nm
                     for nm, cfg in EXISTING_INSTRUMENTS.items()
@@ -1176,7 +1178,7 @@ def main():
             for nm, cfg in NEW_INSTRUMENTS.items():
                 stage_c_results.extend(run_stage_c(nm, cfg))
         else:
-            with ProcessPoolExecutor(max_workers=2) as pool:
+            with ProcessPoolExecutor(max_workers=MAX_WORKERS) as pool:
                 futures = {
                     pool.submit(run_stage_c, nm, cfg): nm
                     for nm, cfg in NEW_INSTRUMENTS.items()

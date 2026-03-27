@@ -29,6 +29,8 @@ import json
 import math
 import sys
 from concurrent.futures import ProcessPoolExecutor, as_completed
+
+from renko.config import MAX_WORKERS
 from pathlib import Path
 
 import numpy as np
@@ -840,7 +842,7 @@ def main():
         for sname in STRATEGIES:
             all_results.extend(_sweep_strategy(sname))
     else:
-        with ProcessPoolExecutor(max_workers=min(len(STRATEGIES), 6)) as pool:
+        with ProcessPoolExecutor(max_workers=MAX_WORKERS, 6)) as pool:
             futures = {pool.submit(_sweep_strategy, s): s for s in STRATEGIES}
             for future in as_completed(futures):
                 sname = futures[future]

@@ -26,12 +26,14 @@ import io
 import itertools
 import math
 import sys
+from concurrent.futures import ProcessPoolExecutor, as_completed
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
 from engine import BacktestConfig, run_backtest_long_short
+from renko.config import MAX_WORKERS
 from renko.data import load_renko_export
 from renko.indicators import add_renko_indicators
 
@@ -88,6 +90,31 @@ def rank_key(result):
     return (qualifies, pf_score, result["net"])
 
 
+# ── Parallel worker ──────────────────────────────────────────────────────────
+# Each worker process loads data once and caches it, so only the small params
+# dict gets serialized per task.
+
+_worker_cache = {}
+
+
+def _sweep_one(args):
+    """Top-level picklable worker — one backtest per call."""
+    strategy_name, renko_file, params, start, end, commission_pct, initial_capital, strategies_dir = args
+
+    if "gen" not in _worker_cache:
+        sys.path.insert(0, strategies_dir)
+        sys.path.insert(0, str(ROOT))
+        mod = importlib.import_module(strategy_name)
+        rf = renko_file or getattr(mod, "RENKO_FILE", None)
+        _worker_cache["gen"] = mod.generate_signals
+        _worker_cache["df"] = load_data(rf)
+
+    return run_single(
+        _worker_cache["df"], _worker_cache["gen"], params, start, end,
+        commission_pct=commission_pct, initial_capital=initial_capital,
+    )
+
+
 def sweep(strategy_name, start=IS_START, end=IS_END, verbose=True, renko_file=None):
     global _renko_file
     _renko_file = renko_file
@@ -102,6 +129,7 @@ def sweep(strategy_name, start=IS_START, end=IS_END, verbose=True, renko_file=No
         print(f"Desc     : {mod.DESCRIPTION}")
         print(f"Period   : {start} to {end}")
         print(f"Combos   : {len(combos)}")
+        print(f"Workers  : {min(len(combos), MAX_WORKERS)}")
         print(f"{'='*60}")
 
     commission_pct   = getattr(mod, "COMMISSION_PCT",   0.0046)
@@ -110,18 +138,33 @@ def sweep(strategy_name, start=IS_START, end=IS_END, verbose=True, renko_file=No
     if verbose and (commission_pct != 0.0046 or initial_capital != 1000.0):
         print(f"Commission: {commission_pct:.4f}%  |  Initial capital: {initial_capital:,.0f}")
 
-    print("Loading data...")
-    df = load_data(getattr(mod, "RENKO_FILE", None) or _renko_file)
+    rf = getattr(mod, "RENKO_FILE", None) or _renko_file
+    strategies_dir = str(Path(__file__).resolve().parent / "strategies")
 
-    results = []
-    for i, params in enumerate(combos, 1):
-        r = run_single(df, mod.generate_signals, params, start, end,
-                       commission_pct=commission_pct, initial_capital=initial_capital)
-        results.append(r)
-        if verbose:
-            print(f"  [{i:>3}/{len(combos)}] PF={fmt_pf(r['pf'])} Net={r['net']:>7.2f} "
-                  f"T={r['trades']:>4} WR={r['win_rate']:>5.1f}% "
-                  f"DD={r['max_dd_pct']:>5.2f}% Exp={r['expectancy']:>6.3f} | {params}")
+    if len(combos) <= 1:
+        # Single combo — no parallelism overhead
+        print("Loading data...")
+        df = load_data(rf)
+        results = [run_single(df, mod.generate_signals, combos[0], start, end,
+                              commission_pct=commission_pct, initial_capital=initial_capital)]
+    else:
+        print(f"Sweeping {len(combos)} combos across {min(len(combos), MAX_WORKERS)} workers...")
+        tasks = [
+            (strategy_name, rf, p, start, end, commission_pct, initial_capital, strategies_dir)
+            for p in combos
+        ]
+        results = []
+        done = 0
+        with ProcessPoolExecutor(max_workers=min(len(tasks), MAX_WORKERS)) as pool:
+            futures = {pool.submit(_sweep_one, t): t[2] for t in tasks}
+            for future in as_completed(futures):
+                r = future.result()
+                results.append(r)
+                done += 1
+                if verbose:
+                    print(f"  [{done:>3}/{len(combos)}] PF={fmt_pf(r['pf'])} Net={r['net']:>7.2f} "
+                          f"T={r['trades']:>4} WR={r['win_rate']:>5.1f}% "
+                          f"DD={r['max_dd_pct']:>5.2f}% Exp={r['expectancy']:>6.3f} | {r['params']}")
 
     results.sort(key=rank_key, reverse=True)
 

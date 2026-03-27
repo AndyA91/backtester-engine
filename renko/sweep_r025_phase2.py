@@ -15,6 +15,8 @@ import itertools
 import math
 import sys
 from concurrent.futures import ProcessPoolExecutor, as_completed
+
+from renko.config import MAX_WORKERS
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -143,7 +145,7 @@ def main():
     print()
 
     all_results = {}
-    with ProcessPoolExecutor(max_workers=len(INSTRUMENTS)) as pool:
+    with ProcessPoolExecutor(max_workers=MAX_WORKERS) as pool:
         futures = {pool.submit(run_instrument, n, c): n for n, c in INSTRUMENTS.items()}
         for fut in as_completed(futures):
             name, results = fut.result()
@@ -240,7 +242,7 @@ def main():
 
     # ── IS/OOS decay for top combo per pair ─────────────────────────────────
     print("\n" + "=" * 110)
-    print("  IS → OOS DECAY (best OOS PF combo per pair)")
+    print("  IS -> OOS DECAY (best OOS PF combo per pair)")
     print("=" * 110)
     print(f"  {'Pair':<8} {'IS PF':>7} {'OOS PF':>8} {'Decay':>8} {'IS T':>5} {'OOS T':>6} {'Live PF':>8}")
     print(f"  {'-'*55}")

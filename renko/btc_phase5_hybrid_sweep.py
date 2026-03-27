@@ -37,6 +37,8 @@ import json
 import math
 import sys
 from concurrent.futures import ProcessPoolExecutor, as_completed
+
+from renko.config import MAX_WORKERS
 from pathlib import Path
 
 import numpy as np
@@ -553,7 +555,7 @@ def main():
         for htf in HTF_ADX_THRESHOLDS:
             all_results.extend(_sweep_htf_threshold(htf))
     else:
-        with ProcessPoolExecutor(max_workers=len(HTF_ADX_THRESHOLDS)) as pool:
+        with ProcessPoolExecutor(max_workers=MAX_WORKERS) as pool:
             futures = {
                 pool.submit(_sweep_htf_threshold, htf): htf
                 for htf in HTF_ADX_THRESHOLDS
