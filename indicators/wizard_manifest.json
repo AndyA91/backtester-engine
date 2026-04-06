@@ -1,0 +1,3353 @@
+{
+  "scraped_at": "2026-03-31T21:06:45.598143",
+  "min_boosts": 100,
+  "max_per_author": 50,
+  "include_strategies": true,
+  "authors": {
+    "ChrisMoody": {
+      "display_name": "ChrisMoody",
+      "scripts_found": 13,
+      "scripts": [
+        {
+          "title": "CM_Price-Action-Bars-Price Patterns That Work!",
+          "link": "https://www.tradingview.com/script/GHnJs0X8-CM-Price-Action-Bars-Price-Patterns-That-Work/",
+          "boosts": 27214,
+          "is_strategy": false,
+          "author": "ChrisMoody",
+          "filename": "indicators\\ChrisMoody\\CM_Price-Action-Bars-Price_Patterns_That_Work_.pine"
+        },
+        {
+          "title": "CM_Williams_Vix_Fix_V3_Ultimate_Filtered_Alerts",
+          "link": "https://www.tradingview.com/script/pJpXG5JH-CM-Williams-Vix-Fix-V3-Ultimate-Filtered-Alerts/",
+          "boosts": 14874,
+          "is_strategy": false,
+          "author": "ChrisMoody",
+          "filename": "indicators\\ChrisMoody\\CM_Williams_Vix_Fix_V3_Ultimate_Filtered_Alerts.pine"
+        },
+        {
+          "title": "CM Stochastic POP Method 2-Jake Bernstein_V1",
+          "link": "https://www.tradingview.com/script/grzVchLi-CM-Stochastic-POP-Method-2-Jake-Bernstein-V1/",
+          "boosts": 10729,
+          "is_strategy": false,
+          "author": "ChrisMoody",
+          "filename": "indicators\\ChrisMoody\\CM_Stochastic_POP_Method_2-Jake_Bernstein_V1.pine"
+        },
+        {
+          "title": "CM_Williams_Vix_Fix_V3_Upper_Text Plots",
+          "link": "https://www.tradingview.com/script/1ffumXy5-CM-Williams-Vix-Fix-V3-Upper-Text-Plots/",
+          "boosts": 8027,
+          "is_strategy": false,
+          "author": "ChrisMoody",
+          "filename": "indicators\\ChrisMoody\\CM_Williams_Vix_Fix_V3_Upper_Text_Plots.pine"
+        },
+        {
+          "title": "CM_ADX_V1",
+          "link": "https://www.tradingview.com/script/Nc5vTbIX-CM-ADX-V1/",
+          "boosts": 4786,
+          "is_strategy": false,
+          "author": "ChrisMoody",
+          "filename": "indicators\\ChrisMoody\\CM_ADX_V1.pine"
+        },
+        {
+          "title": "CM Stochastic POP Method 1 - Jake Bernstein_V1",
+          "link": "https://www.tradingview.com/script/ubxXu7fY-CM-Stochastic-POP-Method-1-Jake-Bernstein-V1/",
+          "boosts": 4609,
+          "is_strategy": false,
+          "author": "ChrisMoody",
+          "filename": "indicators\\ChrisMoody\\CM_Stochastic_POP_Method_1_-_Jake_Bernstein_V1.pine"
+        },
+        {
+          "title": "CM_Donchian Channels Modified_V2 - Alert Capable",
+          "link": "https://www.tradingview.com/script/SxLhBxdO-CM-Donchian-Channels-Modified-V2-Alert-Capable/",
+          "boosts": 3140,
+          "is_strategy": false,
+          "author": "ChrisMoody",
+          "filename": "indicators\\ChrisMoody\\CM_Donchian_Channels_Modified_V2_-_Alert_Capable.pine"
+        },
+        {
+          "title": "CM_Blast_Off_V1_Alerts Ready",
+          "link": "https://www.tradingview.com/script/V9Mi6eOO-CM-Blast-Off-V1-Alerts-Ready/",
+          "boosts": 2726,
+          "is_strategy": false,
+          "author": "ChrisMoody",
+          "filename": "indicators\\ChrisMoody\\CM_Blast_Off_V1_Alerts_Ready.pine"
+        },
+        {
+          "title": "CM_Williams AD+SMA_V1_Public",
+          "link": "https://www.tradingview.com/script/budDCi5L-CM-Williams-AD-SMA-V1-Public/",
+          "boosts": 2723,
+          "is_strategy": false,
+          "author": "ChrisMoody",
+          "filename": "indicators\\ChrisMoody\\CM_Williams_AD_SMA_V1_Public.pine"
+        },
+        {
+          "title": "CM_DI_Plus_Minus",
+          "link": "https://www.tradingview.com/script/dZT5qNbk-CM-DI-Plus-Minus/",
+          "boosts": 2324,
+          "is_strategy": false,
+          "author": "ChrisMoody",
+          "filename": "indicators\\ChrisMoody\\CM_DI_Plus_Minus.pine"
+        },
+        {
+          "title": "CM_3-Stochastics_No%D_UserRequest",
+          "link": "https://www.tradingview.com/script/0GR1LGiW-CM-3-Stochastics-No-D-UserRequest/",
+          "boosts": 2181,
+          "is_strategy": false,
+          "author": "ChrisMoody",
+          "filename": "indicators\\ChrisMoody\\CM_3-Stochastics_No_D_UserRequest.pine"
+        },
+        {
+          "title": "CM_NarrowRange_WideRange_Bars_V1",
+          "link": "https://www.tradingview.com/script/xT2BhcR7-CM-NarrowRange-WideRange-Bars-V1/",
+          "boosts": 2004,
+          "is_strategy": false,
+          "author": "ChrisMoody",
+          "filename": "indicators\\ChrisMoody\\CM_NarrowRange_WideRange_Bars_V1.pine"
+        },
+        {
+          "title": "CM_Donchian Channels Modified_V2_Lower_Alert",
+          "link": "https://www.tradingview.com/script/mbHhH44A-CM-Donchian-Channels-Modified-V2-Lower-Alert/",
+          "boosts": 1427,
+          "is_strategy": false,
+          "author": "ChrisMoody",
+          "filename": "indicators\\ChrisMoody\\CM_Donchian_Channels_Modified_V2_Lower_Alert.pine"
+        }
+      ]
+    },
+    "HPotter": {
+      "display_name": "HPotter",
+      "scripts_found": 17,
+      "scripts": [
+        {
+          "title": "HHLL Strategy",
+          "link": "https://www.tradingview.com/script/CRNp5xev-HHLL-Strategy/",
+          "boosts": 2494,
+          "is_strategy": true,
+          "author": "HPotter",
+          "filename": "indicators\\HPotter\\HHLL_Strategy.pine"
+        },
+        {
+          "title": "Elder Ray (Bull Power) TP and SL",
+          "link": "https://www.tradingview.com/script/Cv3YP9Tw-Elder-Ray-Bull-Power-TP-and-SL/",
+          "boosts": 1425,
+          "is_strategy": true,
+          "author": "HPotter",
+          "filename": "indicators\\HPotter\\Elder_Ray__Bull_Power__TP_and_SL.pine"
+        },
+        {
+          "title": "Moving Average Displaced Envelope & ATRTS",
+          "link": "https://www.tradingview.com/script/n45eXKBG-Moving-Average-Displaced-Envelope-ATRTS/",
+          "boosts": 1271,
+          "is_strategy": true,
+          "author": "HPotter",
+          "filename": "indicators\\HPotter\\Moving_Average_Displaced_Envelope___ATRTS.pine"
+        },
+        {
+          "title": "Tweezer Patterns",
+          "link": "https://www.tradingview.com/script/JrIRuNKM-Tweezer-Patterns/",
+          "boosts": 1128,
+          "is_strategy": false,
+          "author": "HPotter",
+          "filename": "indicators\\HPotter\\Tweezer_Patterns.pine"
+        },
+        {
+          "title": "Trend Line",
+          "link": "https://www.tradingview.com/script/LUKaSZlC-Trend-Line/",
+          "boosts": 753,
+          "is_strategy": false,
+          "author": "HPotter",
+          "filename": "indicators\\HPotter\\Trend_Line.pine"
+        },
+        {
+          "title": "OKX: MA Crossover",
+          "link": "https://www.tradingview.com/script/BeDjJdpx-OKX-MA-Crossover/",
+          "boosts": 644,
+          "is_strategy": true,
+          "author": "HPotter",
+          "filename": "indicators\\HPotter\\OKX__MA_Crossover.pine"
+        },
+        {
+          "title": "Combo 2/20 EMA & Bull Power",
+          "link": "https://www.tradingview.com/script/vZfUVj9q-Combo-2-20-EMA-Bull-Power/",
+          "boosts": 416,
+          "is_strategy": true,
+          "author": "HPotter",
+          "filename": "indicators\\HPotter\\Combo_2_20_EMA___Bull_Power.pine"
+        },
+        {
+          "title": "EMA & MA Crossover Strategy",
+          "link": "https://www.tradingview.com/script/pMhck82D-EMA-MA-Crossover-Strategy/",
+          "boosts": 386,
+          "is_strategy": true,
+          "author": "HPotter",
+          "filename": "indicators\\HPotter\\EMA___MA_Crossover_Strategy.pine"
+        },
+        {
+          "title": "Combo 2/20 EMA & CCI",
+          "link": "https://www.tradingview.com/script/4ADPgzp5-Combo-2-20-EMA-CCI/",
+          "boosts": 378,
+          "is_strategy": true,
+          "author": "HPotter",
+          "filename": "indicators\\HPotter\\Combo_2_20_EMA___CCI.pine"
+        },
+        {
+          "title": "Combo 2/20 EMA & Bull And Bear Balance",
+          "link": "https://www.tradingview.com/script/almToPGU-Combo-2-20-EMA-Bull-And-Bear-Balance/",
+          "boosts": 250,
+          "is_strategy": true,
+          "author": "HPotter",
+          "filename": "indicators\\HPotter\\Combo_2_20_EMA___Bull_And_Bear_Balance.pine"
+        },
+        {
+          "title": "Combo 2/20 EMA & Bill Williams Averages. 3Lines",
+          "link": "https://www.tradingview.com/script/sHoS3Vzz-Combo-2-20-EMA-Bill-Williams-Averages-3Lines/",
+          "boosts": 237,
+          "is_strategy": true,
+          "author": "HPotter",
+          "filename": "indicators\\HPotter\\Combo_2_20_EMA___Bill_Williams_Averages._3Lines.pine"
+        },
+        {
+          "title": "Combo 2/20 EMA & Bill Awesome Oscillator (AC)",
+          "link": "https://www.tradingview.com/script/WAnGUKrg-Combo-2-20-EMA-Bill-Awesome-Oscillator-AC/",
+          "boosts": 232,
+          "is_strategy": true,
+          "author": "HPotter",
+          "filename": "indicators\\HPotter\\Combo_2_20_EMA___Bill_Awesome_Oscillator__AC_.pine"
+        },
+        {
+          "title": "Combo 2/20 EMA & Average True Range Reversed",
+          "link": "https://www.tradingview.com/script/wbzUv3EN-Combo-2-20-EMA-Average-True-Range-Reversed/",
+          "boosts": 162,
+          "is_strategy": true,
+          "author": "HPotter",
+          "filename": "indicators\\HPotter\\Combo_2_20_EMA___Average_True_Range_Reversed.pine"
+        },
+        {
+          "title": "Combo 2/20 EMA & (H-L)/C Histogram",
+          "link": "https://www.tradingview.com/script/mjNcO9GW-Combo-2-20-EMA-H-L-C-Histogram/",
+          "boosts": 136,
+          "is_strategy": true,
+          "author": "HPotter",
+          "filename": "indicators\\HPotter\\Combo_2_20_EMA____H-L__C_Histogram.pine"
+        },
+        {
+          "title": "Bullish Engulfing Automatic Finding Script",
+          "link": "https://www.tradingview.com/script/jIh8k9aA-Bullish-Engulfing-Automatic-Finding-Script/",
+          "boosts": 134,
+          "is_strategy": false,
+          "author": "HPotter",
+          "filename": "indicators\\HPotter\\Bullish_Engulfing_Automatic_Finding_Script.pine"
+        },
+        {
+          "title": "Combo 2/20 EMA & Bear Power",
+          "link": "https://www.tradingview.com/script/eRQf7nSl-Combo-2-20-EMA-Bear-Power/",
+          "boosts": 127,
+          "is_strategy": true,
+          "author": "HPotter",
+          "filename": "indicators\\HPotter\\Combo_2_20_EMA___Bear_Power.pine"
+        },
+        {
+          "title": "Bearish Engulfing Automatic Finding Script",
+          "link": "https://www.tradingview.com/script/HUK6vAGL-Bearish-Engulfing-Automatic-Finding-Script/",
+          "boosts": 120,
+          "is_strategy": false,
+          "author": "HPotter",
+          "filename": "indicators\\HPotter\\Bearish_Engulfing_Automatic_Finding_Script.pine"
+        }
+      ]
+    },
+    "Madrid": {
+      "display_name": "Madrid",
+      "scripts_found": 19,
+      "scripts": [
+        {
+          "title": "Madrid MA Ribbon Bar v2",
+          "link": "https://www.tradingview.com/script/n4rW85zV-Madrid-MA-Ribbon-Bar-v2/",
+          "boosts": 5012,
+          "is_strategy": false,
+          "author": "Madrid",
+          "filename": "indicators\\Madrid\\Madrid_MA_Ribbon_Bar_v2.pine"
+        },
+        {
+          "title": "Madrid Trend Squeeze",
+          "link": "https://www.tradingview.com/script/9bUUSzM3-Madrid-Trend-Squeeze/",
+          "boosts": 4488,
+          "is_strategy": false,
+          "author": "Madrid",
+          "filename": "indicators\\Madrid\\Madrid_Trend_Squeeze.pine"
+        },
+        {
+          "title": "Bollinger Bands",
+          "link": "https://www.tradingview.com/script/ViWAOiIc-Bollinger-Bands/",
+          "boosts": 3300,
+          "is_strategy": false,
+          "author": "Madrid",
+          "filename": "indicators\\Madrid\\Bollinger_Bands.pine"
+        },
+        {
+          "title": "Madrid MA Ribbon Bar",
+          "link": "https://www.tradingview.com/script/g9HYCp3x-Madrid-MA-Ribbon-Bar/",
+          "boosts": 2363,
+          "is_strategy": false,
+          "author": "Madrid",
+          "filename": "indicators\\Madrid\\Madrid_MA_Ribbon_Bar.pine"
+        },
+        {
+          "title": "Madrid Sinewave",
+          "link": "https://www.tradingview.com/script/KX6oMBa8-Madrid-Sinewave/",
+          "boosts": 1605,
+          "is_strategy": false,
+          "author": "Madrid",
+          "filename": "indicators\\Madrid\\Madrid_Sinewave.pine"
+        },
+        {
+          "title": "Madrid Slide",
+          "link": "https://www.tradingview.com/script/oZ2hZF1x-Madrid-Slide/",
+          "boosts": 1480,
+          "is_strategy": false,
+          "author": "Madrid",
+          "filename": "indicators\\Madrid\\Madrid_Slide.pine"
+        },
+        {
+          "title": "Madrid Bull Bear Sentiment",
+          "link": "https://www.tradingview.com/script/f9OdIHQf-Madrid-Bull-Bear-Sentiment/",
+          "boosts": 1119,
+          "is_strategy": false,
+          "author": "Madrid",
+          "filename": "indicators\\Madrid\\Madrid_Bull_Bear_Sentiment.pine"
+        },
+        {
+          "title": "Madrid Trend Spotter",
+          "link": "https://www.tradingview.com/script/66fYQfRu-Madrid-Trend-Spotter/",
+          "boosts": 940,
+          "is_strategy": false,
+          "author": "Madrid",
+          "filename": "indicators\\Madrid\\Madrid_Trend_Spotter.pine"
+        },
+        {
+          "title": "Madrid Bull Bear Sentiment",
+          "link": "https://www.tradingview.com/script/4vBxsw2R-Madrid-Bull-Bear-Sentiment/",
+          "boosts": 849,
+          "is_strategy": false,
+          "author": "Madrid",
+          "filename": "indicators\\Madrid\\Madrid_Bull_Bear_Sentiment.pine"
+        },
+        {
+          "title": "Madrid Heat Map",
+          "link": "https://www.tradingview.com/script/TVLTG9du-Madrid-Heat-Map/",
+          "boosts": 832,
+          "is_strategy": false,
+          "author": "Madrid",
+          "filename": "indicators\\Madrid\\Madrid_Heat_Map.pine"
+        },
+        {
+          "title": "Madrid Donchian Channel",
+          "link": "https://www.tradingview.com/script/k3mtN1Wf-Madrid-Donchian-Channel/",
+          "boosts": 770,
+          "is_strategy": false,
+          "author": "Madrid",
+          "filename": "indicators\\Madrid\\Madrid_Donchian_Channel.pine"
+        },
+        {
+          "title": "Madrid Vector",
+          "link": "https://www.tradingview.com/script/lnXyxOLr-Madrid-Vector/",
+          "boosts": 728,
+          "is_strategy": false,
+          "author": "Madrid",
+          "filename": "indicators\\Madrid\\Madrid_Vector.pine"
+        },
+        {
+          "title": "MWho is in Control",
+          "link": "https://www.tradingview.com/script/bWcHHwAi-MWho-is-in-Control/",
+          "boosts": 635,
+          "is_strategy": false,
+          "author": "Madrid",
+          "filename": "indicators\\Madrid\\MWho_is_in_Control.pine"
+        },
+        {
+          "title": "Madrid Donchian Bar",
+          "link": "https://www.tradingview.com/script/TdlGUxob-Madrid-Donchian-Bar/",
+          "boosts": 499,
+          "is_strategy": false,
+          "author": "Madrid",
+          "filename": "indicators\\Madrid\\Madrid_Donchian_Bar.pine"
+        },
+        {
+          "title": "Moving Average Background",
+          "link": "https://www.tradingview.com/script/wzKUSn1x-Moving-Average-Background/",
+          "boosts": 408,
+          "is_strategy": false,
+          "author": "Madrid",
+          "filename": "indicators\\Madrid\\Moving_Average_Background.pine"
+        },
+        {
+          "title": "Madrid Bollinger Bands %D",
+          "link": "https://www.tradingview.com/script/VXsmRAFi-Madrid-Bollinger-Bands-D/",
+          "boosts": 360,
+          "is_strategy": false,
+          "author": "Madrid",
+          "filename": "indicators\\Madrid\\Madrid_Bollinger_Bands__D.pine"
+        },
+        {
+          "title": "Madrid Bollinger Bands Width",
+          "link": "https://www.tradingview.com/script/Gvi066TT-Madrid-Bollinger-Bands-Width/",
+          "boosts": 280,
+          "is_strategy": false,
+          "author": "Madrid",
+          "filename": "indicators\\Madrid\\Madrid_Bollinger_Bands_Width.pine"
+        },
+        {
+          "title": "Madrid Bollinger Bands SD",
+          "link": "https://www.tradingview.com/script/cRkD0IKk-Madrid-Bollinger-Bands-SD/",
+          "boosts": 239,
+          "is_strategy": false,
+          "author": "Madrid",
+          "filename": "indicators\\Madrid\\Madrid_Bollinger_Bands_SD.pine"
+        },
+        {
+          "title": "Madrid Bollinger Bands Background",
+          "link": "https://www.tradingview.com/script/cvQdpivB-Madrid-Bollinger-Bands-Background/",
+          "boosts": 160,
+          "is_strategy": false,
+          "author": "Madrid",
+          "filename": "indicators\\Madrid\\Madrid_Bollinger_Bands_Background.pine"
+        }
+      ]
+    },
+    "glaz": {
+      "display_name": "glaz",
+      "scripts_found": 12,
+      "scripts": [
+        {
+          "title": "RSI Candles",
+          "link": "https://www.tradingview.com/script/RADlhsKE-RSI-Candles/",
+          "boosts": 23427,
+          "is_strategy": false,
+          "author": "glaz",
+          "filename": "indicators\\glaz\\RSI_Candles.pine"
+        },
+        {
+          "title": "Matrix Series",
+          "link": "https://www.tradingview.com/script/2X2cVLhb-Matrix-Series/",
+          "boosts": 5592,
+          "is_strategy": false,
+          "author": "glaz",
+          "filename": "indicators\\glaz\\Matrix_Series.pine"
+        },
+        {
+          "title": "Slow Heiken Ashi",
+          "link": "https://www.tradingview.com/script/FQSkMjTT-Slow-Heiken-Ashi/",
+          "boosts": 4670,
+          "is_strategy": false,
+          "author": "glaz",
+          "filename": "indicators\\glaz\\Slow_Heiken_Ashi.pine"
+        },
+        {
+          "title": "Trend Magic",
+          "link": "https://www.tradingview.com/script/Wpy6qdyl-Trend-Magic/",
+          "boosts": 4597,
+          "is_strategy": false,
+          "author": "glaz",
+          "filename": "indicators\\glaz\\Trend_Magic.pine"
+        },
+        {
+          "title": "Leledc Exhaustion Bar",
+          "link": "https://www.tradingview.com/script/2rZDPyaC-Leledc-Exhaustion-Bar/",
+          "boosts": 3355,
+          "is_strategy": false,
+          "author": "glaz",
+          "filename": "indicators\\glaz\\Leledc_Exhaustion_Bar.pine"
+        },
+        {
+          "title": "Normalized MACD",
+          "link": "https://www.tradingview.com/script/d64lSwoT-Normalized-MACD/",
+          "boosts": 2350,
+          "is_strategy": false,
+          "author": "glaz",
+          "filename": "indicators\\glaz\\Normalized_MACD.pine"
+        },
+        {
+          "title": "QQE MT4",
+          "link": "https://www.tradingview.com/script/IYfA9R2k-QQE-MT4/",
+          "boosts": 2226,
+          "is_strategy": false,
+          "author": "glaz",
+          "filename": "indicators\\glaz\\QQE_MT4.pine"
+        },
+        {
+          "title": "Ehlers Early Onset Trend",
+          "link": "https://www.tradingview.com/script/aMxmbCFv-Ehlers-Early-Onset-Trend/",
+          "boosts": 1618,
+          "is_strategy": false,
+          "author": "glaz",
+          "filename": "indicators\\glaz\\Ehlers_Early_Onset_Trend.pine"
+        },
+        {
+          "title": "Ehlrers StochCCI",
+          "link": "https://www.tradingview.com/script/OC5yz8CP-Ehlrers-StochCCI/",
+          "boosts": 1382,
+          "is_strategy": false,
+          "author": "glaz",
+          "filename": "indicators\\glaz\\Ehlrers_StochCCI.pine"
+        },
+        {
+          "title": "Linear Regression Channel Clone",
+          "link": "https://www.tradingview.com/script/Mk7G47nS-Linear-Regression-Channel-Clone/",
+          "boosts": 1349,
+          "is_strategy": false,
+          "author": "glaz",
+          "filename": "indicators\\glaz\\Linear_Regression_Channel_Clone.pine"
+        },
+        {
+          "title": "QQE",
+          "link": "https://www.tradingview.com/script/tJ6vtBBe-QQE/",
+          "boosts": 1308,
+          "is_strategy": false,
+          "author": "glaz",
+          "filename": "indicators\\glaz\\QQE.pine"
+        },
+        {
+          "title": "EMA RSI Adaptive",
+          "link": "https://www.tradingview.com/script/RbaBA3DT-EMA-RSI-Adaptive/",
+          "boosts": 437,
+          "is_strategy": false,
+          "author": "glaz",
+          "filename": "indicators\\glaz\\EMA_RSI_Adaptive.pine"
+        }
+      ]
+    },
+    "LazyBear": {
+      "display_name": "LazyBear",
+      "scripts_found": 20,
+      "scripts": [
+        {
+          "title": "Impulse MACD [LazyBear]",
+          "link": "https://www.tradingview.com/script/qt6xLfLi-Impulse-MACD-LazyBear/",
+          "boosts": 9216,
+          "is_strategy": false,
+          "author": "LazyBear",
+          "filename": "indicators\\LazyBear\\Impulse_MACD__LazyBear_.pine"
+        },
+        {
+          "title": "DecisionPoint Price Momentum Oscillator [LazyBear]",
+          "link": "https://www.tradingview.com/script/5e9WBJwE-DecisionPoint-Price-Momentum-Oscillator-LazyBear/",
+          "boosts": 9202,
+          "is_strategy": false,
+          "author": "LazyBear",
+          "filename": "indicators\\LazyBear\\DecisionPoint_Price_Momentum_Oscillator__LazyBear_.pine"
+        },
+        {
+          "title": "Ehlers Instantaneous Trend [LazyBear]",
+          "link": "https://www.tradingview.com/script/DaHLcICg-Ehlers-Instantaneous-Trend-LazyBear/",
+          "boosts": 9003,
+          "is_strategy": false,
+          "author": "LazyBear",
+          "filename": "indicators\\LazyBear\\Ehlers_Instantaneous_Trend__LazyBear_.pine"
+        },
+        {
+          "title": "Ehlers MESA Adaptive Moving Average [LazyBear]",
+          "link": "https://www.tradingview.com/script/foQxLbU3-Ehlers-MESA-Adaptive-Moving-Average-LazyBear/",
+          "boosts": 6148,
+          "is_strategy": false,
+          "author": "LazyBear",
+          "filename": "indicators\\LazyBear\\Ehlers_MESA_Adaptive_Moving_Average__LazyBear_.pine"
+        },
+        {
+          "title": "Premier RSI Oscillator [LazyBear]",
+          "link": "https://www.tradingview.com/script/nExsfauf-Premier-RSI-Oscillator-LazyBear/",
+          "boosts": 5688,
+          "is_strategy": false,
+          "author": "LazyBear",
+          "filename": "indicators\\LazyBear\\Premier_RSI_Oscillator__LazyBear_.pine"
+        },
+        {
+          "title": "Ehlers Stochastic CG Oscillator [LazyBear]",
+          "link": "https://www.tradingview.com/script/aX0yTFaA-Ehlers-Stochastic-CG-Oscillator-LazyBear/",
+          "boosts": 5174,
+          "is_strategy": false,
+          "author": "LazyBear",
+          "filename": "indicators\\LazyBear\\Ehlers_Stochastic_CG_Oscillator__LazyBear_.pine"
+        },
+        {
+          "title": "Composite Momentum Index [LazyBear]",
+          "link": "https://www.tradingview.com/script/BkHytNuJ-Composite-Momentum-Index-LazyBear/",
+          "boosts": 4052,
+          "is_strategy": false,
+          "author": "LazyBear",
+          "filename": "indicators\\LazyBear\\Composite_Momentum_Index__LazyBear_.pine"
+        },
+        {
+          "title": "ATR Pips [LazyBear]",
+          "link": "https://www.tradingview.com/script/O2DdCiML-ATR-Pips-LazyBear/",
+          "boosts": 3872,
+          "is_strategy": false,
+          "author": "LazyBear",
+          "filename": "indicators\\LazyBear\\ATR_Pips__LazyBear_.pine"
+        },
+        {
+          "title": "Absolute Strength Index Oscillator [LazyBear]",
+          "link": "https://www.tradingview.com/script/E6xccTf1-Absolute-Strength-Index-Oscillator-LazyBear/",
+          "boosts": 3135,
+          "is_strategy": false,
+          "author": "LazyBear",
+          "filename": "indicators\\LazyBear\\Absolute_Strength_Index_Oscillator__LazyBear_.pine"
+        },
+        {
+          "title": "Firefly Oscillator [LazyBear]",
+          "link": "https://www.tradingview.com/script/pgvRuoUi-Firefly-Oscillator-LazyBear/",
+          "boosts": 3098,
+          "is_strategy": false,
+          "author": "LazyBear",
+          "filename": "indicators\\LazyBear\\Firefly_Oscillator__LazyBear_.pine"
+        },
+        {
+          "title": "DiNapoli MACD & Stoch [LazyBear]",
+          "link": "https://www.tradingview.com/script/skgtULNh-DiNapoli-MACD-Stoch-LazyBear/",
+          "boosts": 2611,
+          "is_strategy": false,
+          "author": "LazyBear",
+          "filename": "indicators\\LazyBear\\DiNapoli_MACD___Stoch__LazyBear_.pine"
+        },
+        {
+          "title": "Ehlers Smoothed Adaptive Momentum [LazyBear]",
+          "link": "https://www.tradingview.com/script/vIE6adMm-Ehlers-Smoothed-Adaptive-Momentum-LazyBear/",
+          "boosts": 2596,
+          "is_strategy": false,
+          "author": "LazyBear",
+          "filename": "indicators\\LazyBear\\Ehlers_Smoothed_Adaptive_Momentum__LazyBear_.pine"
+        },
+        {
+          "title": "Adaptive Ergodic Candlestick Oscillator [LazyBear]",
+          "link": "https://www.tradingview.com/script/vWzBujcZ-Adaptive-Ergodic-Candlestick-Oscillator-LazyBear/",
+          "boosts": 2585,
+          "is_strategy": false,
+          "author": "LazyBear",
+          "filename": "indicators\\LazyBear\\Adaptive_Ergodic_Candlestick_Oscillator__LazyBear_.pine"
+        },
+        {
+          "title": "Apirine Slow RSI [LazyBear]",
+          "link": "https://www.tradingview.com/script/3VDdQZei-Apirine-Slow-RSI-LazyBear/",
+          "boosts": 2508,
+          "is_strategy": false,
+          "author": "LazyBear",
+          "filename": "indicators\\LazyBear\\Apirine_Slow_RSI__LazyBear_.pine"
+        },
+        {
+          "title": "Ehlers Center of Gravity Oscillator [LazyBear]",
+          "link": "https://www.tradingview.com/script/gFkGeFH4-Ehlers-Center-of-Gravity-Oscillator-LazyBear/",
+          "boosts": 2427,
+          "is_strategy": false,
+          "author": "LazyBear",
+          "filename": "indicators\\LazyBear\\Ehlers_Center_of_Gravity_Oscillator__LazyBear_.pine"
+        },
+        {
+          "title": "Ehlers Adaptive Cyber Cycle Indicator [LazyBear]",
+          "link": "https://www.tradingview.com/script/3lV1e3ci-Ehlers-Adaptive-Cyber-Cycle-Indicator-LazyBear/",
+          "boosts": 1858,
+          "is_strategy": false,
+          "author": "LazyBear",
+          "filename": "indicators\\LazyBear\\Ehlers_Adaptive_Cyber_Cycle_Indicator__LazyBear_.pine"
+        },
+        {
+          "title": "Ehlers Adaptive CG Indicator [LazyBear]",
+          "link": "https://www.tradingview.com/script/Nz4ABg9w-Ehlers-Adaptive-CG-Indicator-LazyBear/",
+          "boosts": 1849,
+          "is_strategy": false,
+          "author": "LazyBear",
+          "filename": "indicators\\LazyBear\\Ehlers_Adaptive_CG_Indicator__LazyBear_.pine"
+        },
+        {
+          "title": "Ehlers Simple Cycle Indicator [LazyBear]",
+          "link": "https://www.tradingview.com/script/xQ4mP4kc-Ehlers-Simple-Cycle-Indicator-LazyBear/",
+          "boosts": 1835,
+          "is_strategy": false,
+          "author": "LazyBear",
+          "filename": "indicators\\LazyBear\\Ehlers_Simple_Cycle_Indicator__LazyBear_.pine"
+        },
+        {
+          "title": "CCT StochRSI [LazyBear]",
+          "link": "https://www.tradingview.com/script/T1IH3ijF-CCT-StochRSI-LazyBear/",
+          "boosts": 1436,
+          "is_strategy": false,
+          "author": "LazyBear",
+          "filename": "indicators\\LazyBear\\CCT_StochRSI__LazyBear_.pine"
+        },
+        {
+          "title": "Ehlers Cyber Cycle Indicator [LazyBear]",
+          "link": "https://www.tradingview.com/script/bJdq9y5j-Ehlers-Cyber-Cycle-Indicator-LazyBear/",
+          "boosts": 1354,
+          "is_strategy": false,
+          "author": "LazyBear",
+          "filename": "indicators\\LazyBear\\Ehlers_Cyber_Cycle_Indicator__LazyBear_.pine"
+        }
+      ]
+    },
+    "UDAY_C_Santhakumar": {
+      "display_name": "UDAY_C_Santhakumar",
+      "scripts_found": 20,
+      "scripts": [
+        {
+          "title": "UCS_TTM_Wave A & B & C",
+          "link": "https://www.tradingview.com/script/nYOzTA1Y-UCS-TTM-Wave-A-B-C/",
+          "boosts": 2492,
+          "is_strategy": false,
+          "author": "UDAY_C_Santhakumar",
+          "filename": "indicators\\UDAY_C_Santhakumar\\UCS_TTM_Wave_A___B___C.pine"
+        },
+        {
+          "title": "Rob Hoffman's Inventory Retracement Bar - by UCSgears",
+          "link": "https://www.tradingview.com/script/VNByUGpE-Rob-Hoffman-s-Inventory-Retracement-Bar-by-UCSgears/",
+          "boosts": 1606,
+          "is_strategy": false,
+          "author": "UDAY_C_Santhakumar",
+          "filename": "indicators\\UDAY_C_Santhakumar\\Rob_Hoffman_s_Inventory_Retracement_Bar_-_by_UCSgears.pine"
+        },
+        {
+          "title": "UCS_S_Stochastic Pop and Drop Strategy",
+          "link": "https://www.tradingview.com/script/UzsROBIg-UCS-S-Stochastic-Pop-and-Drop-Strategy/",
+          "boosts": 1395,
+          "is_strategy": false,
+          "author": "UDAY_C_Santhakumar",
+          "filename": "indicators\\UDAY_C_Santhakumar\\UCS_S_Stochastic_Pop_and_Drop_Strategy.pine"
+        },
+        {
+          "title": "UCS_S_Steve Primo - Strategy 4 - Version 2",
+          "link": "https://www.tradingview.com/script/XCYqjugg-UCS-S-Steve-Primo-Strategy-4-Version-2/",
+          "boosts": 1277,
+          "is_strategy": false,
+          "author": "UDAY_C_Santhakumar",
+          "filename": "indicators\\UDAY_C_Santhakumar\\UCS_S_Steve_Primo_-_Strategy_4_-_Version_2.pine"
+        },
+        {
+          "title": "UCS_S_Steve Primo - Strategy #8",
+          "link": "https://www.tradingview.com/script/Ha1E0nVZ-UCS-S-Steve-Primo-Strategy-8/",
+          "boosts": 1042,
+          "is_strategy": false,
+          "author": "UDAY_C_Santhakumar",
+          "filename": "indicators\\UDAY_C_Santhakumar\\UCS_S_Steve_Primo_-_Strategy__8.pine"
+        },
+        {
+          "title": "UCS_Extreme Snap Back (TVI) V2",
+          "link": "https://www.tradingview.com/script/n3o7yet7-UCS-Extreme-Snap-Back-TVI-V2/",
+          "boosts": 1002,
+          "is_strategy": false,
+          "author": "UDAY_C_Santhakumar",
+          "filename": "indicators\\UDAY_C_Santhakumar\\UCS_Extreme_Snap_Back__TVI__V2.pine"
+        },
+        {
+          "title": "UCS_Top & Bottom Candle Arrows as an overlay",
+          "link": "https://www.tradingview.com/script/HO97N5fl-UCS-Top-Bottom-Candle-Arrows-as-an-overlay/",
+          "boosts": 946,
+          "is_strategy": false,
+          "author": "UDAY_C_Santhakumar",
+          "filename": "indicators\\UDAY_C_Santhakumar\\UCS_Top___Bottom_Candle_Arrows_as_an_overlay.pine"
+        },
+        {
+          "title": "UCS_Trend",
+          "link": "https://www.tradingview.com/script/MFrKHQCZ-UCS-Trend/",
+          "boosts": 924,
+          "is_strategy": false,
+          "author": "UDAY_C_Santhakumar",
+          "filename": "indicators\\UDAY_C_Santhakumar\\UCS_Trend.pine"
+        },
+        {
+          "title": "UCS_TTM - Reversion Bands",
+          "link": "https://www.tradingview.com/script/JpAQTvZH-UCS-TTM-Reversion-Bands/",
+          "boosts": 827,
+          "is_strategy": false,
+          "author": "UDAY_C_Santhakumar",
+          "filename": "indicators\\UDAY_C_Santhakumar\\UCS_TTM_-_Reversion_Bands.pine"
+        },
+        {
+          "title": "UCS_Extreme Snap Back (TVI)",
+          "link": "https://www.tradingview.com/script/miFlQqKD-UCS-Extreme-Snap-Back-TVI/",
+          "boosts": 824,
+          "is_strategy": false,
+          "author": "UDAY_C_Santhakumar",
+          "filename": "indicators\\UDAY_C_Santhakumar\\UCS_Extreme_Snap_Back__TVI_.pine"
+        },
+        {
+          "title": "UCS_S_Steve Primo - Strategy 1",
+          "link": "https://www.tradingview.com/script/oAbuyZv1-UCS-S-Steve-Primo-Strategy-1/",
+          "boosts": 601,
+          "is_strategy": false,
+          "author": "UDAY_C_Santhakumar",
+          "filename": "indicators\\UDAY_C_Santhakumar\\UCS_S_Steve_Primo_-_Strategy_1.pine"
+        },
+        {
+          "title": "UCS_S_Steve Primo - Strategy 3",
+          "link": "https://www.tradingview.com/script/ZzprSVpx-UCS-S-Steve-Primo-Strategy-3/",
+          "boosts": 557,
+          "is_strategy": false,
+          "author": "UDAY_C_Santhakumar",
+          "filename": "indicators\\UDAY_C_Santhakumar\\UCS_S_Steve_Primo_-_Strategy_3.pine"
+        },
+        {
+          "title": "TSM Donchian Moving Average System_by_ucsgears",
+          "link": "https://www.tradingview.com/script/2QlSKxxY-TSM-Donchian-Moving-Average-System-by-ucsgears/",
+          "boosts": 435,
+          "is_strategy": false,
+          "author": "UDAY_C_Santhakumar",
+          "filename": "indicators\\UDAY_C_Santhakumar\\TSM_Donchian_Moving_Average_System_by_ucsgears.pine"
+        },
+        {
+          "title": "UCS_Trader Pressure Indicator -V1",
+          "link": "https://www.tradingview.com/script/8LsbxXZC-UCS-Trader-Pressure-Indicator-V1/",
+          "boosts": 418,
+          "is_strategy": false,
+          "author": "UDAY_C_Santhakumar",
+          "filename": "indicators\\UDAY_C_Santhakumar\\UCS_Trader_Pressure_Indicator_-V1.pine"
+        },
+        {
+          "title": "UCS_Ready Set Go",
+          "link": "https://www.tradingview.com/script/XA6kskYR-UCS-Ready-Set-Go/",
+          "boosts": 418,
+          "is_strategy": false,
+          "author": "UDAY_C_Santhakumar",
+          "filename": "indicators\\UDAY_C_Santhakumar\\UCS_Ready_Set_Go.pine"
+        },
+        {
+          "title": "SP_Relative Strength Index",
+          "link": "https://www.tradingview.com/script/Z3WCa7tZ-SP-Relative-Strength-Index/",
+          "boosts": 408,
+          "is_strategy": false,
+          "author": "UDAY_C_Santhakumar",
+          "filename": "indicators\\UDAY_C_Santhakumar\\SP_Relative_Strength_Index.pine"
+        },
+        {
+          "title": "UCSgears_Transaction Valuation Index",
+          "link": "https://www.tradingview.com/script/t1xyBMdi-UCSgears-Transaction-Valuation-Index/",
+          "boosts": 312,
+          "is_strategy": false,
+          "author": "UDAY_C_Santhakumar",
+          "filename": "indicators\\UDAY_C_Santhakumar\\UCSgears_Transaction_Valuation_Index.pine"
+        },
+        {
+          "title": "UCS_Option Expiry",
+          "link": "https://www.tradingview.com/script/InS1rNqE-UCS-Option-Expiry/",
+          "boosts": 227,
+          "is_strategy": false,
+          "author": "UDAY_C_Santhakumar",
+          "filename": "indicators\\UDAY_C_Santhakumar\\UCS_Option_Expiry.pine"
+        },
+        {
+          "title": "UCS_3rd Friday",
+          "link": "https://www.tradingview.com/script/m2dC0Blg-UCS-3rd-Friday/",
+          "boosts": 148,
+          "is_strategy": false,
+          "author": "UDAY_C_Santhakumar",
+          "filename": "indicators\\UDAY_C_Santhakumar\\UCS_3rd_Friday.pine"
+        },
+        {
+          "title": "UCS_Fridays",
+          "link": "https://www.tradingview.com/script/tthFv0mP-UCS-Fridays/",
+          "boosts": 131,
+          "is_strategy": false,
+          "author": "UDAY_C_Santhakumar",
+          "filename": "indicators\\UDAY_C_Santhakumar\\UCS_Fridays.pine"
+        }
+      ]
+    },
+    "vdubus": {
+      "display_name": "vdubus",
+      "scripts_found": 18,
+      "scripts": [
+        {
+          "title": "Vdubus Divergence Wave Pattern Generator V1",
+          "link": "https://www.tradingview.com/script/fi2LLSGz-Vdubus-Divergence-Wave-Pattern-Generator-V1/",
+          "boosts": 6013,
+          "is_strategy": false,
+          "author": "vdubus",
+          "filename": "indicators\\vdubus\\Vdubus_Divergence_Wave_Pattern_Generator_V1.pine"
+        },
+        {
+          "title": "SSL Channel- Automatic Indicator by forexcakemix689 copy:",
+          "link": "https://www.tradingview.com/script/K0tQNyfK-SSL-Channel-Automatic-Indicator-by-forexcakemix689-copy/",
+          "boosts": 3939,
+          "is_strategy": true,
+          "author": "vdubus",
+          "filename": "indicators\\vdubus\\SSL_Channel-_Automatic_Indicator_by_forexcakemix689_copy_.pine"
+        },
+        {
+          "title": "Vdubs Mr Mani Keeps Selling my SH*T",
+          "link": "https://www.tradingview.com/script/sYe8wTd9-Vdubs-Mr-Mani-Keeps-Selling-my-SH-T/",
+          "boosts": 3217,
+          "is_strategy": false,
+          "author": "vdubus",
+          "filename": "indicators\\vdubus\\Vdubs_Mr_Mani_Keeps_Selling_my_SH_T.pine"
+        },
+        {
+          "title": "Momentum VMA KITKAT CROSS v2.1",
+          "link": "https://www.tradingview.com/script/grzOt65I-Momentum-VMA-KITKAT-CROSS-v2-1/",
+          "boosts": 1503,
+          "is_strategy": false,
+          "author": "vdubus",
+          "filename": "indicators\\vdubus\\Momentum_VMA_KITKAT_CROSS_v2.1.pine"
+        },
+        {
+          "title": "VDUB BB %B REVERSAL_v4",
+          "link": "https://www.tradingview.com/script/LKXdBzAl-VDUB-BB-B-REVERSAL-v4/",
+          "boosts": 1206,
+          "is_strategy": false,
+          "author": "vdubus",
+          "filename": "indicators\\vdubus\\VDUB_BB__B_REVERSAL_v4.pine"
+        },
+        {
+          "title": "Vdub_HMA_Bands",
+          "link": "https://www.tradingview.com/script/DBCP9W47-Vdub-HMA-Bands/",
+          "boosts": 752,
+          "is_strategy": false,
+          "author": "vdubus",
+          "filename": "indicators\\vdubus\\Vdub_HMA_Bands.pine"
+        },
+        {
+          "title": "Vdub_HMA_Bands_V2",
+          "link": "https://www.tradingview.com/script/ONqyIYrK-Vdub-HMA-Bands-V2/",
+          "boosts": 721,
+          "is_strategy": false,
+          "author": "vdubus",
+          "filename": "indicators\\vdubus\\Vdub_HMA_Bands_V2.pine"
+        },
+        {
+          "title": "Momentum VMA CROSS",
+          "link": "https://www.tradingview.com/script/eDSjDoD2-Momentum-VMA-CROSS/",
+          "boosts": 667,
+          "is_strategy": false,
+          "author": "vdubus",
+          "filename": "indicators\\vdubus\\Momentum_VMA_CROSS.pine"
+        },
+        {
+          "title": "Momentum VMA KITKAT CROSS v2",
+          "link": "https://www.tradingview.com/script/ffRCVvYT-Momentum-VMA-KITKAT-CROSS-v2/",
+          "boosts": 639,
+          "is_strategy": false,
+          "author": "vdubus",
+          "filename": "indicators\\vdubus\\Momentum_VMA_KITKAT_CROSS_v2.pine"
+        },
+        {
+          "title": "HMA Pro Flow [Mladen] + Signals",
+          "link": "https://www.tradingview.com/script/A8AoLSrN-HMA-Pro-Flow-Mladen-Signals/",
+          "boosts": 609,
+          "is_strategy": false,
+          "author": "vdubus",
+          "filename": "indicators\\vdubus\\HMA_Pro_Flow__Mladen____Signals.pine"
+        },
+        {
+          "title": "VDUB_KITKAT_V1_EXP",
+          "link": "https://www.tradingview.com/script/ZKfs4CI5-VDUB-KITKAT-V1-EXP/",
+          "boosts": 526,
+          "is_strategy": false,
+          "author": "vdubus",
+          "filename": "indicators\\vdubus\\VDUB_KITKAT_V1_EXP.pine"
+        },
+        {
+          "title": "Smart Signals [Vdubus]",
+          "link": "https://www.tradingview.com/script/Irw4g2iZ-Smart-Signals-Vdubus/",
+          "boosts": 520,
+          "is_strategy": false,
+          "author": "vdubus",
+          "filename": "indicators\\vdubus\\Smart_Signals__Vdubus_.pine"
+        },
+        {
+          "title": "HMA 34 Dual-Fractal Projections - Vdubus",
+          "link": "https://www.tradingview.com/script/Gl4tyQcc-HMA-34-Dual-Fractal-Projections-Vdubus/",
+          "boosts": 459,
+          "is_strategy": false,
+          "author": "vdubus",
+          "filename": "indicators\\vdubus\\HMA_34_Dual-Fractal_Projections_-_Vdubus.pine"
+        },
+        {
+          "title": "MACD_Tracer_VDUB_V1",
+          "link": "https://www.tradingview.com/script/Ge98ys9R-MACD-Tracer-VDUB-V1/",
+          "boosts": 317,
+          "is_strategy": false,
+          "author": "vdubus",
+          "filename": "indicators\\vdubus\\MACD_Tracer_VDUB_V1.pine"
+        },
+        {
+          "title": "BO_EXPIRY_VDUB_v2 - Projection",
+          "link": "https://www.tradingview.com/script/kS2p3pDO-BO-EXPIRY-VDUB-v2-Projection/",
+          "boosts": 258,
+          "is_strategy": false,
+          "author": "vdubus",
+          "filename": "indicators\\vdubus\\BO_EXPIRY_VDUB_v2_-_Projection.pine"
+        },
+        {
+          "title": "Expansion Setup: Entries & structure + Alerts",
+          "link": "https://www.tradingview.com/script/RHOrNNMH-Expansion-Setup-Entries-structure-Alerts/",
+          "boosts": 238,
+          "is_strategy": false,
+          "author": "vdubus",
+          "filename": "indicators\\vdubus\\Expansion_Setup__Entries___structure___Alerts.pine"
+        },
+        {
+          "title": "Vdubus Momentum Lock (Overlay)",
+          "link": "https://www.tradingview.com/script/Ec82fgng-Vdubus-Momentum-Lock-Overlay/",
+          "boosts": 213,
+          "is_strategy": false,
+          "author": "vdubus",
+          "filename": "indicators\\vdubus\\Vdubus_Momentum_Lock__Overlay_.pine"
+        },
+        {
+          "title": "Vdubus TrixStoch + HMA Filter",
+          "link": "https://www.tradingview.com/script/msDnlapN-Vdubus-TrixStoch-HMA-Filter/",
+          "boosts": 169,
+          "is_strategy": false,
+          "author": "vdubus",
+          "filename": "indicators\\vdubus\\Vdubus_TrixStoch___HMA_Filter.pine"
+        }
+      ]
+    },
+    "RicardoSantos": {
+      "display_name": "RicardoSantos",
+      "scripts_found": 6,
+      "scripts": [
+        {
+          "title": "Test - Symbiotic Exiton Measure Enthropic Nexus indicator",
+          "link": "https://www.tradingview.com/script/UbraQho2-Test-Symbiotic-Exiton-Measure-Enthropic-Nexus-indicator/",
+          "boosts": 308,
+          "is_strategy": false,
+          "author": "RicardoSantos",
+          "filename": "indicators\\RicardoSantos\\Test_-_Symbiotic_Exiton_Measure_Enthropic_Nexus_indicator.pine"
+        },
+        {
+          "title": "DemaRSI Strategy",
+          "link": "https://www.tradingview.com/script/zKFaxeiD-DemaRSI-Strategy/",
+          "boosts": 290,
+          "is_strategy": true,
+          "author": "RicardoSantos",
+          "filename": "indicators\\RicardoSantos\\DemaRSI_Strategy.pine"
+        },
+        {
+          "title": "MicuRobert EMA Cross Strategy",
+          "link": "https://www.tradingview.com/script/0nEDJzMX-MicuRobert-EMA-Cross-Strategy/",
+          "boosts": 212,
+          "is_strategy": true,
+          "author": "RicardoSantos",
+          "filename": "indicators\\RicardoSantos\\MicuRobert_EMA_Cross_Strategy.pine"
+        },
+        {
+          "title": "Cumulative Volume Difference Map",
+          "link": "https://www.tradingview.com/script/sqcFjjBf-Cumulative-Volume-Difference-Map/",
+          "boosts": 171,
+          "is_strategy": false,
+          "author": "RicardoSantos",
+          "filename": "indicators\\RicardoSantos\\Cumulative_Volume_Difference_Map.pine"
+        },
+        {
+          "title": "Local Volatility",
+          "link": "https://www.tradingview.com/script/G1TrcU9W-Local-Volatility/",
+          "boosts": 169,
+          "is_strategy": false,
+          "author": "RicardoSantos",
+          "filename": "indicators\\RicardoSantos\\Local_Volatility.pine"
+        },
+        {
+          "title": "Tutorial - Adding sessions to strategies",
+          "link": "https://www.tradingview.com/script/W2LUAkwJ-Tutorial-Adding-sessions-to-strategies/",
+          "boosts": 113,
+          "is_strategy": true,
+          "author": "RicardoSantos",
+          "filename": "indicators\\RicardoSantos\\Tutorial_-_Adding_sessions_to_strategies.pine"
+        }
+      ]
+    },
+    "JustUncleL": {
+      "display_name": "JustUncleL",
+      "scripts_found": 18,
+      "scripts": [
+        {
+          "title": "Open Close Cross Alerts NoRepaint Version by JustUncleL",
+          "link": "https://www.tradingview.com/script/BLY1wfiD-Open-Close-Cross-Alerts-NoRepaint-Version-by-JustUncleL/",
+          "boosts": 7132,
+          "is_strategy": false,
+          "author": "JustUncleL",
+          "filename": "indicators\\JustUncleL\\Open_Close_Cross_Alerts_NoRepaint_Version_by_JustUncleL.pine"
+        },
+        {
+          "title": "Pullback Trading Tool ALT R1.0 by JustUncleL",
+          "link": "https://www.tradingview.com/script/golA5CtL-Pullback-Trading-Tool-ALT-R1-0-by-JustUncleL/",
+          "boosts": 7103,
+          "is_strategy": false,
+          "author": "JustUncleL",
+          "filename": "indicators\\JustUncleL\\Pullback_Trading_Tool_ALT_R1.0_by_JustUncleL.pine"
+        },
+        {
+          "title": "Super Guppy R1.0 by JustUncleL",
+          "link": "https://www.tradingview.com/script/Lj6d7UxQ-Super-Guppy-R1-0-by-JustUncleL/",
+          "boosts": 6226,
+          "is_strategy": false,
+          "author": "JustUncleL",
+          "filename": "indicators\\JustUncleL\\Super_Guppy_R1.0_by_JustUncleL.pine"
+        },
+        {
+          "title": "Big Snapper Alerts R2.0 by JustUncleL",
+          "link": "https://www.tradingview.com/script/56tr3OzQ-Big-Snapper-Alerts-R2-0-by-JustUncleL/",
+          "boosts": 6184,
+          "is_strategy": false,
+          "author": "JustUncleL",
+          "filename": "indicators\\JustUncleL\\Big_Snapper_Alerts_R2.0_by_JustUncleL.pine"
+        },
+        {
+          "title": "Open Close Cross Strategy NoRepaint Version by JustUncleL",
+          "link": "https://www.tradingview.com/script/9wda3yUw-Open-Close-Cross-Strategy-NoRepaint-Version-by-JustUncleL/",
+          "boosts": 5842,
+          "is_strategy": true,
+          "author": "JustUncleL",
+          "filename": "indicators\\JustUncleL\\Open_Close_Cross_Strategy_NoRepaint_Version_by_JustUncleL.pine"
+        },
+        {
+          "title": "GMMA Oscillator v1 by JustUncleL",
+          "link": "https://www.tradingview.com/script/YESRunMr-GMMA-Oscillator-v1-by-JustUncleL/",
+          "boosts": 4699,
+          "is_strategy": false,
+          "author": "JustUncleL",
+          "filename": "indicators\\JustUncleL\\GMMA_Oscillator_v1_by_JustUncleL.pine"
+        },
+        {
+          "title": "Fractal and Alligator Alerts by JustUncleL",
+          "link": "https://www.tradingview.com/script/BVfxBFsd-Fractal-and-Alligator-Alerts-by-JustUncleL/",
+          "boosts": 4628,
+          "is_strategy": false,
+          "author": "JustUncleL",
+          "filename": "indicators\\JustUncleL\\Fractal_and_Alligator_Alerts_by_JustUncleL.pine"
+        },
+        {
+          "title": "[Alerts]QQE Cross v6.0 by JustUncleL",
+          "link": "https://www.tradingview.com/script/rDdpcdJx-Alerts-QQE-Cross-v6-0-by-JustUncleL/",
+          "boosts": 3569,
+          "is_strategy": false,
+          "author": "JustUncleL",
+          "filename": "indicators\\JustUncleL\\_Alerts_QQE_Cross_v6.0_by_JustUncleL.pine"
+        },
+        {
+          "title": "Price Action Candles R2.0 by JustUncleL",
+          "link": "https://www.tradingview.com/script/rjkzdznp-Price-Action-Candles-R2-0-by-JustUncleL/",
+          "boosts": 3111,
+          "is_strategy": false,
+          "author": "JustUncleL",
+          "filename": "indicators\\JustUncleL\\Price_Action_Candles_R2.0_by_JustUncleL.pine"
+        },
+        {
+          "title": "[Backtest]QQE Cross v6.0 by JustUncleL",
+          "link": "https://www.tradingview.com/script/H0TR67ED-Backtest-QQE-Cross-v6-0-by-JustUncleL/",
+          "boosts": 3012,
+          "is_strategy": true,
+          "author": "JustUncleL",
+          "filename": "indicators\\JustUncleL\\_Backtest_QQE_Cross_v6.0_by_JustUncleL.pine"
+        },
+        {
+          "title": "Flying Buddha Inside Bars Indicator v1 by JustUncleL",
+          "link": "https://www.tradingview.com/script/fau3mYk3-Flying-Buddha-Inside-Bars-Indicator-v1-by-JustUncleL/",
+          "boosts": 2879,
+          "is_strategy": false,
+          "author": "JustUncleL",
+          "filename": "indicators\\JustUncleL\\Flying_Buddha_Inside_Bars_Indicator_v1_by_JustUncleL.pine"
+        },
+        {
+          "title": "RSI Donchian R1 Alerts by JustUncleL",
+          "link": "https://www.tradingview.com/script/rf4D3m66-RSI-Donchian-R1-Alerts-by-JustUncleL/",
+          "boosts": 2646,
+          "is_strategy": false,
+          "author": "JustUncleL",
+          "filename": "indicators\\JustUncleL\\RSI_Donchian_R1_Alerts_by_JustUncleL.pine"
+        },
+        {
+          "title": "[Autoview][Alerts]Dual MA Ribbons R0.12 by JustUncleL",
+          "link": "https://www.tradingview.com/script/byHd2CqX-Autoview-Alerts-Dual-MA-Ribbons-R0-12-by-JustUncleL/",
+          "boosts": 1946,
+          "is_strategy": false,
+          "author": "JustUncleL",
+          "filename": "indicators\\JustUncleL\\_Autoview__Alerts_Dual_MA_Ribbons_R0.12_by_JustUncleL.pine"
+        },
+        {
+          "title": "Two Bar Break Line Alerts R1.0 by JustUncleL",
+          "link": "https://www.tradingview.com/script/JtQpOU6d-Two-Bar-Break-Line-Alerts-R1-0-by-JustUncleL/",
+          "boosts": 1786,
+          "is_strategy": false,
+          "author": "JustUncleL",
+          "filename": "indicators\\JustUncleL\\Two_Bar_Break_Line_Alerts_R1.0_by_JustUncleL.pine"
+        },
+        {
+          "title": "BO Swing Finder R0.6 by JustUncleL",
+          "link": "https://www.tradingview.com/script/T7HOox7D-BO-Swing-Finder-R0-6-by-JustUncleL/",
+          "boosts": 1733,
+          "is_strategy": false,
+          "author": "JustUncleL",
+          "filename": "indicators\\JustUncleL\\BO_Swing_Finder_R0.6_by_JustUncleL.pine"
+        },
+        {
+          "title": "[Autoview][BackTest]Dual MA Ribbons R0.12 by JustUncleL",
+          "link": "https://www.tradingview.com/script/KpbbCOzp-Autoview-BackTest-Dual-MA-Ribbons-R0-12-by-JustUncleL/",
+          "boosts": 1568,
+          "is_strategy": true,
+          "author": "JustUncleL",
+          "filename": "indicators\\JustUncleL\\_Autoview__BackTest_Dual_MA_Ribbons_R0.12_by_JustUncleL.pine"
+        },
+        {
+          "title": "ROC and SROC v1 by JustUncleL",
+          "link": "https://www.tradingview.com/script/gj8SCGtj-ROC-and-SROC-v1-by-JustUncleL/",
+          "boosts": 1275,
+          "is_strategy": false,
+          "author": "JustUncleL",
+          "filename": "indicators\\JustUncleL\\ROC_and_SROC_v1_by_JustUncleL.pine"
+        },
+        {
+          "title": "MTF SROC v1 by JustUncleL",
+          "link": "https://www.tradingview.com/script/Ik1KnuWX-MTF-SROC-v1-by-JustUncleL/",
+          "boosts": 743,
+          "is_strategy": false,
+          "author": "JustUncleL",
+          "filename": "indicators\\JustUncleL\\MTF_SROC_v1_by_JustUncleL.pine"
+        }
+      ]
+    },
+    "alexgrover": {
+      "display_name": "alexgrover",
+      "scripts_found": 19,
+      "scripts": [
+        {
+          "title": "A Useful MA Weighting Function For Controlling Lag & Smoothness",
+          "link": "https://www.tradingview.com/script/mheEtfmN-A-Useful-MA-Weighting-Function-For-Controlling-Lag-Smoothness/",
+          "boosts": 4672,
+          "is_strategy": false,
+          "author": "alexgrover",
+          "filename": "indicators\\alexgrover\\A_Useful_MA_Weighting_Function_For_Controlling_Lag___Smoothness.pine"
+        },
+        {
+          "title": "Andean Oscillator",
+          "link": "https://www.tradingview.com/script/x9qYvBYN-Andean-Oscillator/",
+          "boosts": 3401,
+          "is_strategy": false,
+          "author": "alexgrover",
+          "filename": "indicators\\alexgrover\\Andean_Oscillator.pine"
+        },
+        {
+          "title": "Grid Like Strategy",
+          "link": "https://www.tradingview.com/script/oxvR5vMy-Grid-Like-Strategy/",
+          "boosts": 2615,
+          "is_strategy": true,
+          "author": "alexgrover",
+          "filename": "indicators\\alexgrover\\Grid_Like_Strategy.pine"
+        },
+        {
+          "title": "Swing High/Low Anchored Spiral",
+          "link": "https://www.tradingview.com/script/J8fs5jMi-Swing-High-Low-Anchored-Spiral/",
+          "boosts": 2502,
+          "is_strategy": false,
+          "author": "alexgrover",
+          "filename": "indicators\\alexgrover\\Swing_High_Low_Anchored_Spiral.pine"
+        },
+        {
+          "title": "Optimized Linear Regression Channel",
+          "link": "https://www.tradingview.com/script/tCREqC5O-Optimized-Linear-Regression-Channel/",
+          "boosts": 2066,
+          "is_strategy": false,
+          "author": "alexgrover",
+          "filename": "indicators\\alexgrover\\Optimized_Linear_Regression_Channel.pine"
+        },
+        {
+          "title": "Intersection Value Functions",
+          "link": "https://www.tradingview.com/script/gD1gDOyI-Intersection-Value-Functions/",
+          "boosts": 1540,
+          "is_strategy": false,
+          "author": "alexgrover",
+          "filename": "indicators\\alexgrover\\Intersection_Value_Functions.pine"
+        },
+        {
+          "title": "RSI With Noise Elimination Technology (John Ehlers)",
+          "link": "https://www.tradingview.com/script/Rso1v0W9-RSI-With-Noise-Elimination-Technology-John-Ehlers/",
+          "boosts": 960,
+          "is_strategy": false,
+          "author": "alexgrover",
+          "filename": "indicators\\alexgrover\\RSI_With_Noise_Elimination_Technology__John_Ehlers_.pine"
+        },
+        {
+          "title": "Circular Candlestick Chart",
+          "link": "https://www.tradingview.com/script/3BjFD0A2-Circular-Candlestick-Chart/",
+          "boosts": 683,
+          "is_strategy": false,
+          "author": "alexgrover",
+          "filename": "indicators\\alexgrover\\Circular_Candlestick_Chart.pine"
+        },
+        {
+          "title": "Grid System With Fake Martingale",
+          "link": "https://www.tradingview.com/script/MmqKTgfH-Grid-System-With-Fake-Martingale/",
+          "boosts": 522,
+          "is_strategy": true,
+          "author": "alexgrover",
+          "filename": "indicators\\alexgrover\\Grid_System_With_Fake_Martingale.pine"
+        },
+        {
+          "title": "Linear Correlation Oscillator",
+          "link": "https://www.tradingview.com/script/94xv1HSx-Linear-Correlation-Oscillator/",
+          "boosts": 447,
+          "is_strategy": false,
+          "author": "alexgrover",
+          "filename": "indicators\\alexgrover\\Linear_Correlation_Oscillator.pine"
+        },
+        {
+          "title": "Trending True Range",
+          "link": "https://www.tradingview.com/script/8e1f2wFW-Trending-True-Range/",
+          "boosts": 411,
+          "is_strategy": false,
+          "author": "alexgrover",
+          "filename": "indicators\\alexgrover\\Trending_True_Range.pine"
+        },
+        {
+          "title": "Fair Value Gap Chart",
+          "link": "https://www.tradingview.com/script/IYA9g0BE-Fair-Value-Gap-Chart/",
+          "boosts": 389,
+          "is_strategy": false,
+          "author": "alexgrover",
+          "filename": "indicators\\alexgrover\\Fair_Value_Gap_Chart.pine"
+        },
+        {
+          "title": "A Fibonacci Moving Averages Ribbon Using One Plot",
+          "link": "https://www.tradingview.com/script/goASPM2t-A-Fibonacci-Moving-Averages-Ribbon-Using-One-Plot/",
+          "boosts": 365,
+          "is_strategy": false,
+          "author": "alexgrover",
+          "filename": "indicators\\alexgrover\\A_Fibonacci_Moving_Averages_Ribbon_Using_One_Plot.pine"
+        },
+        {
+          "title": "Percentage Price Over SMA",
+          "link": "https://www.tradingview.com/script/0ARhlYbj-Percentage-Price-Over-SMA/",
+          "boosts": 356,
+          "is_strategy": false,
+          "author": "alexgrover",
+          "filename": "indicators\\alexgrover\\Percentage_Price_Over_SMA.pine"
+        },
+        {
+          "title": "Horizontal Volume",
+          "link": "https://www.tradingview.com/script/xXB7vwmN-Horizontal-Volume/",
+          "boosts": 315,
+          "is_strategy": false,
+          "author": "alexgrover",
+          "filename": "indicators\\alexgrover\\Horizontal_Volume.pine"
+        },
+        {
+          "title": "Autocorrelogram",
+          "link": "https://www.tradingview.com/script/d8uJBCvR-Autocorrelogram/",
+          "boosts": 227,
+          "is_strategy": false,
+          "author": "alexgrover",
+          "filename": "indicators\\alexgrover\\Autocorrelogram.pine"
+        },
+        {
+          "title": "Minimum Variance SMA",
+          "link": "https://www.tradingview.com/script/rrpwCiLi-Minimum-Variance-SMA/",
+          "boosts": 202,
+          "is_strategy": false,
+          "author": "alexgrover",
+          "filename": "indicators\\alexgrover\\Minimum_Variance_SMA.pine"
+        },
+        {
+          "title": "Forward Backward EMA [Repaint]",
+          "link": "https://www.tradingview.com/script/FTQdlVYb-Forward-Backward-EMA-Repaint/",
+          "boosts": 137,
+          "is_strategy": false,
+          "author": "alexgrover",
+          "filename": "indicators\\alexgrover\\Forward_Backward_EMA__Repaint_.pine"
+        },
+        {
+          "title": "Using The AM/GM Inequality To Estimate Volatility",
+          "link": "https://www.tradingview.com/script/JvHWbSV4-Using-The-AM-GM-Inequality-To-Estimate-Volatility/",
+          "boosts": 130,
+          "is_strategy": false,
+          "author": "alexgrover",
+          "filename": "indicators\\alexgrover\\Using_The_AM_GM_Inequality_To_Estimate_Volatility.pine"
+        }
+      ]
+    },
+    "everget": {
+      "display_name": "everget",
+      "scripts_found": 8,
+      "scripts": [
+        {
+          "title": "HalfTrend",
+          "link": "https://www.tradingview.com/script/U1SJ8ubc-HalfTrend/",
+          "boosts": 12106,
+          "is_strategy": false,
+          "author": "everget",
+          "filename": "indicators\\everget\\HalfTrend.pine"
+        },
+        {
+          "title": "Nick Rypock Trailing Reverse (NRTR)",
+          "link": "https://www.tradingview.com/script/XAscppNW-Nick-Rypock-Trailing-Reverse-NRTR/",
+          "boosts": 9887,
+          "is_strategy": false,
+          "author": "everget",
+          "filename": "indicators\\everget\\Nick_Rypock_Trailing_Reverse__NRTR_.pine"
+        },
+        {
+          "title": "Money Flow Index (MFI)",
+          "link": "https://www.tradingview.com/script/hYmRLirx-Money-Flow-Index-MFI/",
+          "boosts": 3796,
+          "is_strategy": false,
+          "author": "everget",
+          "filename": "indicators\\everget\\Money_Flow_Index__MFI_.pine"
+        },
+        {
+          "title": "Stochastic",
+          "link": "https://www.tradingview.com/script/kVJIw2Ct-Stochastic/",
+          "boosts": 2310,
+          "is_strategy": false,
+          "author": "everget",
+          "filename": "indicators\\everget\\Stochastic.pine"
+        },
+        {
+          "title": "True Strength Index (TSI)",
+          "link": "https://www.tradingview.com/script/2GdqewLx-True-Strength-Index-TSI/",
+          "boosts": 2096,
+          "is_strategy": false,
+          "author": "everget",
+          "filename": "indicators\\everget\\True_Strength_Index__TSI_.pine"
+        },
+        {
+          "title": "Linear Regression (All Data)",
+          "link": "https://www.tradingview.com/script/NUeh5q6T-Linear-Regression-All-Data/",
+          "boosts": 1017,
+          "is_strategy": false,
+          "author": "everget",
+          "filename": "indicators\\everget\\Linear_Regression__All_Data_.pine"
+        },
+        {
+          "title": "[UTILS] Unit Testing Framework",
+          "link": "https://www.tradingview.com/script/q45dulJC-UTILS-Unit-Testing-Framework/",
+          "boosts": 387,
+          "is_strategy": false,
+          "author": "everget",
+          "filename": "indicators\\everget\\_UTILS__Unit_Testing_Framework.pine"
+        },
+        {
+          "title": "[UTILS] Session Input Parser",
+          "link": "https://www.tradingview.com/script/t1RSjDSb-UTILS-Session-Input-Parser/",
+          "boosts": 226,
+          "is_strategy": false,
+          "author": "everget",
+          "filename": "indicators\\everget\\_UTILS__Session_Input_Parser.pine"
+        }
+      ]
+    },
+    "scarf": {
+      "display_name": "scarf",
+      "scripts_found": 9,
+      "scripts": [
+        {
+          "title": "ADX & DI Histogram",
+          "link": "https://www.tradingview.com/script/yMLQUvEq-ADX-DI-Histogram/",
+          "boosts": 1868,
+          "is_strategy": false,
+          "author": "scarf",
+          "filename": "indicators\\scarf\\ADX___DI_Histogram.pine"
+        },
+        {
+          "title": "Filtered RSI Divergence Finder",
+          "link": "https://www.tradingview.com/script/69sNlkqi-Filtered-RSI-Divergence-Finder/",
+          "boosts": 1634,
+          "is_strategy": false,
+          "author": "scarf",
+          "filename": "indicators\\scarf\\Filtered_RSI_Divergence_Finder.pine"
+        },
+        {
+          "title": "RSI Cave",
+          "link": "https://www.tradingview.com/script/Xp86gbwP-RSI-Cave/",
+          "boosts": 390,
+          "is_strategy": false,
+          "author": "scarf",
+          "filename": "indicators\\scarf\\RSI_Cave.pine"
+        },
+        {
+          "title": "RSI Label",
+          "link": "https://www.tradingview.com/script/COloiQAz-RSI-Label/",
+          "boosts": 352,
+          "is_strategy": false,
+          "author": "scarf",
+          "filename": "indicators\\scarf\\RSI_Label.pine"
+        },
+        {
+          "title": "Daily Moving Averages",
+          "link": "https://www.tradingview.com/script/Tc21dsVG-Daily-Moving-Averages/",
+          "boosts": 281,
+          "is_strategy": false,
+          "author": "scarf",
+          "filename": "indicators\\scarf\\Daily_Moving_Averages.pine"
+        },
+        {
+          "title": "Wick Delta vs Body/Wick Bias",
+          "link": "https://www.tradingview.com/script/vDsGhNBD-Wick-Delta-vs-Body-Wick-Bias/",
+          "boosts": 269,
+          "is_strategy": false,
+          "author": "scarf",
+          "filename": "indicators\\scarf\\Wick_Delta_vs_Body_Wick_Bias.pine"
+        },
+        {
+          "title": "RSI Glow",
+          "link": "https://www.tradingview.com/script/69rfDAEb-RSI-Glow/",
+          "boosts": 260,
+          "is_strategy": false,
+          "author": "scarf",
+          "filename": "indicators\\scarf\\RSI_Glow.pine"
+        },
+        {
+          "title": "Daily & 4H Moving Averages",
+          "link": "https://www.tradingview.com/script/Igav8ury-Daily-4H-Moving-Averages/",
+          "boosts": 199,
+          "is_strategy": false,
+          "author": "scarf",
+          "filename": "indicators\\scarf\\Daily___4H_Moving_Averages.pine"
+        },
+        {
+          "title": "Dump Candle",
+          "link": "https://www.tradingview.com/script/7FGwSRUf-Dump-Candle/",
+          "boosts": 122,
+          "is_strategy": false,
+          "author": "scarf",
+          "filename": "indicators\\scarf\\Dump_Candle.pine"
+        }
+      ]
+    },
+    "BacktestRookies": {
+      "display_name": "BacktestRookies",
+      "scripts_found": 7,
+      "scripts": [
+        {
+          "title": "Support & Resistance",
+          "link": "https://www.tradingview.com/script/aBnvc5kp-Support-Resistance/",
+          "boosts": 3323,
+          "is_strategy": false,
+          "author": "BacktestRookies",
+          "filename": "indicators\\BacktestRookies\\Support___Resistance.pine"
+        },
+        {
+          "title": "Automatic Trendlines",
+          "link": "https://www.tradingview.com/script/ih8Z9vSB-Automatic-Trendlines/",
+          "boosts": 3102,
+          "is_strategy": false,
+          "author": "BacktestRookies",
+          "filename": "indicators\\BacktestRookies\\Automatic_Trendlines.pine"
+        },
+        {
+          "title": "Babypips: Inside Bar Momentum Strategy",
+          "link": "https://www.tradingview.com/script/Y2e6lEXw-Babypips-Inside-Bar-Momentum-Strategy/",
+          "boosts": 761,
+          "is_strategy": true,
+          "author": "BacktestRookies",
+          "filename": "indicators\\BacktestRookies\\Babypips__Inside_Bar_Momentum_Strategy.pine"
+        },
+        {
+          "title": "Percentage Change Function",
+          "link": "https://www.tradingview.com/script/oEfgL8oB-Percentage-Change-Function/",
+          "boosts": 463,
+          "is_strategy": false,
+          "author": "BacktestRookies",
+          "filename": "indicators\\BacktestRookies\\Percentage_Change_Function.pine"
+        },
+        {
+          "title": "Hucklekiwi Pip - HLHB Trend-Catcher System",
+          "link": "https://www.tradingview.com/script/QRA9ANf3-Hucklekiwi-Pip-HLHB-Trend-Catcher-System/",
+          "boosts": 416,
+          "is_strategy": true,
+          "author": "BacktestRookies",
+          "filename": "indicators\\BacktestRookies\\Hucklekiwi_Pip_-_HLHB_Trend-Catcher_System.pine"
+        },
+        {
+          "title": "Pivot Prices - Example",
+          "link": "https://www.tradingview.com/script/2Ty6NqT9-Pivot-Prices-Example/",
+          "boosts": 378,
+          "is_strategy": false,
+          "author": "BacktestRookies",
+          "filename": "indicators\\BacktestRookies\\Pivot_Prices_-_Example.pine"
+        },
+        {
+          "title": "Average Down",
+          "link": "https://www.tradingview.com/script/jofWHP5C-Average-Down/",
+          "boosts": 241,
+          "is_strategy": true,
+          "author": "BacktestRookies",
+          "filename": "indicators\\BacktestRookies\\Average_Down.pine"
+        }
+      ]
+    },
+    "KivancOzbilgic": {
+      "display_name": "KivancOzbilgic",
+      "scripts_found": 19,
+      "scripts": [
+        {
+          "title": "AlphaTrend",
+          "link": "https://www.tradingview.com/script/o50NYLAZ-AlphaTrend/",
+          "boosts": 26188,
+          "is_strategy": false,
+          "author": "KivancOzbilgic",
+          "filename": "indicators\\KivancOzbilgic\\AlphaTrend.pine"
+        },
+        {
+          "title": "Stochastic OTT",
+          "link": "https://www.tradingview.com/script/BK45kYNB-Stochastic-OTT/",
+          "boosts": 11571,
+          "is_strategy": false,
+          "author": "KivancOzbilgic",
+          "filename": "indicators\\KivancOzbilgic\\Stochastic_OTT.pine"
+        },
+        {
+          "title": "HIGH and LOW Optimized Trend Tracker HOTT LOTT",
+          "link": "https://www.tradingview.com/script/5qkKOlVg-HIGH-and-LOW-Optimized-Trend-Tracker-HOTT-LOTT/",
+          "boosts": 8737,
+          "is_strategy": false,
+          "author": "KivancOzbilgic",
+          "filename": "indicators\\KivancOzbilgic\\HIGH_and_LOW_Optimized_Trend_Tracker_HOTT_LOTT.pine"
+        },
+        {
+          "title": "Optimized Trend Tracker Oscillator OTTO",
+          "link": "https://www.tradingview.com/script/W3BqP7Nq-Optimized-Trend-Tracker-Oscillator-OTTO/",
+          "boosts": 7703,
+          "is_strategy": false,
+          "author": "KivancOzbilgic",
+          "filename": "indicators\\KivancOzbilgic\\Optimized_Trend_Tracker_Oscillator_OTTO.pine"
+        },
+        {
+          "title": "MACD ReLoaded STRATEGY",
+          "link": "https://www.tradingview.com/script/VO6DY8s1-MACD-ReLoaded-STRATEGY/",
+          "boosts": 7478,
+          "is_strategy": true,
+          "author": "KivancOzbilgic",
+          "filename": "indicators\\KivancOzbilgic\\MACD_ReLoaded_STRATEGY.pine"
+        },
+        {
+          "title": "Optimized Trend Tracker Bands",
+          "link": "https://www.tradingview.com/script/jD7ioJ1Y-Optimized-Trend-Tracker-Bands/",
+          "boosts": 7103,
+          "is_strategy": false,
+          "author": "KivancOzbilgic",
+          "filename": "indicators\\KivancOzbilgic\\Optimized_Trend_Tracker_Bands.pine"
+        },
+        {
+          "title": "Follow Line",
+          "link": "https://www.tradingview.com/script/UXKo4RaJ/",
+          "boosts": 6971,
+          "is_strategy": false,
+          "author": "KivancOzbilgic",
+          "filename": "indicators\\KivancOzbilgic\\Follow_Line.pine"
+        },
+        {
+          "title": "AlphaTrend Strategy",
+          "link": "https://www.tradingview.com/script/3wdQu7P3-AlphaTrend-Strategy/",
+          "boosts": 6722,
+          "is_strategy": true,
+          "author": "KivancOzbilgic",
+          "filename": "indicators\\KivancOzbilgic\\AlphaTrend_Strategy.pine"
+        },
+        {
+          "title": "MACD ReLoaded",
+          "link": "https://www.tradingview.com/script/PhtqdGBM-MACD-ReLoaded/",
+          "boosts": 6366,
+          "is_strategy": false,
+          "author": "KivancOzbilgic",
+          "filename": "indicators\\KivancOzbilgic\\MACD_ReLoaded.pine"
+        },
+        {
+          "title": "MOST on RSI",
+          "link": "https://www.tradingview.com/script/HPT9ABhO/",
+          "boosts": 6079,
+          "is_strategy": false,
+          "author": "KivancOzbilgic",
+          "filename": "indicators\\KivancOzbilgic\\MOST_on_RSI.pine"
+        },
+        {
+          "title": "Normalized Quantitative Qualitative Estimation nQQE",
+          "link": "https://www.tradingview.com/script/CfCuUCeE/",
+          "boosts": 5997,
+          "is_strategy": false,
+          "author": "KivancOzbilgic",
+          "filename": "indicators\\KivancOzbilgic\\Normalized_Quantitative_Qualitative_Estimation_nQQE.pine"
+        },
+        {
+          "title": "Twin Range Filter Visualized",
+          "link": "https://www.tradingview.com/script/bCCLOhFE-Twin-Range-Filter-Visualized/",
+          "boosts": 5775,
+          "is_strategy": false,
+          "author": "KivancOzbilgic",
+          "filename": "indicators\\KivancOzbilgic\\Twin_Range_Filter_Visualized.pine"
+        },
+        {
+          "title": "Auto Fibo on Indicators",
+          "link": "https://www.tradingview.com/script/lYPBahi8-Auto-Fibo-on-Indicators/",
+          "boosts": 4273,
+          "is_strategy": false,
+          "author": "KivancOzbilgic",
+          "filename": "indicators\\KivancOzbilgic\\Auto_Fibo_on_Indicators.pine"
+        },
+        {
+          "title": "Elevated Leverage index System - ELiS",
+          "link": "https://www.tradingview.com/script/C4IpqgiB/",
+          "boosts": 3556,
+          "is_strategy": false,
+          "author": "KivancOzbilgic",
+          "filename": "indicators\\KivancOzbilgic\\Elevated_Leverage_index_System_-_ELiS.pine"
+        },
+        {
+          "title": "KAIRI RELATIVE INDEX",
+          "link": "https://www.tradingview.com/script/2PUI4Dmh-KAIRI-RELATIVE-INDEX/",
+          "boosts": 2992,
+          "is_strategy": false,
+          "author": "KivancOzbilgic",
+          "filename": "indicators\\KivancOzbilgic\\KAIRI_RELATIVE_INDEX.pine"
+        },
+        {
+          "title": "Progressive Trend Tracker",
+          "link": "https://www.tradingview.com/script/PJs6WwKV/",
+          "boosts": 2479,
+          "is_strategy": false,
+          "author": "KivancOzbilgic",
+          "filename": "indicators\\KivancOzbilgic\\Progressive_Trend_Tracker.pine"
+        },
+        {
+          "title": "Bollinger OTT Spread",
+          "link": "https://www.tradingview.com/script/hynBgzIQ/",
+          "boosts": 2079,
+          "is_strategy": false,
+          "author": "KivancOzbilgic",
+          "filename": "indicators\\KivancOzbilgic\\Bollinger_OTT_Spread.pine"
+        },
+        {
+          "title": "Multiple OTT",
+          "link": "https://www.tradingview.com/script/UXwYKQ5u/",
+          "boosts": 1953,
+          "is_strategy": false,
+          "author": "KivancOzbilgic",
+          "filename": "indicators\\KivancOzbilgic\\Multiple_OTT.pine"
+        },
+        {
+          "title": "MACD-V (Volatility Normalized MACD)",
+          "link": "https://www.tradingview.com/script/mionn7XC-MACD-V-Volatility-Normalized-MACD/",
+          "boosts": 1853,
+          "is_strategy": false,
+          "author": "KivancOzbilgic",
+          "filename": "indicators\\KivancOzbilgic\\MACD-V__Volatility_Normalized_MACD_.pine"
+        }
+      ]
+    },
+    "LonesomeTheBlue": {
+      "display_name": "LonesomeTheBlue",
+      "scripts_found": 16,
+      "scripts": [
+        {
+          "title": "Support Resistance Interactive",
+          "link": "https://www.tradingview.com/script/irqbPJsI-Support-Resistance-Interactive/",
+          "boosts": 15506,
+          "is_strategy": false,
+          "author": "LonesomeTheBlue",
+          "filename": "indicators\\LonesomeTheBlue\\Support_Resistance_Interactive.pine"
+        },
+        {
+          "title": "3rd Wave",
+          "link": "https://www.tradingview.com/script/CP2aNLbk-3rd-Wave/",
+          "boosts": 10053,
+          "is_strategy": false,
+          "author": "LonesomeTheBlue",
+          "filename": "indicators\\LonesomeTheBlue\\3rd_Wave.pine"
+        },
+        {
+          "title": "Renko Candles Overlay",
+          "link": "https://www.tradingview.com/script/rZs7YdMI-Renko-Candles-Overlay/",
+          "boosts": 7887,
+          "is_strategy": false,
+          "author": "LonesomeTheBlue",
+          "filename": "indicators\\LonesomeTheBlue\\Renko_Candles_Overlay.pine"
+        },
+        {
+          "title": "Ichimoku Oscillator",
+          "link": "https://www.tradingview.com/script/ypZ7TSjN-Ichimoku-Oscillator/",
+          "boosts": 6389,
+          "is_strategy": false,
+          "author": "LonesomeTheBlue",
+          "filename": "indicators\\LonesomeTheBlue\\Ichimoku_Oscillator.pine"
+        },
+        {
+          "title": "Fibonacci levels MTF",
+          "link": "https://www.tradingview.com/script/6BL47X8Q-Fibonacci-levels-MTF/",
+          "boosts": 5600,
+          "is_strategy": false,
+          "author": "LonesomeTheBlue",
+          "filename": "indicators\\LonesomeTheBlue\\Fibonacci_levels_MTF.pine"
+        },
+        {
+          "title": "Indicators Overlay",
+          "link": "https://www.tradingview.com/script/uwUfCFF8-Indicators-Overlay/",
+          "boosts": 4834,
+          "is_strategy": false,
+          "author": "LonesomeTheBlue",
+          "filename": "indicators\\LonesomeTheBlue\\Indicators_Overlay.pine"
+        },
+        {
+          "title": "Gann Fan",
+          "link": "https://www.tradingview.com/script/Bara2GrN-Gann-Fan/",
+          "boosts": 4499,
+          "is_strategy": false,
+          "author": "LonesomeTheBlue",
+          "filename": "indicators\\LonesomeTheBlue\\Gann_Fan.pine"
+        },
+        {
+          "title": "Trend Reversal System with SR levels",
+          "link": "https://www.tradingview.com/script/p0BZBtmT-Trend-Reversal-System-with-SR-levels/",
+          "boosts": 3977,
+          "is_strategy": false,
+          "author": "LonesomeTheBlue",
+          "filename": "indicators\\LonesomeTheBlue\\Trend_Reversal_System_with_SR_levels.pine"
+        },
+        {
+          "title": "Line Break Chart Strategy",
+          "link": "https://www.tradingview.com/script/QVYpNxgs-Line-Break-Chart-Strategy/",
+          "boosts": 3659,
+          "is_strategy": false,
+          "author": "LonesomeTheBlue",
+          "filename": "indicators\\LonesomeTheBlue\\Line_Break_Chart_Strategy.pine"
+        },
+        {
+          "title": "Moving Averages 3D",
+          "link": "https://www.tradingview.com/script/EtM15SgP-Moving-Averages-3D/",
+          "boosts": 1594,
+          "is_strategy": false,
+          "author": "LonesomeTheBlue",
+          "filename": "indicators\\LonesomeTheBlue\\Moving_Averages_3D.pine"
+        },
+        {
+          "title": "ZigZag Waves",
+          "link": "https://www.tradingview.com/script/BvWy0Xwx-ZigZag-Waves/",
+          "boosts": 1377,
+          "is_strategy": false,
+          "author": "LonesomeTheBlue",
+          "filename": "indicators\\LonesomeTheBlue\\ZigZag_Waves.pine"
+        },
+        {
+          "title": "Wolfe Wave Pattern",
+          "link": "https://www.tradingview.com/script/vOiQAKuB-Wolfe-Wave-Pattern/",
+          "boosts": 1027,
+          "is_strategy": false,
+          "author": "LonesomeTheBlue",
+          "filename": "indicators\\LonesomeTheBlue\\Wolfe_Wave_Pattern.pine"
+        },
+        {
+          "title": "Volume [Educational]",
+          "link": "https://www.tradingview.com/script/a226z19x-Volume-Educational/",
+          "boosts": 833,
+          "is_strategy": false,
+          "author": "LonesomeTheBlue",
+          "filename": "indicators\\LonesomeTheBlue\\Volume__Educational_.pine"
+        },
+        {
+          "title": "DrawIndicatorOnTheChart",
+          "link": "https://www.tradingview.com/script/1VedFQRo-DrawIndicatorOnTheChart/",
+          "boosts": 328,
+          "is_strategy": false,
+          "author": "LonesomeTheBlue",
+          "filename": "indicators\\LonesomeTheBlue\\DrawIndicatorOnTheChart.pine"
+        },
+        {
+          "title": "LibraryPrivateUsage001",
+          "link": "https://www.tradingview.com/script/LrBomXvi-LibraryPrivateUsage001/",
+          "boosts": 154,
+          "is_strategy": false,
+          "author": "LonesomeTheBlue",
+          "filename": "indicators\\LonesomeTheBlue\\LibraryPrivateUsage001.pine"
+        },
+        {
+          "title": "LibraryCheckNthBar",
+          "link": "https://www.tradingview.com/script/01u8W9QY-LibraryCheckNthBar/",
+          "boosts": 130,
+          "is_strategy": false,
+          "author": "LonesomeTheBlue",
+          "filename": "indicators\\LonesomeTheBlue\\LibraryCheckNthBar.pine"
+        }
+      ]
+    },
+    "ImmortalFreedom": {
+      "display_name": "ImmortalFreedom",
+      "scripts_found": 14,
+      "scripts": [
+        {
+          "title": "Voss Predictor (A Peek Into the Future) - Dr. John Ehlers",
+          "link": "https://www.tradingview.com/script/ekkb1vlg-Voss-Predictor-A-Peek-Into-the-Future-Dr-John-Ehlers/",
+          "boosts": 3672,
+          "is_strategy": false,
+          "author": "ImmortalFreedom",
+          "filename": "indicators\\ImmortalFreedom\\Voss_Predictor__A_Peek_Into_the_Future__-_Dr._John_Ehlers.pine"
+        },
+        {
+          "title": "Correlation Cycle, CorrelationAngle, Market State - John Ehlers",
+          "link": "https://www.tradingview.com/script/wyyXKHDn-Correlation-Cycle-CorrelationAngle-Market-State-John-Ehlers/",
+          "boosts": 1298,
+          "is_strategy": false,
+          "author": "ImmortalFreedom",
+          "filename": "indicators\\ImmortalFreedom\\Correlation_Cycle__CorrelationAngle__Market_State_-_John_Ehlers.pine"
+        },
+        {
+          "title": "McGinley Dynamic (Improved) - John R. McGinley, Jr.",
+          "link": "https://www.tradingview.com/script/AKsKg1ih-McGinley-Dynamic-Improved-John-R-McGinley-Jr/",
+          "boosts": 1200,
+          "is_strategy": false,
+          "author": "ImmortalFreedom",
+          "filename": "indicators\\ImmortalFreedom\\McGinley_Dynamic__Improved__-_John_R._McGinley__Jr..pine"
+        },
+        {
+          "title": "[Excalibur] Ehlers AutoCorrelation Periodogram Modified",
+          "link": "https://www.tradingview.com/script/MdtqpNT0-Excalibur-Ehlers-AutoCorrelation-Periodogram-Modified/",
+          "boosts": 980,
+          "is_strategy": false,
+          "author": "ImmortalFreedom",
+          "filename": "indicators\\ImmortalFreedom\\_Excalibur__Ehlers_AutoCorrelation_Periodogram_Modified.pine"
+        },
+        {
+          "title": "[Pandora] Vast Volatility Treasure Trove",
+          "link": "https://www.tradingview.com/script/94GZ1QY4-Pandora-Vast-Volatility-Treasure-Trove/",
+          "boosts": 749,
+          "is_strategy": false,
+          "author": "ImmortalFreedom",
+          "filename": "indicators\\ImmortalFreedom\\_Pandora__Vast_Volatility_Treasure_Trove.pine"
+        },
+        {
+          "title": "Truncated Bandpass Filter and Bandpass Filter - Dr. John Ehlers",
+          "link": "https://www.tradingview.com/script/kRxaaTOX-Truncated-Bandpass-Filter-and-Bandpass-Filter-Dr-John-Ehlers/",
+          "boosts": 641,
+          "is_strategy": false,
+          "author": "ImmortalFreedom",
+          "filename": "indicators\\ImmortalFreedom\\Truncated_Bandpass_Filter_and_Bandpass_Filter_-_Dr._John_Ehlers.pine"
+        },
+        {
+          "title": "Weekly/Daily/Hourly/Minutes Colored Background Intervals",
+          "link": "https://www.tradingview.com/script/o2mGCgJu-Weekly-Daily-Hourly-Minutes-Colored-Background-Intervals/",
+          "boosts": 418,
+          "is_strategy": false,
+          "author": "ImmortalFreedom",
+          "filename": "indicators\\ImmortalFreedom\\Weekly_Daily_Hourly_Minutes_Colored_Background_Intervals.pine"
+        },
+        {
+          "title": "Synthetic Price Action Generator",
+          "link": "https://www.tradingview.com/script/uqelSkN1-Synthetic-Price-Action-Generator/",
+          "boosts": 293,
+          "is_strategy": false,
+          "author": "ImmortalFreedom",
+          "filename": "indicators\\ImmortalFreedom\\Synthetic_Price_Action_Generator.pine"
+        },
+        {
+          "title": "PSv5 Color Magic and Chart Theme Simulator",
+          "link": "https://www.tradingview.com/script/f27Ejk2I-PSv5-Color-Magic-and-Chart-Theme-Simulator/",
+          "boosts": 227,
+          "is_strategy": false,
+          "author": "ImmortalFreedom",
+          "filename": "indicators\\ImmortalFreedom\\PSv5_Color_Magic_and_Chart_Theme_Simulator.pine"
+        },
+        {
+          "title": "Visualizing Behaviors of barstate Variables",
+          "link": "https://www.tradingview.com/script/lJAP4QkD-Visualizing-Behaviors-of-barstate-Variables/",
+          "boosts": 218,
+          "is_strategy": false,
+          "author": "ImmortalFreedom",
+          "filename": "indicators\\ImmortalFreedom\\Visualizing_Behaviors_of_barstate_Variables.pine"
+        },
+        {
+          "title": "PSv5 3D Array/Matrix Super Hack",
+          "link": "https://www.tradingview.com/script/AIjRLiW3-PSv5-3D-Array-Matrix-Super-Hack/",
+          "boosts": 194,
+          "is_strategy": false,
+          "author": "ImmortalFreedom",
+          "filename": "indicators\\ImmortalFreedom\\PSv5_3D_Array_Matrix_Super_Hack.pine"
+        },
+        {
+          "title": "Exotic SMA Explorations Treasure Trove",
+          "link": "https://www.tradingview.com/script/NVcj3yj1-Exotic-SMA-Explorations-Treasure-Trove/",
+          "boosts": 187,
+          "is_strategy": false,
+          "author": "ImmortalFreedom",
+          "filename": "indicators\\ImmortalFreedom\\Exotic_SMA_Explorations_Treasure_Trove.pine"
+        },
+        {
+          "title": "[Pandora] Error Function Treasure Trove - ERF/ERFI/Sigmoids+",
+          "link": "https://www.tradingview.com/script/sfnpsSMc-Pandora-Error-Function-Treasure-Trove-ERF-ERFI-Sigmoids/",
+          "boosts": 186,
+          "is_strategy": false,
+          "author": "ImmortalFreedom",
+          "filename": "indicators\\ImmortalFreedom\\_Pandora__Error_Function_Treasure_Trove_-_ERF_ERFI_Sigmoids_.pine"
+        },
+        {
+          "title": "[Pandora] Laguerre Ultimate Explorations Multicator",
+          "link": "https://www.tradingview.com/script/FCwSynVW-Pandora-Laguerre-Ultimate-Explorations-Multicator/",
+          "boosts": 131,
+          "is_strategy": false,
+          "author": "ImmortalFreedom",
+          "filename": "indicators\\ImmortalFreedom\\_Pandora__Laguerre_Ultimate_Explorations_Multicator.pine"
+        }
+      ]
+    },
+    "Duyck": {
+      "display_name": "Duyck",
+      "scripts_found": 18,
+      "scripts": [
+        {
+          "title": "ATR Based Trendlines - JD",
+          "link": "https://www.tradingview.com/script/bugFWu53-ATR-Based-Trendlines-JD/",
+          "boosts": 2730,
+          "is_strategy": false,
+          "author": "Duyck",
+          "filename": "indicators\\Duyck\\ATR_Based_Trendlines_-_JD.pine"
+        },
+        {
+          "title": "Rsi Stops - JD",
+          "link": "https://www.tradingview.com/script/rqzryhZ2-Rsi-Stops-JD/",
+          "boosts": 1909,
+          "is_strategy": false,
+          "author": "Duyck",
+          "filename": "indicators\\Duyck\\Rsi_Stops_-_JD.pine"
+        },
+        {
+          "title": "Bollinger Band swings - JD",
+          "link": "https://www.tradingview.com/script/w8WeC0ut-Bollinger-Band-swings-JD/",
+          "boosts": 954,
+          "is_strategy": false,
+          "author": "Duyck",
+          "filename": "indicators\\Duyck\\Bollinger_Band_swings_-_JD.pine"
+        },
+        {
+          "title": "StDev Based Trendlines - JD",
+          "link": "https://www.tradingview.com/script/Vh10xfIq-StDev-Based-Trendlines-JD/",
+          "boosts": 738,
+          "is_strategy": false,
+          "author": "Duyck",
+          "filename": "indicators\\Duyck\\StDev_Based_Trendlines_-_JD.pine"
+        },
+        {
+          "title": "RSI bands - JD",
+          "link": "https://www.tradingview.com/script/toLO7Fdg-RSI-bands-JD/",
+          "boosts": 701,
+          "is_strategy": false,
+          "author": "Duyck",
+          "filename": "indicators\\Duyck\\RSI_bands_-_JD.pine"
+        },
+        {
+          "title": "Double Vwap - JD",
+          "link": "https://www.tradingview.com/script/X5LeZPmW-Double-Vwap-JD/",
+          "boosts": 691,
+          "is_strategy": false,
+          "author": "Duyck",
+          "filename": "indicators\\Duyck\\Double_Vwap_-_JD.pine"
+        },
+        {
+          "title": "security free MTF example - JD",
+          "link": "https://www.tradingview.com/script/Ql1FjjfX-security-free-MTF-example-JD/",
+          "boosts": 561,
+          "is_strategy": false,
+          "author": "Duyck",
+          "filename": "indicators\\Duyck\\security_free_MTF_example_-_JD.pine"
+        },
+        {
+          "title": "MTF seconds values - JD",
+          "link": "https://www.tradingview.com/script/tbfrhEWY-MTF-seconds-values-JD/",
+          "boosts": 558,
+          "is_strategy": false,
+          "author": "Duyck",
+          "filename": "indicators\\Duyck\\MTF_seconds_values_-_JD.pine"
+        },
+        {
+          "title": "resistances - JD",
+          "link": "https://www.tradingview.com/script/mwibH3Lm-resistances-JD/",
+          "boosts": 537,
+          "is_strategy": false,
+          "author": "Duyck",
+          "filename": "indicators\\Duyck\\resistances_-_JD.pine"
+        },
+        {
+          "title": "timeframe box - JD",
+          "link": "https://www.tradingview.com/script/BemxQWe2-timeframe-box-JD/",
+          "boosts": 486,
+          "is_strategy": false,
+          "author": "Duyck",
+          "filename": "indicators\\Duyck\\timeframe_box_-_JD.pine"
+        },
+        {
+          "title": "Watermark Light - JD",
+          "link": "https://www.tradingview.com/script/RecckLBf-Watermark-Light-JD/",
+          "boosts": 460,
+          "is_strategy": false,
+          "author": "Duyck",
+          "filename": "indicators\\Duyck\\Watermark_Light_-_JD.pine"
+        },
+        {
+          "title": "ADX weighted ma",
+          "link": "https://www.tradingview.com/script/nSLN3tKN-ADX-weighted-ma/",
+          "boosts": 361,
+          "is_strategy": false,
+          "author": "Duyck",
+          "filename": "indicators\\Duyck\\ADX_weighted_ma.pine"
+        },
+        {
+          "title": "Vwap Ribbon - JD",
+          "link": "https://www.tradingview.com/script/gnQ0bHLB-Vwap-Ribbon-JD/",
+          "boosts": 331,
+          "is_strategy": false,
+          "author": "Duyck",
+          "filename": "indicators\\Duyck\\Vwap_Ribbon_-_JD.pine"
+        },
+        {
+          "title": "V/V weighted ma - JD",
+          "link": "https://www.tradingview.com/script/pFYbl3e5-V-V-weighted-ma-JD/",
+          "boosts": 329,
+          "is_strategy": false,
+          "author": "Duyck",
+          "filename": "indicators\\Duyck\\V_V_weighted_ma_-_JD.pine"
+        },
+        {
+          "title": "Volatility weighted ma",
+          "link": "https://www.tradingview.com/script/qRG69aPu-Volatility-weighted-ma/",
+          "boosts": 272,
+          "is_strategy": false,
+          "author": "Duyck",
+          "filename": "indicators\\Duyck\\Volatility_weighted_ma.pine"
+        },
+        {
+          "title": "Matrix functions - JD",
+          "link": "https://www.tradingview.com/script/d3PHo9uh-Matrix-functions-JD/",
+          "boosts": 226,
+          "is_strategy": false,
+          "author": "Duyck",
+          "filename": "indicators\\Duyck\\Matrix_functions_-_JD.pine"
+        },
+        {
+          "title": "Unicode font function - JD",
+          "link": "https://www.tradingview.com/script/Bi1gJhKa-Unicode-font-function-JD/",
+          "boosts": 154,
+          "is_strategy": false,
+          "author": "Duyck",
+          "filename": "indicators\\Duyck\\Unicode_font_function_-_JD.pine"
+        },
+        {
+          "title": "ma sorter ('sort by array' example)- JD",
+          "link": "https://www.tradingview.com/script/Mzc4dmq7-ma-sorter-sort-by-array-example-JD/",
+          "boosts": 134,
+          "is_strategy": false,
+          "author": "Duyck",
+          "filename": "indicators\\Duyck\\ma_sorter___sort_by_array__example_-_JD.pine"
+        }
+      ]
+    },
+    "DonovanWall": {
+      "display_name": "DonovanWall",
+      "scripts_found": 18,
+      "scripts": [
+        {
+          "title": "Gaussian Channel [DW]",
+          "link": "https://www.tradingview.com/script/WpVY7GKW-Gaussian-Channel-DW/",
+          "boosts": 8470,
+          "is_strategy": false,
+          "author": "DonovanWall",
+          "filename": "indicators\\DonovanWall\\Gaussian_Channel__DW_.pine"
+        },
+        {
+          "title": "Range Filter [DW]",
+          "link": "https://www.tradingview.com/script/lut7sBgG-Range-Filter-DW/",
+          "boosts": 5815,
+          "is_strategy": false,
+          "author": "DonovanWall",
+          "filename": "indicators\\DonovanWall\\Range_Filter__DW_.pine"
+        },
+        {
+          "title": "Regression Channel [DW]",
+          "link": "https://www.tradingview.com/script/xnMdv0lA-Regression-Channel-DW/",
+          "boosts": 4062,
+          "is_strategy": false,
+          "author": "DonovanWall",
+          "filename": "indicators\\DonovanWall\\Regression_Channel__DW_.pine"
+        },
+        {
+          "title": "Monte Carlo Range Forecast [DW]",
+          "link": "https://www.tradingview.com/script/ujVS2XfG-Monte-Carlo-Range-Forecast-DW/",
+          "boosts": 3672,
+          "is_strategy": false,
+          "author": "DonovanWall",
+          "filename": "indicators\\DonovanWall\\Monte_Carlo_Range_Forecast__DW_.pine"
+        },
+        {
+          "title": "Resampling Reverse Engineering Bands [DW]",
+          "link": "https://www.tradingview.com/script/pK0AIDt2-Resampling-Reverse-Engineering-Bands-DW/",
+          "boosts": 2736,
+          "is_strategy": false,
+          "author": "DonovanWall",
+          "filename": "indicators\\DonovanWall\\Resampling_Reverse_Engineering_Bands__DW_.pine"
+        },
+        {
+          "title": "Polynomial Regression Bands + Channel [DW]",
+          "link": "https://www.tradingview.com/script/B0KZf6uG-Polynomial-Regression-Bands-Channel-DW/",
+          "boosts": 2243,
+          "is_strategy": false,
+          "author": "DonovanWall",
+          "filename": "indicators\\DonovanWall\\Polynomial_Regression_Bands___Channel__DW_.pine"
+        },
+        {
+          "title": "Resampling Filter Pack [DW]",
+          "link": "https://www.tradingview.com/script/hIXxuhEV-Resampling-Filter-Pack-DW/",
+          "boosts": 2059,
+          "is_strategy": false,
+          "author": "DonovanWall",
+          "filename": "indicators\\DonovanWall\\Resampling_Filter_Pack__DW_.pine"
+        },
+        {
+          "title": "DVDIQQE [DW]",
+          "link": "https://www.tradingview.com/script/ZNgiVb6Q-DVDIQQE-DW/",
+          "boosts": 1395,
+          "is_strategy": false,
+          "author": "DonovanWall",
+          "filename": "indicators\\DonovanWall\\DVDIQQE__DW_.pine"
+        },
+        {
+          "title": "Fisher Multi-Pack [DW]",
+          "link": "https://www.tradingview.com/script/hXp5irRI-Fisher-Multi-Pack-DW/",
+          "boosts": 1222,
+          "is_strategy": false,
+          "author": "DonovanWall",
+          "filename": "indicators\\DonovanWall\\Fisher_Multi-Pack__DW_.pine"
+        },
+        {
+          "title": "Quadratic Regression Slope [DW]",
+          "link": "https://www.tradingview.com/script/4bFCTkDv-Quadratic-Regression-Slope-DW/",
+          "boosts": 1204,
+          "is_strategy": false,
+          "author": "DonovanWall",
+          "filename": "indicators\\DonovanWall\\Quadratic_Regression_Slope__DW_.pine"
+        },
+        {
+          "title": "Multi Z Score [DW]",
+          "link": "https://www.tradingview.com/script/lmHJLtdY-Multi-Z-Score-DW/",
+          "boosts": 1197,
+          "is_strategy": false,
+          "author": "DonovanWall",
+          "filename": "indicators\\DonovanWall\\Multi_Z_Score__DW_.pine"
+        },
+        {
+          "title": "Relative Strength Volatility Variable Bands [DW]",
+          "link": "https://www.tradingview.com/script/1IyvlXWs-Relative-Strength-Volatility-Variable-Bands-DW/",
+          "boosts": 1115,
+          "is_strategy": false,
+          "author": "DonovanWall",
+          "filename": "indicators\\DonovanWall\\Relative_Strength_Volatility_Variable_Bands__DW_.pine"
+        },
+        {
+          "title": "Percentile Trend Channel [DW]",
+          "link": "https://www.tradingview.com/script/AhqGvt5U-Percentile-Trend-Channel-DW/",
+          "boosts": 1024,
+          "is_strategy": false,
+          "author": "DonovanWall",
+          "filename": "indicators\\DonovanWall\\Percentile_Trend_Channel__DW_.pine"
+        },
+        {
+          "title": "Index Adaptive Keltner Channels [DW]",
+          "link": "https://www.tradingview.com/script/F6BVjYMH-Index-Adaptive-Keltner-Channels-DW/",
+          "boosts": 736,
+          "is_strategy": false,
+          "author": "DonovanWall",
+          "filename": "indicators\\DonovanWall\\Index_Adaptive_Keltner_Channels__DW_.pine"
+        },
+        {
+          "title": "Interval Volatility Bands [DW]",
+          "link": "https://www.tradingview.com/script/QSkQhfGF-Interval-Volatility-Bands-DW/",
+          "boosts": 669,
+          "is_strategy": false,
+          "author": "DonovanWall",
+          "filename": "indicators\\DonovanWall\\Interval_Volatility_Bands__DW_.pine"
+        },
+        {
+          "title": "Roofing Filter [DW]",
+          "link": "https://www.tradingview.com/script/kPe86Nbc-Roofing-Filter-DW/",
+          "boosts": 667,
+          "is_strategy": false,
+          "author": "DonovanWall",
+          "filename": "indicators\\DonovanWall\\Roofing_Filter__DW_.pine"
+        },
+        {
+          "title": "Low Pass Channel [DW]",
+          "link": "https://www.tradingview.com/script/SFGEoDmG-Low-Pass-Channel-DW/",
+          "boosts": 490,
+          "is_strategy": false,
+          "author": "DonovanWall",
+          "filename": "indicators\\DonovanWall\\Low_Pass_Channel__DW_.pine"
+        },
+        {
+          "title": "Line & Label RGB Color Editor [DW]",
+          "link": "https://www.tradingview.com/script/mPwTa1SE-Line-Label-RGB-Color-Editor-DW/",
+          "boosts": 206,
+          "is_strategy": false,
+          "author": "DonovanWall",
+          "filename": "indicators\\DonovanWall\\Line___Label_RGB_Color_Editor__DW_.pine"
+        }
+      ]
+    },
+    "dgtrd": {
+      "display_name": "dgtrd",
+      "scripts_found": 10,
+      "scripts": [
+        {
+          "title": "Volume Profile, Pivot Anchored by DGT",
+          "link": "https://www.tradingview.com/script/utCRHZeP-Volume-Profile-Pivot-Anchored-by-DGT/",
+          "boosts": 16694,
+          "is_strategy": false,
+          "author": "dgtrd",
+          "filename": "indicators\\dgtrd\\Volume_Profile__Pivot_Anchored_by_DGT.pine"
+        },
+        {
+          "title": "Fibonacci Extension / Retracement / Pivot Points by DGT",
+          "link": "https://www.tradingview.com/script/FWYQ4vTk-Fibonacci-Extension-Retracement-Pivot-Points-by-DGT/",
+          "boosts": 14730,
+          "is_strategy": false,
+          "author": "dgtrd",
+          "filename": "indicators\\dgtrd\\Fibonacci_Extension___Retracement___Pivot_Points_by_DGT.pine"
+        },
+        {
+          "title": "Auto PitchFan, Fib Extension/Retracement and ZigZag by DGT",
+          "link": "https://www.tradingview.com/script/17xrXGad-Auto-PitchFan-Fib-Extension-Retracement-and-ZigZag-by-DGT/",
+          "boosts": 7296,
+          "is_strategy": false,
+          "author": "dgtrd",
+          "filename": "indicators\\dgtrd\\Auto_PitchFan__Fib_Extension_Retracement_and_ZigZag_by_DGT.pine"
+        },
+        {
+          "title": "Oscillators Overlay w/ Divergencies/Alerts by DGT",
+          "link": "https://www.tradingview.com/script/0c9x2Jam-Oscillators-Overlay-w-Divergencies-Alerts-by-DGT/",
+          "boosts": 3789,
+          "is_strategy": false,
+          "author": "dgtrd",
+          "filename": "indicators\\dgtrd\\Oscillators_Overlay_w__Divergencies_Alerts_by_DGT.pine"
+        },
+        {
+          "title": "MACD-X Overlay, More Than MACD by DGT",
+          "link": "https://www.tradingview.com/script/qtkFi42t-MACD-X-Overlay-More-Than-MACD-by-DGT/",
+          "boosts": 3760,
+          "is_strategy": false,
+          "author": "dgtrd",
+          "filename": "indicators\\dgtrd\\MACD-X_Overlay__More_Than_MACD_by_DGT.pine"
+        },
+        {
+          "title": "Raff Regression Channel by DGT",
+          "link": "https://www.tradingview.com/script/1QVTzi78-Raff-Regression-Channel-by-DGT/",
+          "boosts": 3683,
+          "is_strategy": false,
+          "author": "dgtrd",
+          "filename": "indicators\\dgtrd\\Raff_Regression_Channel_by_DGT.pine"
+        },
+        {
+          "title": "Auto Fib Time Zones and Trend-Based Fib Time by DGT",
+          "link": "https://www.tradingview.com/script/l2SQEvfQ-Auto-Fib-Time-Zones-and-Trend-Based-Fib-Time-by-DGT/",
+          "boosts": 3294,
+          "is_strategy": false,
+          "author": "dgtrd",
+          "filename": "indicators\\dgtrd\\Auto_Fib_Time_Zones_and_Trend-Based_Fib_Time_by_DGT.pine"
+        },
+        {
+          "title": "Distance Oscillator - Support and Resistance by DGT",
+          "link": "https://www.tradingview.com/script/lQU45Wmv-Distance-Oscillator-Support-and-Resistance-by-DGT/",
+          "boosts": 2913,
+          "is_strategy": false,
+          "author": "dgtrd",
+          "filename": "indicators\\dgtrd\\Distance_Oscillator_-_Support_and_Resistance_by_DGT.pine"
+        },
+        {
+          "title": "FibFans on Previous HTF HL [FaizanNawaz] by DGT",
+          "link": "https://www.tradingview.com/script/im5PTWWi-FibFans-on-Previous-HTF-HL-FaizanNawaz-by-DGT/",
+          "boosts": 2311,
+          "is_strategy": false,
+          "author": "dgtrd",
+          "filename": "indicators\\dgtrd\\FibFans_on_Previous_HTF_HL__FaizanNawaz__by_DGT.pine"
+        },
+        {
+          "title": "Sacred Geometry by DGT",
+          "link": "https://www.tradingview.com/script/KJ6ng6jv-Sacred-Geometry-by-DGT/",
+          "boosts": 2222,
+          "is_strategy": false,
+          "author": "dgtrd",
+          "filename": "indicators\\dgtrd\\Sacred_Geometry_by_DGT.pine"
+        }
+      ]
+    },
+    "rumpypumpydumpy": {
+      "display_name": "rumpypumpydumpy",
+      "scripts_found": 21,
+      "scripts": [
+        {
+          "title": "Intraday Volume Swings",
+          "link": "https://www.tradingview.com/script/dFY6oRQi-Intraday-Volume-Swings/",
+          "boosts": 5918,
+          "is_strategy": false,
+          "author": "rumpypumpydumpy",
+          "filename": "indicators\\rumpypumpydumpy\\Intraday_Volume_Swings.pine"
+        },
+        {
+          "title": "Speedometer Toolbox",
+          "link": "https://www.tradingview.com/script/1T498Yog-Speedometer-Toolbox/",
+          "boosts": 2880,
+          "is_strategy": false,
+          "author": "rumpypumpydumpy",
+          "filename": "indicators\\rumpypumpydumpy\\Speedometer_Toolbox.pine"
+        },
+        {
+          "title": "Higher Order Pivots",
+          "link": "https://www.tradingview.com/script/x2LlRvBe-Higher-Order-Pivots/",
+          "boosts": 1711,
+          "is_strategy": false,
+          "author": "rumpypumpydumpy",
+          "filename": "indicators\\rumpypumpydumpy\\Higher_Order_Pivots.pine"
+        },
+        {
+          "title": "No Duplicates Interval Range & EQ",
+          "link": "https://www.tradingview.com/script/JpKfECGC-No-Duplicates-Interval-Range-EQ/",
+          "boosts": 1549,
+          "is_strategy": false,
+          "author": "rumpypumpydumpy",
+          "filename": "indicators\\rumpypumpydumpy\\No_Duplicates_Interval_Range___EQ.pine"
+        },
+        {
+          "title": "log-log Regression From Arrays",
+          "link": "https://www.tradingview.com/script/w8tf6FqM-log-log-Regression-From-Arrays/",
+          "boosts": 1266,
+          "is_strategy": false,
+          "author": "rumpypumpydumpy",
+          "filename": "indicators\\rumpypumpydumpy\\log-log_Regression_From_Arrays.pine"
+        },
+        {
+          "title": "Equivolume Overlay - Volume Bars",
+          "link": "https://www.tradingview.com/script/iFW3Re7j-Equivolume-Overlay-Volume-Bars/",
+          "boosts": 915,
+          "is_strategy": false,
+          "author": "rumpypumpydumpy",
+          "filename": "indicators\\rumpypumpydumpy\\Equivolume_Overlay_-_Volume_Bars.pine"
+        },
+        {
+          "title": "Equivolume Bars",
+          "link": "https://www.tradingview.com/script/abwBbB9h-Equivolume-Bars/",
+          "boosts": 861,
+          "is_strategy": false,
+          "author": "rumpypumpydumpy",
+          "filename": "indicators\\rumpypumpydumpy\\Equivolume_Bars.pine"
+        },
+        {
+          "title": "Padovan Retracements",
+          "link": "https://www.tradingview.com/script/GYpAa1Qf-Padovan-Retracements/",
+          "boosts": 737,
+          "is_strategy": false,
+          "author": "rumpypumpydumpy",
+          "filename": "indicators\\rumpypumpydumpy\\Padovan_Retracements.pine"
+        },
+        {
+          "title": "Sigma Spike Filtered Binned OPR ( Adam H. Grimes )",
+          "link": "https://www.tradingview.com/script/TcwiJYgr-Sigma-Spike-Filtered-Binned-OPR-Adam-H-Grimes/",
+          "boosts": 650,
+          "is_strategy": false,
+          "author": "rumpypumpydumpy",
+          "filename": "indicators\\rumpypumpydumpy\\Sigma_Spike_Filtered_Binned_OPR___Adam_H._Grimes__.pine"
+        },
+        {
+          "title": "Function - Weighted Standard Deviation",
+          "link": "https://www.tradingview.com/script/F6fK5IMa-Function-Weighted-Standard-Deviation/",
+          "boosts": 527,
+          "is_strategy": false,
+          "author": "rumpypumpydumpy",
+          "filename": "indicators\\rumpypumpydumpy\\Function_-_Weighted_Standard_Deviation.pine"
+        },
+        {
+          "title": "Exponential Regression From Arrays",
+          "link": "https://www.tradingview.com/script/rYa88u09-Exponential-Regression-From-Arrays/",
+          "boosts": 383,
+          "is_strategy": false,
+          "author": "rumpypumpydumpy",
+          "filename": "indicators\\rumpypumpydumpy\\Exponential_Regression_From_Arrays.pine"
+        },
+        {
+          "title": "Time of day / day of week Sigma Spike",
+          "link": "https://www.tradingview.com/script/bbEeQrdm-Time-of-day-day-of-week-Sigma-Spike/",
+          "boosts": 347,
+          "is_strategy": false,
+          "author": "rumpypumpydumpy",
+          "filename": "indicators\\rumpypumpydumpy\\Time_of_day___day_of_week_Sigma_Spike.pine"
+        },
+        {
+          "title": "Woobull BTC Top Cap",
+          "link": "https://www.tradingview.com/script/iK4PFbpy-Woobull-BTC-Top-Cap/",
+          "boosts": 258,
+          "is_strategy": false,
+          "author": "rumpypumpydumpy",
+          "filename": "indicators\\rumpypumpydumpy\\Woobull_BTC_Top_Cap.pine"
+        },
+        {
+          "title": "Trapezoidal Weighted Moving Average and Bollinger Bands",
+          "link": "https://www.tradingview.com/script/1VlB1g94-Trapezoidal-Weighted-Moving-Average-and-Bollinger-Bands/",
+          "boosts": 188,
+          "is_strategy": false,
+          "author": "rumpypumpydumpy",
+          "filename": "indicators\\rumpypumpydumpy\\Trapezoidal_Weighted_Moving_Average_and_Bollinger_Bands.pine"
+        },
+        {
+          "title": "Pie Chart Toolbox",
+          "link": "https://www.tradingview.com/script/pHlXdeXI-Pie-Chart-Toolbox/",
+          "boosts": 167,
+          "is_strategy": false,
+          "author": "rumpypumpydumpy",
+          "filename": "indicators\\rumpypumpydumpy\\Pie_Chart_Toolbox.pine"
+        },
+        {
+          "title": "Weighted stdev/BB",
+          "link": "https://www.tradingview.com/script/QESIeiFh-Weighted-stdev-BB/",
+          "boosts": 152,
+          "is_strategy": false,
+          "author": "rumpypumpydumpy",
+          "filename": "indicators\\rumpypumpydumpy\\Weighted_stdev_BB.pine"
+        },
+        {
+          "title": "RSI Pie",
+          "link": "https://www.tradingview.com/script/4afSNpBJ-RSI-Pie/",
+          "boosts": 139,
+          "is_strategy": false,
+          "author": "rumpypumpydumpy",
+          "filename": "indicators\\rumpypumpydumpy\\RSI_Pie.pine"
+        },
+        {
+          "title": "Rank Correlation Index",
+          "link": "https://www.tradingview.com/script/owlV88rj-Rank-Correlation-Index/",
+          "boosts": 133,
+          "is_strategy": false,
+          "author": "rumpypumpydumpy",
+          "filename": "indicators\\rumpypumpydumpy\\Rank_Correlation_Index.pine"
+        },
+        {
+          "title": "Candle-Box Ratio",
+          "link": "https://www.tradingview.com/script/1JUfTn5L-Candle-Box-Ratio/",
+          "boosts": 121,
+          "is_strategy": false,
+          "author": "rumpypumpydumpy",
+          "filename": "indicators\\rumpypumpydumpy\\Candle-Box_Ratio.pine"
+        },
+        {
+          "title": "Equivolume Overlay - Bollinger Bands",
+          "link": "https://www.tradingview.com/script/Ik9NB3HI-Equivolume-Overlay-Bollinger-Bands/",
+          "boosts": 114,
+          "is_strategy": false,
+          "author": "rumpypumpydumpy",
+          "filename": "indicators\\rumpypumpydumpy\\Equivolume_Overlay_-_Bollinger_Bands.pine"
+        },
+        {
+          "title": "Equivolume Overlay - Moving Averages",
+          "link": "https://www.tradingview.com/script/Y5M1joIL-Equivolume-Overlay-Moving-Averages/",
+          "boosts": 112,
+          "is_strategy": false,
+          "author": "rumpypumpydumpy",
+          "filename": "indicators\\rumpypumpydumpy\\Equivolume_Overlay_-_Moving_Averages.pine"
+        }
+      ]
+    },
+    "Bjorgum": {
+      "display_name": "Bjorgum",
+      "scripts_found": 12,
+      "scripts": [
+        {
+          "title": "Bjorgum Key Levels",
+          "link": "https://www.tradingview.com/script/CapG3ivf-Bjorgum-Key-Levels/",
+          "boosts": 22559,
+          "is_strategy": false,
+          "author": "Bjorgum",
+          "filename": "indicators\\Bjorgum\\Bjorgum_Key_Levels.pine"
+        },
+        {
+          "title": "3Commas Bot",
+          "link": "https://www.tradingview.com/script/MvlwAzSg-3Commas-Bot/",
+          "boosts": 13718,
+          "is_strategy": true,
+          "author": "Bjorgum",
+          "filename": "indicators\\Bjorgum\\3Commas_Bot.pine"
+        },
+        {
+          "title": "Bjorgum SuperScript",
+          "link": "https://www.tradingview.com/script/dRvnp3hs-Bjorgum-SuperScript/",
+          "boosts": 11629,
+          "is_strategy": false,
+          "author": "Bjorgum",
+          "filename": "indicators\\Bjorgum\\Bjorgum_SuperScript.pine"
+        },
+        {
+          "title": "Bjorgum Double Tap",
+          "link": "https://www.tradingview.com/script/rLkjr2sQ-Bjorgum-Double-Tap/",
+          "boosts": 8145,
+          "is_strategy": true,
+          "author": "Bjorgum",
+          "filename": "indicators\\Bjorgum\\Bjorgum_Double_Tap.pine"
+        },
+        {
+          "title": "TKP T3 Trend With Psar Barcolor",
+          "link": "https://www.tradingview.com/script/5zoE62bC-TKP-T3-Trend-With-Psar-Barcolor/",
+          "boosts": 6195,
+          "is_strategy": false,
+          "author": "Bjorgum",
+          "filename": "indicators\\Bjorgum\\TKP_T3_Trend_With_Psar_Barcolor.pine"
+        },
+        {
+          "title": "Bjorgum AutoTrail",
+          "link": "https://www.tradingview.com/script/EfbdipVs-Bjorgum-AutoTrail/",
+          "boosts": 5197,
+          "is_strategy": false,
+          "author": "Bjorgum",
+          "filename": "indicators\\Bjorgum\\Bjorgum_AutoTrail.pine"
+        },
+        {
+          "title": "Bjorgum TSI",
+          "link": "https://www.tradingview.com/script/VX852ekB-Bjorgum-TSI/",
+          "boosts": 4474,
+          "is_strategy": false,
+          "author": "Bjorgum",
+          "filename": "indicators\\Bjorgum\\Bjorgum_TSI.pine"
+        },
+        {
+          "title": "Bjorgum Triple EMA Strat",
+          "link": "https://www.tradingview.com/script/pr3d5mum-Bjorgum-Triple-EMA-Strat/",
+          "boosts": 4409,
+          "is_strategy": false,
+          "author": "Bjorgum",
+          "filename": "indicators\\Bjorgum\\Bjorgum_Triple_EMA_Strat.pine"
+        },
+        {
+          "title": "Bjorgum RSI",
+          "link": "https://www.tradingview.com/script/zbVtO9Zb-Bjorgum-RSI/",
+          "boosts": 4014,
+          "is_strategy": false,
+          "author": "Bjorgum",
+          "filename": "indicators\\Bjorgum\\Bjorgum_RSI.pine"
+        },
+        {
+          "title": "Bjorgum TSI Arrows",
+          "link": "https://www.tradingview.com/script/IMf2YLh0-Bjorgum-TSI-Arrows/",
+          "boosts": 2364,
+          "is_strategy": false,
+          "author": "Bjorgum",
+          "filename": "indicators\\Bjorgum\\Bjorgum_TSI_Arrows.pine"
+        },
+        {
+          "title": "Bjorgum EMA",
+          "link": "https://www.tradingview.com/script/yHUaINRX-Bjorgum-EMA/",
+          "boosts": 1972,
+          "is_strategy": false,
+          "author": "Bjorgum",
+          "filename": "indicators\\Bjorgum\\Bjorgum_EMA.pine"
+        },
+        {
+          "title": "BjCandlePatterns",
+          "link": "https://www.tradingview.com/script/x8mUJqGT-BjCandlePatterns/",
+          "boosts": 1240,
+          "is_strategy": false,
+          "author": "Bjorgum",
+          "filename": "indicators\\Bjorgum\\BjCandlePatterns.pine"
+        }
+      ]
+    },
+    "fikira": {
+      "display_name": "fikira",
+      "scripts_found": 7,
+      "scripts": [
+        {
+          "title": "Harmonic Pattern Detector (75 patterns)",
+          "link": "https://www.tradingview.com/script/h6jFK5SR-Harmonic-Pattern-Detector-75-patterns/",
+          "boosts": 979,
+          "is_strategy": false,
+          "author": "fikira",
+          "filename": "indicators\\fikira\\Harmonic_Pattern_Detector__75_patterns_.pine"
+        },
+        {
+          "title": "ICT Silver Bullet with signals",
+          "link": "https://www.tradingview.com/script/sGIbNDS3-ICT-Silver-Bullet-with-signals/",
+          "boosts": 838,
+          "is_strategy": false,
+          "author": "fikira",
+          "filename": "indicators\\fikira\\ICT_Silver_Bullet_with_signals.pine"
+        },
+        {
+          "title": "Volume Profile with a few polylines",
+          "link": "https://www.tradingview.com/script/HBMP20tn-Volume-Profile-with-a-few-polylines/",
+          "boosts": 788,
+          "is_strategy": false,
+          "author": "fikira",
+          "filename": "indicators\\fikira\\Volume_Profile_with_a_few_polylines.pine"
+        },
+        {
+          "title": "Log Regression Oscillator",
+          "link": "https://www.tradingview.com/script/giDolcB9-Log-Regression-Oscillator/",
+          "boosts": 631,
+          "is_strategy": false,
+          "author": "fikira",
+          "filename": "indicators\\fikira\\Log_Regression_Oscillator.pine"
+        },
+        {
+          "title": "Sentinels",
+          "link": "https://www.tradingview.com/script/GlbuIHjp-Sentinels/",
+          "boosts": 360,
+          "is_strategy": false,
+          "author": "fikira",
+          "filename": "indicators\\fikira\\Sentinels.pine"
+        },
+        {
+          "title": "Statistics \u2022 Chi Square \u2022 P-value \u2022 Significance",
+          "link": "https://www.tradingview.com/script/W0vYvqgB-Statistics-Chi-Square-P-value-Significance/",
+          "boosts": 265,
+          "is_strategy": false,
+          "author": "fikira",
+          "filename": "indicators\\fikira\\Statistics___Chi_Square___P-value___Significance.pine"
+        },
+        {
+          "title": "Intersection Point",
+          "link": "https://www.tradingview.com/script/bmnN6B7P-Intersection-Point/",
+          "boosts": 221,
+          "is_strategy": false,
+          "author": "fikira",
+          "filename": "indicators\\fikira\\Intersection_Point.pine"
+        }
+      ]
+    },
+    "allanster": {
+      "display_name": "allanster",
+      "scripts_found": 11,
+      "scripts": [
+        {
+          "title": "VAMA Volume Adjusted Moving Average Function",
+          "link": "https://www.tradingview.com/script/WzvigqK7-VAMA-Volume-Adjusted-Moving-Average-Function/",
+          "boosts": 3065,
+          "is_strategy": false,
+          "author": "allanster",
+          "filename": "indicators\\allanster\\VAMA_Volume_Adjusted_Moving_Average_Function.pine"
+        },
+        {
+          "title": "Pivotal Moments",
+          "link": "https://www.tradingview.com/script/qTTsZPpO-Pivotal-Moments/",
+          "boosts": 1586,
+          "is_strategy": false,
+          "author": "allanster",
+          "filename": "indicators\\allanster\\Pivotal_Moments.pine"
+        },
+        {
+          "title": "Heikin-Ashi Source Function",
+          "link": "https://www.tradingview.com/script/HtNYMuBO-Heikin-Ashi-Source-Function/",
+          "boosts": 1412,
+          "is_strategy": false,
+          "author": "allanster",
+          "filename": "indicators\\allanster\\Heikin-Ashi_Source_Function.pine"
+        },
+        {
+          "title": "Intraday Intensity Modes",
+          "link": "https://www.tradingview.com/script/S7HGang6-Intraday-Intensity-Modes/",
+          "boosts": 1177,
+          "is_strategy": false,
+          "author": "allanster",
+          "filename": "indicators\\allanster\\Intraday_Intensity_Modes.pine"
+        },
+        {
+          "title": "VAMA Volume Adjusted Moving Average",
+          "link": "https://www.tradingview.com/script/RLnFKoAx-VAMA-Volume-Adjusted-Moving-Average/",
+          "boosts": 726,
+          "is_strategy": false,
+          "author": "allanster",
+          "filename": "indicators\\allanster\\VAMA_Volume_Adjusted_Moving_Average.pine"
+        },
+        {
+          "title": "How To Show Vertical Lines",
+          "link": "https://www.tradingview.com/script/7xoz2sEd-How-To-Show-Vertical-Lines/",
+          "boosts": 721,
+          "is_strategy": false,
+          "author": "allanster",
+          "filename": "indicators\\allanster\\How_To_Show_Vertical_Lines.pine"
+        },
+        {
+          "title": "How To Limit n Round Trips Per Day [Alerts]",
+          "link": "https://www.tradingview.com/script/O4sQWJaT-How-To-Limit-n-Round-Trips-Per-Day-Alerts/",
+          "boosts": 578,
+          "is_strategy": false,
+          "author": "allanster",
+          "filename": "indicators\\allanster\\How_To_Limit_n_Round_Trips_Per_Day__Alerts_.pine"
+        },
+        {
+          "title": "Never Going Back Again",
+          "link": "https://www.tradingview.com/script/Uxbf1tOL-Never-Going-Back-Again/",
+          "boosts": 402,
+          "is_strategy": false,
+          "author": "allanster",
+          "filename": "indicators\\allanster\\Never_Going_Back_Again.pine"
+        },
+        {
+          "title": "VAMA Volume Adjusted Moving Average Bands",
+          "link": "https://www.tradingview.com/script/gGLfjMek-VAMA-Volume-Adjusted-Moving-Average-Bands/",
+          "boosts": 342,
+          "is_strategy": false,
+          "author": "allanster",
+          "filename": "indicators\\allanster\\VAMA_Volume_Adjusted_Moving_Average_Bands.pine"
+        },
+        {
+          "title": "How To Import And Offset CSV Data",
+          "link": "https://www.tradingview.com/script/KmceMbsx-How-To-Import-And-Offset-CSV-Data/",
+          "boosts": 285,
+          "is_strategy": false,
+          "author": "allanster",
+          "filename": "indicators\\allanster\\How_To_Import_And_Offset_CSV_Data.pine"
+        },
+        {
+          "title": "How To Limit Repeating Signals",
+          "link": "https://www.tradingview.com/script/swT4NEBY-How-To-Limit-Repeating-Signals/",
+          "boosts": 172,
+          "is_strategy": false,
+          "author": "allanster",
+          "filename": "indicators\\allanster\\How_To_Limit_Repeating_Signals.pine"
+        }
+      ]
+    },
+    "Trendoscope": {
+      "display_name": "Trendoscope",
+      "scripts_found": 6,
+      "scripts": [
+        {
+          "title": "Divergence Screener [Trendoscope\u00ae]",
+          "link": "https://www.tradingview.com/script/zewvHAvQ-Divergence-Screener-Trendoscope/",
+          "boosts": 5164,
+          "is_strategy": false,
+          "author": "Trendoscope",
+          "filename": "indicators\\Trendoscope\\Divergence_Screener__Trendoscope__.pine"
+        },
+        {
+          "title": "Breakouts & Pullbacks [Trendoscope\u00ae]",
+          "link": "https://www.tradingview.com/script/hkjvjHbt-Breakouts-Pullbacks-Trendoscope/",
+          "boosts": 2115,
+          "is_strategy": false,
+          "author": "Trendoscope",
+          "filename": "indicators\\Trendoscope\\Breakouts___Pullbacks__Trendoscope__.pine"
+        },
+        {
+          "title": "Divergence Strategy [Trendoscope\u00ae]",
+          "link": "https://www.tradingview.com/script/haCPJOF2-Divergence-Strategy-Trendoscope/",
+          "boosts": 1121,
+          "is_strategy": true,
+          "author": "Trendoscope",
+          "filename": "indicators\\Trendoscope\\Divergence_Strategy__Trendoscope__.pine"
+        },
+        {
+          "title": "Rolling Angled Volume Profile [Trendoscope\u00ae]",
+          "link": "https://www.tradingview.com/script/YGgTjsby-Rolling-Angled-Volume-Profile-Trendoscope/",
+          "boosts": 596,
+          "is_strategy": false,
+          "author": "Trendoscope",
+          "filename": "indicators\\Trendoscope\\Rolling_Angled_Volume_Profile__Trendoscope__.pine"
+        },
+        {
+          "title": "Earnings Snapshot [Trendoscope]",
+          "link": "https://www.tradingview.com/script/lu0MTsuD-Earnings-Snapshot-Trendoscope/",
+          "boosts": 393,
+          "is_strategy": false,
+          "author": "Trendoscope",
+          "filename": "indicators\\Trendoscope\\Earnings_Snapshot__Trendoscope_.pine"
+        },
+        {
+          "title": "SIP Evaluator and Screener [Trendoscope\u00ae]",
+          "link": "https://www.tradingview.com/script/Hxxk64fl-SIP-Evaluator-and-Screener-Trendoscope/",
+          "boosts": 248,
+          "is_strategy": false,
+          "author": "Trendoscope",
+          "filename": "indicators\\Trendoscope\\SIP_Evaluator_and_Screener__Trendoscope__.pine"
+        }
+      ]
+    },
+    "LuxAlgo": {
+      "display_name": "LuxAlgo",
+      "scripts_found": 22,
+      "scripts": [
+        {
+          "title": "Support & Resistance Pro Toolkit [LuxAlgo]",
+          "link": "https://www.tradingview.com/script/n2ODj57p-Support-Resistance-Pro-Toolkit-LuxAlgo/",
+          "boosts": 3387,
+          "is_strategy": false,
+          "author": "LuxAlgo",
+          "filename": "indicators\\LuxAlgo\\Support___Resistance_Pro_Toolkit__LuxAlgo_.pine"
+        },
+        {
+          "title": "Liquidity Structure & Order Flow [LuxAlgo]",
+          "link": "https://www.tradingview.com/script/FjoX7GeT-Liquidity-Structure-Order-Flow-LuxAlgo/",
+          "boosts": 2905,
+          "is_strategy": false,
+          "author": "LuxAlgo",
+          "filename": "indicators\\LuxAlgo\\Liquidity_Structure___Order_Flow__LuxAlgo_.pine"
+        },
+        {
+          "title": "kNN Market Architecture [LuxAlgo]",
+          "link": "https://www.tradingview.com/script/20YQRCyP-kNN-Market-Architecture-LuxAlgo/",
+          "boosts": 2178,
+          "is_strategy": false,
+          "author": "LuxAlgo",
+          "filename": "indicators\\LuxAlgo\\kNN_Market_Architecture__LuxAlgo_.pine"
+        },
+        {
+          "title": "Spline Quantile Regression Channel [LuxAlgo]",
+          "link": "https://www.tradingview.com/script/nAiSNsGQ-Spline-Quantile-Regression-Channel-LuxAlgo/",
+          "boosts": 1798,
+          "is_strategy": false,
+          "author": "LuxAlgo",
+          "filename": "indicators\\LuxAlgo\\Spline_Quantile_Regression_Channel__LuxAlgo_.pine"
+        },
+        {
+          "title": "KNN Supertrend Horizon [LuxAlgo]",
+          "link": "https://www.tradingview.com/script/O6LjCPzY-KNN-Supertrend-Horizon-LuxAlgo/",
+          "boosts": 1787,
+          "is_strategy": false,
+          "author": "LuxAlgo",
+          "filename": "indicators\\LuxAlgo\\KNN_Supertrend_Horizon__LuxAlgo_.pine"
+        },
+        {
+          "title": "Rolling Segment [LuxAlgo]",
+          "link": "https://www.tradingview.com/script/eoti0nIb-Rolling-Segment-LuxAlgo/",
+          "boosts": 1674,
+          "is_strategy": false,
+          "author": "LuxAlgo",
+          "filename": "indicators\\LuxAlgo\\Rolling_Segment__LuxAlgo_.pine"
+        },
+        {
+          "title": "Hot Zone Radar [LuxAlgo]",
+          "link": "https://www.tradingview.com/script/Z7AzC5sk-Hot-Zone-Radar-LuxAlgo/",
+          "boosts": 1351,
+          "is_strategy": false,
+          "author": "LuxAlgo",
+          "filename": "indicators\\LuxAlgo\\Hot_Zone_Radar__LuxAlgo_.pine"
+        },
+        {
+          "title": "Structural SVM Ranker [LuxAlgo]",
+          "link": "https://www.tradingview.com/script/5B6a2c6I-Structural-SVM-Ranker-LuxAlgo/",
+          "boosts": 1170,
+          "is_strategy": false,
+          "author": "LuxAlgo",
+          "filename": "indicators\\LuxAlgo\\Structural_SVM_Ranker__LuxAlgo_.pine"
+        },
+        {
+          "title": "Daily Polynomial Regressions [LuxAlgo]",
+          "link": "https://www.tradingview.com/script/QROCs1AS-Daily-Polynomial-Regressions-LuxAlgo/",
+          "boosts": 1066,
+          "is_strategy": false,
+          "author": "LuxAlgo",
+          "filename": "indicators\\LuxAlgo\\Daily_Polynomial_Regressions__LuxAlgo_.pine"
+        },
+        {
+          "title": "Trailing Peak Activity Level [LuxAlgo]",
+          "link": "https://www.tradingview.com/script/2dXhp1vH-Trailing-Peak-Activity-Level-LuxAlgo/",
+          "boosts": 1017,
+          "is_strategy": false,
+          "author": "LuxAlgo",
+          "filename": "indicators\\LuxAlgo\\Trailing_Peak_Activity_Level__LuxAlgo_.pine"
+        },
+        {
+          "title": "RSI Prediction by Range Segmentation [LuxAlgo]",
+          "link": "https://www.tradingview.com/script/3gpERF3o-RSI-Prediction-by-Range-Segmentation-LuxAlgo/",
+          "boosts": 910,
+          "is_strategy": false,
+          "author": "LuxAlgo",
+          "filename": "indicators\\LuxAlgo\\RSI_Prediction_by_Range_Segmentation__LuxAlgo_.pine"
+        },
+        {
+          "title": "Omni-Flow Consensus [LuxAlgo]",
+          "link": "https://www.tradingview.com/script/3ONFG3bJ-Omni-Flow-Consensus-LuxAlgo/",
+          "boosts": 884,
+          "is_strategy": false,
+          "author": "LuxAlgo",
+          "filename": "indicators\\LuxAlgo\\Omni-Flow_Consensus__LuxAlgo_.pine"
+        },
+        {
+          "title": "Probabilistic Breakout Forecaster [LuxAlgo]",
+          "link": "https://www.tradingview.com/script/lJUIXnof-Probabilistic-Breakout-Forecaster-LuxAlgo/",
+          "boosts": 582,
+          "is_strategy": false,
+          "author": "LuxAlgo",
+          "filename": "indicators\\LuxAlgo\\Probabilistic_Breakout_Forecaster__LuxAlgo_.pine"
+        },
+        {
+          "title": "Sigmoid Transition Trailing Stop [LuxAlgo]",
+          "link": "https://www.tradingview.com/script/GAF9JYlL-Sigmoid-Transition-Trailing-Stop-LuxAlgo/",
+          "boosts": 528,
+          "is_strategy": false,
+          "author": "LuxAlgo",
+          "filename": "indicators\\LuxAlgo\\Sigmoid_Transition_Trailing_Stop__LuxAlgo_.pine"
+        },
+        {
+          "title": "Inertial Stochastic [LuxAlgo]",
+          "link": "https://www.tradingview.com/script/AgyYROJE-Inertial-Stochastic-LuxAlgo/",
+          "boosts": 494,
+          "is_strategy": false,
+          "author": "LuxAlgo",
+          "filename": "indicators\\LuxAlgo\\Inertial_Stochastic__LuxAlgo_.pine"
+        },
+        {
+          "title": "Consecutive Candle Streak Analysis [LuxAlgo]",
+          "link": "https://www.tradingview.com/script/yBAJ4hxK-Consecutive-Candle-Streak-Analysis-LuxAlgo/",
+          "boosts": 453,
+          "is_strategy": false,
+          "author": "LuxAlgo",
+          "filename": "indicators\\LuxAlgo\\Consecutive_Candle_Streak_Analysis__LuxAlgo_.pine"
+        },
+        {
+          "title": "3D Opportunity Cone [LuxAlgo]",
+          "link": "https://www.tradingview.com/script/4dlaP3qt-3D-Opportunity-Cone-LuxAlgo/",
+          "boosts": 390,
+          "is_strategy": false,
+          "author": "LuxAlgo",
+          "filename": "indicators\\LuxAlgo\\3D_Opportunity_Cone__LuxAlgo_.pine"
+        },
+        {
+          "title": "Momentum Cycle Sentry [LuxAlgo]",
+          "link": "https://www.tradingview.com/script/5M9CcOMa-Momentum-Cycle-Sentry-LuxAlgo/",
+          "boosts": 270,
+          "is_strategy": false,
+          "author": "LuxAlgo",
+          "filename": "indicators\\LuxAlgo\\Momentum_Cycle_Sentry__LuxAlgo_.pine"
+        },
+        {
+          "title": "Rolling KPSS Statistic [LuxAlgo]",
+          "link": "https://www.tradingview.com/script/BT3GcJxr-Rolling-KPSS-Statistic-LuxAlgo/",
+          "boosts": 251,
+          "is_strategy": false,
+          "author": "LuxAlgo",
+          "filename": "indicators\\LuxAlgo\\Rolling_KPSS_Statistic__LuxAlgo_.pine"
+        },
+        {
+          "title": "Price-Volume-Volatility Cube [LuxAlgo]",
+          "link": "https://www.tradingview.com/script/8xjJujlH-Price-Volume-Volatility-Cube-LuxAlgo/",
+          "boosts": 212,
+          "is_strategy": false,
+          "author": "LuxAlgo",
+          "filename": "indicators\\LuxAlgo\\Price-Volume-Volatility_Cube__LuxAlgo_.pine"
+        },
+        {
+          "title": "NFP Price Zones [LuxAlgo]",
+          "link": "https://www.tradingview.com/script/RNKs3ejJ-NFP-Price-Zones-LuxAlgo/",
+          "boosts": 205,
+          "is_strategy": false,
+          "author": "LuxAlgo",
+          "filename": "indicators\\LuxAlgo\\NFP_Price_Zones__LuxAlgo_.pine"
+        },
+        {
+          "title": "Liquidity Clusters Magnitude [LuxAlgo]",
+          "link": "https://www.tradingview.com/script/mmZR2Lat-Liquidity-Clusters-Magnitude-LuxAlgo/",
+          "boosts": 150,
+          "is_strategy": false,
+          "author": "LuxAlgo",
+          "filename": "indicators\\LuxAlgo\\Liquidity_Clusters_Magnitude__LuxAlgo_.pine"
+        }
+      ]
+    },
+    "KioseffTrading": {
+      "display_name": "KioseffTrading",
+      "scripts_found": 8,
+      "scripts": [
+        {
+          "title": "The Next Pivot [Kioseff Trading]",
+          "link": "https://www.tradingview.com/script/pLzwXOug-The-Next-Pivot-Kioseff-Trading/",
+          "boosts": 5596,
+          "is_strategy": false,
+          "author": "KioseffTrading",
+          "filename": "indicators\\KioseffTrading\\The_Next_Pivot__Kioseff_Trading_.pine"
+        },
+        {
+          "title": "10x Bull Vs. Bear VP Intraday Sessions [Kioseff Trading]",
+          "link": "https://www.tradingview.com/script/3mKewfnN-10x-Bull-Vs-Bear-VP-Intraday-Sessions-Kioseff-Trading/",
+          "boosts": 5420,
+          "is_strategy": false,
+          "author": "KioseffTrading",
+          "filename": "indicators\\KioseffTrading\\10x_Bull_Vs._Bear_VP_Intraday_Sessions__Kioseff_Trading_.pine"
+        },
+        {
+          "title": "Zig-Zag Volume Profile (Bull vs. Bear) [Kioseff Trading]",
+          "link": "https://www.tradingview.com/script/L2LxYayS-Zig-Zag-Volume-Profile-Bull-vs-Bear-Kioseff-Trading/",
+          "boosts": 2792,
+          "is_strategy": false,
+          "author": "KioseffTrading",
+          "filename": "indicators\\KioseffTrading\\Zig-Zag_Volume_Profile__Bull_vs._Bear___Kioseff_Trading_.pine"
+        },
+        {
+          "title": "Fundamentals Graphing [Kioseff Trading]",
+          "link": "https://www.tradingview.com/script/7qjXp2op-Fundamentals-Graphing-Kioseff-Trading/",
+          "boosts": 1395,
+          "is_strategy": false,
+          "author": "KioseffTrading",
+          "filename": "indicators\\KioseffTrading\\Fundamentals_Graphing__Kioseff_Trading_.pine"
+        },
+        {
+          "title": "Monte Carlo Simulation - Your Strategy [Kioseff Trading]",
+          "link": "https://www.tradingview.com/script/cvEVOXaH-Monte-Carlo-Simulation-Your-Strategy-Kioseff-Trading/",
+          "boosts": 1389,
+          "is_strategy": false,
+          "author": "KioseffTrading",
+          "filename": "indicators\\KioseffTrading\\Monte_Carlo_Simulation_-_Your_Strategy__Kioseff_Trading_.pine"
+        },
+        {
+          "title": "Monte Carlo (Polyline Traceback) [Kioseff Trading]",
+          "link": "https://www.tradingview.com/script/L1ZVVqbX-Monte-Carlo-Polyline-Traceback-Kioseff-Trading/",
+          "boosts": 1276,
+          "is_strategy": false,
+          "author": "KioseffTrading",
+          "filename": "indicators\\KioseffTrading\\Monte_Carlo__Polyline_Traceback___Kioseff_Trading_.pine"
+        },
+        {
+          "title": "Gaps [Kioseff Trading]",
+          "link": "https://www.tradingview.com/script/0JcOuXSQ-Gaps-Kioseff-Trading/",
+          "boosts": 1060,
+          "is_strategy": false,
+          "author": "KioseffTrading",
+          "filename": "indicators\\KioseffTrading\\Gaps__Kioseff_Trading_.pine"
+        },
+        {
+          "title": "ZWAP (ZigZag Anchored VWAP) [Kioseff Trading]",
+          "link": "https://www.tradingview.com/script/NiL9i0qV-ZWAP-ZigZag-Anchored-VWAP-Kioseff-Trading/",
+          "boosts": 500,
+          "is_strategy": false,
+          "author": "KioseffTrading",
+          "filename": "indicators\\KioseffTrading\\ZWAP__ZigZag_Anchored_VWAP___Kioseff_Trading_.pine"
+        }
+      ]
+    },
+    "LucF": {
+      "display_name": "LucF",
+      "scripts_found": 7,
+      "scripts": [
+        {
+          "title": "Oscillator Workbench \u2014 Chart [LucF]",
+          "link": "https://www.tradingview.com/script/BY9mAioc-Oscillator-Workbench-Chart-LucF/",
+          "boosts": 4252,
+          "is_strategy": false,
+          "author": "LucF",
+          "filename": "indicators\\LucF\\Oscillator_Workbench___Chart__LucF_.pine"
+        },
+        {
+          "title": "Signs of the Times [LucF]",
+          "link": "https://www.tradingview.com/script/ZKF0qji2-Signs-of-the-Times-LucF/",
+          "boosts": 2201,
+          "is_strategy": false,
+          "author": "LucF",
+          "filename": "indicators\\LucF\\Signs_of_the_Times__LucF_.pine"
+        },
+        {
+          "title": "Volume Buoyancy [LucF]",
+          "link": "https://www.tradingview.com/script/18fu8TxD-Volume-Buoyancy-LucF/",
+          "boosts": 936,
+          "is_strategy": false,
+          "author": "LucF",
+          "filename": "indicators\\LucF\\Volume_Buoyancy__LucF_.pine"
+        },
+        {
+          "title": "Volatility System by Wilder [LucF]",
+          "link": "https://www.tradingview.com/script/pjZKWnHl-Volatility-System-by-Wilder-LucF/",
+          "boosts": 895,
+          "is_strategy": true,
+          "author": "LucF",
+          "filename": "indicators\\LucF\\Volatility_System_by_Wilder__LucF_.pine"
+        },
+        {
+          "title": "Ord Volume [LucF]",
+          "link": "https://www.tradingview.com/script/lhda3xOg-Ord-Volume-LucF/",
+          "boosts": 674,
+          "is_strategy": false,
+          "author": "LucF",
+          "filename": "indicators\\LucF\\Ord_Volume__LucF_.pine"
+        },
+        {
+          "title": "Great Expectations [LucF]",
+          "link": "https://www.tradingview.com/script/ZLswiBhQ-Great-Expectations-LucF/",
+          "boosts": 606,
+          "is_strategy": false,
+          "author": "LucF",
+          "filename": "indicators\\LucF\\Great_Expectations__LucF_.pine"
+        },
+        {
+          "title": "Volume Cloud [LucF]",
+          "link": "https://www.tradingview.com/script/69pRaFvF-Volume-Cloud-LucF/",
+          "boosts": 224,
+          "is_strategy": false,
+          "author": "LucF",
+          "filename": "indicators\\LucF\\Volume_Cloud__LucF_.pine"
+        }
+      ]
+    },
+    "jdehorty": {
+      "display_name": "jdehorty",
+      "scripts_found": 10,
+      "scripts": [
+        {
+          "title": "Machine Learning: Lorentzian Classification",
+          "link": "https://www.tradingview.com/script/WhBzgfDu-Machine-Learning-Lorentzian-Classification/",
+          "boosts": 32079,
+          "is_strategy": false,
+          "author": "jdehorty",
+          "filename": "indicators\\jdehorty\\Machine_Learning__Lorentzian_Classification.pine"
+        },
+        {
+          "title": "Backtest Adapter",
+          "link": "https://www.tradingview.com/script/Pu38F2pB-Backtest-Adapter/",
+          "boosts": 6214,
+          "is_strategy": true,
+          "author": "jdehorty",
+          "filename": "indicators\\jdehorty\\Backtest_Adapter.pine"
+        },
+        {
+          "title": "WaveTrend 3D",
+          "link": "https://www.tradingview.com/script/clUzC70G-WaveTrend-3D/",
+          "boosts": 4213,
+          "is_strategy": false,
+          "author": "jdehorty",
+          "filename": "indicators\\jdehorty\\WaveTrend_3D.pine"
+        },
+        {
+          "title": "Nadaraya-Watson: Rational Quadratic Kernel (Non-Repainting)",
+          "link": "https://www.tradingview.com/script/AWNvbPRM-Nadaraya-Watson-Rational-Quadratic-Kernel-Non-Repainting/",
+          "boosts": 4003,
+          "is_strategy": false,
+          "author": "jdehorty",
+          "filename": "indicators\\jdehorty\\Nadaraya-Watson__Rational_Quadratic_Kernel__Non-Repainting_.pine"
+        },
+        {
+          "title": "Economic Calendar Events: FOMC, CPI, and more",
+          "link": "https://www.tradingview.com/script/HLYDwa0N-Economic-Calendar-Events-FOMC-CPI-and-more/",
+          "boosts": 3084,
+          "is_strategy": false,
+          "author": "jdehorty",
+          "filename": "indicators\\jdehorty\\Economic_Calendar_Events__FOMC__CPI__and_more.pine"
+        },
+        {
+          "title": "Nadaraya-Watson: Envelope (Non-Repainting)",
+          "link": "https://www.tradingview.com/script/WeLssFxl-Nadaraya-Watson-Envelope-Non-Repainting/",
+          "boosts": 2746,
+          "is_strategy": false,
+          "author": "jdehorty",
+          "filename": "indicators\\jdehorty\\Nadaraya-Watson__Envelope__Non-Repainting_.pine"
+        },
+        {
+          "title": "COG Continuations",
+          "link": "https://www.tradingview.com/script/JJNXcchG-COG-Continuations/",
+          "boosts": 989,
+          "is_strategy": false,
+          "author": "jdehorty",
+          "filename": "indicators\\jdehorty\\COG_Continuations.pine"
+        },
+        {
+          "title": "MLExtensions",
+          "link": "https://www.tradingview.com/script/ia5ozyMF-MLExtensions/",
+          "boosts": 949,
+          "is_strategy": false,
+          "author": "jdehorty",
+          "filename": "indicators\\jdehorty\\MLExtensions.pine"
+        },
+        {
+          "title": "KernelFunctions",
+          "link": "https://www.tradingview.com/script/e0Ek9x99-KernelFunctions/",
+          "boosts": 527,
+          "is_strategy": false,
+          "author": "jdehorty",
+          "filename": "indicators\\jdehorty\\KernelFunctions.pine"
+        },
+        {
+          "title": "EconomicCalendar",
+          "link": "https://www.tradingview.com/script/FAShzjTK-EconomicCalendar/",
+          "boosts": 231,
+          "is_strategy": false,
+          "author": "jdehorty",
+          "filename": "indicators\\jdehorty\\EconomicCalendar.pine"
+        }
+      ]
+    },
+    "kaigouthro": {
+      "display_name": "kaigouthro",
+      "scripts_found": 4,
+      "scripts": [
+        {
+          "title": "Textmate Language for Pine Script v5 2023-05",
+          "link": "https://www.tradingview.com/script/O6LCkLTf-Textmate-Language-for-Pine-Script-v5-2023-05/",
+          "boosts": 213,
+          "is_strategy": false,
+          "author": "kaigouthro",
+          "filename": "indicators\\kaigouthro\\Textmate_Language_for_Pine_Script_v5_2023-05.pine"
+        },
+        {
+          "title": "pymath",
+          "link": "https://www.tradingview.com/script/ItFyiLDU-pymath/",
+          "boosts": 148,
+          "is_strategy": false,
+          "author": "kaigouthro",
+          "filename": "indicators\\kaigouthro\\pymath.pine"
+        },
+        {
+          "title": "Geo.",
+          "link": "https://www.tradingview.com/script/MzHKuGci-Geo/",
+          "boosts": 134,
+          "is_strategy": false,
+          "author": "kaigouthro",
+          "filename": "indicators\\kaigouthro\\Geo..pine"
+        },
+        {
+          "title": "Wave Modulation Demo",
+          "link": "https://www.tradingview.com/script/I3jJUMnI-Wave-Modulation-Demo/",
+          "boosts": 121,
+          "is_strategy": false,
+          "author": "kaigouthro",
+          "filename": "indicators\\kaigouthro\\Wave_Modulation_Demo.pine"
+        }
+      ]
+    },
+    "skinra": {
+      "display_name": "skinra",
+      "scripts_found": 0,
+      "scripts": []
+    },
+    "e2e4": {
+      "display_name": "e2e4",
+      "scripts_found": 6,
+      "scripts": [
+        {
+          "title": "Reflex & Trendflex",
+          "link": "https://www.tradingview.com/script/6tSfPE3W-Reflex-Trendflex/",
+          "boosts": 735,
+          "is_strategy": false,
+          "author": "e2e4",
+          "filename": "indicators\\e2e4\\Reflex___Trendflex.pine"
+        },
+        {
+          "title": "Voss Predictive Filter",
+          "link": "https://www.tradingview.com/script/YCkuD0nx-Voss-Predictive-Filter/",
+          "boosts": 533,
+          "is_strategy": false,
+          "author": "e2e4",
+          "filename": "indicators\\e2e4\\Voss_Predictive_Filter.pine"
+        },
+        {
+          "title": "[e2] Color Gradient Function",
+          "link": "https://www.tradingview.com/script/VSGvuDEF-e2-Color-Gradient-Function/",
+          "boosts": 401,
+          "is_strategy": false,
+          "author": "e2e4",
+          "filename": "indicators\\e2e4\\_e2__Color_Gradient_Function.pine"
+        },
+        {
+          "title": "Fourier series Model Of The Market",
+          "link": "https://www.tradingview.com/script/EvPlRDqu-Fourier-series-Model-Of-The-Market/",
+          "boosts": 295,
+          "is_strategy": false,
+          "author": "e2e4",
+          "filename": "indicators\\e2e4\\Fourier_series_Model_Of_The_Market.pine"
+        },
+        {
+          "title": "[e2] Drawing Library :: Horizontal Ray",
+          "link": "https://www.tradingview.com/script/WRHeq9cf-e2-Drawing-Library-Horizontal-Ray/",
+          "boosts": 184,
+          "is_strategy": false,
+          "author": "e2e4",
+          "filename": "indicators\\e2e4\\_e2__Drawing_Library____Horizontal_Ray.pine"
+        },
+        {
+          "title": "[e2] Fibonacci, Tribonacci, Tetranacci Sequence Calculator",
+          "link": "https://www.tradingview.com/script/tVIOAsaD-e2-Fibonacci-Tribonacci-Tetranacci-Sequence-Calculator/",
+          "boosts": 183,
+          "is_strategy": false,
+          "author": "e2e4",
+          "filename": "indicators\\e2e4\\_e2__Fibonacci__Tribonacci__Tetranacci_Sequence_Calculator.pine"
+        }
+      ]
+    }
+  }
+}

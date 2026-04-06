@@ -73,6 +73,7 @@ from indicators.obv         import calc_obv
 from indicators.parabolic_sar import calc_psar
 from indicators.stochastic  import calc_stochastic
 from indicators.squeeze     import calc_squeeze
+from indicators.momentum_king_v4 import calc_momentum_king_v4
 
 
 def add_renko_indicators(df: pd.DataFrame) -> pd.DataFrame:
@@ -168,5 +169,14 @@ def add_renko_indicators(df: pd.DataFrame) -> pd.DataFrame:
     sq_result = calc_squeeze(df)
     df["sq_momentum"] = pd.Series(sq_result["momentum"],   index=df.index).shift(1).values
     df["sq_on"]       = pd.Series(sq_result["squeeze_on"], index=df.index).shift(1).values
+
+    # ── Momentum King v4 (adaptive momentum + signal line) ───────────────────
+    mk_result = calc_momentum_king_v4(df)
+    df["mk_momentum"] = pd.Series(mk_result["smoothed_momentum"], index=df.index).shift(1).values
+    df["mk_signal"]   = pd.Series(mk_result["signal_line"],       index=df.index).shift(1).values
+    df["mk_strength"] = pd.Series(mk_result["momentum_strength"], index=df.index).shift(1).values
+    df["mk_cross_up"] = pd.Series(mk_result["cross_up"],          index=df.index).shift(1).values
+    df["mk_cross_dn"] = pd.Series(mk_result["cross_dn"],          index=df.index).shift(1).values
+    df["mk_nz"]       = pd.Series(mk_result["neutral_zone_width"],index=df.index).shift(1).values
 
     return df

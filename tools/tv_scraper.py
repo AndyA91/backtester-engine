@@ -6,8 +6,8 @@ from pathlib import Path
 from playwright.async_api import async_playwright
 
 # Configuration
-URL = "https://www.tradingview.com/u/HPotter/#published-scripts"
-MIN_BOOSTS = 150          # Minimum likes/boosts required
+URL = "https://www.tradingview.com/u/LuxAlgo/#published-scripts"
+MIN_BOOSTS = 400          # Minimum likes/boosts required
 INDICATORS_ONLY = True    # Skip strategies
 
 # Extract author from URL for organized storage
@@ -26,7 +26,7 @@ STYLE_GROUPS = {
 }
 
 # Set to [] to grab everything, or list specific groups from above
-ACTIVE_GROUPS = list(STYLE_GROUPS.keys())
+ACTIVE_GROUPS = []  # Empty = no keyword filter, grab all with MIN_BOOSTS
 
 # Static Analysis Forbidden Patterns (Regex)
 FORBIDDEN_PATTERNS = [

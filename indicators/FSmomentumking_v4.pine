@@ -1,0 +1,199 @@
+//@version=6
+// FS Momentum King v4.0 (Renko-Optimized)
+//
+// Changes from v3.0:
+//   1. Neutral zone: ATR-proportional (neutral_atr_pct × ATR) instead of fixed
+//      price constant. v3's base_neutral=0.05 was dead on BTC (0.04% of momentum).
+//   2. Adaptive smoothing: capped at max_smooth (default 10). v3 averaged 32-bar
+//      smoothing on BTC Renko — too heavy on pre-denoised data.
+//   3. Normalization: percentile-rank over lookback window (not rolling-max).
+//      v3's rolling-max had "peak shadow" — 200 bars read as weak after one spike.
+//   4. Signal line: EMA of smoothed momentum for crossover entries.
+//      v3 had zones only. v4 adds signal line + cross markers.
+
+indicator("FS Momentum King v4.0", overlay=false, max_lines_count=500, max_labels_count=500)
+
+// === INPUTS ===
+ema_length         = input.int(14, "EMA Length",
+     tooltip = "Period for the slow EMA. Fast EMA uses half this value. " +
+               "Controls the base momentum calculation (fast EMA − slow EMA).")
+
+smoothing_base     = input.int(3, "Base Smoothing",
+     tooltip = "Minimum smoothing period for the adaptive EMA applied to raw momentum.")
+
+max_smooth         = input.int(10, "Max Smoothing", minval = 3,
+     tooltip = "Maximum adaptive smoothing period. Caps lag on Renko charts " +
+               "where bricks already denoise price. v3 averaged ~32 bars on BTC — " +
+               "v4 caps at 10 for faster response.")
+
+atr_length         = input.int(14, "ATR Length",
+     tooltip = "Period for the ATR calculation used in adaptive smoothing " +
+               "and neutral zone width.")
+
+volatility_factor  = input.float(1.5, "Volatility Sensitivity", step = 0.1,
+     tooltip = "Multiplier on normalized ATR for adaptive smoothing. " +
+               "Higher = more smoothing during volatile periods (before cap).")
+
+norm_lookback      = input.int(200, "Normalization Lookback", minval = 20,
+     tooltip = "Bars used for percentile-rank normalization of momentum strength (0–1).")
+
+strength_threshold = input.float(0.6, "Strong/Weak Threshold", minval = 0.1, maxval = 0.95, step = 0.05,
+     tooltip = "Percentile-ranked strength above this = 'Strong' regime. " +
+               "Below = 'Weak'. Percentile rank gives balanced distribution.")
+
+neutral_atr_pct    = input.float(0.3, "Neutral Zone (ATR %)", step = 0.05, minval = 0.05,
+     tooltip = "Neutral zone half-width as fraction of ATR. " +
+               "0.3 = 30% of ATR. Scales correctly across all instruments. " +
+               "v3's fixed 0.05 was dead on BTC ($0.05 vs $500 momentum swings).")
+
+signal_length      = input.int(9, "Signal Line Length", minval = 2,
+     tooltip = "EMA period for the signal line. Crossovers generate trade signals.")
+
+show_strength_line = input.bool(true, "Show Momentum Energy Wave",
+     tooltip = "Toggle the signed-strength overlay line and fill.")
+
+show_signal_line   = input.bool(true, "Show Signal Line",
+     tooltip = "Toggle the signal line (orange) for crossover visibility.")
+
+// === CORE VOLATILITY + ADAPTIVE SMOOTHING (CAPPED) ===
+atr_val = ta.atr(atr_length)
+
+// Normalize ATR to percentage of price (×10000 ≈ pips on FX).
+atr_normalized = (atr_val / close) * 10000
+
+// v4 FIX: Clamp adaptive smoothing to [smoothing_base, max_smooth]
+// v3 averaged ~32 bars on BTC Renko — way too heavy on pre-denoised data
+adaptive_smoothing = math.min(max_smooth, math.max(smoothing_base, atr_normalized * volatility_factor))
+alpha = 2.0 / (adaptive_smoothing + 1.0)
+
+// === MOMENTUM ENGINE ===
+fast_ema = ta.ema(close, int(ema_length / 2))
+slow_ema = ta.ema(close, ema_length)
+momentum = fast_ema - slow_ema
+
+// === CUSTOM ADAPTIVE EMA SMOOTHING ===
+var float smoothed_momentum = na
+smoothed_momentum := na(smoothed_momentum[1]) ? momentum : alpha * momentum + (1 - alpha) * smoothed_momentum[1]
+
+// === SIGNAL LINE (EMA of smoothed momentum) ===
+signal_line = ta.ema(smoothed_momentum, signal_length)
+
+// === CROSSOVERS ===
+cross_up = ta.crossover(smoothed_momentum, signal_line)
+cross_dn = ta.crossunder(smoothed_momentum, signal_line)
+
+// === PERCENTILE-RANK STRENGTH (0–1) ===
+// v4 FIX: Percentile rank instead of rolling-max normalization.
+// Rolling-max creates "peak shadow" — after a big spike, everything reads
+// as weak for 200 bars. Percentile rank gives balanced distribution.
+abs_momentum = math.abs(smoothed_momentum)
+
+// Count how many bars in the lookback window have |momentum| <= current |momentum|
+// This is the percentile rank (0–1)
+var float momentum_strength = 0.0
+if bar_index >= norm_lookback
+    count_below = 0
+    for j = 1 to norm_lookback
+        if math.abs(smoothed_momentum[j]) <= abs_momentum
+            count_below += 1
+    momentum_strength := count_below / norm_lookback
+else if bar_index > 0
+    count_below = 0
+    for j = 1 to bar_index
+        if math.abs(smoothed_momentum[j]) <= abs_momentum
+            count_below += 1
+    momentum_strength := count_below / bar_index
+else
+    momentum_strength := 0.5
+
+signed_strength = momentum_strength * math.sign(smoothed_momentum)
+
+// === ATR-PROPORTIONAL NEUTRAL ZONE ===
+// v4 FIX: Scales correctly across all instruments.
+// BTC $150 Renko: ATR ~$183, zone = 0.3 * 183 = ~$55 (vs momentum ±240)
+// EURUSD 0.0004: ATR ~0.0005, zone = 0.3 * 0.0005 = ~0.00015
+neutral_zone_width = neutral_atr_pct * atr_val
+
+// === ZONE LOGIC (Flat checked first, mutually exclusive) ===
+isFlat       = smoothed_momentum < neutral_zone_width and smoothed_momentum > -neutral_zone_width
+isStrongUp   = not isFlat and smoothed_momentum > 0 and momentum_strength > strength_threshold
+isWeakUp     = not isFlat and smoothed_momentum > 0 and momentum_strength <= strength_threshold
+isStrongDown = not isFlat and smoothed_momentum < 0 and momentum_strength > strength_threshold
+isWeakDown   = not isFlat and smoothed_momentum < 0 and momentum_strength <= strength_threshold
+
+// === GLOW COLOR ENGINE ===
+// --- Strong bullish (bright neon green) ---
+c_bull_strong_core  = #00FF64
+c_bull_strong_mid   = color.new(#00E650, 30)
+c_bull_strong_outer = color.new(#00C83C, 55)
+
+// --- Weak bullish (dimmer green) ---
+c_bull_weak_core    = color.new(#00FF64, 40)
+c_bull_weak_mid     = color.new(#00E650, 60)
+c_bull_weak_outer   = color.new(#00C83C, 78)
+
+// --- Strong bearish (bright neon red) ---
+c_bear_strong_core  = #FF2846
+c_bear_strong_mid   = color.new(#E61E3C, 30)
+c_bear_strong_outer = color.new(#C81432, 55)
+
+// --- Weak bearish (dimmer red) ---
+c_bear_weak_core    = color.new(#FF2846, 40)
+c_bear_weak_mid     = color.new(#E61E3C, 60)
+c_bear_weak_outer   = color.new(#C81432, 78)
+
+// --- Flat (dim gray) ---
+c_flat_core         = color.new(#50506E, 60)
+c_flat_mid          = color.new(#50506E, 80)
+c_flat_outer        = color.new(#50506E, 90)
+
+// Pick color tier based on regime
+coreColor  = isStrongUp ? c_bull_strong_core  : isWeakUp ? c_bull_weak_core
+           : isStrongDown ? c_bear_strong_core : isWeakDown ? c_bear_weak_core
+           : c_flat_core
+
+midColor   = isStrongUp ? c_bull_strong_mid   : isWeakUp ? c_bull_weak_mid
+           : isStrongDown ? c_bear_strong_mid  : isWeakDown ? c_bear_weak_mid
+           : c_flat_mid
+
+outerColor = isStrongUp ? c_bull_strong_outer  : isWeakUp ? c_bull_weak_outer
+           : isStrongDown ? c_bear_strong_outer : isWeakDown ? c_bear_weak_outer
+           : c_flat_outer
+
+// === HISTOGRAM — 3-layer glow (outer → mid → core) ===
+plot(smoothed_momentum, style=plot.style_histogram, color=outerColor, linewidth=6,  title="Glow Outer")
+plot(smoothed_momentum, style=plot.style_histogram, color=midColor,   linewidth=4,  title="Glow Mid")
+plot(smoothed_momentum, style=plot.style_histogram, color=coreColor,  linewidth=2,  title="Core")
+
+// === SIGNAL LINE — orange ===
+plot(show_signal_line ? signal_line : na, color=color.new(#FFA500, 20), linewidth=2, title="Signal Line")
+
+// === CROSSOVER MARKERS ===
+plotshape(cross_up, style=shape.triangleup,   location=location.bottom, color=#00FF64, size=size.tiny, title="Cross Up")
+plotshape(cross_dn, style=shape.triangledown, location=location.top,    color=#FF2846, size=size.tiny, title="Cross Down")
+
+// === ENERGY WAVE — matching neon colors ===
+c_wave_bull = #00FFC8
+c_wave_bear = #FF50B4
+c_wave_flat = color.new(color.gray, 60)
+
+waveColor = isFlat ? c_wave_flat : smoothed_momentum > 0 ? c_wave_bull : c_wave_bear
+
+waveFill  = isFlat ? color.new(color.gray, 92)
+          : smoothed_momentum > 0 ? color.new(#00FFC8, 80)
+          : color.new(#FF50B4, 80)
+
+energyLine = plot(show_strength_line ? signed_strength : na, color=waveColor, linewidth=2, title="Momentum Strength")
+zeroLine   = plot(0, color=color.new(color.gray, 0), display=display.none)
+fill(energyLine, zeroLine, color=waveFill, title="Energy Fill")
+
+// === DYNAMIC NEUTRAL ZONE — soft yellow lines ===
+plot( neutral_zone_width, "Upper Neutral", color=color.new(#FFFF64, 70), style=plot.style_line, linewidth=1)
+plot(-neutral_zone_width, "Lower Neutral", color=color.new(#FFFF64, 70), style=plot.style_line, linewidth=1)
+
+// === HUD — neon regime badge ===
+var table hud = table.new(position.top_right, 1, 1)
+regimeText  = isFlat ? "⬜ FLAT" : isStrongUp ? "🟢 STRONG UP" : isWeakUp ? "🔵 WEAK UP" : isStrongDown ? "🔴 STRONG DOWN" : "🟠 WEAK DOWN"
+regimeColor = isFlat ? #3C3C46 : isStrongUp ? #00B450 : isWeakUp ? #00783C : isStrongDown ? #C81E32 : #961E28
+if barstate.islast
+    table.cell(hud, 0, 0, "MK v4.0: " + regimeText, text_color=color.white, bgcolor=regimeColor, text_size=size.normal)

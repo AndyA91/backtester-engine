@@ -1,0 +1,164 @@
+// ============================================================================
+// R029: Band Bounce MR [Renko EURUSD 0.0006]
+//
+// Mean-reversion strategy: enter when price bounces off Bollinger Band
+// extremes with confirming reversal brick + oscillator gates.
+//
+// Optimized for EURUSD Renko brick 0.0006 (Phase 16 sweep → multi-brick
+// re-optimization).  Best OOS config: bt=0.20, cd=2, rsi<45, adx<25.
+//
+// Entry logic:
+//   LONG:  BB %B <= 0.20 (at lower band)  AND  brick UP  AND  RSI < 45  AND  ADX < 25
+//   SHORT: BB %B >= 0.80 (at upper band)  AND  brick DOWN AND  RSI > 55  AND  ADX < 25
+//
+// Exit: first opposing brick.
+//
+// Gates (mean-reversion specific):
+//   - RSI extreme: confirms oversold/overbought (< 45 long, > 55 short)
+//   - ADX ceiling: only trade in ranging markets (ADX < 25)
+//   - Volume ratio: skip volume spikes (vol/EMA20 > 1.5)
+//
+// TV Alert setup:
+//   Condition: "Any alert() function call"
+//   Message:   {{message}}
+//   Webhook:   Your broker webhook URL
+//
+// Backtest KPIs (0.0006 brick, OOS 2025-10-01 → 2026-03-19):
+//   PF=10.05, Trades=62, WR=59.7%, Net=$78.54
+// ============================================================================
+//@version=6
+strategy("R029 Band Bounce MR [Renko EURUSD 0.0006]",
+     overlay             = true,
+     initial_capital     = 1000,
+     default_qty_type    = strategy.fixed,
+     default_qty_value   = 1000,
+     commission_type     = strategy.commission.percent,
+     commission_value    = 0.0046,
+     slippage            = 0,
+     calc_on_order_fills = false,
+     calc_on_every_tick  = false,
+     fill_orders_on_standard_ohlc = true,
+     use_bar_magnifier   = false,
+     margin_long         = 0,
+     margin_short        = 0,
+     pyramiding          = 1)
+
+// ── Inputs ────────────────────────────────────────────────────────────────────
+band_thresh = input.float(0.20, "Band Threshold", minval=0.01, maxval=0.50, step=0.05,
+     tooltip="BB %B threshold for entry. Long when %B <= this (at lower band), Short when %B >= (1 - this) (at upper band). Lower = more extreme = fewer trades.")
+
+cooldown = input.int(2, "Cooldown (bricks)", minval=0, maxval=50,
+     tooltip="Minimum bricks between entries. Prevents rapid re-entry after exit.")
+
+rsi_thresh = input.int(45, "RSI Extreme Threshold (0=off)", minval=0, maxval=100,
+     tooltip="RSI must be < this for longs (oversold) and > (100-this) for shorts (overbought). 0 = no RSI gate.")
+
+adx_max = input.int(25, "ADX Ceiling (0=off)", minval=0, maxval=100,
+     tooltip="Only trade when ADX < this value (ranging market). Mean reversion fails in strong trends. 0 = no ADX gate.")
+
+vol_max = input.float(1.5, "Volume Ratio Max (0=off)", minval=0, step=0.1,
+     tooltip="Skip entry when volume / EMA(20) volume exceeds this. Filters out news spikes. 0 = no gate.")
+
+liveMode  = input.bool(false, "Live Mode (disable date gate)",
+     tooltip="Check for live/forward trading — ignores Start/End Date and trades all bars.")
+startDate = input.time(timestamp("2023-01-01 00:00 +0000"), "Start Date",
+     tooltip="Backtest start date. Set to match your chart data range.")
+endDate   = input.time(timestamp("2069-12-31 23:59 +0000"), "End Date",
+     tooltip="Backtest end date.")
+
+// ── Date gate ─────────────────────────────────────────────────────────────────
+inRange = liveMode or (time >= startDate and time <= endDate)
+
+// ── Indicators (all use [1] shift to prevent lookahead) ──────────────────────
+// Bollinger Bands
+[bb_mid, bb_upper, bb_lower] = ta.bb(close, 20, 2.0)
+bb_range = bb_upper - bb_lower
+bb_pct_b = bb_range > 0 ? (close - bb_lower) / bb_range : 0.5
+
+// RSI
+rsi_val = ta.rsi(close, 14)
+
+// ADX
+[_diP, _diM, adx_val] = ta.dmi(14, 14)
+
+// Volume ratio
+vol_ema = ta.ema(volume, 20)
+vol_ratio = vol_ema > 0 ? volume / vol_ema : 1.0
+
+// ── Brick direction ──────────────────────────────────────────────────────────
+brick_up = close > open
+
+// ── Use [1] shifted values for signal decisions (no lookahead) ───────────────
+pct_b_prev = bb_pct_b[1]
+rsi_prev   = rsi_val[1]
+adx_prev   = adx_val[1]
+vol_prev   = vol_ratio[1]
+
+// ── Cooldown tracker ─────────────────────────────────────────────────────────
+var int last_trade_bar = na
+can_trade = na(last_trade_bar) or (bar_index - last_trade_bar >= cooldown)
+
+// ── Gate checks ──────────────────────────────────────────────────────────────
+// Volume gate
+vol_ok = vol_max <= 0 or na(vol_prev) or vol_prev <= vol_max
+
+// ADX ceiling gate (mean reversion: only in ranging markets)
+adx_ok = adx_max <= 0 or na(adx_prev) or adx_prev < adx_max
+
+// ── Entry conditions ─────────────────────────────────────────────────────────
+// LONG: at lower band + up brick + RSI oversold + ADX ranging
+long_band  = not na(pct_b_prev) and pct_b_prev <= band_thresh
+long_brick = brick_up
+long_rsi   = rsi_thresh <= 0 or na(rsi_prev) or rsi_prev < rsi_thresh
+
+longCondition = inRange and can_trade and vol_ok and adx_ok and
+     long_band and long_brick and long_rsi and
+     strategy.position_size == 0
+
+// SHORT: at upper band + down brick + RSI overbought + ADX ranging
+short_band  = not na(pct_b_prev) and pct_b_prev >= (1.0 - band_thresh)
+short_brick = not brick_up
+short_rsi   = rsi_thresh <= 0 or na(rsi_prev) or rsi_prev > (100.0 - rsi_thresh)
+
+shortCondition = inRange and can_trade and vol_ok and adx_ok and
+     short_band and short_brick and short_rsi and
+     strategy.position_size == 0
+
+// ── Exits: first opposing brick ──────────────────────────────────────────────
+exitLong  = strategy.position_size > 0 and not brick_up
+exitShort = strategy.position_size < 0 and brick_up
+
+// ── Execute ──────────────────────────────────────────────────────────────────
+if exitLong
+    strategy.close("Long", comment="ExitL")
+
+if exitShort
+    strategy.close("Short", comment="ExitS")
+
+if longCondition
+    strategy.entry("Long", strategy.long, comment="BnceL")
+    last_trade_bar := bar_index
+
+if shortCondition
+    strategy.entry("Short", strategy.short, comment="BnceS")
+    last_trade_bar := bar_index
+
+// ── Visual markers ───────────────────────────────────────────────────────────
+isNewTrade = strategy.opentrades > 0 and strategy.opentrades[1] == 0
+plotshape(isNewTrade and strategy.position_size > 0,
+     title="Long Entry", location=location.belowbar, style=shape.triangleup,
+     color=color.new(color.green, 0), size=size.small)
+plotshape(isNewTrade and strategy.position_size < 0,
+     title="Short Entry", location=location.abovebar, style=shape.triangledown,
+     color=color.new(color.red, 0), size=size.small)
+
+// ── Bollinger Band plot ──────────────────────────────────────────────────────
+plot(bb_upper, "BB Upper", color=color.new(color.blue, 70))
+plot(bb_lower, "BB Lower", color=color.new(color.blue, 70))
+plot(bb_mid,   "BB Mid",   color=color.new(color.gray, 80))
+
+// ── Data window ──────────────────────────────────────────────────────────────
+plot(bb_pct_b[1],  "BB %B [1]",    display=display.data_window)
+plot(rsi_val[1],   "RSI(14) [1]",  display=display.data_window)
+plot(adx_val[1],   "ADX(14) [1]",  display=display.data_window)
+plot(vol_ratio[1], "Vol Ratio [1]", display=display.data_window)

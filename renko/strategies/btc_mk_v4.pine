@@ -1,0 +1,279 @@
+// ============================================================================
+// BTC MK v4: Momentum King v4 Oscillator [Renko BTCUSD] -- Long Only
+//
+// Custom adaptive momentum oscillator with 4 improvements over v3:
+//   1. ATR-proportional neutral zone (not fixed price constant)
+//   2. Capped adaptive smoothing (max_smooth) for Renko
+//   3. Percentile-rank normalization (no peak shadow)
+//   4. Signal line (EMA of smoothed momentum) for crossover entries
+//
+// Entry signals (toggleable, shared cooldown):
+//   MK_CROSS:      Smoothed momentum crosses above signal line on up brick
+//   MK_STRONG:     Momentum enters STRONG_UP regime on up brick
+//   MK_FLAT_BREAK: Momentum exits neutral zone upward on up brick
+//   MK_ZERO_CROSS: Smoothed momentum crosses above zero on up brick
+//   MK_DIVERGENCE: Previous brick down + momentum rising over N bars, then up brick
+//
+// Gates (toggleable):
+//   PSAR(0.02, 0.02, 0.2) must be bullish
+//   Choppiness Index(14) <= threshold
+//   ADX(14) >= threshold
+//
+// Exit: first down brick
+//
+// Python sweep (9,720 combos) — optimal config:
+//   mk_cross + PSAR, ema=10, smooth=15, sig=14, cd=3
+//   IS:  PF=20.48, 260t, WR=66.9%
+//   OOS: PF=30.79, 120t (0.7/d), WR=69.2%, net=$20.11
+//
+//   mk_cross + PSAR+ADX25 (quality variant):
+//   IS:  PF=22.82, 165t, WR=68.5%
+//   OOS: PF=36.10, 74t (0.4/d), WR=70.3%, net=$11.69
+//
+// Chart: OANDA:BTCUSD, Renko $150
+// ============================================================================
+//@version=5
+strategy("BTC MK v4: Momentum King [Renko BTCUSD]",
+     overlay             = true,
+     initial_capital     = 1000,
+     default_qty_type    = strategy.fixed,
+     default_qty_value   = 0.001,
+     commission_type     = strategy.commission.percent,
+     commission_value    = 0.0046,
+     calc_on_order_fills = false,
+     margin_long         = 0,
+     margin_short        = 0,
+     pyramiding          = 1)
+
+// === MK v4 OSCILLATOR INPUTS ===
+ema_length    = input.int(10, "MK EMA Length", minval=4, group="Momentum King v4",
+     tooltip="Slow EMA period. Fast = half. Controls base momentum calculation.")
+smooth_base   = input.int(3,  "MK Smoothing Base", minval=1, group="Momentum King v4",
+     tooltip="Minimum adaptive smoothing period.")
+max_smooth    = input.int(15, "MK Max Smoothing", minval=3, group="Momentum King v4",
+     tooltip="Cap on adaptive smoothing. Prevents over-smoothing on Renko.")
+atr_len       = input.int(14, "MK ATR Length", group="Momentum King v4")
+vol_factor    = input.float(1.5, "MK Volatility Factor", step=0.1, group="Momentum King v4",
+     tooltip="ATR multiplier for adaptive smoothing (before cap).")
+neutral_pct   = input.float(0.3, "MK Neutral Zone (ATR %)", step=0.05, minval=0.05, group="Momentum King v4",
+     tooltip="Neutral zone as fraction of ATR. 0.3 = 30% of ATR.")
+sig_len       = input.int(14, "MK Signal Length", minval=2, group="Momentum King v4",
+     tooltip="EMA period for signal line crossovers.")
+norm_lb       = input.int(200, "MK Normalization Lookback", minval=20, group="Momentum King v4",
+     tooltip="Bars for percentile-rank strength normalization.")
+str_thresh    = input.float(0.6, "MK Strength Threshold", minval=0.1, maxval=0.95, step=0.05, group="Momentum King v4",
+     tooltip="Percentile strength above this = STRONG regime.")
+
+// === SIGNAL TOGGLES ===
+use_mk_cross     = input.bool(true,  "MK Cross (signal line crossover)", group="Signals")
+use_mk_strong    = input.bool(false, "MK Strong (regime transition)", group="Signals")
+use_mk_flat_brk  = input.bool(false, "MK Flat Break (neutral zone breakout)", group="Signals")
+use_mk_zero      = input.bool(false, "MK Zero Cross (zero line crossover)", group="Signals")
+use_mk_div       = input.bool(false, "MK Divergence (hidden bullish)", group="Signals")
+div_lookback     = input.int(3, "Divergence Lookback", minval=2, maxval=10, group="Signals",
+     tooltip="Bars to compare momentum rise for hidden divergence signal.")
+
+// === GATE INPUTS ===
+use_psar      = input.bool(true, "PSAR Gate", group="Gates",
+     tooltip="Parabolic SAR must be bullish (close > SAR).")
+use_chop      = input.bool(false, "Choppiness Gate", group="Gates")
+chop_thresh   = input.float(60, "Chop Threshold", minval=30, maxval=100, group="Gates")
+use_adx       = input.bool(false, "ADX Gate", group="Gates")
+adx_thresh    = input.float(25, "ADX Threshold", minval=10, maxval=50, group="Gates")
+
+// === TRADE INPUTS ===
+cd_bars       = input.int(3,   "Cooldown (bricks)", minval=0, group="Trade",
+     tooltip="Minimum bricks between entries.")
+liveMode      = input.bool(false, "Live Mode", group="Trade",
+     tooltip="Ignores date range, trades all bars.")
+startDate     = input.time(timestamp("2024-06-04 00:00 +0000"), "Start Date", group="Trade")
+endDate       = input.time(timestamp("2025-09-30 23:59 +0000"), "End Date", group="Trade")
+
+// === DATE GATE ===
+inRange = liveMode or (time >= startDate and time <= endDate)
+
+// === BRICK DIRECTION ===
+brick_up = close > open
+
+// ============================================================================
+// MOMENTUM KING v4 ENGINE
+// ============================================================================
+
+// --- ATR + adaptive smoothing (capped) ---
+atr_val = ta.atr(atr_len)
+atr_norm = (atr_val / close) * 10000
+adapt_smooth = math.min(max_smooth, math.max(smooth_base, atr_norm * vol_factor))
+mk_alpha = 2.0 / (adapt_smooth + 1.0)
+
+// --- Momentum = fast EMA - slow EMA ---
+fast_ema = ta.ema(close, int(ema_length / 2))
+slow_ema = ta.ema(close, ema_length)
+raw_momentum = fast_ema - slow_ema
+
+// --- Adaptive EMA smoothing ---
+var float mk_mom = na
+mk_mom := na(mk_mom[1]) ? raw_momentum : mk_alpha * raw_momentum + (1 - mk_alpha) * mk_mom[1]
+
+// --- Signal line ---
+mk_sig = ta.ema(mk_mom, sig_len)
+
+// --- ATR-proportional neutral zone ---
+mk_nz = neutral_pct * atr_val
+
+// --- Percentile-rank strength ---
+abs_mom = math.abs(mk_mom)
+var float mk_strength = 0.0
+if bar_index >= norm_lb
+    count_below = 0
+    for j = 1 to norm_lb
+        if math.abs(mk_mom[j]) <= abs_mom
+            count_below += 1
+    mk_strength := count_below / norm_lb
+else if bar_index > 0
+    count_below = 0
+    for j = 1 to bar_index
+        if math.abs(mk_mom[j]) <= abs_mom
+            count_below += 1
+    mk_strength := count_below / bar_index
+else
+    mk_strength := 0.5
+
+// --- Regime classification ---
+is_flat = mk_mom < mk_nz and mk_mom > -mk_nz
+is_strong_up = not is_flat and mk_mom > 0 and mk_strength > str_thresh
+
+// ============================================================================
+// GATES
+// ============================================================================
+
+// --- PSAR ---
+psar_val  = ta.sar(0.02, 0.02, 0.2)
+psar_bull = close > psar_val
+psar_ok   = not use_psar or na(psar_val[1]) or psar_bull[1]
+
+// --- Choppiness ---
+chop_hi     = ta.highest(high, 14)
+chop_lo     = ta.lowest(low,  14)
+chop_rng    = chop_hi - chop_lo
+chop_tr_sum = ta.sma(ta.tr(true), 14) * 14
+chop_val    = chop_rng > 0 ? 100.0 * math.log10(chop_tr_sum / chop_rng) / math.log10(14) : na
+chop_ok     = not use_chop or na(chop_val[1]) or chop_val[1] <= chop_thresh
+
+// --- ADX ---
+[di_p, di_m, adx_val] = ta.dmi(14, 14)
+adx_ok = not use_adx or na(adx_val[1]) or adx_val[1] >= adx_thresh
+
+// --- Combined gate ---
+all_gates = psar_ok and chop_ok and adx_ok
+
+// ============================================================================
+// SIGNAL DETECTION (all use [1] shift for pre-shifted data convention)
+// ============================================================================
+
+// --- MK Cross: smoothed momentum crosses above signal line ---
+mk_cross_bull = use_mk_cross and not na(mk_mom[1]) and not na(mk_sig[1]) and not na(mk_mom[2]) and not na(mk_sig[2]) and mk_mom[1] > mk_sig[1] and mk_mom[2] <= mk_sig[2]
+
+// --- MK Strong: transition into STRONG_UP regime ---
+was_flat_or_weak_1 = na(mk_mom[2]) or na(mk_nz[2]) or mk_mom[2] <= mk_nz[2] or (not na(mk_strength[2]) and mk_strength[2] <= str_thresh)
+is_strong_now_1 = not na(mk_mom[1]) and not na(mk_nz[1]) and mk_mom[1] > mk_nz[1] and mk_strength[1] > str_thresh
+mk_strong_bull = use_mk_strong and is_strong_now_1 and was_flat_or_weak_1
+
+// --- MK Flat Break: exits neutral zone upward ---
+was_flat_2 = not na(mk_mom[2]) and not na(mk_nz[2]) and mk_mom[2] < mk_nz[2] and mk_mom[2] > -mk_nz[2]
+now_above_1 = not na(mk_mom[1]) and not na(mk_nz[1]) and mk_mom[1] > mk_nz[1]
+mk_flat_brk_bull = use_mk_flat_brk and was_flat_2 and now_above_1
+
+// --- MK Zero Cross: momentum crosses above zero ---
+mk_zero_bull = use_mk_zero and not na(mk_mom[1]) and not na(mk_mom[2]) and mk_mom[1] > 0 and mk_mom[2] <= 0
+
+// --- MK Divergence: previous brick down + momentum rising, then up brick ---
+mk_mom_rising = not na(mk_mom[1]) and bar_index > div_lookback and mk_mom[1] > mk_mom[div_lookback + 1]
+mk_div_bull = use_mk_div and not brick_up[1] and mk_mom_rising
+
+// --- Any signal fired ---
+any_signal = mk_cross_bull or mk_strong_bull or mk_flat_brk_bull or mk_zero_bull or mk_div_bull
+
+// ============================================================================
+// COOLDOWN + ENTRY/EXIT
+// ============================================================================
+
+var int last_entry_bar = na
+can_trade = na(last_entry_bar) or (bar_index - last_entry_bar >= cd_bars)
+
+// --- Tag for data window ---
+f_tag(sig) =>
+    "[" + sig + " M:" + str.tostring(mk_mom[1], "#.#") + " S:" + str.tostring(mk_sig[1], "#.#") + " St:" + str.tostring(mk_strength, "#.##") + " NZ:" + str.tostring(mk_nz[1], "#.#") + " PS:" + (psar_bull ? "U" : "D") + "]"
+
+// --- Exit: first down brick ---
+if strategy.position_size > 0 and not brick_up
+    strategy.close("Long", comment=f_tag("Exit"))
+
+// --- Long entry ---
+if inRange and strategy.position_size == 0 and all_gates and can_trade and brick_up
+    if mk_cross_bull
+        strategy.entry("Long", strategy.long, comment=f_tag("MKx"))
+        last_entry_bar := bar_index
+    else if mk_strong_bull
+        strategy.entry("Long", strategy.long, comment=f_tag("MKs"))
+        last_entry_bar := bar_index
+    else if mk_flat_brk_bull
+        strategy.entry("Long", strategy.long, comment=f_tag("MKf"))
+        last_entry_bar := bar_index
+    else if mk_zero_bull
+        strategy.entry("Long", strategy.long, comment=f_tag("MK0"))
+        last_entry_bar := bar_index
+    else if mk_div_bull
+        strategy.entry("Long", strategy.long, comment=f_tag("MKd"))
+        last_entry_bar := bar_index
+
+// ============================================================================
+// VISUALS
+// ============================================================================
+
+isNewTrade = strategy.opentrades > 0 and strategy.opentrades[1] == 0
+plotshape(isNewTrade and strategy.position_size > 0,
+     title="Long Entry", location=location.belowbar, style=shape.triangleup,
+     color=color.new(color.green, 0), size=size.small)
+
+// --- Data window ---
+plot(mk_mom,       "MK Momentum",     display=display.data_window)
+plot(mk_sig,       "MK Signal",       display=display.data_window)
+plot(mk_strength,  "MK Strength",     display=display.data_window)
+plot(mk_nz,        "MK Neutral Zone", display=display.data_window)
+plot(psar_bull[1] ? 1 : 0, "PSAR [1]", display=display.data_window)
+plot(chop_val[1],  "Chop [1]",        display=display.data_window)
+plot(adx_val[1],   "ADX [1]",         display=display.data_window)
+
+// ============================================================================
+// MK OSCILLATOR VISUAL (separate pane — add via indicator on same pane)
+// ============================================================================
+
+// --- Regime colors ---
+c_strong_up   = #00FF64
+c_weak_up     = color.new(#00FF64, 40)
+c_strong_down = #FF2846
+c_weak_down   = color.new(#FF2846, 40)
+c_flat        = color.new(#50506E, 60)
+
+is_weak_up    = not is_flat and mk_mom > 0 and mk_strength <= str_thresh
+is_strong_dn  = not is_flat and mk_mom < 0 and mk_strength > str_thresh
+is_weak_dn    = not is_flat and mk_mom < 0 and mk_strength <= str_thresh
+
+hist_color = is_strong_up ? c_strong_up : is_weak_up ? c_weak_up
+           : is_strong_dn ? c_strong_down : is_weak_dn ? c_weak_down
+           : c_flat
+
+// --- Histogram + signal line ---
+plot(mk_mom, "MK Histogram", style=plot.style_histogram, color=hist_color, linewidth=3, display=display.pane)
+plot(mk_sig, "MK Signal Line", color=color.new(#FFA500, 20), linewidth=2, display=display.pane)
+
+// --- Neutral zone bands ---
+plot( mk_nz, "MK +NZ", color=color.new(#FFFF64, 70), style=plot.style_line, linewidth=1, display=display.pane)
+plot(-mk_nz, "MK -NZ", color=color.new(#FFFF64, 70), style=plot.style_line, linewidth=1, display=display.pane)
+
+// --- Zero line ---
+hline(0, "Zero", color=color.new(color.gray, 60), linestyle=hline.style_dotted)
+
+// --- Crossover markers on histogram ---
+plotshape(mk_cross_bull, "MK Cross Up", style=shape.triangleup, location=location.bottom,
+     color=#00FF64, size=size.tiny, display=display.pane)

@@ -134,10 +134,15 @@ def load_tv_export(filename: str = "INDEX_BTCUSD, 1D.csv") -> pd.DataFrame:
     """
     filepath = _DATA_DIR / filename
     if not filepath.exists():
-        raise FileNotFoundError(
-            f"TV export not found: {filepath}\n"
-            f"Place CSV files in the data/ directory."
-        )
+        # Search subdirectories (data is organized by instrument)
+        matches = list(_DATA_DIR.rglob(filename))
+        if matches:
+            filepath = matches[0]
+        else:
+            raise FileNotFoundError(
+                f"TV export not found: {filepath}\n"
+                f"Place CSV files in the data/ directory (or a subdirectory)."
+            )
 
     df = pd.read_csv(filepath)
 

@@ -1,0 +1,516 @@
+{
+  "total": 5720,
+  "viable": 3167,
+  "top30": [
+    {
+      "label": "ema_cross_adx40_htf_0.0012_adx25_cd30",
+      "signal": "ema_cross",
+      "gate": "adx40",
+      "htf": "htf_0.0012_adx25",
+      "cd": 30,
+      "is": {
+        "pf": 14.97,
+        "trades": 106,
+        "wr": 69.8
+      },
+      "oos": {
+        "pf": 45.31,
+        "trades": 12,
+        "wr": 91.7
+      }
+    },
+    {
+      "label": "R001_n3_psar+adx40_htf_0.0012_adx25_cd30",
+      "signal": "R001_n3",
+      "gate": "psar+adx40",
+      "htf": "htf_0.0012_adx25",
+      "cd": 30,
+      "is": {
+        "pf": 16.37,
+        "trades": 110,
+        "wr": 70.9
+      },
+      "oos": {
+        "pf": 44.09,
+        "trades": 12,
+        "wr": 91.7
+      }
+    },
+    {
+      "label": "R007_n3_psar+adx40_htf_0.0012_adx25_cd30",
+      "signal": "R007_n3",
+      "gate": "psar+adx40",
+      "htf": "htf_0.0012_adx25",
+      "cd": 30,
+      "is": {
+        "pf": 16.37,
+        "trades": 110,
+        "wr": 70.9
+      },
+      "oos": {
+        "pf": 44.09,
+        "trades": 12,
+        "wr": 91.7
+      }
+    },
+    {
+      "label": "psar_flip_adx40_htf_0.0012_adx25_cd30",
+      "signal": "psar_flip",
+      "gate": "adx40",
+      "htf": "htf_0.0012_adx25",
+      "cd": 30,
+      "is": {
+        "pf": 14.87,
+        "trades": 112,
+        "wr": 70.5
+      },
+      "oos": {
+        "pf": 44.09,
+        "trades": 12,
+        "wr": 91.7
+      }
+    },
+    {
+      "label": "psar_flip_psar+adx40_htf_0.0012_adx25_cd30",
+      "signal": "psar_flip",
+      "gate": "psar+adx40",
+      "htf": "htf_0.0012_adx25",
+      "cd": 30,
+      "is": {
+        "pf": 14.87,
+        "trades": 112,
+        "wr": 70.5
+      },
+      "oos": {
+        "pf": 44.09,
+        "trades": 12,
+        "wr": 91.7
+      }
+    },
+    {
+      "label": "ema_cross_psar+adx40_htf_0.0012_adx25_cd30",
+      "signal": "ema_cross",
+      "gate": "psar+adx40",
+      "htf": "htf_0.0012_adx25",
+      "cd": 30,
+      "is": {
+        "pf": 15.96,
+        "trades": 101,
+        "wr": 73.3
+      },
+      "oos": {
+        "pf": 42.62,
+        "trades": 12,
+        "wr": 91.7
+      }
+    },
+    {
+      "label": "R007_n3_adx30_htf_0.0012_adx40_cd30",
+      "signal": "R007_n3",
+      "gate": "adx30",
+      "htf": "htf_0.0012_adx40",
+      "cd": 30,
+      "is": {
+        "pf": 23.78,
+        "trades": 52,
+        "wr": 73.1
+      },
+      "oos": {
+        "pf": 27.55,
+        "trades": 10,
+        "wr": 90.0
+      }
+    },
+    {
+      "label": "R001_n3_none_htf_0.0018_adx35_cd45",
+      "signal": "R001_n3",
+      "gate": "none",
+      "htf": "htf_0.0018_adx35",
+      "cd": 45,
+      "is": {
+        "pf": 37.7,
+        "trades": 42,
+        "wr": 81.0
+      },
+      "oos": {
+        "pf": 21.96,
+        "trades": 10,
+        "wr": 90.0
+      }
+    },
+    {
+      "label": "R007_n5_adx40_htf_0.0012_adx25_cd30",
+      "signal": "R007_n5",
+      "gate": "adx40",
+      "htf": "htf_0.0012_adx25",
+      "cd": 30,
+      "is": {
+        "pf": 13.79,
+        "trades": 105,
+        "wr": 69.5
+      },
+      "oos": {
+        "pf": 34.98,
+        "trades": 15,
+        "wr": 86.7
+      }
+    },
+    {
+      "label": "ema_cross_none_htf_0.0012_adx30_cd45",
+      "signal": "ema_cross",
+      "gate": "none",
+      "htf": "htf_0.0012_adx30",
+      "cd": 45,
+      "is": {
+        "pf": 18.56,
+        "trades": 87,
+        "wr": 64.4
+      },
+      "oos": {
+        "pf": 53.2,
+        "trades": 14,
+        "wr": 85.7
+      }
+    },
+    {
+      "label": "R007_n3_adx40_htf_0.0012_adx25_cd30",
+      "signal": "R007_n3",
+      "gate": "adx40",
+      "htf": "htf_0.0012_adx25",
+      "cd": 30,
+      "is": {
+        "pf": 17.5,
+        "trades": 113,
+        "wr": 72.6
+      },
+      "oos": {
+        "pf": 23.91,
+        "trades": 14,
+        "wr": 85.7
+      }
+    },
+    {
+      "label": "R001_n3_adx40_htf_0.0012_adx25_cd30",
+      "signal": "R001_n3",
+      "gate": "adx40",
+      "htf": "htf_0.0012_adx25",
+      "cd": 30,
+      "is": {
+        "pf": 18.31,
+        "trades": 114,
+        "wr": 74.6
+      },
+      "oos": {
+        "pf": 34.12,
+        "trades": 13,
+        "wr": 84.6
+      }
+    },
+    {
+      "label": "ema_cross_psar+adx40_htf_0.0012_adx25_cd20",
+      "signal": "ema_cross",
+      "gate": "psar+adx40",
+      "htf": "htf_0.0012_adx25",
+      "cd": 20,
+      "is": {
+        "pf": 16.38,
+        "trades": 119,
+        "wr": 70.6
+      },
+      "oos": {
+        "pf": 32.7,
+        "trades": 13,
+        "wr": 84.6
+      }
+    },
+    {
+      "label": "R001_n5_adx40_htf_0.0012_adx25_cd30",
+      "signal": "R001_n5",
+      "gate": "adx40",
+      "htf": "htf_0.0012_adx25",
+      "cd": 30,
+      "is": {
+        "pf": 13.29,
+        "trades": 107,
+        "wr": 69.2
+      },
+      "oos": {
+        "pf": 31.15,
+        "trades": 13,
+        "wr": 84.6
+      }
+    },
+    {
+      "label": "R001_n5_psar+adx40_htf_0.0012_adx25_cd30",
+      "signal": "R001_n5",
+      "gate": "psar+adx40",
+      "htf": "htf_0.0012_adx25",
+      "cd": 30,
+      "is": {
+        "pf": 13.29,
+        "trades": 107,
+        "wr": 69.2
+      },
+      "oos": {
+        "pf": 31.15,
+        "trades": 13,
+        "wr": 84.6
+      }
+    },
+    {
+      "label": "R007_n5_psar+adx40_htf_0.0012_adx25_cd30",
+      "signal": "R007_n5",
+      "gate": "psar+adx40",
+      "htf": "htf_0.0012_adx25",
+      "cd": 30,
+      "is": {
+        "pf": 13.29,
+        "trades": 107,
+        "wr": 69.2
+      },
+      "oos": {
+        "pf": 31.15,
+        "trades": 13,
+        "wr": 84.6
+      }
+    },
+    {
+      "label": "R007_n3_none_htf_0.0018_adx35_cd30",
+      "signal": "R007_n3",
+      "gate": "none",
+      "htf": "htf_0.0018_adx35",
+      "cd": 30,
+      "is": {
+        "pf": 20.14,
+        "trades": 51,
+        "wr": 66.7
+      },
+      "oos": {
+        "pf": 21.8,
+        "trades": 12,
+        "wr": 83.3
+      }
+    },
+    {
+      "label": "ema_cross_psar+adx40_htf_0.0012_adx25_cd10",
+      "signal": "ema_cross",
+      "gate": "psar+adx40",
+      "htf": "htf_0.0012_adx25",
+      "cd": 10,
+      "is": {
+        "pf": 13.94,
+        "trades": 150,
+        "wr": 69.3
+      },
+      "oos": {
+        "pf": 15.02,
+        "trades": 17,
+        "wr": 82.4
+      }
+    },
+    {
+      "label": "ema_cross_adx40_htf_0.0012_adx25_cd45",
+      "signal": "ema_cross",
+      "gate": "adx40",
+      "htf": "htf_0.0012_adx25",
+      "cd": 45,
+      "is": {
+        "pf": 15.59,
+        "trades": 83,
+        "wr": 68.7
+      },
+      "oos": {
+        "pf": 26.65,
+        "trades": 11,
+        "wr": 81.8
+      }
+    },
+    {
+      "label": "ema_cross_psar+adx40_htf_0.0012_adx25_cd45",
+      "signal": "ema_cross",
+      "gate": "psar+adx40",
+      "htf": "htf_0.0012_adx25",
+      "cd": 45,
+      "is": {
+        "pf": 17.72,
+        "trades": 77,
+        "wr": 71.4
+      },
+      "oos": {
+        "pf": 24.74,
+        "trades": 11,
+        "wr": 81.8
+      }
+    },
+    {
+      "label": "ema_cross_adx40_htf_0.0012_adx30_cd30",
+      "signal": "ema_cross",
+      "gate": "adx40",
+      "htf": "htf_0.0012_adx30",
+      "cd": 30,
+      "is": {
+        "pf": 15.65,
+        "trades": 89,
+        "wr": 69.7
+      },
+      "oos": {
+        "pf": 23.6,
+        "trades": 11,
+        "wr": 81.8
+      }
+    },
+    {
+      "label": "ema_cross_psar+adx40_htf_0.0012_adx30_cd30",
+      "signal": "ema_cross",
+      "gate": "psar+adx40",
+      "htf": "htf_0.0012_adx30",
+      "cd": 30,
+      "is": {
+        "pf": 15.52,
+        "trades": 83,
+        "wr": 68.7
+      },
+      "oos": {
+        "pf": 23.6,
+        "trades": 11,
+        "wr": 81.8
+      }
+    },
+    {
+      "label": "R007_n9_adx40_htf_0.0012_adx25_cd20",
+      "signal": "R007_n9",
+      "gate": "adx40",
+      "htf": "htf_0.0012_adx25",
+      "cd": 20,
+      "is": {
+        "pf": 15.11,
+        "trades": 106,
+        "wr": 71.7
+      },
+      "oos": {
+        "pf": 21.89,
+        "trades": 11,
+        "wr": 81.8
+      }
+    },
+    {
+      "label": "R001_n9_adx40_htf_0.0012_adx30_cd20",
+      "signal": "R001_n9",
+      "gate": "adx40",
+      "htf": "htf_0.0012_adx30",
+      "cd": 20,
+      "is": {
+        "pf": 16.43,
+        "trades": 85,
+        "wr": 68.2
+      },
+      "oos": {
+        "pf": 20.59,
+        "trades": 11,
+        "wr": 81.8
+      }
+    },
+    {
+      "label": "R001_n9_psar+adx40_htf_0.0012_adx30_cd20",
+      "signal": "R001_n9",
+      "gate": "psar+adx40",
+      "htf": "htf_0.0012_adx30",
+      "cd": 20,
+      "is": {
+        "pf": 16.43,
+        "trades": 85,
+        "wr": 68.2
+      },
+      "oos": {
+        "pf": 20.59,
+        "trades": 11,
+        "wr": 81.8
+      }
+    },
+    {
+      "label": "R007_n9_adx40_htf_0.0012_adx30_cd20",
+      "signal": "R007_n9",
+      "gate": "adx40",
+      "htf": "htf_0.0012_adx30",
+      "cd": 20,
+      "is": {
+        "pf": 17.07,
+        "trades": 89,
+        "wr": 68.5
+      },
+      "oos": {
+        "pf": 20.59,
+        "trades": 11,
+        "wr": 81.8
+      }
+    },
+    {
+      "label": "R007_n9_psar+adx40_htf_0.0012_adx30_cd20",
+      "signal": "R007_n9",
+      "gate": "psar+adx40",
+      "htf": "htf_0.0012_adx30",
+      "cd": 20,
+      "is": {
+        "pf": 16.43,
+        "trades": 85,
+        "wr": 68.2
+      },
+      "oos": {
+        "pf": 20.59,
+        "trades": 11,
+        "wr": 81.8
+      }
+    },
+    {
+      "label": "R007_n3_adx25_htf_0.0012_adx40_cd30",
+      "signal": "R007_n3",
+      "gate": "adx25",
+      "htf": "htf_0.0012_adx40",
+      "cd": 30,
+      "is": {
+        "pf": 25.5,
+        "trades": 53,
+        "wr": 73.6
+      },
+      "oos": {
+        "pf": 20.44,
+        "trades": 11,
+        "wr": 81.8
+      }
+    },
+    {
+      "label": "escgo_cross_adx50_htf_0.0018_adx30_cd3",
+      "signal": "escgo_cross",
+      "gate": "adx50",
+      "htf": "htf_0.0018_adx30",
+      "cd": 3,
+      "is": {
+        "pf": 35.18,
+        "trades": 63,
+        "wr": 76.2
+      },
+      "oos": {
+        "pf": 15.41,
+        "trades": 11,
+        "wr": 81.8
+      }
+    },
+    {
+      "label": "escgo_cross_adx50_htf_0.0012_adx45_cd3",
+      "signal": "escgo_cross",
+      "gate": "adx50",
+      "htf": "htf_0.0012_adx45",
+      "cd": 3,
+      "is": {
+        "pf": 22.87,
+        "trades": 44,
+        "wr": 65.9
+      },
+      "oos": {
+        "pf": 15.4,
+        "trades": 11,
+        "wr": 81.8
+      }
+    }
+  ]
+}

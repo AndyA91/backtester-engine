@@ -33,10 +33,15 @@ def load_renko_export(filename: str) -> pd.DataFrame:
     """
     filepath = _DATA_DIR / filename
     if not filepath.exists():
-        raise FileNotFoundError(
-            f"Renko export not found: {filepath}\n"
-            f"Place CSV files in the data/ directory."
-        )
+        # Search subdirectories (data is organized by instrument)
+        matches = list(_DATA_DIR.rglob(filename))
+        if matches:
+            filepath = matches[0]
+        else:
+            raise FileNotFoundError(
+                f"Renko export not found: {filepath}\n"
+                f"Place CSV files in the data/ directory (or a subdirectory)."
+            )
 
     df = pd.read_csv(filepath)
 
