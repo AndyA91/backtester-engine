@@ -42,7 +42,7 @@ MIN_TRADES_FOR_RANK = 60
 
 
 def run_single(df, generate_signals, params, start, end,
-               commission_pct=0.0, initial_capital=10000.0):
+               commission_pct=0.0, initial_capital=10000.0, pyramiding=1):
     df_sig = generate_signals(df.copy(), **params)
     cfg = BacktestConfig(
         initial_capital=initial_capital,
@@ -50,7 +50,7 @@ def run_single(df, generate_signals, params, start, end,
         slippage_ticks=0,
         qty_type="fixed",
         qty_value=1,
-        pyramiding=1,
+        pyramiding=pyramiding,
         start_date=start,
         end_date=end,
         take_profit_pct=0.0,
@@ -87,7 +87,7 @@ _worker_cache = {}
 
 def _sweep_one(args):
     """Top-level picklable worker — one backtest per call."""
-    strategy_name, renko_file, params, start, end, commission_pct, initial_capital, strategies_dir = args
+    strategy_name, renko_file, params, start, end, commission_pct, initial_capital, pyramiding, strategies_dir = args
 
     if "gen" not in _worker_cache:
         sys.path.insert(0, strategies_dir)
@@ -100,6 +100,7 @@ def _sweep_one(args):
     return run_single(
         _worker_cache["df"], _worker_cache["gen"], params, start, end,
         commission_pct=commission_pct, initial_capital=initial_capital,
+        pyramiding=pyramiding,
     )
 
 
@@ -120,22 +121,25 @@ def sweep(strategy_name, start=IS_START, end=IS_END, verbose=True, renko_file=No
 
     commission_pct  = getattr(mod, "COMMISSION_PCT",  0.0)
     initial_capital = getattr(mod, "INITIAL_CAPITAL", 10000.0)
+    pyramiding      = getattr(mod, "PYRAMIDING",      1)
 
-    if verbose and (commission_pct != 0.0 or initial_capital != 10000.0):
-        print(f"Commission: {commission_pct:.4f}%  |  Initial capital: {initial_capital:,.0f}")
+    if verbose and (commission_pct != 0.0 or initial_capital != 10000.0 or pyramiding != 1):
+        print(f"Commission: {commission_pct:.4f}%  |  Initial capital: {initial_capital:,.0f}  |  Pyramiding: {pyramiding}")
 
-    rf = getattr(mod, "RENKO_FILE", None) or renko_file
+    # CLI --renko wins over module default when explicitly passed.
+    rf = renko_file or getattr(mod, "RENKO_FILE", None)
     strategies_dir = str(Path(__file__).resolve().parent / "strategies")
 
     if len(combos) <= 1:
         print("Loading data...")
         df = load_stock_renko(rf)
         results = [run_single(df, mod.generate_signals, combos[0], start, end,
-                              commission_pct=commission_pct, initial_capital=initial_capital)]
+                              commission_pct=commission_pct, initial_capital=initial_capital,
+                              pyramiding=pyramiding)]
     else:
         print(f"Sweeping {len(combos)} combos across {min(len(combos), MAX_WORKERS)} workers...")
         tasks = [
-            (strategy_name, rf, p, start, end, commission_pct, initial_capital, strategies_dir)
+            (strategy_name, rf, p, start, end, commission_pct, initial_capital, pyramiding, strategies_dir)
             for p in combos
         ]
         results = []

@@ -1,0 +1,2788 @@
+{
+  "results": [
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 12,
+        "slow_len": 14,
+        "min_brick_streak": 5,
+        "cooldown": 10
+      },
+      "total_trades": 132,
+      "win_rate": 85.6,
+      "profit_factor": 155.89,
+      "net_profit": 33424.19,
+      "max_drawdown": -36.82,
+      "avg_trade": 253.21,
+      "avg_win_loss_ratio": 26.21
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 12,
+        "slow_len": 14,
+        "min_brick_streak": 5,
+        "cooldown": 20
+      },
+      "total_trades": 131,
+      "win_rate": 85.5,
+      "profit_factor": 155.55,
+      "net_profit": 33350.88,
+      "max_drawdown": -36.82,
+      "avg_trade": 254.59,
+      "avg_win_loss_ratio": 26.39
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 12,
+        "slow_len": 14,
+        "min_brick_streak": 5,
+        "cooldown": 30
+      },
+      "total_trades": 119,
+      "win_rate": 86.6,
+      "profit_factor": 146.87,
+      "net_profit": 26291.99,
+      "max_drawdown": -23.78,
+      "avg_trade": 220.94,
+      "avg_win_loss_ratio": 22.81
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 20,
+        "slow_len": 40,
+        "min_brick_streak": 6,
+        "cooldown": 30
+      },
+      "total_trades": 20,
+      "win_rate": 75.0,
+      "profit_factor": 129.24,
+      "net_profit": 6984.47,
+      "max_drawdown": -38.69,
+      "avg_trade": 349.22,
+      "avg_win_loss_ratio": 43.08
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 20,
+        "slow_len": 40,
+        "min_brick_streak": 6,
+        "cooldown": 10
+      },
+      "total_trades": 20,
+      "win_rate": 75.0,
+      "profit_factor": 129.24,
+      "net_profit": 6984.47,
+      "max_drawdown": -38.69,
+      "avg_trade": 349.22,
+      "avg_win_loss_ratio": 43.08
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 20,
+        "slow_len": 40,
+        "min_brick_streak": 6,
+        "cooldown": 20
+      },
+      "total_trades": 20,
+      "win_rate": 75.0,
+      "profit_factor": 129.24,
+      "net_profit": 6984.47,
+      "max_drawdown": -38.69,
+      "avg_trade": 349.22,
+      "avg_win_loss_ratio": 43.08
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 20,
+        "slow_len": 25,
+        "min_brick_streak": 6,
+        "cooldown": 10
+      },
+      "total_trades": 35,
+      "win_rate": 74.3,
+      "profit_factor": 129.02,
+      "net_profit": 9880.69,
+      "max_drawdown": -61.92,
+      "avg_trade": 282.31,
+      "avg_win_loss_ratio": 44.66
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 20,
+        "slow_len": 25,
+        "min_brick_streak": 6,
+        "cooldown": 20
+      },
+      "total_trades": 35,
+      "win_rate": 74.3,
+      "profit_factor": 129.02,
+      "net_profit": 9880.69,
+      "max_drawdown": -61.92,
+      "avg_trade": 282.31,
+      "avg_win_loss_ratio": 44.66
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 20,
+        "slow_len": 25,
+        "min_brick_streak": 6,
+        "cooldown": 30
+      },
+      "total_trades": 34,
+      "win_rate": 73.5,
+      "profit_factor": 124.57,
+      "net_profit": 9537.59,
+      "max_drawdown": -61.92,
+      "avg_trade": 280.52,
+      "avg_win_loss_ratio": 44.85
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 20,
+        "slow_len": 30,
+        "min_brick_streak": 6,
+        "cooldown": 10
+      },
+      "total_trades": 15,
+      "win_rate": 73.3,
+      "profit_factor": 124.48,
+      "net_profit": 4637.99,
+      "max_drawdown": -34.89,
+      "avg_trade": 309.2,
+      "avg_win_loss_ratio": 45.26
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 20,
+        "slow_len": 30,
+        "min_brick_streak": 6,
+        "cooldown": 20
+      },
+      "total_trades": 15,
+      "win_rate": 73.3,
+      "profit_factor": 124.48,
+      "net_profit": 4637.99,
+      "max_drawdown": -34.89,
+      "avg_trade": 309.2,
+      "avg_win_loss_ratio": 45.26
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 20,
+        "slow_len": 30,
+        "min_brick_streak": 6,
+        "cooldown": 30
+      },
+      "total_trades": 15,
+      "win_rate": 73.3,
+      "profit_factor": 124.48,
+      "net_profit": 4637.99,
+      "max_drawdown": -34.89,
+      "avg_trade": 309.2,
+      "avg_win_loss_ratio": 45.26
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 15,
+        "slow_len": 40,
+        "min_brick_streak": 5,
+        "cooldown": 20
+      },
+      "total_trades": 24,
+      "win_rate": 70.8,
+      "profit_factor": 95.2,
+      "net_profit": 6841.84,
+      "max_drawdown": -34.2,
+      "avg_trade": 285.08,
+      "avg_win_loss_ratio": 39.2
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 15,
+        "slow_len": 40,
+        "min_brick_streak": 5,
+        "cooldown": 30
+      },
+      "total_trades": 23,
+      "win_rate": 69.6,
+      "profit_factor": 87.78,
+      "net_profit": 6303.43,
+      "max_drawdown": -34.2,
+      "avg_trade": 274.06,
+      "avg_win_loss_ratio": 38.41
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 10,
+        "slow_len": 30,
+        "min_brick_streak": 4,
+        "cooldown": 10
+      },
+      "total_trades": 26,
+      "win_rate": 73.1,
+      "profit_factor": 85.18,
+      "net_profit": 6133.16,
+      "max_drawdown": -32.91,
+      "avg_trade": 235.89,
+      "avg_win_loss_ratio": 31.38
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 10,
+        "slow_len": 30,
+        "min_brick_streak": 4,
+        "cooldown": 30
+      },
+      "total_trades": 25,
+      "win_rate": 72.0,
+      "profit_factor": 81.7,
+      "net_profit": 5880.03,
+      "max_drawdown": -32.91,
+      "avg_trade": 235.2,
+      "avg_win_loss_ratio": 31.77
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 10,
+        "slow_len": 30,
+        "min_brick_streak": 4,
+        "cooldown": 20
+      },
+      "total_trades": 25,
+      "win_rate": 72.0,
+      "profit_factor": 81.7,
+      "net_profit": 5880.03,
+      "max_drawdown": -32.91,
+      "avg_trade": 235.2,
+      "avg_win_loss_ratio": 31.77
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 15,
+        "slow_len": 40,
+        "min_brick_streak": 5,
+        "cooldown": 10
+      },
+      "total_trades": 25,
+      "win_rate": 68.0,
+      "profit_factor": 77.33,
+      "net_profit": 6825.06,
+      "max_drawdown": -34.2,
+      "avg_trade": 273.0,
+      "avg_win_loss_ratio": 36.39
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 10,
+        "slow_len": 40,
+        "min_brick_streak": 4,
+        "cooldown": 10
+      },
+      "total_trades": 37,
+      "win_rate": 67.6,
+      "profit_factor": 67.62,
+      "net_profit": 9473.1,
+      "max_drawdown": -46.86,
+      "avg_trade": 256.03,
+      "avg_win_loss_ratio": 32.46
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 12,
+        "slow_len": 14,
+        "min_brick_streak": 4,
+        "cooldown": 10
+      },
+      "total_trades": 245,
+      "win_rate": 74.3,
+      "profit_factor": 66.1,
+      "net_profit": 44997.78,
+      "max_drawdown": -58.96,
+      "avg_trade": 183.66,
+      "avg_win_loss_ratio": 22.88
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 10,
+        "slow_len": 40,
+        "min_brick_streak": 4,
+        "cooldown": 20
+      },
+      "total_trades": 36,
+      "win_rate": 66.7,
+      "profit_factor": 65.84,
+      "net_profit": 9219.97,
+      "max_drawdown": -46.86,
+      "avg_trade": 256.11,
+      "avg_win_loss_ratio": 32.92
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 10,
+        "slow_len": 40,
+        "min_brick_streak": 4,
+        "cooldown": 30
+      },
+      "total_trades": 35,
+      "win_rate": 65.7,
+      "profit_factor": 64.27,
+      "net_profit": 8996.71,
+      "max_drawdown": -46.86,
+      "avg_trade": 257.05,
+      "avg_win_loss_ratio": 33.53
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 20,
+        "slow_len": 40,
+        "min_brick_streak": 5,
+        "cooldown": 20
+      },
+      "total_trades": 52,
+      "win_rate": 67.3,
+      "profit_factor": 62.66,
+      "net_profit": 13045.59,
+      "max_drawdown": -53.5,
+      "avg_trade": 250.88,
+      "avg_win_loss_ratio": 30.43
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 12,
+        "slow_len": 14,
+        "min_brick_streak": 4,
+        "cooldown": 20
+      },
+      "total_trades": 225,
+      "win_rate": 72.9,
+      "profit_factor": 59.31,
+      "net_profit": 41810.41,
+      "max_drawdown": -72.35,
+      "avg_trade": 185.82,
+      "avg_win_loss_ratio": 22.06
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 20,
+        "slow_len": 40,
+        "min_brick_streak": 5,
+        "cooldown": 30
+      },
+      "total_trades": 50,
+      "win_rate": 66.0,
+      "profit_factor": 59.13,
+      "net_profit": 12298.93,
+      "max_drawdown": -53.5,
+      "avg_trade": 245.98,
+      "avg_win_loss_ratio": 30.46
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 12,
+        "slow_len": 14,
+        "min_brick_streak": 4,
+        "cooldown": 30
+      },
+      "total_trades": 196,
+      "win_rate": 75.0,
+      "profit_factor": 58.81,
+      "net_profit": 34078.67,
+      "max_drawdown": -72.35,
+      "avg_trade": 173.87,
+      "avg_win_loss_ratio": 19.6
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 20,
+        "slow_len": 40,
+        "min_brick_streak": 5,
+        "cooldown": 10
+      },
+      "total_trades": 53,
+      "win_rate": 66.0,
+      "profit_factor": 58.05,
+      "net_profit": 13028.8,
+      "max_drawdown": -53.5,
+      "avg_trade": 245.83,
+      "avg_win_loss_ratio": 29.86
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 20,
+        "slow_len": 25,
+        "min_brick_streak": 5,
+        "cooldown": 20
+      },
+      "total_trades": 82,
+      "win_rate": 69.5,
+      "profit_factor": 57.91,
+      "net_profit": 17202.78,
+      "max_drawdown": -52.86,
+      "avg_trade": 209.79,
+      "avg_win_loss_ratio": 25.4
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 20,
+        "slow_len": 25,
+        "min_brick_streak": 5,
+        "cooldown": 10
+      },
+      "total_trades": 84,
+      "win_rate": 69.0,
+      "profit_factor": 56.45,
+      "net_profit": 17694.25,
+      "max_drawdown": -52.86,
+      "avg_trade": 210.65,
+      "avg_win_loss_ratio": 25.31
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 15,
+        "slow_len": 30,
+        "min_brick_streak": 5,
+        "cooldown": 20
+      },
+      "total_trades": 19,
+      "win_rate": 63.2,
+      "profit_factor": 56.02,
+      "net_profit": 4000.68,
+      "max_drawdown": -17.71,
+      "avg_trade": 210.56,
+      "avg_win_loss_ratio": 32.68
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 15,
+        "slow_len": 30,
+        "min_brick_streak": 5,
+        "cooldown": 10
+      },
+      "total_trades": 19,
+      "win_rate": 63.2,
+      "profit_factor": 56.02,
+      "net_profit": 4000.68,
+      "max_drawdown": -17.71,
+      "avg_trade": 210.56,
+      "avg_win_loss_ratio": 32.68
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 12,
+        "slow_len": 40,
+        "min_brick_streak": 4,
+        "cooldown": 10
+      },
+      "total_trades": 67,
+      "win_rate": 68.7,
+      "profit_factor": 55.4,
+      "net_profit": 14381.94,
+      "max_drawdown": -97.53,
+      "avg_trade": 214.66,
+      "avg_win_loss_ratio": 25.29
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 12,
+        "slow_len": 30,
+        "min_brick_streak": 4,
+        "cooldown": 10
+      },
+      "total_trades": 54,
+      "win_rate": 70.4,
+      "profit_factor": 54.63,
+      "net_profit": 10460.38,
+      "max_drawdown": -66.65,
+      "avg_trade": 193.71,
+      "avg_win_loss_ratio": 23.0
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 12,
+        "slow_len": 30,
+        "min_brick_streak": 4,
+        "cooldown": 30
+      },
+      "total_trades": 53,
+      "win_rate": 69.8,
+      "profit_factor": 53.33,
+      "net_profit": 10207.25,
+      "max_drawdown": -66.65,
+      "avg_trade": 192.59,
+      "avg_win_loss_ratio": 23.06
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 12,
+        "slow_len": 30,
+        "min_brick_streak": 4,
+        "cooldown": 20
+      },
+      "total_trades": 53,
+      "win_rate": 69.8,
+      "profit_factor": 53.33,
+      "net_profit": 10207.25,
+      "max_drawdown": -66.65,
+      "avg_trade": 192.59,
+      "avg_win_loss_ratio": 23.06
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 12,
+        "slow_len": 40,
+        "min_brick_streak": 4,
+        "cooldown": 20
+      },
+      "total_trades": 65,
+      "win_rate": 67.7,
+      "profit_factor": 52.92,
+      "net_profit": 13725.55,
+      "max_drawdown": -97.53,
+      "avg_trade": 211.16,
+      "avg_win_loss_ratio": 25.26
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 20,
+        "slow_len": 30,
+        "min_brick_streak": 5,
+        "cooldown": 20
+      },
+      "total_trades": 52,
+      "win_rate": 63.5,
+      "profit_factor": 51.86,
+      "net_profit": 11739.75,
+      "max_drawdown": -55.38,
+      "avg_trade": 225.76,
+      "avg_win_loss_ratio": 29.86
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 12,
+        "slow_len": 40,
+        "min_brick_streak": 4,
+        "cooldown": 30
+      },
+      "total_trades": 63,
+      "win_rate": 66.7,
+      "profit_factor": 50.03,
+      "net_profit": 12963.88,
+      "max_drawdown": -97.53,
+      "avg_trade": 205.78,
+      "avg_win_loss_ratio": 25.02
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 10,
+        "slow_len": 25,
+        "min_brick_streak": 4,
+        "cooldown": 10
+      },
+      "total_trades": 20,
+      "win_rate": 70.0,
+      "profit_factor": 49.63,
+      "net_profit": 3458.52,
+      "max_drawdown": -32.91,
+      "avg_trade": 172.93,
+      "avg_win_loss_ratio": 21.27
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 20,
+        "slow_len": 25,
+        "min_brick_streak": 5,
+        "cooldown": 30
+      },
+      "total_trades": 74,
+      "win_rate": 67.6,
+      "profit_factor": 48.94,
+      "net_profit": 14397.32,
+      "max_drawdown": -50.88,
+      "avg_trade": 194.56,
+      "avg_win_loss_ratio": 23.49
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 20,
+        "slow_len": 30,
+        "min_brick_streak": 5,
+        "cooldown": 10
+      },
+      "total_trades": 53,
+      "win_rate": 62.3,
+      "profit_factor": 48.35,
+      "net_profit": 11722.96,
+      "max_drawdown": -55.38,
+      "avg_trade": 221.19,
+      "avg_win_loss_ratio": 29.3
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 10,
+        "slow_len": 20,
+        "min_brick_streak": 4,
+        "cooldown": 10
+      },
+      "total_trades": 19,
+      "win_rate": 68.4,
+      "profit_factor": 47.2,
+      "net_profit": 3295.2,
+      "max_drawdown": -32.91,
+      "avg_trade": 173.43,
+      "avg_win_loss_ratio": 21.78
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 10,
+        "slow_len": 25,
+        "min_brick_streak": 4,
+        "cooldown": 20
+      },
+      "total_trades": 19,
+      "win_rate": 68.4,
+      "profit_factor": 46.07,
+      "net_profit": 3205.39,
+      "max_drawdown": -32.91,
+      "avg_trade": 168.7,
+      "avg_win_loss_ratio": 21.26
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 10,
+        "slow_len": 25,
+        "min_brick_streak": 4,
+        "cooldown": 30
+      },
+      "total_trades": 19,
+      "win_rate": 68.4,
+      "profit_factor": 46.07,
+      "net_profit": 3205.39,
+      "max_drawdown": -32.91,
+      "avg_trade": 168.7,
+      "avg_win_loss_ratio": 21.26
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 20,
+        "slow_len": 30,
+        "min_brick_streak": 5,
+        "cooldown": 30
+      },
+      "total_trades": 50,
+      "win_rate": 62.0,
+      "profit_factor": 45.64,
+      "net_profit": 10303.08,
+      "max_drawdown": -55.38,
+      "avg_trade": 206.06,
+      "avg_win_loss_ratio": 27.97
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 15,
+        "slow_len": 40,
+        "min_brick_streak": 4,
+        "cooldown": 20
+      },
+      "total_trades": 82,
+      "win_rate": 64.6,
+      "profit_factor": 45.44,
+      "net_profit": 14427.96,
+      "max_drawdown": -51.65,
+      "avg_trade": 175.95,
+      "avg_win_loss_ratio": 24.86
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 15,
+        "slow_len": 25,
+        "min_brick_streak": 5,
+        "cooldown": 10
+      },
+      "total_trades": 20,
+      "win_rate": 60.0,
+      "profit_factor": 44.95,
+      "net_profit": 3938.59,
+      "max_drawdown": -17.82,
+      "avg_trade": 196.93,
+      "avg_win_loss_ratio": 29.97
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 15,
+        "slow_len": 25,
+        "min_brick_streak": 5,
+        "cooldown": 20
+      },
+      "total_trades": 20,
+      "win_rate": 60.0,
+      "profit_factor": 44.95,
+      "net_profit": 3938.59,
+      "max_drawdown": -17.82,
+      "avg_trade": 196.93,
+      "avg_win_loss_ratio": 29.97
+    },
+    {
+      "params": {
+        "use_sha": false,
+        "fast_len": 3,
+        "slow_len": 10,
+        "min_brick_streak": 10,
+        "cooldown": 10
+      },
+      "total_trades": 526,
+      "win_rate": 66.9,
+      "profit_factor": 44.05,
+      "net_profit": 85163.39,
+      "max_drawdown": -59.08,
+      "avg_trade": 161.91,
+      "avg_win_loss_ratio": 21.78
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 15,
+        "slow_len": 40,
+        "min_brick_streak": 4,
+        "cooldown": 10
+      },
+      "total_trades": 88,
+      "win_rate": 64.8,
+      "profit_factor": 43.79,
+      "net_profit": 15332.02,
+      "max_drawdown": -55.3,
+      "avg_trade": 174.23,
+      "avg_win_loss_ratio": 23.81
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 10,
+        "slow_len": 20,
+        "min_brick_streak": 4,
+        "cooldown": 20
+      },
+      "total_trades": 18,
+      "win_rate": 66.7,
+      "profit_factor": 43.65,
+      "net_profit": 3042.07,
+      "max_drawdown": -32.91,
+      "avg_trade": 169.0,
+      "avg_win_loss_ratio": 21.82
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 10,
+        "slow_len": 20,
+        "min_brick_streak": 4,
+        "cooldown": 30
+      },
+      "total_trades": 18,
+      "win_rate": 66.7,
+      "profit_factor": 43.65,
+      "net_profit": 3042.07,
+      "max_drawdown": -32.91,
+      "avg_trade": 169.0,
+      "avg_win_loss_ratio": 21.82
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 15,
+        "slow_len": 30,
+        "min_brick_streak": 5,
+        "cooldown": 30
+      },
+      "total_trades": 18,
+      "win_rate": 61.1,
+      "profit_factor": 43.46,
+      "net_profit": 3087.43,
+      "max_drawdown": -17.71,
+      "avg_trade": 171.52,
+      "avg_win_loss_ratio": 27.66
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 15,
+        "slow_len": 40,
+        "min_brick_streak": 4,
+        "cooldown": 30
+      },
+      "total_trades": 80,
+      "win_rate": 63.7,
+      "profit_factor": 43.14,
+      "net_profit": 13681.28,
+      "max_drawdown": -51.65,
+      "avg_trade": 171.02,
+      "avg_win_loss_ratio": 24.53
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 12,
+        "slow_len": 14,
+        "min_brick_streak": 3,
+        "cooldown": 30
+      },
+      "total_trades": 261,
+      "win_rate": 69.7,
+      "profit_factor": 42.64,
+      "net_profit": 38184.12,
+      "max_drawdown": -87.58,
+      "avg_trade": 146.3,
+      "avg_win_loss_ratio": 18.51
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 15,
+        "slow_len": 30,
+        "min_brick_streak": 4,
+        "cooldown": 20
+      },
+      "total_trades": 74,
+      "win_rate": 64.9,
+      "profit_factor": 41.32,
+      "net_profit": 11652.39,
+      "max_drawdown": -51.65,
+      "avg_trade": 157.46,
+      "avg_win_loss_ratio": 22.38
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 12,
+        "slow_len": 14,
+        "min_brick_streak": 3,
+        "cooldown": 20
+      },
+      "total_trades": 310,
+      "win_rate": 67.7,
+      "profit_factor": 40.52,
+      "net_profit": 46747.61,
+      "max_drawdown": -98.82,
+      "avg_trade": 150.8,
+      "avg_win_loss_ratio": 19.3
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 15,
+        "slow_len": 30,
+        "min_brick_streak": 4,
+        "cooldown": 10
+      },
+      "total_trades": 77,
+      "win_rate": 64.9,
+      "profit_factor": 40.06,
+      "net_profit": 11946.87,
+      "max_drawdown": -51.65,
+      "avg_trade": 155.15,
+      "avg_win_loss_ratio": 21.63
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 12,
+        "slow_len": 25,
+        "min_brick_streak": 4,
+        "cooldown": 10
+      },
+      "total_trades": 49,
+      "win_rate": 69.4,
+      "profit_factor": 39.95,
+      "net_profit": 7528.87,
+      "max_drawdown": -68.53,
+      "avg_trade": 153.65,
+      "avg_win_loss_ratio": 17.62
+    },
+    {
+      "params": {
+        "use_sha": false,
+        "fast_len": 3,
+        "slow_len": 10,
+        "min_brick_streak": 10,
+        "cooldown": 30
+      },
+      "total_trades": 282,
+      "win_rate": 63.1,
+      "profit_factor": 39.32,
+      "net_profit": 44942.09,
+      "max_drawdown": -92.83,
+      "avg_trade": 159.37,
+      "avg_win_loss_ratio": 22.98
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 20,
+        "slow_len": 40,
+        "min_brick_streak": 4,
+        "cooldown": 10
+      },
+      "total_trades": 112,
+      "win_rate": 62.5,
+      "profit_factor": 38.85,
+      "net_profit": 19458.36,
+      "max_drawdown": -117.36,
+      "avg_trade": 173.74,
+      "avg_win_loss_ratio": 23.31
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 12,
+        "slow_len": 25,
+        "min_brick_streak": 4,
+        "cooldown": 20
+      },
+      "total_trades": 48,
+      "win_rate": 68.8,
+      "profit_factor": 38.64,
+      "net_profit": 7275.74,
+      "max_drawdown": -68.53,
+      "avg_trade": 151.58,
+      "avg_win_loss_ratio": 17.56
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 12,
+        "slow_len": 25,
+        "min_brick_streak": 4,
+        "cooldown": 30
+      },
+      "total_trades": 48,
+      "win_rate": 68.8,
+      "profit_factor": 38.64,
+      "net_profit": 7275.74,
+      "max_drawdown": -68.53,
+      "avg_trade": 151.58,
+      "avg_win_loss_ratio": 17.56
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 15,
+        "slow_len": 25,
+        "min_brick_streak": 4,
+        "cooldown": 20
+      },
+      "total_trades": 77,
+      "win_rate": 64.9,
+      "profit_factor": 38.05,
+      "net_profit": 11331.74,
+      "max_drawdown": -68.54,
+      "avg_trade": 147.17,
+      "avg_win_loss_ratio": 20.54
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 12,
+        "slow_len": 14,
+        "min_brick_streak": 3,
+        "cooldown": 10
+      },
+      "total_trades": 365,
+      "win_rate": 66.8,
+      "profit_factor": 38.02,
+      "net_profit": 51354.13,
+      "max_drawdown": -100.69,
+      "avg_trade": 140.7,
+      "avg_win_loss_ratio": 18.85
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 15,
+        "slow_len": 30,
+        "min_brick_streak": 4,
+        "cooldown": 30
+      },
+      "total_trades": 72,
+      "win_rate": 63.9,
+      "profit_factor": 37.44,
+      "net_profit": 10530.88,
+      "max_drawdown": -51.65,
+      "avg_trade": 146.26,
+      "avg_win_loss_ratio": 21.16
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 8,
+        "slow_len": 40,
+        "min_brick_streak": 3,
+        "cooldown": 30
+      },
+      "total_trades": 100,
+      "win_rate": 63.0,
+      "profit_factor": 37.35,
+      "net_profit": 15083.84,
+      "max_drawdown": -77.88,
+      "avg_trade": 150.84,
+      "avg_win_loss_ratio": 21.93
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 15,
+        "slow_len": 25,
+        "min_brick_streak": 4,
+        "cooldown": 10
+      },
+      "total_trades": 80,
+      "win_rate": 65.0,
+      "profit_factor": 37.02,
+      "net_profit": 11626.22,
+      "max_drawdown": -68.54,
+      "avg_trade": 145.33,
+      "avg_win_loss_ratio": 19.93
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 12,
+        "slow_len": 20,
+        "min_brick_streak": 4,
+        "cooldown": 10
+      },
+      "total_trades": 54,
+      "win_rate": 70.4,
+      "profit_factor": 36.95,
+      "net_profit": 7563.99,
+      "max_drawdown": -85.43,
+      "avg_trade": 140.07,
+      "avg_win_loss_ratio": 15.56
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 20,
+        "slow_len": 40,
+        "min_brick_streak": 4,
+        "cooldown": 20
+      },
+      "total_trades": 103,
+      "win_rate": 62.1,
+      "profit_factor": 36.87,
+      "net_profit": 17164.81,
+      "max_drawdown": -117.36,
+      "avg_trade": 166.65,
+      "avg_win_loss_ratio": 22.47
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 20,
+        "slow_len": 40,
+        "min_brick_streak": 4,
+        "cooldown": 30
+      },
+      "total_trades": 99,
+      "win_rate": 61.6,
+      "profit_factor": 36.19,
+      "net_profit": 16241.88,
+      "max_drawdown": -117.36,
+      "avg_trade": 164.06,
+      "avg_win_loss_ratio": 22.54
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 12,
+        "slow_len": 20,
+        "min_brick_streak": 4,
+        "cooldown": 20
+      },
+      "total_trades": 53,
+      "win_rate": 69.8,
+      "profit_factor": 35.75,
+      "net_profit": 7310.86,
+      "max_drawdown": -85.43,
+      "avg_trade": 137.94,
+      "avg_win_loss_ratio": 15.46
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 12,
+        "slow_len": 20,
+        "min_brick_streak": 4,
+        "cooldown": 30
+      },
+      "total_trades": 53,
+      "win_rate": 69.8,
+      "profit_factor": 35.75,
+      "net_profit": 7310.86,
+      "max_drawdown": -85.43,
+      "avg_trade": 137.94,
+      "avg_win_loss_ratio": 15.46
+    },
+    {
+      "params": {
+        "use_sha": false,
+        "fast_len": 3,
+        "slow_len": 10,
+        "min_brick_streak": 10,
+        "cooldown": 20
+      },
+      "total_trades": 331,
+      "win_rate": 61.9,
+      "profit_factor": 35.49,
+      "net_profit": 47041.56,
+      "max_drawdown": -92.83,
+      "avg_trade": 142.12,
+      "avg_win_loss_ratio": 21.81
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 15,
+        "slow_len": 25,
+        "min_brick_streak": 4,
+        "cooldown": 30
+      },
+      "total_trades": 76,
+      "win_rate": 64.5,
+      "profit_factor": 35.06,
+      "net_profit": 10418.49,
+      "max_drawdown": -68.54,
+      "avg_trade": 137.09,
+      "avg_win_loss_ratio": 19.32
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 15,
+        "slow_len": 25,
+        "min_brick_streak": 5,
+        "cooldown": 30
+      },
+      "total_trades": 19,
+      "win_rate": 57.9,
+      "profit_factor": 34.76,
+      "net_profit": 3025.34,
+      "max_drawdown": -17.82,
+      "avg_trade": 159.23,
+      "avg_win_loss_ratio": 25.28
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 20,
+        "slow_len": 25,
+        "min_brick_streak": 4,
+        "cooldown": 10
+      },
+      "total_trades": 160,
+      "win_rate": 64.4,
+      "profit_factor": 34.66,
+      "net_profit": 24841.24,
+      "max_drawdown": -88.8,
+      "avg_trade": 155.26,
+      "avg_win_loss_ratio": 19.18
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 8,
+        "slow_len": 40,
+        "min_brick_streak": 3,
+        "cooldown": 20
+      },
+      "total_trades": 104,
+      "win_rate": 61.5,
+      "profit_factor": 34.46,
+      "net_profit": 15076.21,
+      "max_drawdown": -89.79,
+      "avg_trade": 144.96,
+      "avg_win_loss_ratio": 21.54
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 10,
+        "slow_len": 40,
+        "min_brick_streak": 3,
+        "cooldown": 10
+      },
+      "total_trades": 140,
+      "win_rate": 59.3,
+      "profit_factor": 34.43,
+      "net_profit": 20664.03,
+      "max_drawdown": -72.82,
+      "avg_trade": 147.6,
+      "avg_win_loss_ratio": 23.65
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 20,
+        "slow_len": 25,
+        "min_brick_streak": 4,
+        "cooldown": 20
+      },
+      "total_trades": 144,
+      "win_rate": 63.9,
+      "profit_factor": 34.02,
+      "net_profit": 22080.93,
+      "max_drawdown": -71.82,
+      "avg_trade": 153.34,
+      "avg_win_loss_ratio": 19.23
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 10,
+        "slow_len": 40,
+        "min_brick_streak": 3,
+        "cooldown": 30
+      },
+      "total_trades": 119,
+      "win_rate": 59.7,
+      "profit_factor": 33.98,
+      "net_profit": 17837.9,
+      "max_drawdown": -64.84,
+      "avg_trade": 149.9,
+      "avg_win_loss_ratio": 22.97
+    },
+    {
+      "params": {
+        "use_sha": false,
+        "fast_len": 3,
+        "slow_len": 10,
+        "min_brick_streak": 8,
+        "cooldown": 30
+      },
+      "total_trades": 321,
+      "win_rate": 61.4,
+      "profit_factor": 33.87,
+      "net_profit": 48182.2,
+      "max_drawdown": -88.0,
+      "avg_trade": 150.1,
+      "avg_win_loss_ratio": 21.32
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 20,
+        "slow_len": 25,
+        "min_brick_streak": 3,
+        "cooldown": 30
+      },
+      "total_trades": 175,
+      "win_rate": 64.0,
+      "profit_factor": 33.73,
+      "net_profit": 25021.38,
+      "max_drawdown": -70.51,
+      "avg_trade": 142.98,
+      "avg_win_loss_ratio": 18.97
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 8,
+        "slow_len": 40,
+        "min_brick_streak": 3,
+        "cooldown": 10
+      },
+      "total_trades": 116,
+      "win_rate": 61.2,
+      "profit_factor": 33.44,
+      "net_profit": 15909.0,
+      "max_drawdown": -89.79,
+      "avg_trade": 137.15,
+      "avg_win_loss_ratio": 21.2
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 15,
+        "slow_len": 40,
+        "min_brick_streak": 3,
+        "cooldown": 30
+      },
+      "total_trades": 137,
+      "win_rate": 61.3,
+      "profit_factor": 33.29,
+      "net_profit": 18733.5,
+      "max_drawdown": -61.88,
+      "avg_trade": 136.74,
+      "avg_win_loss_ratio": 21.01
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 12,
+        "slow_len": 40,
+        "min_brick_streak": 3,
+        "cooldown": 30
+      },
+      "total_trades": 127,
+      "win_rate": 62.2,
+      "profit_factor": 32.98,
+      "net_profit": 18257.46,
+      "max_drawdown": -53.6,
+      "avg_trade": 143.76,
+      "avg_win_loss_ratio": 20.04
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 20,
+        "slow_len": 25,
+        "min_brick_streak": 4,
+        "cooldown": 30
+      },
+      "total_trades": 133,
+      "win_rate": 64.7,
+      "profit_factor": 32.86,
+      "net_profit": 19566.05,
+      "max_drawdown": -82.87,
+      "avg_trade": 147.11,
+      "avg_win_loss_ratio": 17.96
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 10,
+        "slow_len": 40,
+        "min_brick_streak": 3,
+        "cooldown": 20
+      },
+      "total_trades": 124,
+      "win_rate": 58.9,
+      "profit_factor": 32.76,
+      "net_profit": 18308.52,
+      "max_drawdown": -76.75,
+      "avg_trade": 147.65,
+      "avg_win_loss_ratio": 22.89
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 20,
+        "slow_len": 30,
+        "min_brick_streak": 4,
+        "cooldown": 10
+      },
+      "total_trades": 116,
+      "win_rate": 60.3,
+      "profit_factor": 32.66,
+      "net_profit": 18429.49,
+      "max_drawdown": -117.36,
+      "avg_trade": 158.87,
+      "avg_win_loss_ratio": 21.46
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 10,
+        "slow_len": 30,
+        "min_brick_streak": 3,
+        "cooldown": 30
+      },
+      "total_trades": 112,
+      "win_rate": 59.8,
+      "profit_factor": 32.54,
+      "net_profit": 15465.53,
+      "max_drawdown": -55.84,
+      "avg_trade": 138.09,
+      "avg_win_loss_ratio": 21.86
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 20,
+        "slow_len": 40,
+        "min_brick_streak": 3,
+        "cooldown": 20
+      },
+      "total_trades": 147,
+      "win_rate": 59.2,
+      "profit_factor": 32.25,
+      "net_profit": 21370.61,
+      "max_drawdown": -121.19,
+      "avg_trade": 145.38,
+      "avg_win_loss_ratio": 22.24
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 20,
+        "slow_len": 40,
+        "min_brick_streak": 3,
+        "cooldown": 30
+      },
+      "total_trades": 139,
+      "win_rate": 59.0,
+      "profit_factor": 32.17,
+      "net_profit": 20200.13,
+      "max_drawdown": -104.28,
+      "avg_trade": 145.32,
+      "avg_win_loss_ratio": 22.36
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 12,
+        "slow_len": 40,
+        "min_brick_streak": 3,
+        "cooldown": 10
+      },
+      "total_trades": 150,
+      "win_rate": 61.3,
+      "profit_factor": 32.13,
+      "net_profit": 21170.03,
+      "max_drawdown": -57.36,
+      "avg_trade": 141.13,
+      "avg_win_loss_ratio": 20.26
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 10,
+        "slow_len": 30,
+        "min_brick_streak": 3,
+        "cooldown": 10
+      },
+      "total_trades": 124,
+      "win_rate": 60.5,
+      "profit_factor": 31.87,
+      "net_profit": 16763.55,
+      "max_drawdown": -72.82,
+      "avg_trade": 135.19,
+      "avg_win_loss_ratio": 20.82
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 15,
+        "slow_len": 40,
+        "min_brick_streak": 3,
+        "cooldown": 20
+      },
+      "total_trades": 145,
+      "win_rate": 60.0,
+      "profit_factor": 31.8,
+      "net_profit": 19544.1,
+      "max_drawdown": -70.48,
+      "avg_trade": 134.79,
+      "avg_win_loss_ratio": 21.2
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 12,
+        "slow_len": 40,
+        "min_brick_streak": 3,
+        "cooldown": 20
+      },
+      "total_trades": 136,
+      "win_rate": 61.0,
+      "profit_factor": 31.52,
+      "net_profit": 19080.96,
+      "max_drawdown": -57.36,
+      "avg_trade": 140.3,
+      "avg_win_loss_ratio": 20.13
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 20,
+        "slow_len": 30,
+        "min_brick_streak": 4,
+        "cooldown": 20
+      },
+      "total_trades": 106,
+      "win_rate": 60.4,
+      "profit_factor": 31.5,
+      "net_profit": 16152.93,
+      "max_drawdown": -117.36,
+      "avg_trade": 152.39,
+      "avg_win_loss_ratio": 20.67
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 15,
+        "slow_len": 40,
+        "min_brick_streak": 3,
+        "cooldown": 10
+      },
+      "total_trades": 164,
+      "win_rate": 60.4,
+      "profit_factor": 31.37,
+      "net_profit": 21953.58,
+      "max_drawdown": -70.48,
+      "avg_trade": 133.86,
+      "avg_win_loss_ratio": 20.59
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 20,
+        "slow_len": 40,
+        "min_brick_streak": 3,
+        "cooldown": 10
+      },
+      "total_trades": 168,
+      "win_rate": 58.9,
+      "profit_factor": 31.36,
+      "net_profit": 24001.95,
+      "max_drawdown": -121.19,
+      "avg_trade": 142.87,
+      "avg_win_loss_ratio": 21.86
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 20,
+        "slow_len": 25,
+        "min_brick_streak": 3,
+        "cooldown": 20
+      },
+      "total_trades": 197,
+      "win_rate": 60.4,
+      "profit_factor": 30.95,
+      "net_profit": 27350.04,
+      "max_drawdown": -87.42,
+      "avg_trade": 138.83,
+      "avg_win_loss_ratio": 20.29
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 10,
+        "slow_len": 30,
+        "min_brick_streak": 3,
+        "cooldown": 20
+      },
+      "total_trades": 115,
+      "win_rate": 58.3,
+      "profit_factor": 30.82,
+      "net_profit": 15684.88,
+      "max_drawdown": -93.71,
+      "avg_trade": 136.39,
+      "avg_win_loss_ratio": 22.08
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 20,
+        "slow_len": 25,
+        "min_brick_streak": 3,
+        "cooldown": 10
+      },
+      "total_trades": 224,
+      "win_rate": 61.6,
+      "profit_factor": 30.55,
+      "net_profit": 30539.2,
+      "max_drawdown": -87.42,
+      "avg_trade": 136.34,
+      "avg_win_loss_ratio": 19.04
+    },
+    {
+      "params": {
+        "use_sha": false,
+        "fast_len": 3,
+        "slow_len": 10,
+        "min_brick_streak": 8,
+        "cooldown": 20
+      },
+      "total_trades": 384,
+      "win_rate": 61.5,
+      "profit_factor": 30.11,
+      "net_profit": 50975.0,
+      "max_drawdown": -104.06,
+      "avg_trade": 132.75,
+      "avg_win_loss_ratio": 18.88
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 12,
+        "slow_len": 30,
+        "min_brick_streak": 3,
+        "cooldown": 30
+      },
+      "total_trades": 121,
+      "win_rate": 61.2,
+      "profit_factor": 30.11,
+      "net_profit": 16137.94,
+      "max_drawdown": -62.87,
+      "avg_trade": 133.37,
+      "avg_win_loss_ratio": 19.13
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 8,
+        "slow_len": 10,
+        "min_brick_streak": 3,
+        "cooldown": 30
+      },
+      "total_trades": 157,
+      "win_rate": 63.7,
+      "profit_factor": 29.93,
+      "net_profit": 17056.58,
+      "max_drawdown": -121.53,
+      "avg_trade": 108.64,
+      "avg_win_loss_ratio": 17.06
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 10,
+        "slow_len": 14,
+        "min_brick_streak": 4,
+        "cooldown": 10
+      },
+      "total_trades": 70,
+      "win_rate": 57.1,
+      "profit_factor": 29.71,
+      "net_profit": 9379.31,
+      "max_drawdown": -57.38,
+      "avg_trade": 133.99,
+      "avg_win_loss_ratio": 22.28
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 10,
+        "slow_len": 14,
+        "min_brick_streak": 4,
+        "cooldown": 30
+      },
+      "total_trades": 63,
+      "win_rate": 55.6,
+      "profit_factor": 28.87,
+      "net_profit": 8162.41,
+      "max_drawdown": -53.91,
+      "avg_trade": 129.56,
+      "avg_win_loss_ratio": 23.09
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 20,
+        "slow_len": 30,
+        "min_brick_streak": 4,
+        "cooldown": 30
+      },
+      "total_trades": 102,
+      "win_rate": 59.8,
+      "profit_factor": 28.53,
+      "net_profit": 14524.97,
+      "max_drawdown": -117.36,
+      "avg_trade": 142.4,
+      "avg_win_loss_ratio": 19.17
+    },
+    {
+      "params": {
+        "use_sha": false,
+        "fast_len": 3,
+        "slow_len": 10,
+        "min_brick_streak": 7,
+        "cooldown": 30
+      },
+      "total_trades": 347,
+      "win_rate": 61.1,
+      "profit_factor": 28.34,
+      "net_profit": 45582.65,
+      "max_drawdown": -106.78,
+      "avg_trade": 131.36,
+      "avg_win_loss_ratio": 18.04
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 8,
+        "slow_len": 30,
+        "min_brick_streak": 3,
+        "cooldown": 30
+      },
+      "total_trades": 86,
+      "win_rate": 59.3,
+      "profit_factor": 28.17,
+      "net_profit": 10773.98,
+      "max_drawdown": -89.76,
+      "avg_trade": 125.28,
+      "avg_win_loss_ratio": 19.33
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 12,
+        "slow_len": 30,
+        "min_brick_streak": 3,
+        "cooldown": 10
+      },
+      "total_trades": 138,
+      "win_rate": 60.9,
+      "profit_factor": 28.17,
+      "net_profit": 17051.24,
+      "max_drawdown": -62.87,
+      "avg_trade": 123.56,
+      "avg_win_loss_ratio": 18.11
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 15,
+        "slow_len": 30,
+        "min_brick_streak": 3,
+        "cooldown": 30
+      },
+      "total_trades": 132,
+      "win_rate": 60.6,
+      "profit_factor": 27.9,
+      "net_profit": 15562.25,
+      "max_drawdown": -61.88,
+      "avg_trade": 117.9,
+      "avg_win_loss_ratio": 18.14
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 8,
+        "slow_len": 10,
+        "min_brick_streak": 3,
+        "cooldown": 20
+      },
+      "total_trades": 167,
+      "win_rate": 62.3,
+      "profit_factor": 27.72,
+      "net_profit": 18057.4,
+      "max_drawdown": -121.53,
+      "avg_trade": 108.13,
+      "avg_win_loss_ratio": 16.79
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 12,
+        "slow_len": 30,
+        "min_brick_streak": 3,
+        "cooldown": 20
+      },
+      "total_trades": 128,
+      "win_rate": 59.4,
+      "profit_factor": 27.61,
+      "net_profit": 16199.76,
+      "max_drawdown": -62.87,
+      "avg_trade": 126.56,
+      "avg_win_loss_ratio": 18.89
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 20,
+        "slow_len": 30,
+        "min_brick_streak": 3,
+        "cooldown": 20
+      },
+      "total_trades": 157,
+      "win_rate": 57.3,
+      "profit_factor": 27.41,
+      "net_profit": 20795.92,
+      "max_drawdown": -121.19,
+      "avg_trade": 132.46,
+      "avg_win_loss_ratio": 20.4
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 10,
+        "slow_len": 14,
+        "min_brick_streak": 4,
+        "cooldown": 20
+      },
+      "total_trades": 65,
+      "win_rate": 55.4,
+      "profit_factor": 27.33,
+      "net_profit": 8158.54,
+      "max_drawdown": -57.38,
+      "avg_trade": 125.52,
+      "avg_win_loss_ratio": 22.02
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 15,
+        "slow_len": 30,
+        "min_brick_streak": 3,
+        "cooldown": 20
+      },
+      "total_trades": 139,
+      "win_rate": 59.0,
+      "profit_factor": 27.33,
+      "net_profit": 16659.55,
+      "max_drawdown": -82.76,
+      "avg_trade": 119.85,
+      "avg_win_loss_ratio": 19.0
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 15,
+        "slow_len": 30,
+        "min_brick_streak": 3,
+        "cooldown": 10
+      },
+      "total_trades": 155,
+      "win_rate": 60.0,
+      "profit_factor": 27.32,
+      "net_profit": 18489.48,
+      "max_drawdown": -70.48,
+      "avg_trade": 119.29,
+      "avg_win_loss_ratio": 18.21
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 15,
+        "slow_len": 20,
+        "min_brick_streak": 4,
+        "cooldown": 30
+      },
+      "total_trades": 108,
+      "win_rate": 60.2,
+      "profit_factor": 27.2,
+      "net_profit": 12352.71,
+      "max_drawdown": -102.33,
+      "avg_trade": 114.38,
+      "avg_win_loss_ratio": 18.0
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 20,
+        "slow_len": 30,
+        "min_brick_streak": 3,
+        "cooldown": 10
+      },
+      "total_trades": 176,
+      "win_rate": 57.4,
+      "profit_factor": 26.98,
+      "net_profit": 23190.43,
+      "max_drawdown": -121.19,
+      "avg_trade": 131.76,
+      "avg_win_loss_ratio": 20.04
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 10,
+        "slow_len": 25,
+        "min_brick_streak": 3,
+        "cooldown": 10
+      },
+      "total_trades": 108,
+      "win_rate": 61.1,
+      "profit_factor": 26.96,
+      "net_profit": 12982.58,
+      "max_drawdown": -72.82,
+      "avg_trade": 120.21,
+      "avg_win_loss_ratio": 17.16
+    },
+    {
+      "params": {
+        "use_sha": false,
+        "fast_len": 3,
+        "slow_len": 10,
+        "min_brick_streak": 7,
+        "cooldown": 20
+      },
+      "total_trades": 419,
+      "win_rate": 59.2,
+      "profit_factor": 26.87,
+      "net_profit": 54611.83,
+      "max_drawdown": -123.73,
+      "avg_trade": 130.34,
+      "avg_win_loss_ratio": 18.53
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 8,
+        "slow_len": 30,
+        "min_brick_streak": 3,
+        "cooldown": 10
+      },
+      "total_trades": 96,
+      "win_rate": 59.4,
+      "profit_factor": 26.65,
+      "net_profit": 11520.66,
+      "max_drawdown": -106.75,
+      "avg_trade": 120.01,
+      "avg_win_loss_ratio": 18.23
+    },
+    {
+      "params": {
+        "use_sha": false,
+        "fast_len": 3,
+        "slow_len": 10,
+        "min_brick_streak": 8,
+        "cooldown": 10
+      },
+      "total_trades": 485,
+      "win_rate": 62.1,
+      "profit_factor": 26.49,
+      "net_profit": 57473.9,
+      "max_drawdown": -139.69,
+      "avg_trade": 118.5,
+      "avg_win_loss_ratio": 16.19
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 15,
+        "slow_len": 20,
+        "min_brick_streak": 4,
+        "cooldown": 20
+      },
+      "total_trades": 111,
+      "win_rate": 60.4,
+      "profit_factor": 26.46,
+      "net_profit": 12437.01,
+      "max_drawdown": -102.33,
+      "avg_trade": 112.05,
+      "avg_win_loss_ratio": 17.38
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 20,
+        "slow_len": 30,
+        "min_brick_streak": 3,
+        "cooldown": 30
+      },
+      "total_trades": 146,
+      "win_rate": 56.8,
+      "profit_factor": 26.11,
+      "net_profit": 18821.28,
+      "max_drawdown": -104.28,
+      "avg_trade": 128.91,
+      "avg_win_loss_ratio": 19.81
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 8,
+        "slow_len": 10,
+        "min_brick_streak": 3,
+        "cooldown": 10
+      },
+      "total_trades": 197,
+      "win_rate": 62.4,
+      "profit_factor": 25.98,
+      "net_profit": 19665.11,
+      "max_drawdown": -138.46,
+      "avg_trade": 99.82,
+      "avg_win_loss_ratio": 15.63
+    },
+    {
+      "params": {
+        "use_sha": false,
+        "fast_len": 3,
+        "slow_len": 10,
+        "min_brick_streak": 6,
+        "cooldown": 20
+      },
+      "total_trades": 442,
+      "win_rate": 57.9,
+      "profit_factor": 25.92,
+      "net_profit": 55961.36,
+      "max_drawdown": -147.53,
+      "avg_trade": 126.61,
+      "avg_win_loss_ratio": 18.83
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 8,
+        "slow_len": 30,
+        "min_brick_streak": 3,
+        "cooldown": 20
+      },
+      "total_trades": 89,
+      "win_rate": 57.3,
+      "profit_factor": 25.85,
+      "net_profit": 10738.34,
+      "max_drawdown": -106.75,
+      "avg_trade": 120.66,
+      "avg_win_loss_ratio": 19.26
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 15,
+        "slow_len": 20,
+        "min_brick_streak": 4,
+        "cooldown": 10
+      },
+      "total_trades": 117,
+      "win_rate": 60.7,
+      "profit_factor": 25.8,
+      "net_profit": 12950.77,
+      "max_drawdown": -102.33,
+      "avg_trade": 110.69,
+      "avg_win_loss_ratio": 16.72
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 15,
+        "slow_len": 25,
+        "min_brick_streak": 3,
+        "cooldown": 10
+      },
+      "total_trades": 161,
+      "win_rate": 60.2,
+      "profit_factor": 25.76,
+      "net_profit": 18238.08,
+      "max_drawdown": -87.37,
+      "avg_trade": 113.28,
+      "avg_win_loss_ratio": 17.0
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 8,
+        "slow_len": 25,
+        "min_brick_streak": 3,
+        "cooldown": 30
+      },
+      "total_trades": 72,
+      "win_rate": 61.1,
+      "profit_factor": 25.42,
+      "net_profit": 8999.95,
+      "max_drawdown": -97.76,
+      "avg_trade": 125.0,
+      "avg_win_loss_ratio": 16.17
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 8,
+        "slow_len": 25,
+        "min_brick_streak": 3,
+        "cooldown": 10
+      },
+      "total_trades": 78,
+      "win_rate": 61.5,
+      "profit_factor": 25.32,
+      "net_profit": 9424.05,
+      "max_drawdown": -114.74,
+      "avg_trade": 120.82,
+      "avg_win_loss_ratio": 15.83
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 10,
+        "slow_len": 25,
+        "min_brick_streak": 3,
+        "cooldown": 20
+      },
+      "total_trades": 100,
+      "win_rate": 58.0,
+      "profit_factor": 25.22,
+      "net_profit": 12112.02,
+      "max_drawdown": -93.71,
+      "avg_trade": 121.12,
+      "avg_win_loss_ratio": 18.27
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 10,
+        "slow_len": 25,
+        "min_brick_streak": 3,
+        "cooldown": 30
+      },
+      "total_trades": 97,
+      "win_rate": 58.8,
+      "profit_factor": 25.16,
+      "net_profit": 11622.58,
+      "max_drawdown": -55.84,
+      "avg_trade": 119.82,
+      "avg_win_loss_ratio": 17.65
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 15,
+        "slow_len": 25,
+        "min_brick_streak": 3,
+        "cooldown": 20
+      },
+      "total_trades": 144,
+      "win_rate": 58.3,
+      "profit_factor": 24.93,
+      "net_profit": 16364.74,
+      "max_drawdown": -87.37,
+      "avg_trade": 113.64,
+      "avg_win_loss_ratio": 17.81
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 15,
+        "slow_len": 25,
+        "min_brick_streak": 3,
+        "cooldown": 30
+      },
+      "total_trades": 138,
+      "win_rate": 59.4,
+      "profit_factor": 24.88,
+      "net_profit": 15430.81,
+      "max_drawdown": -70.49,
+      "avg_trade": 111.82,
+      "avg_win_loss_ratio": 16.99
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 15,
+        "slow_len": 20,
+        "min_brick_streak": 5,
+        "cooldown": 20
+      },
+      "total_trades": 37,
+      "win_rate": 54.1,
+      "profit_factor": 24.8,
+      "net_profit": 5031.95,
+      "max_drawdown": -34.72,
+      "avg_trade": 136.0,
+      "avg_win_loss_ratio": 21.08
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 15,
+        "slow_len": 20,
+        "min_brick_streak": 5,
+        "cooldown": 10
+      },
+      "total_trades": 37,
+      "win_rate": 54.1,
+      "profit_factor": 24.8,
+      "net_profit": 5031.95,
+      "max_drawdown": -34.72,
+      "avg_trade": 136.0,
+      "avg_win_loss_ratio": 21.08
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 15,
+        "slow_len": 20,
+        "min_brick_streak": 5,
+        "cooldown": 30
+      },
+      "total_trades": 37,
+      "win_rate": 54.1,
+      "profit_factor": 24.8,
+      "net_profit": 5031.95,
+      "max_drawdown": -34.72,
+      "avg_trade": 136.0,
+      "avg_win_loss_ratio": 21.08
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 15,
+        "slow_len": 20,
+        "min_brick_streak": 3,
+        "cooldown": 30
+      },
+      "total_trades": 161,
+      "win_rate": 57.8,
+      "profit_factor": 24.49,
+      "net_profit": 17127.17,
+      "max_drawdown": -87.38,
+      "avg_trade": 106.38,
+      "avg_win_loss_ratio": 17.91
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 8,
+        "slow_len": 25,
+        "min_brick_streak": 3,
+        "cooldown": 20
+      },
+      "total_trades": 74,
+      "win_rate": 59.5,
+      "profit_factor": 24.18,
+      "net_profit": 8981.09,
+      "max_drawdown": -114.74,
+      "avg_trade": 121.37,
+      "avg_win_loss_ratio": 16.49
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 10,
+        "slow_len": 20,
+        "min_brick_streak": 3,
+        "cooldown": 10
+      },
+      "total_trades": 104,
+      "win_rate": 58.7,
+      "profit_factor": 24.07,
+      "net_profit": 11579.7,
+      "max_drawdown": -72.82,
+      "avg_trade": 111.34,
+      "avg_win_loss_ratio": 16.97
+    },
+    {
+      "params": {
+        "use_sha": false,
+        "fast_len": 3,
+        "slow_len": 10,
+        "min_brick_streak": 6,
+        "cooldown": 30
+      },
+      "total_trades": 356,
+      "win_rate": 58.7,
+      "profit_factor": 24.05,
+      "net_profit": 44484.83,
+      "max_drawdown": -163.68,
+      "avg_trade": 124.96,
+      "avg_win_loss_ratio": 16.91
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 12,
+        "slow_len": 25,
+        "min_brick_streak": 3,
+        "cooldown": 10
+      },
+      "total_trades": 133,
+      "win_rate": 60.9,
+      "profit_factor": 23.67,
+      "net_profit": 14149.75,
+      "max_drawdown": -62.87,
+      "avg_trade": 106.39,
+      "avg_win_loss_ratio": 15.2
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 12,
+        "slow_len": 25,
+        "min_brick_streak": 3,
+        "cooldown": 30
+      },
+      "total_trades": 117,
+      "win_rate": 59.8,
+      "profit_factor": 23.54,
+      "net_profit": 13174.46,
+      "max_drawdown": -62.87,
+      "avg_trade": 112.6,
+      "avg_win_loss_ratio": 15.8
+    },
+    {
+      "params": {
+        "use_sha": false,
+        "fast_len": 3,
+        "slow_len": 10,
+        "min_brick_streak": 7,
+        "cooldown": 10
+      },
+      "total_trades": 543,
+      "win_rate": 58.4,
+      "profit_factor": 23.46,
+      "net_profit": 62581.55,
+      "max_drawdown": -135.82,
+      "avg_trade": 115.25,
+      "avg_win_loss_ratio": 16.73
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 10,
+        "slow_len": 20,
+        "min_brick_streak": 3,
+        "cooldown": 20
+      },
+      "total_trades": 96,
+      "win_rate": 56.2,
+      "profit_factor": 23.42,
+      "net_profit": 10874.3,
+      "max_drawdown": -93.71,
+      "avg_trade": 113.27,
+      "avg_win_loss_ratio": 18.21
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 12,
+        "slow_len": 20,
+        "min_brick_streak": 3,
+        "cooldown": 20
+      },
+      "total_trades": 127,
+      "win_rate": 59.8,
+      "profit_factor": 23.16,
+      "net_profit": 13455.32,
+      "max_drawdown": -62.87,
+      "avg_trade": 105.95,
+      "avg_win_loss_ratio": 15.54
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 12,
+        "slow_len": 20,
+        "min_brick_streak": 3,
+        "cooldown": 30
+      },
+      "total_trades": 121,
+      "win_rate": 59.5,
+      "profit_factor": 23.02,
+      "net_profit": 13286.72,
+      "max_drawdown": -62.87,
+      "avg_trade": 109.81,
+      "avg_win_loss_ratio": 15.67
+    },
+    {
+      "params": {
+        "use_sha": false,
+        "fast_len": 3,
+        "slow_len": 10,
+        "min_brick_streak": 5,
+        "cooldown": 30
+      },
+      "total_trades": 368,
+      "win_rate": 56.8,
+      "profit_factor": 22.99,
+      "net_profit": 42975.9,
+      "max_drawdown": -167.9,
+      "avg_trade": 116.78,
+      "avg_win_loss_ratio": 17.49
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 15,
+        "slow_len": 20,
+        "min_brick_streak": 3,
+        "cooldown": 10
+      },
+      "total_trades": 200,
+      "win_rate": 58.5,
+      "profit_factor": 22.98,
+      "net_profit": 20278.89,
+      "max_drawdown": -104.26,
+      "avg_trade": 101.39,
+      "avg_win_loss_ratio": 16.3
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 12,
+        "slow_len": 20,
+        "min_brick_streak": 3,
+        "cooldown": 10
+      },
+      "total_trades": 141,
+      "win_rate": 61.0,
+      "profit_factor": 22.67,
+      "net_profit": 14299.11,
+      "max_drawdown": -62.87,
+      "avg_trade": 101.41,
+      "avg_win_loss_ratio": 14.5
+    },
+    {
+      "params": {
+        "use_sha": false,
+        "fast_len": 3,
+        "slow_len": 10,
+        "min_brick_streak": 4,
+        "cooldown": 30
+      },
+      "total_trades": 382,
+      "win_rate": 56.8,
+      "profit_factor": 22.66,
+      "net_profit": 43578.58,
+      "max_drawdown": -110.56,
+      "avg_trade": 114.08,
+      "avg_win_loss_ratio": 17.23
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 10,
+        "slow_len": 20,
+        "min_brick_streak": 3,
+        "cooldown": 30
+      },
+      "total_trades": 94,
+      "win_rate": 56.4,
+      "profit_factor": 22.46,
+      "net_profit": 10368.0,
+      "max_drawdown": -55.84,
+      "avg_trade": 110.3,
+      "avg_win_loss_ratio": 17.38
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 12,
+        "slow_len": 25,
+        "min_brick_streak": 3,
+        "cooldown": 20
+      },
+      "total_trades": 123,
+      "win_rate": 58.5,
+      "profit_factor": 22.3,
+      "net_profit": 13253.07,
+      "max_drawdown": -62.87,
+      "avg_trade": 107.75,
+      "avg_win_loss_ratio": 15.8
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 15,
+        "slow_len": 20,
+        "min_brick_streak": 3,
+        "cooldown": 20
+      },
+      "total_trades": 171,
+      "win_rate": 56.7,
+      "profit_factor": 21.91,
+      "net_profit": 17048.25,
+      "max_drawdown": -104.26,
+      "avg_trade": 99.7,
+      "avg_win_loss_ratio": 16.71
+    },
+    {
+      "params": {
+        "use_sha": false,
+        "fast_len": 3,
+        "slow_len": 10,
+        "min_brick_streak": 3,
+        "cooldown": 20
+      },
+      "total_trades": 492,
+      "win_rate": 56.9,
+      "profit_factor": 21.83,
+      "net_profit": 53478.8,
+      "max_drawdown": -106.41,
+      "avg_trade": 108.7,
+      "avg_win_loss_ratio": 16.53
+    },
+    {
+      "params": {
+        "use_sha": false,
+        "fast_len": 3,
+        "slow_len": 10,
+        "min_brick_streak": 5,
+        "cooldown": 20
+      },
+      "total_trades": 465,
+      "win_rate": 56.1,
+      "profit_factor": 21.4,
+      "net_profit": 50502.42,
+      "max_drawdown": -145.43,
+      "avg_trade": 108.61,
+      "avg_win_loss_ratio": 16.73
+    },
+    {
+      "params": {
+        "use_sha": false,
+        "fast_len": 3,
+        "slow_len": 10,
+        "min_brick_streak": 6,
+        "cooldown": 10
+      },
+      "total_trades": 598,
+      "win_rate": 55.2,
+      "profit_factor": 21.09,
+      "net_profit": 63615.73,
+      "max_drawdown": -140.09,
+      "avg_trade": 106.38,
+      "avg_win_loss_ratio": 17.12
+    },
+    {
+      "params": {
+        "use_sha": false,
+        "fast_len": 3,
+        "slow_len": 10,
+        "min_brick_streak": 4,
+        "cooldown": 20
+      },
+      "total_trades": 480,
+      "win_rate": 55.6,
+      "profit_factor": 20.81,
+      "net_profit": 51162.72,
+      "max_drawdown": -91.81,
+      "avg_trade": 106.59,
+      "avg_win_loss_ratio": 16.6
+    },
+    {
+      "params": {
+        "use_sha": false,
+        "fast_len": 3,
+        "slow_len": 10,
+        "min_brick_streak": 5,
+        "cooldown": 10
+      },
+      "total_trades": 641,
+      "win_rate": 56.2,
+      "profit_factor": 20.17,
+      "net_profit": 66127.59,
+      "max_drawdown": -118.7,
+      "avg_trade": 103.16,
+      "avg_win_loss_ratio": 15.75
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 8,
+        "slow_len": 20,
+        "min_brick_streak": 3,
+        "cooldown": 30
+      },
+      "total_trades": 62,
+      "win_rate": 56.5,
+      "profit_factor": 20.13,
+      "net_profit": 6152.77,
+      "max_drawdown": -99.72,
+      "avg_trade": 99.24,
+      "avg_win_loss_ratio": 15.53
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 8,
+        "slow_len": 20,
+        "min_brick_streak": 3,
+        "cooldown": 10
+      },
+      "total_trades": 66,
+      "win_rate": 56.1,
+      "profit_factor": 19.57,
+      "net_profit": 6325.33,
+      "max_drawdown": -116.71,
+      "avg_trade": 95.84,
+      "avg_win_loss_ratio": 15.34
+    },
+    {
+      "params": {
+        "use_sha": false,
+        "fast_len": 3,
+        "slow_len": 10,
+        "min_brick_streak": 3,
+        "cooldown": 30
+      },
+      "total_trades": 391,
+      "win_rate": 56.0,
+      "profit_factor": 19.38,
+      "net_profit": 39120.98,
+      "max_drawdown": -126.59,
+      "avg_trade": 100.05,
+      "avg_win_loss_ratio": 15.22
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 8,
+        "slow_len": 20,
+        "min_brick_streak": 3,
+        "cooldown": 20
+      },
+      "total_trades": 64,
+      "win_rate": 54.7,
+      "profit_factor": 19.01,
+      "net_profit": 6133.92,
+      "max_drawdown": -116.71,
+      "avg_trade": 95.84,
+      "avg_win_loss_ratio": 15.75
+    },
+    {
+      "params": {
+        "use_sha": false,
+        "fast_len": 3,
+        "slow_len": 10,
+        "min_brick_streak": 4,
+        "cooldown": 10
+      },
+      "total_trades": 683,
+      "win_rate": 53.3,
+      "profit_factor": 18.45,
+      "net_profit": 65685.37,
+      "max_drawdown": -171.78,
+      "avg_trade": 96.17,
+      "avg_win_loss_ratio": 16.17
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 10,
+        "slow_len": 14,
+        "min_brick_streak": 3,
+        "cooldown": 30
+      },
+      "total_trades": 150,
+      "win_rate": 53.3,
+      "profit_factor": 17.23,
+      "net_profit": 13111.97,
+      "max_drawdown": -94.7,
+      "avg_trade": 87.41,
+      "avg_win_loss_ratio": 15.07
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 10,
+        "slow_len": 14,
+        "min_brick_streak": 3,
+        "cooldown": 10
+      },
+      "total_trades": 182,
+      "win_rate": 53.3,
+      "profit_factor": 16.94,
+      "net_profit": 15256.8,
+      "max_drawdown": -111.59,
+      "avg_trade": 83.83,
+      "avg_win_loss_ratio": 14.85
+    },
+    {
+      "params": {
+        "use_sha": false,
+        "fast_len": 3,
+        "slow_len": 10,
+        "min_brick_streak": 3,
+        "cooldown": 10
+      },
+      "total_trades": 714,
+      "win_rate": 52.5,
+      "profit_factor": 16.65,
+      "net_profit": 63000.26,
+      "max_drawdown": -181.06,
+      "avg_trade": 88.24,
+      "avg_win_loss_ratio": 15.05
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 10,
+        "slow_len": 14,
+        "min_brick_streak": 3,
+        "cooldown": 20
+      },
+      "total_trades": 162,
+      "win_rate": 51.2,
+      "profit_factor": 15.56,
+      "net_profit": 13329.11,
+      "max_drawdown": -111.59,
+      "avg_trade": 82.28,
+      "avg_win_loss_ratio": 14.81
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 8,
+        "slow_len": 14,
+        "min_brick_streak": 3,
+        "cooldown": 30
+      },
+      "total_trades": 71,
+      "win_rate": 53.5,
+      "profit_factor": 13.42,
+      "net_profit": 5070.44,
+      "max_drawdown": -88.72,
+      "avg_trade": 71.41,
+      "avg_win_loss_ratio": 11.66
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 8,
+        "slow_len": 14,
+        "min_brick_streak": 3,
+        "cooldown": 10
+      },
+      "total_trades": 83,
+      "win_rate": 53.0,
+      "profit_factor": 12.49,
+      "net_profit": 5513.02,
+      "max_drawdown": -89.78,
+      "avg_trade": 66.42,
+      "avg_win_loss_ratio": 11.07
+    },
+    {
+      "params": {
+        "use_sha": true,
+        "fast_len": 8,
+        "slow_len": 14,
+        "min_brick_streak": 3,
+        "cooldown": 20
+      },
+      "total_trades": 75,
+      "win_rate": 50.7,
+      "profit_factor": 12.12,
+      "net_profit": 5123.06,
+      "max_drawdown": -133.72,
+      "avg_trade": 68.31,
+      "avg_win_loss_ratio": 11.8
+    }
+  ]
+}

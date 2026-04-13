@@ -1,0 +1,905 @@
+{
+  "strategy": "r032_kama_ribbon_confirmed",
+  "instrument": "EURAUD 0.0006",
+  "data_file": "OANDA_EURAUD, 1S renko 0.0006.csv",
+  "locked_ribbon": {
+    "fast": 5,
+    "mid": 13,
+    "slow": 30,
+    "fast_sc": 2,
+    "slow_sc": 30
+  },
+  "splits": {
+    "TRAIN": [
+      "2023-07-20",
+      "2025-09-30"
+    ],
+    "VALIDATE": [
+      "2025-10-01",
+      "2025-12-31"
+    ],
+    "HOLDOUT": [
+      "2026-01-01",
+      "2026-03-14"
+    ]
+  },
+  "filters": {
+    "min_train_trades": 30,
+    "min_validate_trades": 10,
+    "wr_delta_min": -5.0,
+    "wr_delta_max": 15.0
+  },
+  "holdout_rules": {
+    "min_pf": 2.5,
+    "min_wr": 52.0,
+    "min_trades": 8,
+    "min_net_profit": 75.17
+  },
+  "total_combos": 10,
+  "total_backtests": 30,
+  "all_results": [
+    {
+      "window": "VALIDATE",
+      "params": {
+        "confirm_bars": 1,
+        "use_adx_gate": false
+      },
+      "pf": 2.8688640498536526,
+      "net": 121.70118120000146,
+      "trades": 74,
+      "win_rate": 52.702702702702695,
+      "max_dd_pct": -0.7867903224375423,
+      "expectancy": 1.6446105567567764
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "confirm_bars": 2,
+        "use_adx_gate": true
+      },
+      "pf": 1.9446659390168335,
+      "net": 687.2542739999956,
+      "trades": 583,
+      "win_rate": 46.82675814751286,
+      "max_dd_pct": -3.0415929093550824,
+      "expectancy": 1.1788237975986202
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "confirm_bars": 2,
+        "use_adx_gate": false
+      },
+      "pf": 2.5657492688928367,
+      "net": 101.95773000000173,
+      "trades": 70,
+      "win_rate": 50.0,
+      "max_dd_pct": -0.891636912542829,
+      "expectancy": 1.4565390000000247
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "confirm_bars": 1,
+        "use_adx_gate": false
+      },
+      "pf": 1.7078455868998852,
+      "net": 80.30800920000026,
+      "trades": 90,
+      "win_rate": 47.77777777777778,
+      "max_dd_pct": -2.1994375220640268,
+      "expectancy": 0.8923112133333362
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "confirm_bars": 3,
+        "use_adx_gate": true
+      },
+      "pf": 2.8725343104847463,
+      "net": 94.26207840000163,
+      "trades": 62,
+      "win_rate": 53.2258064516129,
+      "max_dd_pct": -0.9271254343255733,
+      "expectancy": 1.5203561032258326
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "confirm_bars": 5,
+        "use_adx_gate": false
+      },
+      "pf": 2.170814912405056,
+      "net": 64.42685040000005,
+      "trades": 61,
+      "win_rate": 47.540983606557376,
+      "max_dd_pct": -0.9295344000000227,
+      "expectancy": 1.0561778754098368
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "confirm_bars": 2,
+        "use_adx_gate": false
+      },
+      "pf": 1.5552266411582354,
+      "net": 64.57475280000203,
+      "trades": 87,
+      "win_rate": 47.12643678160919,
+      "max_dd_pct": -2.393413938173816,
+      "expectancy": 0.7422385379310579
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "confirm_bars": 3,
+        "use_adx_gate": false
+      },
+      "pf": 1.4566041387407143,
+      "net": 53.17516680000155,
+      "trades": 87,
+      "win_rate": 45.97701149425287,
+      "max_dd_pct": -2.532040078973756,
+      "expectancy": 0.6112088137931212
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "confirm_bars": 1,
+        "use_adx_gate": true
+      },
+      "pf": 3.100362958969597,
+      "net": 116.84337960000121,
+      "trades": 67,
+      "win_rate": 52.23880597014925,
+      "max_dd_pct": -0.7865180645212646,
+      "expectancy": 1.7439310388059883
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "confirm_bars": 1,
+        "use_adx_gate": true
+      },
+      "pf": 2.1214083140362625,
+      "net": 75.16838639999987,
+      "trades": 57,
+      "win_rate": 54.385964912280706,
+      "max_dd_pct": -1.0575838237893596,
+      "expectancy": 1.3187436210526293
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "confirm_bars": 3,
+        "use_adx_gate": true
+      },
+      "pf": 1.829775668437533,
+      "net": 606.6156372000004,
+      "trades": 577,
+      "win_rate": 44.367417677642976,
+      "max_dd_pct": -3.703398532442389,
+      "expectancy": 1.0513269275563264
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "confirm_bars": 2,
+        "use_adx_gate": true
+      },
+      "pf": 2.0158119227656175,
+      "net": 69.92291880000157,
+      "trades": 56,
+      "win_rate": 53.57142857142857,
+      "max_dd_pct": -1.1671904121957366,
+      "expectancy": 1.248623550000028
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "confirm_bars": 3,
+        "use_adx_gate": false
+      },
+      "pf": 1.7180632488845549,
+      "net": 626.2258631999993,
+      "trades": 671,
+      "win_rate": 42.92101341281669,
+      "max_dd_pct": -3.879435504340087,
+      "expectancy": 0.9332725233979124
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "confirm_bars": 3,
+        "use_adx_gate": false
+      },
+      "pf": 2.3477288830421705,
+      "net": 85.922032800002,
+      "trades": 69,
+      "win_rate": 50.72463768115942,
+      "max_dd_pct": -0.9331987268230941,
+      "expectancy": 1.245246852173942
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "confirm_bars": 2,
+        "use_adx_gate": true
+      },
+      "pf": 2.8190960191743892,
+      "net": 100.0998456000027,
+      "trades": 63,
+      "win_rate": 49.2063492063492,
+      "max_dd_pct": -0.8893428229290891,
+      "expectancy": 1.588886438095281
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "confirm_bars": 3,
+        "use_adx_gate": true
+      },
+      "pf": 1.866434712482841,
+      "net": 66.01534440000063,
+      "trades": 58,
+      "win_rate": 53.44827586206896,
+      "max_dd_pct": -1.8682341701453393,
+      "expectancy": 1.138195593103459
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "confirm_bars": 2,
+        "use_adx_gate": false
+      },
+      "pf": 1.8172561728250605,
+      "net": 734.3806103999949,
+      "trades": 693,
+      "win_rate": 45.16594516594517,
+      "max_dd_pct": -3.388146199559076,
+      "expectancy": 1.0597122805194732
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "confirm_bars": 1,
+        "use_adx_gate": true
+      },
+      "pf": 2.197220090466815,
+      "net": 820.0307351999986,
+      "trades": 597,
+      "win_rate": 49.413735343383586,
+      "max_dd_pct": -2.1956953080174646,
+      "expectancy": 1.3735858211055254
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "confirm_bars": 1,
+        "use_adx_gate": false
+      },
+      "pf": 2.0016739676332898,
+      "net": 894.8000903999973,
+      "trades": 726,
+      "win_rate": 47.658402203856745,
+      "max_dd_pct": -2.8095465428317556,
+      "expectancy": 1.2325070115702443
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "confirm_bars": 5,
+        "use_adx_gate": false
+      },
+      "pf": 1.6454058928491109,
+      "net": 497.75412239998946,
+      "trades": 633,
+      "win_rate": 40.12638230647709,
+      "max_dd_pct": -3.7864545357772594,
+      "expectancy": 0.7863414255924004
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "confirm_bars": 5,
+        "use_adx_gate": false
+      },
+      "pf": 1.3358234618843767,
+      "net": 37.4474268000003,
+      "trades": 80,
+      "win_rate": 42.5,
+      "max_dd_pct": -2.6639843373455543,
+      "expectancy": 0.46809283500000376
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "confirm_bars": 8,
+        "use_adx_gate": false
+      },
+      "pf": 1.7729278559817352,
+      "net": 37.26358560000075,
+      "trades": 51,
+      "win_rate": 47.05882352941176,
+      "max_dd_pct": -1.22857380592991,
+      "expectancy": 0.7306585411764853
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "confirm_bars": 8,
+        "use_adx_gate": false
+      },
+      "pf": 1.5082778597630857,
+      "net": 38.83443720000136,
+      "trades": 71,
+      "win_rate": 38.028169014084504,
+      "max_dd_pct": -2.041434090959563,
+      "expectancy": 0.5469639042253712
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "confirm_bars": 5,
+        "use_adx_gate": true
+      },
+      "pf": 2.65346417845252,
+      "net": 73.0417404000003,
+      "trades": 56,
+      "win_rate": 50.0,
+      "max_dd_pct": -0.7821589103549421,
+      "expectancy": 1.3043167928571482
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "confirm_bars": 5,
+        "use_adx_gate": true
+      },
+      "pf": 1.6825616075794287,
+      "net": 51.61026600000021,
+      "trades": 58,
+      "win_rate": 46.55172413793103,
+      "max_dd_pct": -2.2599928694124802,
+      "expectancy": 0.8898321724137968
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "confirm_bars": 5,
+        "use_adx_gate": true
+      },
+      "pf": 1.7660207664370866,
+      "net": 514.6178099999893,
+      "trades": 559,
+      "win_rate": 41.681574239713775,
+      "max_dd_pct": -3.574222950578391,
+      "expectancy": 0.920604311270106
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "confirm_bars": 8,
+        "use_adx_gate": true
+      },
+      "pf": 1.887717771719486,
+      "net": 39.98954160000093,
+      "trades": 49,
+      "win_rate": 46.93877551020408,
+      "max_dd_pct": -1.2253358473522382,
+      "expectancy": 0.81611309387757
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "confirm_bars": 8,
+        "use_adx_gate": true
+      },
+      "pf": 1.5197081008512998,
+      "net": 34.229944800002116,
+      "trades": 58,
+      "win_rate": 41.37931034482759,
+      "max_dd_pct": -2.3001518546519377,
+      "expectancy": 0.590171462069002
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "confirm_bars": 8,
+        "use_adx_gate": true
+      },
+      "pf": 1.7661239691012611,
+      "net": 395.57985599999563,
+      "trades": 457,
+      "win_rate": 39.606126914660834,
+      "max_dd_pct": -3.845442035626798,
+      "expectancy": 0.8656014354485682
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "confirm_bars": 8,
+        "use_adx_gate": false
+      },
+      "pf": 1.682620029606978,
+      "net": 391.48391999999626,
+      "trades": 499,
+      "win_rate": 38.276553106212425,
+      "max_dd_pct": -3.5994612317827266,
+      "expectancy": 0.7845369138276478
+    }
+  ],
+  "finalists": [
+    {
+      "params": {
+        "confirm_bars": 1,
+        "use_adx_gate": true
+      },
+      "train": {
+        "window": "TRAIN",
+        "params": {
+          "confirm_bars": 1,
+          "use_adx_gate": true
+        },
+        "pf": 2.197220090466815,
+        "net": 820.0307351999986,
+        "trades": 597,
+        "win_rate": 49.413735343383586,
+        "max_dd_pct": -2.1956953080174646,
+        "expectancy": 1.3735858211055254
+      },
+      "validate": {
+        "window": "VALIDATE",
+        "params": {
+          "confirm_bars": 1,
+          "use_adx_gate": true
+        },
+        "pf": 3.100362958969597,
+        "net": 116.84337960000121,
+        "trades": 67,
+        "win_rate": 52.23880597014925,
+        "max_dd_pct": -0.7865180645212646,
+        "expectancy": 1.7439310388059883
+      },
+      "wr_delta": 2.8250706267656653,
+      "holdout": {
+        "window": "HOLDOUT",
+        "params": {
+          "confirm_bars": 1,
+          "use_adx_gate": true
+        },
+        "pf": 2.1214083140362625,
+        "net": 75.16838639999987,
+        "trades": 57,
+        "win_rate": 54.385964912280706,
+        "max_dd_pct": -1.0575838237893596,
+        "expectancy": 1.3187436210526293
+      },
+      "passes": false
+    },
+    {
+      "params": {
+        "confirm_bars": 3,
+        "use_adx_gate": true
+      },
+      "train": {
+        "window": "TRAIN",
+        "params": {
+          "confirm_bars": 3,
+          "use_adx_gate": true
+        },
+        "pf": 1.829775668437533,
+        "net": 606.6156372000004,
+        "trades": 577,
+        "win_rate": 44.367417677642976,
+        "max_dd_pct": -3.703398532442389,
+        "expectancy": 1.0513269275563264
+      },
+      "validate": {
+        "window": "VALIDATE",
+        "params": {
+          "confirm_bars": 3,
+          "use_adx_gate": true
+        },
+        "pf": 2.8725343104847463,
+        "net": 94.26207840000163,
+        "trades": 62,
+        "win_rate": 53.2258064516129,
+        "max_dd_pct": -0.9271254343255733,
+        "expectancy": 1.5203561032258326
+      },
+      "wr_delta": 8.85838877396992,
+      "holdout": {
+        "window": "HOLDOUT",
+        "params": {
+          "confirm_bars": 3,
+          "use_adx_gate": true
+        },
+        "pf": 1.866434712482841,
+        "net": 66.01534440000063,
+        "trades": 58,
+        "win_rate": 53.44827586206896,
+        "max_dd_pct": -1.8682341701453393,
+        "expectancy": 1.138195593103459
+      },
+      "passes": false
+    },
+    {
+      "params": {
+        "confirm_bars": 1,
+        "use_adx_gate": false
+      },
+      "train": {
+        "window": "TRAIN",
+        "params": {
+          "confirm_bars": 1,
+          "use_adx_gate": false
+        },
+        "pf": 2.0016739676332898,
+        "net": 894.8000903999973,
+        "trades": 726,
+        "win_rate": 47.658402203856745,
+        "max_dd_pct": -2.8095465428317556,
+        "expectancy": 1.2325070115702443
+      },
+      "validate": {
+        "window": "VALIDATE",
+        "params": {
+          "confirm_bars": 1,
+          "use_adx_gate": false
+        },
+        "pf": 2.8688640498536526,
+        "net": 121.70118120000146,
+        "trades": 74,
+        "win_rate": 52.702702702702695,
+        "max_dd_pct": -0.7867903224375423,
+        "expectancy": 1.6446105567567764
+      },
+      "wr_delta": 5.044300498845949,
+      "holdout": {
+        "window": "HOLDOUT",
+        "params": {
+          "confirm_bars": 1,
+          "use_adx_gate": false
+        },
+        "pf": 1.7078455868998852,
+        "net": 80.30800920000026,
+        "trades": 90,
+        "win_rate": 47.77777777777778,
+        "max_dd_pct": -2.1994375220640268,
+        "expectancy": 0.8923112133333362
+      },
+      "passes": false
+    },
+    {
+      "params": {
+        "confirm_bars": 2,
+        "use_adx_gate": true
+      },
+      "train": {
+        "window": "TRAIN",
+        "params": {
+          "confirm_bars": 2,
+          "use_adx_gate": true
+        },
+        "pf": 1.9446659390168335,
+        "net": 687.2542739999956,
+        "trades": 583,
+        "win_rate": 46.82675814751286,
+        "max_dd_pct": -3.0415929093550824,
+        "expectancy": 1.1788237975986202
+      },
+      "validate": {
+        "window": "VALIDATE",
+        "params": {
+          "confirm_bars": 2,
+          "use_adx_gate": true
+        },
+        "pf": 2.8190960191743892,
+        "net": 100.0998456000027,
+        "trades": 63,
+        "win_rate": 49.2063492063492,
+        "max_dd_pct": -0.8893428229290891,
+        "expectancy": 1.588886438095281
+      },
+      "wr_delta": 2.37959105883634,
+      "holdout": {
+        "window": "HOLDOUT",
+        "params": {
+          "confirm_bars": 2,
+          "use_adx_gate": true
+        },
+        "pf": 2.0158119227656175,
+        "net": 69.92291880000157,
+        "trades": 56,
+        "win_rate": 53.57142857142857,
+        "max_dd_pct": -1.1671904121957366,
+        "expectancy": 1.248623550000028
+      },
+      "passes": false
+    },
+    {
+      "params": {
+        "confirm_bars": 5,
+        "use_adx_gate": true
+      },
+      "train": {
+        "window": "TRAIN",
+        "params": {
+          "confirm_bars": 5,
+          "use_adx_gate": true
+        },
+        "pf": 1.7660207664370866,
+        "net": 514.6178099999893,
+        "trades": 559,
+        "win_rate": 41.681574239713775,
+        "max_dd_pct": -3.574222950578391,
+        "expectancy": 0.920604311270106
+      },
+      "validate": {
+        "window": "VALIDATE",
+        "params": {
+          "confirm_bars": 5,
+          "use_adx_gate": true
+        },
+        "pf": 2.65346417845252,
+        "net": 73.0417404000003,
+        "trades": 56,
+        "win_rate": 50.0,
+        "max_dd_pct": -0.7821589103549421,
+        "expectancy": 1.3043167928571482
+      },
+      "wr_delta": 8.318425760286225,
+      "holdout": {
+        "window": "HOLDOUT",
+        "params": {
+          "confirm_bars": 5,
+          "use_adx_gate": true
+        },
+        "pf": 1.6825616075794287,
+        "net": 51.61026600000021,
+        "trades": 58,
+        "win_rate": 46.55172413793103,
+        "max_dd_pct": -2.2599928694124802,
+        "expectancy": 0.8898321724137968
+      },
+      "passes": false
+    },
+    {
+      "params": {
+        "confirm_bars": 2,
+        "use_adx_gate": false
+      },
+      "train": {
+        "window": "TRAIN",
+        "params": {
+          "confirm_bars": 2,
+          "use_adx_gate": false
+        },
+        "pf": 1.8172561728250605,
+        "net": 734.3806103999949,
+        "trades": 693,
+        "win_rate": 45.16594516594517,
+        "max_dd_pct": -3.388146199559076,
+        "expectancy": 1.0597122805194732
+      },
+      "validate": {
+        "window": "VALIDATE",
+        "params": {
+          "confirm_bars": 2,
+          "use_adx_gate": false
+        },
+        "pf": 2.5657492688928367,
+        "net": 101.95773000000173,
+        "trades": 70,
+        "win_rate": 50.0,
+        "max_dd_pct": -0.891636912542829,
+        "expectancy": 1.4565390000000247
+      },
+      "wr_delta": 4.834054834054832,
+      "holdout": {
+        "window": "HOLDOUT",
+        "params": {
+          "confirm_bars": 2,
+          "use_adx_gate": false
+        },
+        "pf": 1.5552266411582354,
+        "net": 64.57475280000203,
+        "trades": 87,
+        "win_rate": 47.12643678160919,
+        "max_dd_pct": -2.393413938173816,
+        "expectancy": 0.7422385379310579
+      },
+      "passes": false
+    },
+    {
+      "params": {
+        "confirm_bars": 3,
+        "use_adx_gate": false
+      },
+      "train": {
+        "window": "TRAIN",
+        "params": {
+          "confirm_bars": 3,
+          "use_adx_gate": false
+        },
+        "pf": 1.7180632488845549,
+        "net": 626.2258631999993,
+        "trades": 671,
+        "win_rate": 42.92101341281669,
+        "max_dd_pct": -3.879435504340087,
+        "expectancy": 0.9332725233979124
+      },
+      "validate": {
+        "window": "VALIDATE",
+        "params": {
+          "confirm_bars": 3,
+          "use_adx_gate": false
+        },
+        "pf": 2.3477288830421705,
+        "net": 85.922032800002,
+        "trades": 69,
+        "win_rate": 50.72463768115942,
+        "max_dd_pct": -0.9331987268230941,
+        "expectancy": 1.245246852173942
+      },
+      "wr_delta": 7.80362426834273,
+      "holdout": {
+        "window": "HOLDOUT",
+        "params": {
+          "confirm_bars": 3,
+          "use_adx_gate": false
+        },
+        "pf": 1.4566041387407143,
+        "net": 53.17516680000155,
+        "trades": 87,
+        "win_rate": 45.97701149425287,
+        "max_dd_pct": -2.532040078973756,
+        "expectancy": 0.6112088137931212
+      },
+      "passes": false
+    },
+    {
+      "params": {
+        "confirm_bars": 5,
+        "use_adx_gate": false
+      },
+      "train": {
+        "window": "TRAIN",
+        "params": {
+          "confirm_bars": 5,
+          "use_adx_gate": false
+        },
+        "pf": 1.6454058928491109,
+        "net": 497.75412239998946,
+        "trades": 633,
+        "win_rate": 40.12638230647709,
+        "max_dd_pct": -3.7864545357772594,
+        "expectancy": 0.7863414255924004
+      },
+      "validate": {
+        "window": "VALIDATE",
+        "params": {
+          "confirm_bars": 5,
+          "use_adx_gate": false
+        },
+        "pf": 2.170814912405056,
+        "net": 64.42685040000005,
+        "trades": 61,
+        "win_rate": 47.540983606557376,
+        "max_dd_pct": -0.9295344000000227,
+        "expectancy": 1.0561778754098368
+      },
+      "wr_delta": 7.414601300080285,
+      "holdout": {
+        "window": "HOLDOUT",
+        "params": {
+          "confirm_bars": 5,
+          "use_adx_gate": false
+        },
+        "pf": 1.3358234618843767,
+        "net": 37.4474268000003,
+        "trades": 80,
+        "win_rate": 42.5,
+        "max_dd_pct": -2.6639843373455543,
+        "expectancy": 0.46809283500000376
+      },
+      "passes": false
+    },
+    {
+      "params": {
+        "confirm_bars": 8,
+        "use_adx_gate": true
+      },
+      "train": {
+        "window": "TRAIN",
+        "params": {
+          "confirm_bars": 8,
+          "use_adx_gate": true
+        },
+        "pf": 1.7661239691012611,
+        "net": 395.57985599999563,
+        "trades": 457,
+        "win_rate": 39.606126914660834,
+        "max_dd_pct": -3.845442035626798,
+        "expectancy": 0.8656014354485682
+      },
+      "validate": {
+        "window": "VALIDATE",
+        "params": {
+          "confirm_bars": 8,
+          "use_adx_gate": true
+        },
+        "pf": 1.887717771719486,
+        "net": 39.98954160000093,
+        "trades": 49,
+        "win_rate": 46.93877551020408,
+        "max_dd_pct": -1.2253358473522382,
+        "expectancy": 0.81611309387757
+      },
+      "wr_delta": 7.332648595543247,
+      "holdout": {
+        "window": "HOLDOUT",
+        "params": {
+          "confirm_bars": 8,
+          "use_adx_gate": true
+        },
+        "pf": 1.5197081008512998,
+        "net": 34.229944800002116,
+        "trades": 58,
+        "win_rate": 41.37931034482759,
+        "max_dd_pct": -2.3001518546519377,
+        "expectancy": 0.590171462069002
+      },
+      "passes": false
+    },
+    {
+      "params": {
+        "confirm_bars": 8,
+        "use_adx_gate": false
+      },
+      "train": {
+        "window": "TRAIN",
+        "params": {
+          "confirm_bars": 8,
+          "use_adx_gate": false
+        },
+        "pf": 1.682620029606978,
+        "net": 391.48391999999626,
+        "trades": 499,
+        "win_rate": 38.276553106212425,
+        "max_dd_pct": -3.5994612317827266,
+        "expectancy": 0.7845369138276478
+      },
+      "validate": {
+        "window": "VALIDATE",
+        "params": {
+          "confirm_bars": 8,
+          "use_adx_gate": false
+        },
+        "pf": 1.7729278559817352,
+        "net": 37.26358560000075,
+        "trades": 51,
+        "win_rate": 47.05882352941176,
+        "max_dd_pct": -1.22857380592991,
+        "expectancy": 0.7306585411764853
+      },
+      "wr_delta": 8.782270423199336,
+      "holdout": {
+        "window": "HOLDOUT",
+        "params": {
+          "confirm_bars": 8,
+          "use_adx_gate": false
+        },
+        "pf": 1.5082778597630857,
+        "net": 38.83443720000136,
+        "trades": 71,
+        "win_rate": 38.028169014084504,
+        "max_dd_pct": -2.041434090959563,
+        "expectancy": 0.5469639042253712
+      },
+      "passes": false
+    }
+  ],
+  "holdout_use_count": 3
+}

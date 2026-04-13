@@ -1,0 +1,655 @@
+{
+  "config": {
+    "renko_file": "OANDA_EURUSD, 1S renko 0.0006.csv",
+    "train_window": [
+      "2023-01-02",
+      "2025-09-30"
+    ],
+    "validate_window": [
+      "2025-10-01",
+      "2025-12-31"
+    ],
+    "holdout_window": [
+      "2026-01-01",
+      "2026-03-26"
+    ],
+    "r029_params": {
+      "band_thresh": 0.2,
+      "cooldown": 2,
+      "rsi_thresh": 45,
+      "adx_max": 25,
+      "vol_max": 1.5
+    },
+    "breakout_lookbacks": [
+      20,
+      30,
+      40,
+      60
+    ],
+    "inter_cooldowns": [
+      0,
+      5,
+      10
+    ],
+    "rules": {
+      "min_net_multiplier": 1.1,
+      "min_wr": 55.0,
+      "min_breakout_fraction": 0.3,
+      "min_total_trade_ratio": 1.0
+    }
+  },
+  "baseline": {
+    "train": {
+      "trades": 256,
+      "wr": 53.12,
+      "pf": 7.35,
+      "net_profit": 369.69,
+      "max_dd": -3.05,
+      "avg_trade": 1.44,
+      "avg_wl": 6.49,
+      "worst_loss": -0.71,
+      "n_long": 120,
+      "n_short": 136
+    },
+    "validate": {
+      "trades": 16,
+      "wr": 50.0,
+      "pf": 25.55,
+      "net_profit": 21.08,
+      "max_dd": -0.65,
+      "avg_trade": 1.32,
+      "avg_wl": 25.55,
+      "worst_loss": -0.11,
+      "n_long": 12,
+      "n_short": 4
+    },
+    "holdout": {
+      "trades": 59,
+      "wr": 59.32,
+      "pf": 7.04,
+      "net_profit": 69.88,
+      "max_dd": -2.28,
+      "avg_trade": 1.18,
+      "avg_wl": 4.83,
+      "worst_loss": -0.71,
+      "n_long": 33,
+      "n_short": 26
+    }
+  },
+  "overlap_diagnostic": {
+    "20": [
+      0.0,
+      59,
+      86
+    ],
+    "30": [
+      0.0,
+      59,
+      67
+    ],
+    "40": [
+      0.0,
+      59,
+      58
+    ],
+    "60": [
+      0.0,
+      59,
+      47
+    ]
+  },
+  "results": [
+    {
+      "lookback": 20,
+      "inter_cooldown": 0,
+      "train": {
+        "trades": 871,
+        "wr": 55.34,
+        "pf": 8.69,
+        "net_profit": 1452.68,
+        "max_dd": -4.18,
+        "avg_trade": 1.67,
+        "avg_wl": 7.01,
+        "worst_loss": -0.71,
+        "n_long": 428,
+        "n_short": 443
+      },
+      "validate": {
+        "trades": 60,
+        "wr": 51.67,
+        "pf": 6.66,
+        "net_profit": 58.38,
+        "max_dd": -3.1,
+        "avg_trade": 0.97,
+        "avg_wl": 6.23,
+        "worst_loss": -0.71,
+        "n_long": 34,
+        "n_short": 26
+      },
+      "holdout": {
+        "trades": 146,
+        "wr": 48.63,
+        "pf": 4.58,
+        "net_profit": 142.76,
+        "max_dd": -3.74,
+        "avg_trade": 0.98,
+        "avg_wl": 4.84,
+        "worst_loss": -0.71,
+        "n_long": 72,
+        "n_short": 74
+      },
+      "train_r029": 257,
+      "train_bo": 615,
+      "val_r029": 16,
+      "val_bo": 44,
+      "hld_r029": 59,
+      "hld_bo": 87
+    },
+    {
+      "lookback": 20,
+      "inter_cooldown": 5,
+      "train": {
+        "trades": 675,
+        "wr": 54.96,
+        "pf": 8.89,
+        "net_profit": 1149.55,
+        "max_dd": -5.62,
+        "avg_trade": 1.7,
+        "avg_wl": 7.28,
+        "worst_loss": -0.71,
+        "n_long": 336,
+        "n_short": 339
+      },
+      "validate": {
+        "trades": 47,
+        "wr": 53.19,
+        "pf": 6.75,
+        "net_profit": 41.17,
+        "max_dd": -2.29,
+        "avg_trade": 0.88,
+        "avg_wl": 5.94,
+        "worst_loss": -0.71,
+        "n_long": 27,
+        "n_short": 20
+      },
+      "holdout": {
+        "trades": 97,
+        "wr": 47.42,
+        "pf": 4.48,
+        "net_profit": 102.4,
+        "max_dd": -5.64,
+        "avg_trade": 1.06,
+        "avg_wl": 4.96,
+        "worst_loss": -0.71,
+        "n_long": 44,
+        "n_short": 53
+      },
+      "train_r029": 77,
+      "train_bo": 599,
+      "val_r029": 6,
+      "val_bo": 41,
+      "hld_r029": 16,
+      "hld_bo": 81
+    },
+    {
+      "lookback": 20,
+      "inter_cooldown": 10,
+      "train": {
+        "trades": 546,
+        "wr": 55.31,
+        "pf": 8.51,
+        "net_profit": 896.69,
+        "max_dd": -4.39,
+        "avg_trade": 1.64,
+        "avg_wl": 6.88,
+        "worst_loss": -0.71,
+        "n_long": 280,
+        "n_short": 266
+      },
+      "validate": {
+        "trades": 36,
+        "wr": 47.22,
+        "pf": 4.4,
+        "net_profit": 27.35,
+        "max_dd": -3.69,
+        "avg_trade": 0.76,
+        "avg_wl": 4.92,
+        "worst_loss": -0.71,
+        "n_long": 19,
+        "n_short": 17
+      },
+      "holdout": {
+        "trades": 77,
+        "wr": 45.45,
+        "pf": 4.32,
+        "net_profit": 78.74,
+        "max_dd": -4.82,
+        "avg_trade": 1.02,
+        "avg_wl": 5.19,
+        "worst_loss": -0.71,
+        "n_long": 36,
+        "n_short": 41
+      },
+      "train_r029": 58,
+      "train_bo": 489,
+      "val_r029": 4,
+      "val_bo": 32,
+      "hld_r029": 9,
+      "hld_bo": 68
+    },
+    {
+      "lookback": 30,
+      "inter_cooldown": 0,
+      "train": {
+        "trades": 747,
+        "wr": 56.36,
+        "pf": 9.02,
+        "net_profit": 1273.17,
+        "max_dd": -3.63,
+        "avg_trade": 1.7,
+        "avg_wl": 6.99,
+        "worst_loss": -0.71,
+        "n_long": 370,
+        "n_short": 377
+      },
+      "validate": {
+        "trades": 53,
+        "wr": 56.6,
+        "pf": 7.99,
+        "net_profit": 54.93,
+        "max_dd": -1.69,
+        "avg_trade": 1.04,
+        "avg_wl": 6.12,
+        "worst_loss": -0.71,
+        "n_long": 30,
+        "n_short": 23
+      },
+      "holdout": {
+        "trades": 130,
+        "wr": 49.23,
+        "pf": 5.0,
+        "net_profit": 133.68,
+        "max_dd": -4.23,
+        "avg_trade": 1.03,
+        "avg_wl": 5.15,
+        "worst_loss": -0.71,
+        "n_long": 63,
+        "n_short": 67
+      },
+      "train_r029": 257,
+      "train_bo": 491,
+      "val_r029": 16,
+      "val_bo": 37,
+      "hld_r029": 59,
+      "hld_bo": 71
+    },
+    {
+      "lookback": 30,
+      "inter_cooldown": 5,
+      "train": {
+        "trades": 589,
+        "wr": 55.52,
+        "pf": 9.15,
+        "net_profit": 996.23,
+        "max_dd": -5.62,
+        "avg_trade": 1.69,
+        "avg_wl": 7.33,
+        "worst_loss": -0.71,
+        "n_long": 295,
+        "n_short": 294
+      },
+      "validate": {
+        "trades": 41,
+        "wr": 58.54,
+        "pf": 8.8,
+        "net_profit": 37.61,
+        "max_dd": -1.58,
+        "avg_trade": 0.92,
+        "avg_wl": 6.23,
+        "worst_loss": -0.71,
+        "n_long": 23,
+        "n_short": 18
+      },
+      "holdout": {
+        "trades": 84,
+        "wr": 48.81,
+        "pf": 4.94,
+        "net_profit": 96.0,
+        "max_dd": -5.64,
+        "avg_trade": 1.14,
+        "avg_wl": 5.18,
+        "worst_loss": -0.71,
+        "n_long": 38,
+        "n_short": 46
+      },
+      "train_r029": 127,
+      "train_bo": 463,
+      "val_r029": 6,
+      "val_bo": 35,
+      "hld_r029": 21,
+      "hld_bo": 63
+    },
+    {
+      "lookback": 30,
+      "inter_cooldown": 10,
+      "train": {
+        "trades": 477,
+        "wr": 57.23,
+        "pf": 8.98,
+        "net_profit": 823.88,
+        "max_dd": -5.83,
+        "avg_trade": 1.73,
+        "avg_wl": 6.71,
+        "worst_loss": -0.71,
+        "n_long": 244,
+        "n_short": 233
+      },
+      "validate": {
+        "trades": 33,
+        "wr": 51.52,
+        "pf": 6.44,
+        "net_profit": 28.87,
+        "max_dd": -2.71,
+        "avg_trade": 0.87,
+        "avg_wl": 6.06,
+        "worst_loss": -0.71,
+        "n_long": 20,
+        "n_short": 13
+      },
+      "holdout": {
+        "trades": 68,
+        "wr": 51.47,
+        "pf": 5.43,
+        "net_profit": 82.11,
+        "max_dd": -3.41,
+        "avg_trade": 1.21,
+        "avg_wl": 5.12,
+        "worst_loss": -0.71,
+        "n_long": 28,
+        "n_short": 40
+      },
+      "train_r029": 96,
+      "train_bo": 381,
+      "val_r029": 6,
+      "val_bo": 27,
+      "hld_r029": 15,
+      "hld_bo": 53
+    },
+    {
+      "lookback": 40,
+      "inter_cooldown": 0,
+      "train": {
+        "trades": 677,
+        "wr": 56.43,
+        "pf": 8.96,
+        "net_profit": 1151.8,
+        "max_dd": -4.16,
+        "avg_trade": 1.7,
+        "avg_wl": 6.92,
+        "worst_loss": -0.71,
+        "n_long": 337,
+        "n_short": 340
+      },
+      "validate": {
+        "trades": 46,
+        "wr": 54.35,
+        "pf": 8.52,
+        "net_profit": 48.48,
+        "max_dd": -1.79,
+        "avg_trade": 1.05,
+        "avg_wl": 7.16,
+        "worst_loss": -0.71,
+        "n_long": 28,
+        "n_short": 18
+      },
+      "holdout": {
+        "trades": 120,
+        "wr": 50.83,
+        "pf": 5.25,
+        "net_profit": 126.36,
+        "max_dd": -4.72,
+        "avg_trade": 1.05,
+        "avg_wl": 5.08,
+        "worst_loss": -0.71,
+        "n_long": 58,
+        "n_short": 62
+      },
+      "train_r029": 257,
+      "train_bo": 421,
+      "val_r029": 16,
+      "val_bo": 30,
+      "hld_r029": 58,
+      "hld_bo": 62
+    },
+    {
+      "lookback": 40,
+      "inter_cooldown": 5,
+      "train": {
+        "trades": 546,
+        "wr": 54.95,
+        "pf": 8.82,
+        "net_profit": 924.95,
+        "max_dd": -5.62,
+        "avg_trade": 1.69,
+        "avg_wl": 7.23,
+        "worst_loss": -0.71,
+        "n_long": 271,
+        "n_short": 275
+      },
+      "validate": {
+        "trades": 38,
+        "wr": 47.37,
+        "pf": 7.89,
+        "net_profit": 31.33,
+        "max_dd": -1.77,
+        "avg_trade": 0.82,
+        "avg_wl": 8.77,
+        "worst_loss": -0.71,
+        "n_long": 25,
+        "n_short": 13
+      },
+      "holdout": {
+        "trades": 78,
+        "wr": 48.72,
+        "pf": 4.99,
+        "net_profit": 86.45,
+        "max_dd": -4.93,
+        "avg_trade": 1.11,
+        "avg_wl": 5.25,
+        "worst_loss": -0.71,
+        "n_long": 37,
+        "n_short": 41
+      },
+      "train_r029": 148,
+      "train_bo": 399,
+      "val_r029": 10,
+      "val_bo": 28,
+      "hld_r029": 26,
+      "hld_bo": 52
+    },
+    {
+      "lookback": 40,
+      "inter_cooldown": 10,
+      "train": {
+        "trades": 444,
+        "wr": 56.08,
+        "pf": 8.74,
+        "net_profit": 759.39,
+        "max_dd": -4.53,
+        "avg_trade": 1.71,
+        "avg_wl": 6.84,
+        "worst_loss": -0.71,
+        "n_long": 223,
+        "n_short": 221
+      },
+      "validate": {
+        "trades": 30,
+        "wr": 46.67,
+        "pf": 5.02,
+        "net_profit": 26.19,
+        "max_dd": -4.82,
+        "avg_trade": 0.87,
+        "avg_wl": 5.74,
+        "worst_loss": -0.71,
+        "n_long": 19,
+        "n_short": 11
+      },
+      "holdout": {
+        "trades": 64,
+        "wr": 53.12,
+        "pf": 5.29,
+        "net_profit": 72.94,
+        "max_dd": -3.41,
+        "avg_trade": 1.14,
+        "avg_wl": 4.67,
+        "worst_loss": -0.71,
+        "n_long": 27,
+        "n_short": 37
+      },
+      "train_r029": 123,
+      "train_bo": 321,
+      "val_r029": 8,
+      "val_bo": 22,
+      "hld_r029": 19,
+      "hld_bo": 45
+    },
+    {
+      "lookback": 60,
+      "inter_cooldown": 0,
+      "train": {
+        "trades": 594,
+        "wr": 56.4,
+        "pf": 8.89,
+        "net_profit": 995.14,
+        "max_dd": -5.22,
+        "avg_trade": 1.68,
+        "avg_wl": 6.87,
+        "worst_loss": -0.71,
+        "n_long": 290,
+        "n_short": 304
+      },
+      "validate": {
+        "trades": 40,
+        "wr": 55.0,
+        "pf": 8.58,
+        "net_profit": 41.92,
+        "max_dd": -1.68,
+        "avg_trade": 1.05,
+        "avg_wl": 7.02,
+        "worst_loss": -0.71,
+        "n_long": 26,
+        "n_short": 14
+      },
+      "holdout": {
+        "trades": 106,
+        "wr": 53.77,
+        "pf": 6.11,
+        "net_profit": 124.85,
+        "max_dd": -3.35,
+        "avg_trade": 1.18,
+        "avg_wl": 5.25,
+        "worst_loss": -0.71,
+        "n_long": 52,
+        "n_short": 54
+      },
+      "train_r029": 257,
+      "train_bo": 338,
+      "val_r029": 16,
+      "val_bo": 24,
+      "hld_r029": 58,
+      "hld_bo": 48
+    },
+    {
+      "lookback": 60,
+      "inter_cooldown": 5,
+      "train": {
+        "trades": 485,
+        "wr": 56.29,
+        "pf": 8.99,
+        "net_profit": 816.47,
+        "max_dd": -4.89,
+        "avg_trade": 1.68,
+        "avg_wl": 6.98,
+        "worst_loss": -0.71,
+        "n_long": 233,
+        "n_short": 252
+      },
+      "validate": {
+        "trades": 32,
+        "wr": 50.0,
+        "pf": 8.89,
+        "net_profit": 27.77,
+        "max_dd": -1.3,
+        "avg_trade": 0.87,
+        "avg_wl": 8.89,
+        "worst_loss": -0.71,
+        "n_long": 23,
+        "n_short": 9
+      },
+      "holdout": {
+        "trades": 76,
+        "wr": 51.32,
+        "pf": 4.91,
+        "net_profit": 78.86,
+        "max_dd": -3.52,
+        "avg_trade": 1.04,
+        "avg_wl": 4.66,
+        "worst_loss": -0.71,
+        "n_long": 34,
+        "n_short": 42
+      },
+      "train_r029": 168,
+      "train_bo": 318,
+      "val_r029": 11,
+      "val_bo": 21,
+      "hld_r029": 33,
+      "hld_bo": 43
+    },
+    {
+      "lookback": 60,
+      "inter_cooldown": 10,
+      "train": {
+        "trades": 395,
+        "wr": 57.47,
+        "pf": 9.22,
+        "net_profit": 675.51,
+        "max_dd": -4.53,
+        "avg_trade": 1.71,
+        "avg_wl": 6.82,
+        "worst_loss": -0.71,
+        "n_long": 195,
+        "n_short": 200
+      },
+      "validate": {
+        "trades": 26,
+        "wr": 46.15,
+        "pf": 5.75,
+        "net_profit": 24.22,
+        "max_dd": -1.89,
+        "avg_trade": 0.93,
+        "avg_wl": 6.71,
+        "worst_loss": -0.71,
+        "n_long": 18,
+        "n_short": 8
+      },
+      "holdout": {
+        "trades": 60,
+        "wr": 60.0,
+        "pf": 7.19,
+        "net_profit": 71.57,
+        "max_dd": -2.59,
+        "avg_trade": 1.19,
+        "avg_wl": 4.79,
+        "worst_loss": -0.71,
+        "n_long": 25,
+        "n_short": 35
+      },
+      "train_r029": 138,
+      "train_bo": 258,
+      "val_r029": 9,
+      "val_bo": 17,
+      "hld_r029": 26,
+      "hld_bo": 34
+    }
+  ]
+}

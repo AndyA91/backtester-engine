@@ -1,0 +1,3020 @@
+{
+  "strategy": "r030_kama_ribbon_3line",
+  "instrument": "EURAUD 0.0006",
+  "data_file": "OANDA_EURAUD, 1S renko 0.0006.csv",
+  "splits": {
+    "TRAIN": [
+      "2023-07-20",
+      "2025-09-30"
+    ],
+    "VALIDATE": [
+      "2025-10-01",
+      "2025-12-31"
+    ],
+    "HOLDOUT": [
+      "2026-01-01",
+      "2026-03-14"
+    ]
+  },
+  "filters": {
+    "min_train_trades": 40,
+    "min_validate_trades": 10,
+    "wr_delta_min": -5.0,
+    "wr_delta_max": 15.0
+  },
+  "holdout_rules": {
+    "min_pf": 2.0,
+    "min_wr": 50.0,
+    "min_trades": 8,
+    "min_net_profit": 0.0
+  },
+  "total_combos": 56,
+  "total_backtests": 168,
+  "all_results": [
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 5,
+        "mid_len": 20,
+        "slow_len": 30,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 2.1608904970931646,
+      "net": 94.97996159999808,
+      "trades": 65,
+      "win_rate": 58.46153846153847,
+      "max_dd_pct": -1.6756083061830713,
+      "expectancy": 1.461230178461509
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 5,
+        "mid_len": 13,
+        "slow_len": 30,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 2.8688640498536526,
+      "net": 121.70118120000146,
+      "trades": 74,
+      "win_rate": 52.702702702702695,
+      "max_dd_pct": -0.7867903224375423,
+      "expectancy": 1.6446105567567764
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 5,
+        "mid_len": 20,
+        "slow_len": 30,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.4397141052380606,
+      "net": 57.93923159999815,
+      "trades": 87,
+      "win_rate": 48.275862068965516,
+      "max_dd_pct": -2.806072501260289,
+      "expectancy": 0.6659681793103236
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 5,
+        "mid_len": 13,
+        "slow_len": 30,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.7078455868998852,
+      "net": 80.30800920000026,
+      "trades": 90,
+      "win_rate": 47.77777777777778,
+      "max_dd_pct": -2.1994375220640268,
+      "expectancy": 0.8923112133333362
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 5,
+        "mid_len": 13,
+        "slow_len": 34,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.5978047861773463,
+      "net": 71.14751520000259,
+      "trades": 91,
+      "win_rate": 47.25274725274725,
+      "max_dd_pct": -2.209131834350241,
+      "expectancy": 0.7818408263736548
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 5,
+        "mid_len": 13,
+        "slow_len": 30,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 2.0016739676332898,
+      "net": 894.8000903999973,
+      "trades": 726,
+      "win_rate": 47.658402203856745,
+      "max_dd_pct": -2.8095465428317556,
+      "expectancy": 1.2325070115702443
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 5,
+        "mid_len": 13,
+        "slow_len": 34,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 3.089454007509006,
+      "net": 129.11717520000076,
+      "trades": 69,
+      "win_rate": 52.17391304347826,
+      "max_dd_pct": -0.7089797052316266,
+      "expectancy": 1.8712634086956632
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 5,
+        "mid_len": 20,
+        "slow_len": 34,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.491806436947276,
+      "net": 57.56358120000063,
+      "trades": 74,
+      "win_rate": 41.891891891891895,
+      "max_dd_pct": -2.7498703248133,
+      "expectancy": 0.7778862324324409
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 5,
+        "mid_len": 13,
+        "slow_len": 80,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.456684520313354,
+      "net": 55.582066800002394,
+      "trades": 87,
+      "win_rate": 42.5287356321839,
+      "max_dd_pct": -3.1537656970799173,
+      "expectancy": 0.6388743310345103
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 5,
+        "mid_len": 13,
+        "slow_len": 55,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 2.3608554895864073,
+      "net": 102.72032159999983,
+      "trades": 69,
+      "win_rate": 47.82608695652174,
+      "max_dd_pct": -2.0265660213302983,
+      "expectancy": 1.488700313043476
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 5,
+        "mid_len": 13,
+        "slow_len": 55,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.5850953620404176,
+      "net": 69.97842360000143,
+      "trades": 87,
+      "win_rate": 44.827586206896555,
+      "max_dd_pct": -2.7806930434650985,
+      "expectancy": 0.8043496965517406
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 5,
+        "mid_len": 20,
+        "slow_len": 30,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.9019282528104948,
+      "net": 749.3475335999946,
+      "trades": 651,
+      "win_rate": 48.694316436251924,
+      "max_dd_pct": -3.6440277760290485,
+      "expectancy": 1.1510714801843234
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 5,
+        "mid_len": 20,
+        "slow_len": 55,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 2.1763804192222698,
+      "net": 89.5707047999994,
+      "trades": 54,
+      "win_rate": 46.2962962962963,
+      "max_dd_pct": -2.624806168835011,
+      "expectancy": 1.6587167555555444
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 5,
+        "mid_len": 20,
+        "slow_len": 34,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 2.318180937421181,
+      "net": 103.10484119999995,
+      "trades": 63,
+      "win_rate": 57.14285714285714,
+      "max_dd_pct": -1.5783701461509634,
+      "expectancy": 1.6365847809523801
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 5,
+        "mid_len": 13,
+        "slow_len": 34,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 2.078340119684408,
+      "net": 904.3055555999961,
+      "trades": 692,
+      "win_rate": 48.41040462427746,
+      "max_dd_pct": -2.4766225283070025,
+      "expectancy": 1.3067999358381446
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 5,
+        "mid_len": 13,
+        "slow_len": 55,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.951636946076572,
+      "net": 801.5991803999913,
+      "trades": 658,
+      "win_rate": 45.59270516717325,
+      "max_dd_pct": -3.613047864393895,
+      "expectancy": 1.2182358364741508
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 5,
+        "mid_len": 20,
+        "slow_len": 34,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.847713504328158,
+      "net": 701.5558403999997,
+      "trades": 630,
+      "win_rate": 46.666666666666664,
+      "max_dd_pct": -3.91588178974004,
+      "expectancy": 1.1135806990476187
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 5,
+        "mid_len": 13,
+        "slow_len": 80,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 2.772690947184494,
+      "net": 115.53650880000075,
+      "trades": 64,
+      "win_rate": 56.25,
+      "max_dd_pct": -1.8591153432380663,
+      "expectancy": 1.8052579500000117
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 5,
+        "mid_len": 20,
+        "slow_len": 55,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.8834170002858923,
+      "net": 669.6052728000033,
+      "trades": 561,
+      "win_rate": 45.632798573975045,
+      "max_dd_pct": -4.894067719573588,
+      "expectancy": 1.1935922866310218
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 5,
+        "mid_len": 13,
+        "slow_len": 80,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 2.0184158276990876,
+      "net": 806.4295668000011,
+      "trades": 627,
+      "win_rate": 44.81658692185008,
+      "max_dd_pct": -3.3806229097631366,
+      "expectancy": 1.2861715578947386
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 5,
+        "mid_len": 20,
+        "slow_len": 55,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.4011879449961278,
+      "net": 50.80976639999824,
+      "trades": 75,
+      "win_rate": 42.66666666666667,
+      "max_dd_pct": -3.9619605538524283,
+      "expectancy": 0.6774635519999765
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 5,
+        "mid_len": 21,
+        "slow_len": 30,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 2.1393442734089114,
+      "net": 93.77692560000068,
+      "trades": 65,
+      "win_rate": 53.84615384615385,
+      "max_dd_pct": -1.5747494637385246,
+      "expectancy": 1.4427219323077027
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 5,
+        "mid_len": 20,
+        "slow_len": 80,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 2.1699659883984106,
+      "net": 80.02396919999936,
+      "trades": 50,
+      "win_rate": 56.00000000000001,
+      "max_dd_pct": -2.1619444441325775,
+      "expectancy": 1.6004793839999871
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 5,
+        "mid_len": 21,
+        "slow_len": 55,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.4356185446994738,
+      "net": 53.0802635999987,
+      "trades": 72,
+      "win_rate": 40.27777777777778,
+      "max_dd_pct": -3.533259224212631,
+      "expectancy": 0.7372258833333153
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 5,
+        "mid_len": 21,
+        "slow_len": 30,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.4255340400616536,
+      "net": 52.87239119999987,
+      "trades": 85,
+      "win_rate": 44.70588235294118,
+      "max_dd_pct": -2.9965815431505094,
+      "expectancy": 0.6220281317647043
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 5,
+        "mid_len": 21,
+        "slow_len": 30,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.8585253344774264,
+      "net": 722.3201892000009,
+      "trades": 659,
+      "win_rate": 48.406676783004556,
+      "max_dd_pct": -3.663465948818709,
+      "expectancy": 1.0960852643399104
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 5,
+        "mid_len": 21,
+        "slow_len": 34,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.88411143768334,
+      "net": 711.5376108000057,
+      "trades": 635,
+      "win_rate": 48.976377952755904,
+      "max_dd_pct": -2.978405941795507,
+      "expectancy": 1.12053167055119
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 5,
+        "mid_len": 21,
+        "slow_len": 34,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.4957378327587878,
+      "net": 56.67910440000075,
+      "trades": 72,
+      "win_rate": 43.05555555555556,
+      "max_dd_pct": -2.8328510271527834,
+      "expectancy": 0.7872097833333438
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 5,
+        "mid_len": 21,
+        "slow_len": 34,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 2.2025590602397003,
+      "net": 99.5036819999988,
+      "trades": 63,
+      "win_rate": 53.96825396825397,
+      "max_dd_pct": -1.4689487890947601,
+      "expectancy": 1.579423523809505
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 5,
+        "mid_len": 20,
+        "slow_len": 80,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.3097200465314864,
+      "net": 38.24765399999863,
+      "trades": 67,
+      "win_rate": 37.3134328358209,
+      "max_dd_pct": -3.7048695162263225,
+      "expectancy": 0.5708605074626661
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 5,
+        "mid_len": 21,
+        "slow_len": 55,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.8511193965812396,
+      "net": 651.8825940000025,
+      "trades": 555,
+      "win_rate": 45.585585585585584,
+      "max_dd_pct": -5.0934612186788835,
+      "expectancy": 1.174563232432437
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 5,
+        "mid_len": 21,
+        "slow_len": 55,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 2.1421286968674385,
+      "net": 84.6597491999998,
+      "trades": 51,
+      "win_rate": 52.94117647058824,
+      "max_dd_pct": -2.9020711324906294,
+      "expectancy": 1.6599950823529372
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 5,
+        "mid_len": 20,
+        "slow_len": 80,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.878740766825422,
+      "net": 654.9844991999987,
+      "trades": 532,
+      "win_rate": 44.73684210526316,
+      "max_dd_pct": -4.206508793774036,
+      "expectancy": 1.2311738706766893
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 5,
+        "mid_len": 30,
+        "slow_len": 34,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.607593755794699,
+      "net": 530.0144364000031,
+      "trades": 661,
+      "win_rate": 51.73978819969742,
+      "max_dd_pct": -3.963548072437618,
+      "expectancy": 0.8018372714069638
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 5,
+        "mid_len": 21,
+        "slow_len": 80,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.226031528482683,
+      "net": 28.933427999999225,
+      "trades": 69,
+      "win_rate": 36.231884057971016,
+      "max_dd_pct": -3.908737363335204,
+      "expectancy": 0.4193250434782496
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 5,
+        "mid_len": 30,
+        "slow_len": 34,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 0.9864380816311358,
+      "net": -2.0825028000019756,
+      "trades": 103,
+      "win_rate": 43.689320388349515,
+      "max_dd_pct": -4.370954548720575,
+      "expectancy": -0.02021847378642695
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 5,
+        "mid_len": 30,
+        "slow_len": 34,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 2.268782668274639,
+      "net": 98.62218600000048,
+      "trades": 61,
+      "win_rate": 60.65573770491803,
+      "max_dd_pct": -1.6521702820182602,
+      "expectancy": 1.6167571475409914
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 5,
+        "mid_len": 21,
+        "slow_len": 80,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 2.3208730133547393,
+      "net": 82.42303080000133,
+      "trades": 50,
+      "win_rate": 56.00000000000001,
+      "max_dd_pct": -2.149410562026677,
+      "expectancy": 1.6484606160000266
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 5,
+        "mid_len": 21,
+        "slow_len": 80,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.824938195989351,
+      "net": 632.0959032000034,
+      "trades": 532,
+      "win_rate": 44.92481203007519,
+      "max_dd_pct": -4.240719282841729,
+      "expectancy": 1.1881501939849688
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 5,
+        "mid_len": 30,
+        "slow_len": 55,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.6244829777435668,
+      "net": 485.6879400000033,
+      "trades": 517,
+      "win_rate": 44.680851063829785,
+      "max_dd_pct": -6.1203859330476345,
+      "expectancy": 0.9394350870406254
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 5,
+        "mid_len": 30,
+        "slow_len": 55,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 2.6975983241694887,
+      "net": 93.98335920000166,
+      "trades": 49,
+      "win_rate": 53.06122448979592,
+      "max_dd_pct": -2.100091120701468,
+      "expectancy": 1.918027738775544
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 5,
+        "mid_len": 30,
+        "slow_len": 80,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.7371350709275448,
+      "net": 534.770199600004,
+      "trades": 460,
+      "win_rate": 45.43478260869565,
+      "max_dd_pct": -4.89033117003698,
+      "expectancy": 1.1625439121739218
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 5,
+        "mid_len": 30,
+        "slow_len": 55,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.669246891387685,
+      "net": 69.29629559999772,
+      "trades": 68,
+      "win_rate": 39.705882352941174,
+      "max_dd_pct": -2.7900083234924855,
+      "expectancy": 1.0190631705882018
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 8,
+        "mid_len": 13,
+        "slow_len": 30,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.3925688067881556,
+      "net": 49.076107199998376,
+      "trades": 94,
+      "win_rate": 48.93617021276596,
+      "max_dd_pct": -3.7335004909227196,
+      "expectancy": 0.5220862468084934
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 8,
+        "mid_len": 13,
+        "slow_len": 30,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.5849857721827492,
+      "net": 590.2645572000038,
+      "trades": 729,
+      "win_rate": 48.971193415637856,
+      "max_dd_pct": -4.3772835821531535,
+      "expectancy": 0.8096907506172891
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 8,
+        "mid_len": 13,
+        "slow_len": 34,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 2.4750872089961824,
+      "net": 112.96649279999794,
+      "trades": 65,
+      "win_rate": 56.92307692307692,
+      "max_dd_pct": -1.8858277280464613,
+      "expectancy": 1.7379460430768914
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 8,
+        "mid_len": 13,
+        "slow_len": 80,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.1989829447527536,
+      "net": 24.663811200000424,
+      "trades": 89,
+      "win_rate": 44.9438202247191,
+      "max_dd_pct": -4.69147361610084,
+      "expectancy": 0.27712147415730815
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 8,
+        "mid_len": 13,
+        "slow_len": 34,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.309213196849846,
+      "net": 40.2289836000007,
+      "trades": 93,
+      "win_rate": 50.53763440860215,
+      "max_dd_pct": -3.4384738759742435,
+      "expectancy": 0.4325697161290398
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 5,
+        "mid_len": 30,
+        "slow_len": 80,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.4532759970340872,
+      "net": 48.01727999999903,
+      "trades": 62,
+      "win_rate": 33.87096774193548,
+      "max_dd_pct": -3.003822233159948,
+      "expectancy": 0.7744722580645005
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 8,
+        "mid_len": 13,
+        "slow_len": 34,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.6196482401347068,
+      "net": 598.8205236000028,
+      "trades": 697,
+      "win_rate": 49.35437589670014,
+      "max_dd_pct": -4.002626364692055,
+      "expectancy": 0.8591399190817831
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 8,
+        "mid_len": 13,
+        "slow_len": 30,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 2.317787290715787,
+      "net": 105.87877319999865,
+      "trades": 68,
+      "win_rate": 57.35294117647059,
+      "max_dd_pct": -1.889799247682527,
+      "expectancy": 1.5570407823529213
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 5,
+        "mid_len": 30,
+        "slow_len": 80,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 3.7259034573044363,
+      "net": 101.5651740000007,
+      "trades": 43,
+      "win_rate": 65.11627906976744,
+      "max_dd_pct": -1.7393340096022492,
+      "expectancy": 2.3619807906976904
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 8,
+        "mid_len": 13,
+        "slow_len": 80,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.5584961160841466,
+      "net": 506.6283528000047,
+      "trades": 638,
+      "win_rate": 48.7460815047022,
+      "max_dd_pct": -5.324607149048882,
+      "expectancy": 0.7940883272727346
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 8,
+        "mid_len": 13,
+        "slow_len": 55,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.5176667834220359,
+      "net": 500.00362439999617,
+      "trades": 669,
+      "win_rate": 48.87892376681614,
+      "max_dd_pct": -4.988715881537218,
+      "expectancy": 0.7473895730941646
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 8,
+        "mid_len": 13,
+        "slow_len": 55,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 2.002005997533807,
+      "net": 86.57162639999709,
+      "trades": 65,
+      "win_rate": 49.23076923076923,
+      "max_dd_pct": -3.203242848608787,
+      "expectancy": 1.3318711753845704
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 8,
+        "mid_len": 20,
+        "slow_len": 30,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 2.07488395138569,
+      "net": 94.10260559999986,
+      "trades": 63,
+      "win_rate": 53.96825396825397,
+      "max_dd_pct": -2.298561762614559,
+      "expectancy": 1.49369215238095
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 8,
+        "mid_len": 13,
+        "slow_len": 55,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.306335678343256,
+      "net": 38.74768079999956,
+      "trades": 91,
+      "win_rate": 49.45054945054945,
+      "max_dd_pct": -4.655542756775341,
+      "expectancy": 0.42579869010988525
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 8,
+        "mid_len": 13,
+        "slow_len": 80,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 2.367925217322132,
+      "net": 99.38582639999797,
+      "trades": 60,
+      "win_rate": 56.666666666666664,
+      "max_dd_pct": -3.328723676651983,
+      "expectancy": 1.656430439999966
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 8,
+        "mid_len": 20,
+        "slow_len": 30,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.613181921435269,
+      "net": 554.6780039999996,
+      "trades": 607,
+      "win_rate": 50.0823723228995,
+      "max_dd_pct": -4.146683755668799,
+      "expectancy": 0.9138023130148264
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 8,
+        "mid_len": 20,
+        "slow_len": 30,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.4171958708334673,
+      "net": 52.26661560000005,
+      "trades": 77,
+      "win_rate": 50.649350649350644,
+      "max_dd_pct": -2.8802626856038294,
+      "expectancy": 0.6787872155844162
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 8,
+        "mid_len": 20,
+        "slow_len": 34,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.5557031242343238,
+      "net": 507.03584760000433,
+      "trades": 585,
+      "win_rate": 48.205128205128204,
+      "max_dd_pct": -4.177871230866255,
+      "expectancy": 0.866727944615392
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 8,
+        "mid_len": 20,
+        "slow_len": 34,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 2.2241073753909504,
+      "net": 102.22914120000166,
+      "trades": 61,
+      "win_rate": 50.81967213114754,
+      "max_dd_pct": -2.3126658325672755,
+      "expectancy": 1.675887560655765
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 8,
+        "mid_len": 21,
+        "slow_len": 30,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 2.1266500225832754,
+      "net": 93.71807520000175,
+      "trades": 58,
+      "win_rate": 51.724137931034484,
+      "max_dd_pct": -2.351964558441933,
+      "expectancy": 1.6158288827586509
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 8,
+        "mid_len": 21,
+        "slow_len": 30,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.4027173610450552,
+      "net": 46.583960400001146,
+      "trades": 75,
+      "win_rate": 49.333333333333336,
+      "max_dd_pct": -2.904522922933791,
+      "expectancy": 0.6211194720000153
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 8,
+        "mid_len": 20,
+        "slow_len": 34,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.4857754884844137,
+      "net": 51.733700400002505,
+      "trades": 65,
+      "win_rate": 49.23076923076923,
+      "max_dd_pct": -2.939074372731141,
+      "expectancy": 0.7959030830769616
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 8,
+        "mid_len": 20,
+        "slow_len": 80,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.2891642146599283,
+      "net": 32.5748724000006,
+      "trades": 57,
+      "win_rate": 40.35087719298245,
+      "max_dd_pct": -4.650893577437789,
+      "expectancy": 0.5714889894736948
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 8,
+        "mid_len": 20,
+        "slow_len": 55,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 2.0207626857785,
+      "net": 88.85999760000108,
+      "trades": 51,
+      "win_rate": 49.01960784313725,
+      "max_dd_pct": -3.224962288098458,
+      "expectancy": 1.7423528941176682
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 8,
+        "mid_len": 20,
+        "slow_len": 55,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.571920912221212,
+      "net": 475.377398400008,
+      "trades": 514,
+      "win_rate": 45.91439688715953,
+      "max_dd_pct": -4.94246136566235,
+      "expectancy": 0.9248587517509884
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 8,
+        "mid_len": 20,
+        "slow_len": 55,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.3927223894508212,
+      "net": 45.13405920000014,
+      "trades": 65,
+      "win_rate": 43.07692307692308,
+      "max_dd_pct": -4.62629081123268,
+      "expectancy": 0.6943701415384637
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 8,
+        "mid_len": 20,
+        "slow_len": 80,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.5629666199786663,
+      "net": 461.20474200000444,
+      "trades": 486,
+      "win_rate": 42.592592592592595,
+      "max_dd_pct": -7.4082044576266295,
+      "expectancy": 0.948980950617293
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 8,
+        "mid_len": 21,
+        "slow_len": 34,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 2.1537161866998114,
+      "net": 99.11793719999986,
+      "trades": 58,
+      "win_rate": 48.275862068965516,
+      "max_dd_pct": -2.2626903155836153,
+      "expectancy": 1.7089299517241354
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 8,
+        "mid_len": 21,
+        "slow_len": 30,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.6044633865400701,
+      "net": 546.7789956000042,
+      "trades": 600,
+      "win_rate": 49.5,
+      "max_dd_pct": -3.259228884075667,
+      "expectancy": 0.911298326000007
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 8,
+        "mid_len": 21,
+        "slow_len": 55,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 2.032753168089133,
+      "net": 84.2740044000008,
+      "trades": 46,
+      "win_rate": 52.17391304347826,
+      "max_dd_pct": -3.6565731709876115,
+      "expectancy": 1.832043573913061
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 8,
+        "mid_len": 21,
+        "slow_len": 55,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.4166709755478049,
+      "net": 46.63865279999996,
+      "trades": 63,
+      "win_rate": 41.269841269841265,
+      "max_dd_pct": -4.020387279950132,
+      "expectancy": 0.7402960761904755
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 8,
+        "mid_len": 21,
+        "slow_len": 34,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.6050143800487706,
+      "net": 534.3352764000069,
+      "trades": 579,
+      "win_rate": 49.568221070811745,
+      "max_dd_pct": -2.8412045711238822,
+      "expectancy": 0.9228588538860223
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 8,
+        "mid_len": 20,
+        "slow_len": 80,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 2.0247528315919086,
+      "net": 79.14826920000107,
+      "trades": 48,
+      "win_rate": 56.25,
+      "max_dd_pct": -2.898022092728318,
+      "expectancy": 1.6489222750000223
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 8,
+        "mid_len": 21,
+        "slow_len": 80,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.5566967401859346,
+      "net": 456.8818800000074,
+      "trades": 471,
+      "win_rate": 44.5859872611465,
+      "max_dd_pct": -6.570667339009438,
+      "expectancy": 0.9700252229299521
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 8,
+        "mid_len": 21,
+        "slow_len": 34,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.4726699685512374,
+      "net": 49.922908800002034,
+      "trades": 65,
+      "win_rate": 46.15384615384615,
+      "max_dd_pct": -2.7421741247632787,
+      "expectancy": 0.768044750769262
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 8,
+        "mid_len": 21,
+        "slow_len": 55,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.5707037935055306,
+      "net": 474.686000400005,
+      "trades": 499,
+      "win_rate": 45.89178356713427,
+      "max_dd_pct": -4.866996954115016,
+      "expectancy": 0.9512745498998096
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 8,
+        "mid_len": 21,
+        "slow_len": 80,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 2.1388202451106544,
+      "net": 81.43731360000199,
+      "trades": 45,
+      "win_rate": 57.77777777777777,
+      "max_dd_pct": -2.9514155411449634,
+      "expectancy": 1.809718080000044
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 8,
+        "mid_len": 30,
+        "slow_len": 34,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 2.1389861670283534,
+      "net": 97.85578560000103,
+      "trades": 62,
+      "win_rate": 51.61290322580645,
+      "max_dd_pct": -2.215106157011941,
+      "expectancy": 1.5783191225806616
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 8,
+        "mid_len": 30,
+        "slow_len": 34,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.3683632230494285,
+      "net": 352.0332996000027,
+      "trades": 625,
+      "win_rate": 49.6,
+      "max_dd_pct": -6.955425312437516,
+      "expectancy": 0.5632532793600044
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 8,
+        "mid_len": 30,
+        "slow_len": 55,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.8294541524744323,
+      "net": 76.66685639999992,
+      "trades": 59,
+      "win_rate": 40.67796610169492,
+      "max_dd_pct": -2.412860195624409,
+      "expectancy": 1.2994382440677952
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 8,
+        "mid_len": 30,
+        "slow_len": 55,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.3592127352664287,
+      "net": 308.96332080000275,
+      "trades": 473,
+      "win_rate": 44.18604651162791,
+      "max_dd_pct": -7.612474514582564,
+      "expectancy": 0.6531994097251643
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 8,
+        "mid_len": 30,
+        "slow_len": 80,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.6326188505475892,
+      "net": 56.45646120000136,
+      "trades": 50,
+      "win_rate": 40.0,
+      "max_dd_pct": -2.8739037249399333,
+      "expectancy": 1.1291292240000272
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 8,
+        "mid_len": 21,
+        "slow_len": 80,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.189468273051121,
+      "net": 22.4880636000005,
+      "trades": 60,
+      "win_rate": 36.666666666666664,
+      "max_dd_pct": -4.242221556282894,
+      "expectancy": 0.37480106000000835
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 8,
+        "mid_len": 30,
+        "slow_len": 34,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.0405353810730793,
+      "net": 5.597950800000206,
+      "trades": 92,
+      "win_rate": 44.565217391304344,
+      "max_dd_pct": -3.7461945181342258,
+      "expectancy": 0.060847291304350064
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 8,
+        "mid_len": 30,
+        "slow_len": 55,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 2.366488337740558,
+      "net": 93.54214200000216,
+      "trades": 48,
+      "win_rate": 45.83333333333333,
+      "max_dd_pct": -2.499573666642532,
+      "expectancy": 1.948794625000045
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 10,
+        "mid_len": 13,
+        "slow_len": 30,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 2.2707330984153864,
+      "net": 103.26719519999729,
+      "trades": 73,
+      "win_rate": 57.534246575342465,
+      "max_dd_pct": -2.009839663519574,
+      "expectancy": 1.41461911232873
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 10,
+        "mid_len": 13,
+        "slow_len": 34,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 2.4834691072403583,
+      "net": 110.68434839999661,
+      "trades": 68,
+      "win_rate": 60.29411764705882,
+      "max_dd_pct": -2.0047206306004184,
+      "expectancy": 1.627711005882303
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 10,
+        "mid_len": 13,
+        "slow_len": 30,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.5065890311897696,
+      "net": 63.47771159999887,
+      "trades": 98,
+      "win_rate": 53.06122448979592,
+      "max_dd_pct": -3.5819121617939875,
+      "expectancy": 0.6477317510203966
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 10,
+        "mid_len": 13,
+        "slow_len": 34,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.424329372615307,
+      "net": 54.631416000001195,
+      "trades": 97,
+      "win_rate": 53.608247422680414,
+      "max_dd_pct": -3.48497090500211,
+      "expectancy": 0.5632104742268165
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 10,
+        "mid_len": 13,
+        "slow_len": 30,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.3524738473329043,
+      "net": 409.4421240000049,
+      "trades": 784,
+      "win_rate": 47.44897959183674,
+      "max_dd_pct": -6.163972273832945,
+      "expectancy": 0.5222476071428634
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 10,
+        "mid_len": 13,
+        "slow_len": 55,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.94534238370383,
+      "net": 84.4537019999957,
+      "trades": 67,
+      "win_rate": 56.71641791044776,
+      "max_dd_pct": -3.3090282780586824,
+      "expectancy": 1.260503014925309
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 10,
+        "mid_len": 13,
+        "slow_len": 34,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.3704944860395964,
+      "net": 417.54528480000477,
+      "trades": 755,
+      "win_rate": 47.81456953642384,
+      "max_dd_pct": -6.329280676277864,
+      "expectancy": 0.5530401123178871
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 8,
+        "mid_len": 30,
+        "slow_len": 80,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 3.1631189524185888,
+      "net": 101.12395680000122,
+      "trades": 42,
+      "win_rate": 57.14285714285714,
+      "max_dd_pct": -2.080013424639277,
+      "expectancy": 2.4077132571428863
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 8,
+        "mid_len": 30,
+        "slow_len": 80,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.451164382981395,
+      "net": 359.21826360000307,
+      "trades": 424,
+      "win_rate": 43.63207547169811,
+      "max_dd_pct": -7.683745844203392,
+      "expectancy": 0.8472128858490638
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 10,
+        "mid_len": 13,
+        "slow_len": 55,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.4325858737649995,
+      "net": 53.151990000000055,
+      "trades": 95,
+      "win_rate": 55.78947368421052,
+      "max_dd_pct": -4.403002764035562,
+      "expectancy": 0.559494631578948
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 10,
+        "mid_len": 13,
+        "slow_len": 80,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.3072547420575986,
+      "net": 325.34013840000785,
+      "trades": 692,
+      "win_rate": 47.25433526011561,
+      "max_dd_pct": -8.453057857588421,
+      "expectancy": 0.47014470867053154
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 10,
+        "mid_len": 20,
+        "slow_len": 30,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.6380195889486484,
+      "net": 65.73857879999916,
+      "trades": 64,
+      "win_rate": 50.0,
+      "max_dd_pct": -3.060561509539693,
+      "expectancy": 1.0271652937499869
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 10,
+        "mid_len": 13,
+        "slow_len": 55,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.279934556761615,
+      "net": 316.00905359999956,
+      "trades": 729,
+      "win_rate": 46.913580246913575,
+      "max_dd_pct": -8.87170643868855,
+      "expectancy": 0.4334829267489706
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 10,
+        "mid_len": 13,
+        "slow_len": 80,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.3210129017237864,
+      "net": 39.063483600000964,
+      "trades": 93,
+      "win_rate": 50.53763440860215,
+      "max_dd_pct": -4.180962243068475,
+      "expectancy": 0.42003745806452647
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 10,
+        "mid_len": 20,
+        "slow_len": 34,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.7569171252748907,
+      "net": 74.35694640000095,
+      "trades": 59,
+      "win_rate": 45.76271186440678,
+      "max_dd_pct": -3.0434253060782495,
+      "expectancy": 1.2602872271186603
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 10,
+        "mid_len": 20,
+        "slow_len": 30,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.3925633698398596,
+      "net": 50.77211999999807,
+      "trades": 75,
+      "win_rate": 50.66666666666667,
+      "max_dd_pct": -2.7414790047081143,
+      "expectancy": 0.6769615999999743
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 10,
+        "mid_len": 13,
+        "slow_len": 80,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 2.1533565496704585,
+      "net": 96.93896519999659,
+      "trades": 64,
+      "win_rate": 59.375,
+      "max_dd_pct": -3.443019745573205,
+      "expectancy": 1.5146713312499467
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 10,
+        "mid_len": 20,
+        "slow_len": 34,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.5021980103660288,
+      "net": 469.58710559999497,
+      "trades": 575,
+      "win_rate": 51.47826086956522,
+      "max_dd_pct": -5.240325081831791,
+      "expectancy": 0.816673227130426
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 10,
+        "mid_len": 20,
+        "slow_len": 34,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.43082176420046,
+      "net": 50.083264800000464,
+      "trades": 64,
+      "win_rate": 53.125,
+      "max_dd_pct": -2.8943079194206094,
+      "expectancy": 0.7825510125000072
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 10,
+        "mid_len": 20,
+        "slow_len": 30,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.5524453155752533,
+      "net": 516.923564399994,
+      "trades": 599,
+      "win_rate": 51.41903171953256,
+      "max_dd_pct": -3.957802504547086,
+      "expectancy": 0.8629775699499065
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 10,
+        "mid_len": 20,
+        "slow_len": 55,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.346687031850448,
+      "net": 43.33370039999808,
+      "trades": 65,
+      "win_rate": 38.46153846153847,
+      "max_dd_pct": -4.075914429307215,
+      "expectancy": 0.6666723138461244
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 10,
+        "mid_len": 20,
+        "slow_len": 80,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.2728740429244803,
+      "net": 31.682667599998425,
+      "trades": 55,
+      "win_rate": 40.0,
+      "max_dd_pct": -4.098599833818968,
+      "expectancy": 0.5760485018181531
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 10,
+        "mid_len": 20,
+        "slow_len": 55,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.633804636673622,
+      "net": 60.49613640000038,
+      "trades": 52,
+      "win_rate": 50.0,
+      "max_dd_pct": -3.874992531945518,
+      "expectancy": 1.1633872384615458
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 10,
+        "mid_len": 21,
+        "slow_len": 34,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.4751954836361778,
+      "net": 52.03271879999984,
+      "trades": 63,
+      "win_rate": 53.96825396825397,
+      "max_dd_pct": -2.814537416944119,
+      "expectancy": 0.8259161714285689
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 10,
+        "mid_len": 21,
+        "slow_len": 30,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.7460101761858497,
+      "net": 74.30213640000085,
+      "trades": 63,
+      "win_rate": 47.61904761904761,
+      "max_dd_pct": -3.0232176854021295,
+      "expectancy": 1.179398990476204
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 10,
+        "mid_len": 20,
+        "slow_len": 80,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.4994692215177723,
+      "net": 426.21997319999707,
+      "trades": 472,
+      "win_rate": 45.97457627118644,
+      "max_dd_pct": -8.765498334800766,
+      "expectancy": 0.903008417796604
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 10,
+        "mid_len": 21,
+        "slow_len": 30,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.5438088240419197,
+      "net": 508.9343075999943,
+      "trades": 596,
+      "win_rate": 51.006711409395976,
+      "max_dd_pct": -3.698376752824916,
+      "expectancy": 0.8539166234899234
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 10,
+        "mid_len": 21,
+        "slow_len": 30,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.4065321903544077,
+      "net": 48.2414579999988,
+      "trades": 72,
+      "win_rate": 52.77777777777778,
+      "max_dd_pct": -2.9627338991849728,
+      "expectancy": 0.6700202499999833
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 10,
+        "mid_len": 20,
+        "slow_len": 80,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.568108874492661,
+      "net": 50.78799600000039,
+      "trades": 49,
+      "win_rate": 55.10204081632652,
+      "max_dd_pct": -4.105230089430833,
+      "expectancy": 1.0364897142857223
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 10,
+        "mid_len": 20,
+        "slow_len": 55,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.5045150197826598,
+      "net": 438.89382839999985,
+      "trades": 498,
+      "win_rate": 47.59036144578313,
+      "max_dd_pct": -6.20674297345519,
+      "expectancy": 0.8813129084337347
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 10,
+        "mid_len": 21,
+        "slow_len": 34,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.559467233137945,
+      "net": 497.95736279999755,
+      "trades": 566,
+      "win_rate": 52.82685512367491,
+      "max_dd_pct": -3.7114631362353356,
+      "expectancy": 0.8797833265017625
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 10,
+        "mid_len": 21,
+        "slow_len": 34,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.7911939845607059,
+      "net": 80.35551119999901,
+      "trades": 59,
+      "win_rate": 42.3728813559322,
+      "max_dd_pct": -2.9744564947692873,
+      "expectancy": 1.3619578169491358
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 10,
+        "mid_len": 21,
+        "slow_len": 55,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.5055358460602124,
+      "net": 437.2040315999943,
+      "trades": 493,
+      "win_rate": 48.275862068965516,
+      "max_dd_pct": -5.839635546187603,
+      "expectancy": 0.8868235935091163
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 10,
+        "mid_len": 21,
+        "slow_len": 80,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.718343652897473,
+      "net": 61.74995280000124,
+      "trades": 48,
+      "win_rate": 52.083333333333336,
+      "max_dd_pct": -3.345818451260025,
+      "expectancy": 1.2864573500000258
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 10,
+        "mid_len": 21,
+        "slow_len": 55,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.4125681866664808,
+      "net": 48.5900387999978,
+      "trades": 62,
+      "win_rate": 41.935483870967744,
+      "max_dd_pct": -3.660347763498558,
+      "expectancy": 0.783710303225771
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 10,
+        "mid_len": 30,
+        "slow_len": 34,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 0.9237823084121738,
+      "net": -11.794128000002047,
+      "trades": 92,
+      "win_rate": 45.65217391304348,
+      "max_dd_pct": -4.057135808464926,
+      "expectancy": -0.12819704347828312
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 10,
+        "mid_len": 21,
+        "slow_len": 80,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.2120629736228006,
+      "net": 24.597873599998294,
+      "trades": 58,
+      "win_rate": 37.93103448275862,
+      "max_dd_pct": -3.902986916795143,
+      "expectancy": 0.42410126896548783
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 10,
+        "mid_len": 30,
+        "slow_len": 34,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 2.062008134811902,
+      "net": 91.41716279999932,
+      "trades": 61,
+      "win_rate": 49.18032786885246,
+      "max_dd_pct": -2.6673034606967705,
+      "expectancy": 1.4986420131147429
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 10,
+        "mid_len": 30,
+        "slow_len": 34,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.2976422941520949,
+      "net": 293.98549199999854,
+      "trades": 601,
+      "win_rate": 51.74708818635607,
+      "max_dd_pct": -8.66181202514252,
+      "expectancy": 0.48916055241264317
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 10,
+        "mid_len": 30,
+        "slow_len": 55,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.5827633993902765,
+      "net": 59.11337279999758,
+      "trades": 60,
+      "win_rate": 41.66666666666667,
+      "max_dd_pct": -3.0210414787268567,
+      "expectancy": 0.9852228799999596
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 10,
+        "mid_len": 21,
+        "slow_len": 80,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.4932537748347046,
+      "net": 420.1760267999973,
+      "trades": 464,
+      "win_rate": 46.33620689655172,
+      "max_dd_pct": -7.889495806708334,
+      "expectancy": 0.905551781896546
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 10,
+        "mid_len": 30,
+        "slow_len": 55,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.2755049560378462,
+      "net": 250.62908039999888,
+      "trades": 451,
+      "win_rate": 43.45898004434589,
+      "max_dd_pct": -10.629531440432785,
+      "expectancy": 0.5557185818181793
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 10,
+        "mid_len": 30,
+        "slow_len": 55,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 2.14719193301306,
+      "net": 87.10351920000043,
+      "trades": 47,
+      "win_rate": 48.93617021276596,
+      "max_dd_pct": -3.295952622782847,
+      "expectancy": 1.853266365957456
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 10,
+        "mid_len": 21,
+        "slow_len": 55,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.6948549780606952,
+      "net": 65.18661599999993,
+      "trades": 49,
+      "win_rate": 44.89795918367347,
+      "max_dd_pct": -4.227418894553136,
+      "expectancy": 1.3303391020408148
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 10,
+        "mid_len": 30,
+        "slow_len": 80,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.3856873284621438,
+      "net": 38.30294999999893,
+      "trades": 51,
+      "win_rate": 35.294117647058826,
+      "max_dd_pct": -3.0210387538185923,
+      "expectancy": 0.7510382352940966
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 13,
+        "mid_len": 20,
+        "slow_len": 30,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.5737613636329255,
+      "net": 63.81771479999941,
+      "trades": 61,
+      "win_rate": 55.73770491803278,
+      "max_dd_pct": -3.3875406727958004,
+      "expectancy": 1.0461920459016296
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 10,
+        "mid_len": 30,
+        "slow_len": 80,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.3575447146417177,
+      "net": 301.1254680000002,
+      "trades": 400,
+      "win_rate": 43.5,
+      "max_dd_pct": -10.111473371304083,
+      "expectancy": 0.7528136700000004
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 10,
+        "mid_len": 30,
+        "slow_len": 80,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 2.8524365281594513,
+      "net": 94.68533399999949,
+      "trades": 41,
+      "win_rate": 53.65853658536586,
+      "max_dd_pct": -2.867778794292199,
+      "expectancy": 2.30939839024389
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 13,
+        "mid_len": 20,
+        "slow_len": 30,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.4445297403411137,
+      "net": 436.5016055999956,
+      "trades": 611,
+      "win_rate": 54.828150572831426,
+      "max_dd_pct": -5.066663045481571,
+      "expectancy": 0.7144052464811712
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 13,
+        "mid_len": 20,
+        "slow_len": 30,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.3558581170991875,
+      "net": 45.926476799998824,
+      "trades": 83,
+      "win_rate": 53.01204819277109,
+      "max_dd_pct": -3.2334144108290093,
+      "expectancy": 0.5533310457831183
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 13,
+        "mid_len": 20,
+        "slow_len": 34,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.7670977451441678,
+      "net": 76.91134080000094,
+      "trades": 58,
+      "win_rate": 55.172413793103445,
+      "max_dd_pct": -3.356300286077664,
+      "expectancy": 1.3260576000000162
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 13,
+        "mid_len": 20,
+        "slow_len": 34,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.3979220628167441,
+      "net": 387.3880343999982,
+      "trades": 595,
+      "win_rate": 52.94117647058824,
+      "max_dd_pct": -6.0606597085232,
+      "expectancy": 0.6510723267226861
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 13,
+        "mid_len": 20,
+        "slow_len": 34,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.3792701451397906,
+      "net": 45.859836000001295,
+      "trades": 68,
+      "win_rate": 51.470588235294116,
+      "max_dd_pct": -2.774186029829826,
+      "expectancy": 0.6744093529411955
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 13,
+        "mid_len": 20,
+        "slow_len": 55,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.6105556588404124,
+      "net": 63.2123220000003,
+      "trades": 50,
+      "win_rate": 52.0,
+      "max_dd_pct": -4.4870711271963595,
+      "expectancy": 1.264246440000006
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 13,
+        "mid_len": 20,
+        "slow_len": 80,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.5034815625875213,
+      "net": 50.06768400000007,
+      "trades": 46,
+      "win_rate": 54.347826086956516,
+      "max_dd_pct": -4.483442555410176,
+      "expectancy": 1.0884279130434797
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 13,
+        "mid_len": 20,
+        "slow_len": 55,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.3009895013491986,
+      "net": 39.10706999999897,
+      "trades": 69,
+      "win_rate": 46.3768115942029,
+      "max_dd_pct": -3.6076040095461503,
+      "expectancy": 0.5667691304347677
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 13,
+        "mid_len": 21,
+        "slow_len": 30,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.5861603313907284,
+      "net": 63.98138280000204,
+      "trades": 60,
+      "win_rate": 51.66666666666667,
+      "max_dd_pct": -3.1973207954871157,
+      "expectancy": 1.066356380000034
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 13,
+        "mid_len": 20,
+        "slow_len": 80,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.2191039080348292,
+      "net": 27.148131599999317,
+      "trades": 61,
+      "win_rate": 45.90163934426229,
+      "max_dd_pct": -3.02305777733901,
+      "expectancy": 0.44505133770490685
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 13,
+        "mid_len": 21,
+        "slow_len": 30,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.4744593147788876,
+      "net": 455.67719639999495,
+      "trades": 600,
+      "win_rate": 54.50000000000001,
+      "max_dd_pct": -4.156521678334483,
+      "expectancy": 0.7594619939999916
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 13,
+        "mid_len": 21,
+        "slow_len": 30,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.3683020676563253,
+      "net": 45.36464400000034,
+      "trades": 79,
+      "win_rate": 54.43037974683544,
+      "max_dd_pct": -2.975994941015427,
+      "expectancy": 0.5742360000000043
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 13,
+        "mid_len": 20,
+        "slow_len": 80,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.3700390451597868,
+      "net": 344.5045716000011,
+      "trades": 496,
+      "win_rate": 48.99193548387097,
+      "max_dd_pct": -9.637472256643695,
+      "expectancy": 0.6945656685483893
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 13,
+        "mid_len": 21,
+        "slow_len": 34,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.7336258313635455,
+      "net": 75.87522960000021,
+      "trades": 57,
+      "win_rate": 52.63157894736842,
+      "max_dd_pct": -3.0737530408615745,
+      "expectancy": 1.331144378947372
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 13,
+        "mid_len": 21,
+        "slow_len": 55,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.6191071114999074,
+      "net": 59.06600040000107,
+      "trades": 46,
+      "win_rate": 52.17391304347826,
+      "max_dd_pct": -4.573886706390973,
+      "expectancy": 1.2840434869565451
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 13,
+        "mid_len": 20,
+        "slow_len": 55,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.3921321508769038,
+      "net": 361.46125440000446,
+      "trades": 522,
+      "win_rate": 48.85057471264368,
+      "max_dd_pct": -7.065724424751124,
+      "expectancy": 0.6924545103448362
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 13,
+        "mid_len": 21,
+        "slow_len": 34,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.423830712255256,
+      "net": 49.46618400000135,
+      "trades": 68,
+      "win_rate": 51.470588235294116,
+      "max_dd_pct": -2.769260143732714,
+      "expectancy": 0.727443882352961
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 13,
+        "mid_len": 21,
+        "slow_len": 55,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.3643781069940732,
+      "net": 45.86739839999939,
+      "trades": 68,
+      "win_rate": 44.11764705882353,
+      "max_dd_pct": -2.8567388650964034,
+      "expectancy": 0.6745205647058734
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 13,
+        "mid_len": 21,
+        "slow_len": 34,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.4838845414923498,
+      "net": 443.01029999999946,
+      "trades": 577,
+      "win_rate": 55.28596187175043,
+      "max_dd_pct": -4.477337312798814,
+      "expectancy": 0.7677821490467929
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 13,
+        "mid_len": 21,
+        "slow_len": 55,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.4378582948576575,
+      "net": 387.8067467999962,
+      "trades": 495,
+      "win_rate": 50.101010101010104,
+      "max_dd_pct": -6.01916597501053,
+      "expectancy": 0.7834479733333256
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 13,
+        "mid_len": 21,
+        "slow_len": 80,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.4152833377000795,
+      "net": 366.5336231999984,
+      "trades": 474,
+      "win_rate": 49.57805907172996,
+      "max_dd_pct": -7.94114600457149,
+      "expectancy": 0.7732776860759459
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 13,
+        "mid_len": 21,
+        "slow_len": 80,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.5884349078325217,
+      "net": 53.668401600002156,
+      "trades": 46,
+      "win_rate": 52.17391304347826,
+      "max_dd_pct": -4.098923829744954,
+      "expectancy": 1.1667043826087424
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 13,
+        "mid_len": 21,
+        "slow_len": 80,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.1664547730635029,
+      "net": 21.876226799999813,
+      "trades": 64,
+      "win_rate": 45.3125,
+      "max_dd_pct": -2.830530709135658,
+      "expectancy": 0.3418160437499971
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 13,
+        "mid_len": 30,
+        "slow_len": 34,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.2704783365095096,
+      "net": 273.71795399999814,
+      "trades": 581,
+      "win_rate": 51.80722891566265,
+      "max_dd_pct": -8.962440719104958,
+      "expectancy": 0.47111523924268184
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 13,
+        "mid_len": 30,
+        "slow_len": 34,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.7499924939686986,
+      "net": 70.20284159999956,
+      "trades": 55,
+      "win_rate": 60.0,
+      "max_dd_pct": -3.00857459187809,
+      "expectancy": 1.2764153018181739
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 13,
+        "mid_len": 30,
+        "slow_len": 34,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.0620601185770593,
+      "net": 8.799837599998256,
+      "trades": 83,
+      "win_rate": 51.80722891566265,
+      "max_dd_pct": -3.092538853848111,
+      "expectancy": 0.10602213975901513
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 13,
+        "mid_len": 30,
+        "slow_len": 55,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.795334553826207,
+      "net": 65.72597160000069,
+      "trades": 42,
+      "win_rate": 50.0,
+      "max_dd_pct": -3.33608204022253,
+      "expectancy": 1.5649040857143022
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 13,
+        "mid_len": 30,
+        "slow_len": 55,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.249962679951398,
+      "net": 233.15821319999884,
+      "trades": 432,
+      "win_rate": 43.28703703703704,
+      "max_dd_pct": -9.955073640984114,
+      "expectancy": 0.5397180861111084
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 13,
+        "mid_len": 30,
+        "slow_len": 80,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.7123012362709285,
+      "net": 59.05854119999924,
+      "trades": 41,
+      "win_rate": 41.46341463414634,
+      "max_dd_pct": -2.806473301496189,
+      "expectancy": 1.4404522243902254
+    },
+    {
+      "window": "HOLDOUT",
+      "params": {
+        "fast_len": 13,
+        "mid_len": 30,
+        "slow_len": 55,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.9089398809827673,
+      "net": 79.86896399999787,
+      "trades": 50,
+      "win_rate": 50.0,
+      "max_dd_pct": -2.3752284713219853,
+      "expectancy": 1.5973792799999575
+    },
+    {
+      "window": "TRAIN",
+      "params": {
+        "fast_len": 13,
+        "mid_len": 30,
+        "slow_len": 80,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 1.3320955275626782,
+      "net": 286.63750919999814,
+      "trades": 374,
+      "win_rate": 42.780748663101605,
+      "max_dd_pct": -10.111100545303726,
+      "expectancy": 0.7664104524064121
+    },
+    {
+      "window": "VALIDATE",
+      "params": {
+        "fast_len": 13,
+        "mid_len": 30,
+        "slow_len": 80,
+        "fast_sc": 2,
+        "slow_sc": 30
+      },
+      "pf": 2.375509054102483,
+      "net": 73.30778639999971,
+      "trades": 36,
+      "win_rate": 61.111111111111114,
+      "max_dd_pct": -2.9003063058466063,
+      "expectancy": 2.0363273999999922
+    }
+  ],
+  "finalists": [
+    {
+      "params": {
+        "fast_len": 8,
+        "fast_sc": 2,
+        "mid_len": 30,
+        "slow_len": 80,
+        "slow_sc": 30
+      },
+      "train": {
+        "window": "TRAIN",
+        "params": {
+          "fast_len": 8,
+          "mid_len": 30,
+          "slow_len": 80,
+          "fast_sc": 2,
+          "slow_sc": 30
+        },
+        "pf": 1.451164382981395,
+        "net": 359.21826360000307,
+        "trades": 424,
+        "win_rate": 43.63207547169811,
+        "max_dd_pct": -7.683745844203392,
+        "expectancy": 0.8472128858490638
+      },
+      "validate": {
+        "window": "VALIDATE",
+        "params": {
+          "fast_len": 8,
+          "mid_len": 30,
+          "slow_len": 80,
+          "fast_sc": 2,
+          "slow_sc": 30
+        },
+        "pf": 3.1631189524185888,
+        "net": 101.12395680000122,
+        "trades": 42,
+        "win_rate": 57.14285714285714,
+        "max_dd_pct": -2.080013424639277,
+        "expectancy": 2.4077132571428863
+      },
+      "wr_delta": 13.51078167115903,
+      "holdout": {
+        "window": "HOLDOUT",
+        "params": {
+          "fast_len": 8,
+          "mid_len": 30,
+          "slow_len": 80,
+          "fast_sc": 2,
+          "slow_sc": 30
+        },
+        "pf": 1.6326188505475892,
+        "net": 56.45646120000136,
+        "trades": 50,
+        "win_rate": 40.0,
+        "max_dd_pct": -2.8739037249399333,
+        "expectancy": 1.1291292240000272
+      },
+      "passes": false
+    },
+    {
+      "params": {
+        "fast_len": 5,
+        "fast_sc": 2,
+        "mid_len": 13,
+        "slow_len": 34,
+        "slow_sc": 30
+      },
+      "train": {
+        "window": "TRAIN",
+        "params": {
+          "fast_len": 5,
+          "mid_len": 13,
+          "slow_len": 34,
+          "fast_sc": 2,
+          "slow_sc": 30
+        },
+        "pf": 2.078340119684408,
+        "net": 904.3055555999961,
+        "trades": 692,
+        "win_rate": 48.41040462427746,
+        "max_dd_pct": -2.4766225283070025,
+        "expectancy": 1.3067999358381446
+      },
+      "validate": {
+        "window": "VALIDATE",
+        "params": {
+          "fast_len": 5,
+          "mid_len": 13,
+          "slow_len": 34,
+          "fast_sc": 2,
+          "slow_sc": 30
+        },
+        "pf": 3.089454007509006,
+        "net": 129.11717520000076,
+        "trades": 69,
+        "win_rate": 52.17391304347826,
+        "max_dd_pct": -0.7089797052316266,
+        "expectancy": 1.8712634086956632
+      },
+      "wr_delta": 3.7635084192007966,
+      "holdout": {
+        "window": "HOLDOUT",
+        "params": {
+          "fast_len": 5,
+          "mid_len": 13,
+          "slow_len": 34,
+          "fast_sc": 2,
+          "slow_sc": 30
+        },
+        "pf": 1.5978047861773463,
+        "net": 71.14751520000259,
+        "trades": 91,
+        "win_rate": 47.25274725274725,
+        "max_dd_pct": -2.209131834350241,
+        "expectancy": 0.7818408263736548
+      },
+      "passes": false
+    },
+    {
+      "params": {
+        "fast_len": 5,
+        "fast_sc": 2,
+        "mid_len": 13,
+        "slow_len": 30,
+        "slow_sc": 30
+      },
+      "train": {
+        "window": "TRAIN",
+        "params": {
+          "fast_len": 5,
+          "mid_len": 13,
+          "slow_len": 30,
+          "fast_sc": 2,
+          "slow_sc": 30
+        },
+        "pf": 2.0016739676332898,
+        "net": 894.8000903999973,
+        "trades": 726,
+        "win_rate": 47.658402203856745,
+        "max_dd_pct": -2.8095465428317556,
+        "expectancy": 1.2325070115702443
+      },
+      "validate": {
+        "window": "VALIDATE",
+        "params": {
+          "fast_len": 5,
+          "mid_len": 13,
+          "slow_len": 30,
+          "fast_sc": 2,
+          "slow_sc": 30
+        },
+        "pf": 2.8688640498536526,
+        "net": 121.70118120000146,
+        "trades": 74,
+        "win_rate": 52.702702702702695,
+        "max_dd_pct": -0.7867903224375423,
+        "expectancy": 1.6446105567567764
+      },
+      "wr_delta": 5.044300498845949,
+      "holdout": {
+        "window": "HOLDOUT",
+        "params": {
+          "fast_len": 5,
+          "mid_len": 13,
+          "slow_len": 30,
+          "fast_sc": 2,
+          "slow_sc": 30
+        },
+        "pf": 1.7078455868998852,
+        "net": 80.30800920000026,
+        "trades": 90,
+        "win_rate": 47.77777777777778,
+        "max_dd_pct": -2.1994375220640268,
+        "expectancy": 0.8923112133333362
+      },
+      "passes": false
+    },
+    {
+      "params": {
+        "fast_len": 10,
+        "fast_sc": 2,
+        "mid_len": 30,
+        "slow_len": 80,
+        "slow_sc": 30
+      },
+      "train": {
+        "window": "TRAIN",
+        "params": {
+          "fast_len": 10,
+          "mid_len": 30,
+          "slow_len": 80,
+          "fast_sc": 2,
+          "slow_sc": 30
+        },
+        "pf": 1.3575447146417177,
+        "net": 301.1254680000002,
+        "trades": 400,
+        "win_rate": 43.5,
+        "max_dd_pct": -10.111473371304083,
+        "expectancy": 0.7528136700000004
+      },
+      "validate": {
+        "window": "VALIDATE",
+        "params": {
+          "fast_len": 10,
+          "mid_len": 30,
+          "slow_len": 80,
+          "fast_sc": 2,
+          "slow_sc": 30
+        },
+        "pf": 2.8524365281594513,
+        "net": 94.68533399999949,
+        "trades": 41,
+        "win_rate": 53.65853658536586,
+        "max_dd_pct": -2.867778794292199,
+        "expectancy": 2.30939839024389
+      },
+      "wr_delta": 10.158536585365859,
+      "holdout": {
+        "window": "HOLDOUT",
+        "params": {
+          "fast_len": 10,
+          "mid_len": 30,
+          "slow_len": 80,
+          "fast_sc": 2,
+          "slow_sc": 30
+        },
+        "pf": 1.3856873284621438,
+        "net": 38.30294999999893,
+        "trades": 51,
+        "win_rate": 35.294117647058826,
+        "max_dd_pct": -3.0210387538185923,
+        "expectancy": 0.7510382352940966
+      },
+      "passes": false
+    },
+    {
+      "params": {
+        "fast_len": 5,
+        "fast_sc": 2,
+        "mid_len": 13,
+        "slow_len": 80,
+        "slow_sc": 30
+      },
+      "train": {
+        "window": "TRAIN",
+        "params": {
+          "fast_len": 5,
+          "mid_len": 13,
+          "slow_len": 80,
+          "fast_sc": 2,
+          "slow_sc": 30
+        },
+        "pf": 2.0184158276990876,
+        "net": 806.4295668000011,
+        "trades": 627,
+        "win_rate": 44.81658692185008,
+        "max_dd_pct": -3.3806229097631366,
+        "expectancy": 1.2861715578947386
+      },
+      "validate": {
+        "window": "VALIDATE",
+        "params": {
+          "fast_len": 5,
+          "mid_len": 13,
+          "slow_len": 80,
+          "fast_sc": 2,
+          "slow_sc": 30
+        },
+        "pf": 2.772690947184494,
+        "net": 115.53650880000075,
+        "trades": 64,
+        "win_rate": 56.25,
+        "max_dd_pct": -1.8591153432380663,
+        "expectancy": 1.8052579500000117
+      },
+      "wr_delta": 11.433413078149918,
+      "holdout": {
+        "window": "HOLDOUT",
+        "params": {
+          "fast_len": 5,
+          "mid_len": 13,
+          "slow_len": 80,
+          "fast_sc": 2,
+          "slow_sc": 30
+        },
+        "pf": 1.456684520313354,
+        "net": 55.582066800002394,
+        "trades": 87,
+        "win_rate": 42.5287356321839,
+        "max_dd_pct": -3.1537656970799173,
+        "expectancy": 0.6388743310345103
+      },
+      "passes": false
+    }
+  ]
+}

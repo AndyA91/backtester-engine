@@ -1,0 +1,82 @@
+{
+  "base": {
+    "fast_len": 12,
+    "slow_len": 14,
+    "cooldown": 20,
+    "min_brick_streak": 5
+  },
+  "results": [
+    {
+      "params": {
+        "exit_tolerance": 1
+      },
+      "total_trades": 131,
+      "win_rate": 85.5,
+      "profit_factor": 155.55,
+      "net_profit": 33350.88,
+      "max_drawdown": -36.82,
+      "avg_trade": 254.59,
+      "avg_win_loss_ratio": 26.39
+    },
+    {
+      "params": {
+        "exit_tolerance": 2
+      },
+      "total_trades": 130,
+      "win_rate": 81.5,
+      "profit_factor": 72.45,
+      "net_profit": 32152.68,
+      "max_drawdown": -81.82,
+      "avg_trade": 247.33,
+      "avg_win_loss_ratio": 16.4
+    },
+    {
+      "params": {
+        "exit_tolerance": 3
+      },
+      "total_trades": 129,
+      "win_rate": 80.6,
+      "profit_factor": 46.63,
+      "net_profit": 32259.35,
+      "max_drawdown": -111.82,
+      "avg_trade": 250.07,
+      "avg_win_loss_ratio": 11.21
+    },
+    {
+      "params": {
+        "exit_tolerance": 4
+      },
+      "total_trades": 126,
+      "win_rate": 79.4,
+      "profit_factor": 30.54,
+      "net_profit": 30239.65,
+      "max_drawdown": -190.51,
+      "avg_trade": 240.0,
+      "avg_win_loss_ratio": 7.94
+    },
+    {
+      "params": {
+        "exit_tolerance": 5
+      },
+      "total_trades": 126,
+      "win_rate": 73.0,
+      "profit_factor": 21.1,
+      "net_profit": 28994.66,
+      "max_drawdown": -310.51,
+      "avg_trade": 230.12,
+      "avg_win_loss_ratio": 7.8
+    },
+    {
+      "params": {
+        "exit_tolerance": 6
+      },
+      "total_trades": 124,
+      "win_rate": 70.2,
+      "profit_factor": 14.66,
+      "net_profit": 27783.18,
+      "max_drawdown": -490.5,
+      "avg_trade": 224.06,
+      "avg_win_loss_ratio": 6.24
+    }
+  ]
+}

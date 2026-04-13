@@ -1,0 +1,35 @@
+# Heavy data directories — 1GB+ of CSVs I don't need to index
+data/
+
+# Sweep result JSONs — 87MB, only read on demand
+ai_context/*.json
+
+# TV result CSVs — only read when user opens one
+tvresults/
+
+# Live result logs
+liveresults/
+
+# Stale handoff docs from previous agents
+*handoff*.md
+CODEX_*.md
+OPTIMIZATION_PLAN_*.md
+PROJECT_MAP.md
+
+# Temp analysis scripts
+temp_*.py
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Claude worktrees (duplicated temp files)
+.claude/worktrees/
+
+# IDE
+.vscode/
+*.code-workspace
+
+# Legacy strategies directory (pre-Renko)
+strategies/
+signals/

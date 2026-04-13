@@ -1,0 +1,288 @@
+{
+  "config": {
+    "renko_file": "OANDA_EURUSD, 1S renko 0.0006.csv",
+    "data_end_date": "2026-04-08 01:36:24",
+    "train_window": [
+      "2023-01-02",
+      "2025-09-30"
+    ],
+    "validate_window": [
+      "2025-10-01",
+      "2025-12-31"
+    ],
+    "holdout_window": [
+      "2026-01-01",
+      "2026-03-25"
+    ],
+    "fresh_window": [
+      "2026-03-26",
+      "2026-04-08 01:36:24"
+    ],
+    "r029_params": {
+      "band_thresh": 0.2,
+      "cooldown": 2,
+      "rsi_thresh": 45,
+      "adx_max": 25,
+      "vol_max": 1.5
+    },
+    "test_configs": [
+      {
+        "lookback": 60,
+        "inter_cooldown": 0,
+        "label": "winner (Phase 19b best)"
+      },
+      {
+        "lookback": 40,
+        "inter_cooldown": 0,
+        "label": "more aggressive (more trades)"
+      },
+      {
+        "lookback": 60,
+        "inter_cooldown": 5,
+        "label": "more spaced (better WR in 19b)"
+      }
+    ],
+    "rules": {
+      "min_net_multiplier": 1.1,
+      "min_pf_multiplier": 0.85,
+      "min_breakout_fraction": 0.3,
+      "min_total_trade_ratio": 1.0,
+      "max_dd_multiplier": 1.5
+    }
+  },
+  "baseline": {
+    "train": {
+      "trades": 302,
+      "wr": 52.98,
+      "pf": 7.56,
+      "net_profit": 447.27,
+      "max_dd": -3.75,
+      "avg_trade": 1.48,
+      "avg_wl": 6.71,
+      "worst_loss": -0.71,
+      "n_long": 146,
+      "n_short": 156
+    },
+    "validate": {
+      "trades": 17,
+      "wr": 52.94,
+      "pf": 26.13,
+      "net_profit": 21.58,
+      "max_dd": -0.65,
+      "avg_trade": 1.27,
+      "avg_wl": 23.22,
+      "worst_loss": -0.11,
+      "n_long": 13,
+      "n_short": 4
+    },
+    "holdout": {
+      "trades": 45,
+      "wr": 64.44,
+      "pf": 9.79,
+      "net_profit": 67.78,
+      "max_dd": -1.83,
+      "avg_trade": 1.51,
+      "avg_wl": 5.4,
+      "worst_loss": -0.71,
+      "n_long": 28,
+      "n_short": 17
+    },
+    "fresh": {
+      "trades": 9,
+      "wr": 55.56,
+      "pf": 4.84,
+      "net_profit": 6.24,
+      "max_dd": -1.47,
+      "avg_trade": 0.69,
+      "avg_wl": 3.87,
+      "worst_loss": -0.71,
+      "n_long": 4,
+      "n_short": 5
+    }
+  },
+  "results": [
+    {
+      "lookback": 60,
+      "inter_cooldown": 0,
+      "label": "winner (Phase 19b best)",
+      "train": {
+        "trades": 636,
+        "wr": 55.97,
+        "pf": 8.73,
+        "net_profit": 1050.92,
+        "max_dd": -5.22,
+        "avg_trade": 1.65,
+        "avg_wl": 6.86,
+        "worst_loss": -0.71,
+        "n_long": 313,
+        "n_short": 323
+      },
+      "validate": {
+        "trades": 41,
+        "wr": 56.1,
+        "pf": 8.67,
+        "net_profit": 42.41,
+        "max_dd": -1.68,
+        "avg_trade": 1.03,
+        "avg_wl": 6.79,
+        "worst_loss": -0.71,
+        "n_long": 27,
+        "n_short": 14
+      },
+      "holdout": {
+        "trades": 78,
+        "wr": 60.26,
+        "pf": 9.24,
+        "net_profit": 121.24,
+        "max_dd": -3.35,
+        "avg_trade": 1.55,
+        "avg_wl": 6.09,
+        "worst_loss": -0.71,
+        "n_long": 41,
+        "n_short": 37
+      },
+      "fresh": {
+        "trades": 21,
+        "wr": 33.33,
+        "pf": 2.08,
+        "net_profit": 6.17,
+        "max_dd": -3.03,
+        "avg_trade": 0.29,
+        "avg_wl": 4.17,
+        "worst_loss": -0.71,
+        "n_long": 12,
+        "n_short": 9
+      },
+      "train_r029": 303,
+      "train_bo": 334,
+      "val_r029": 17,
+      "val_bo": 24,
+      "hld_r029": 44,
+      "hld_bo": 34,
+      "fresh_r029": 7,
+      "fresh_bo": 14
+    },
+    {
+      "lookback": 40,
+      "inter_cooldown": 0,
+      "label": "more aggressive (more trades)",
+      "train": {
+        "trades": 717,
+        "wr": 56.21,
+        "pf": 8.84,
+        "net_profit": 1206.59,
+        "max_dd": -4.3,
+        "avg_trade": 1.68,
+        "avg_wl": 6.89,
+        "worst_loss": -0.71,
+        "n_long": 358,
+        "n_short": 359
+      },
+      "validate": {
+        "trades": 47,
+        "wr": 55.32,
+        "pf": 8.6,
+        "net_profit": 48.97,
+        "max_dd": -1.79,
+        "avg_trade": 1.04,
+        "avg_wl": 6.94,
+        "worst_loss": -0.71,
+        "n_long": 29,
+        "n_short": 18
+      },
+      "holdout": {
+        "trades": 90,
+        "wr": 57.78,
+        "pf": 8.4,
+        "net_profit": 127.76,
+        "max_dd": -3.35,
+        "avg_trade": 1.42,
+        "avg_wl": 6.14,
+        "worst_loss": -0.71,
+        "n_long": 46,
+        "n_short": 44
+      },
+      "fresh": {
+        "trades": 24,
+        "wr": 41.67,
+        "pf": 3.77,
+        "net_profit": 12.45,
+        "max_dd": -2.77,
+        "avg_trade": 0.52,
+        "avg_wl": 5.28,
+        "worst_loss": -0.71,
+        "n_long": 14,
+        "n_short": 10
+      },
+      "train_r029": 303,
+      "train_bo": 415,
+      "val_r029": 17,
+      "val_bo": 30,
+      "hld_r029": 44,
+      "hld_bo": 46,
+      "fresh_r029": 8,
+      "fresh_bo": 16
+    },
+    {
+      "lookback": 60,
+      "inter_cooldown": 5,
+      "label": "more spaced (better WR in 19b)",
+      "train": {
+        "trades": 501,
+        "wr": 56.69,
+        "pf": 8.98,
+        "net_profit": 848.48,
+        "max_dd": -4.72,
+        "avg_trade": 1.69,
+        "avg_wl": 6.86,
+        "worst_loss": -0.71,
+        "n_long": 242,
+        "n_short": 259
+      },
+      "validate": {
+        "trades": 32,
+        "wr": 50.0,
+        "pf": 8.89,
+        "net_profit": 27.77,
+        "max_dd": -1.3,
+        "avg_trade": 0.87,
+        "avg_wl": 8.89,
+        "worst_loss": -0.71,
+        "n_long": 23,
+        "n_short": 9
+      },
+      "holdout": {
+        "trades": 56,
+        "wr": 58.93,
+        "pf": 9.48,
+        "net_profit": 87.0,
+        "max_dd": -2.07,
+        "avg_trade": 1.55,
+        "avg_wl": 6.6,
+        "worst_loss": -0.71,
+        "n_long": 29,
+        "n_short": 27
+      },
+      "fresh": {
+        "trades": 13,
+        "wr": 30.77,
+        "pf": 1.56,
+        "net_profit": 2.22,
+        "max_dd": -4.08,
+        "avg_trade": 0.17,
+        "avg_wl": 3.51,
+        "worst_loss": -0.71,
+        "n_long": 8,
+        "n_short": 5
+      },
+      "train_r029": 187,
+      "train_bo": 315,
+      "val_r029": 11,
+      "val_bo": 21,
+      "hld_r029": 25,
+      "hld_bo": 31,
+      "fresh_r029": 3,
+      "fresh_bo": 10
+    }
+  ]
+}

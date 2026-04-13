@@ -1,0 +1,204 @@
+==============================================================================
+GBPUSD 0.0005 — R033 KAMA Length Sweep (2 brackets in parallel)
+==============================================================================
+Strategy   : r033_kama_ribbon_3l_mk (KAMA SC LOCKED 2/30, MK locked at defaults)
+Data       : OANDA_GBPUSD, 1S renko 0.0005.csv
+TRAIN      : 2022-01-01 -> 2025-09-30  (auto-clipped to file start)
+VALIDATE   : 2025-10-01 -> 2025-12-31
+HOLDOUT    : 2026-01-01 -> data end  (DEPLOY GATE)
+KAMA combos: 60 valid triples (K1<K2<K3)
+Brackets   : ['A_grinder', 'B_highwr']
+Total      : 60 KAMA × 2 brackets × 3 windows = 360 backtests
+Workers    : 20
+==============================================================================
+  [  60/360] A_grinder  TRAIN    PF= 3.219 Net= 278.13 T= 343 WR= 40.8% DD=-0.46% Exp=0.8109 | k1= 3 k2=25 k3=90
+  [ 120/360] A_grinder  HOLDOUT  PF= 1.821 Net=  19.45 T=  53 WR= 28.3% DD=-0.48% Exp=0.3669 | k1= 5 k2=25 k3=90
+  [ 180/360] A_grinder  HOLDOUT  PF= 1.922 Net=  20.70 T=  51 WR= 29.4% DD=-0.76% Exp=0.4059 | k1= 8 k2=25 k3=90
+  [ 240/360] B_highwr   HOLDOUT  PF= 1.518 Net=   5.17 T=  27 WR= 40.7% DD=-0.33% Exp=0.1913 | k1= 3 k2=25 k3=90
+  [ 300/360] B_highwr   HOLDOUT  PF= 1.242 Net=   2.41 T=  25 WR= 36.0% DD=-0.33% Exp=0.0965 | k1= 5 k2=25 k3=90
+  [ 360/360] B_highwr   HOLDOUT  PF= 1.278 Net=   3.29 T=  30 WR= 36.7% DD=-0.44% Exp=0.1097 | k1= 8 k2=25 k3=90
+Loaded Renko export: 20001 bricks from 2023-02-22 00:00:00 to 2026-04-08 20:58:01
+  Up bricks: 10129 (50.6%), Down bricks: 9872 (49.4%)
+Loaded Renko export: 20001 bricks from 2023-02-22 00:00:00 to 2026-04-08 20:58:01
+  Up bricks: 10129 (50.6%), Down bricks: 9872 (49.4%)
+Loaded Renko export: 20001 bricks from 2023-02-22 00:00:00 to 2026-04-08 20:58:01
+  Up bricks: 10129 (50.6%), Down bricks: 9872 (49.4%)
+Loaded Renko export: 20001 bricks from 2023-02-22 00:00:00 to 2026-04-08 20:58:01
+  Up bricks: 10129 (50.6%), Down bricks: 9872 (49.4%)
+Loaded Renko export: 20001 bricks from 2023-02-22 00:00:00 to 2026-04-08 20:58:01
+  Up bricks: 10129 (50.6%), Down bricks: 9872 (49.4%)
+Loaded Renko export: 20001 bricks from 2023-02-22 00:00:00 to 2026-04-08 20:58:01
+  Up bricks: 10129 (50.6%), Down bricks: 9872 (49.4%)
+Loaded Renko export: 20001 bricks from 2023-02-22 00:00:00 to 2026-04-08 20:58:01
+  Up bricks: 10129 (50.6%), Down bricks: 9872 (49.4%)
+Loaded Renko export: 20001 bricks from 2023-02-22 00:00:00 to 2026-04-08 20:58:01
+  Up bricks: 10129 (50.6%), Down bricks: 9872 (49.4%)
+Loaded Renko export: 20001 bricks from 2023-02-22 00:00:00 to 2026-04-08 20:58:01
+  Up bricks: 10129 (50.6%), Down bricks: 9872 (49.4%)
+Loaded Renko export: 20001 bricks from 2023-02-22 00:00:00 to 2026-04-08 20:58:01
+  Up bricks: 10129 (50.6%), Down bricks: 9872 (49.4%)
+Loaded Renko export: 20001 bricks from 2023-02-22 00:00:00 to 2026-04-08 20:58:01
+  Up bricks: 10129 (50.6%), Down bricks: 9872 (49.4%)
+Loaded Renko export: 20001 bricks from 2023-02-22 00:00:00 to 2026-04-08 20:58:01
+  Up bricks: 10129 (50.6%), Down bricks: 9872 (49.4%)
+Loaded Renko export: 20001 bricks from 2023-02-22 00:00:00 to 2026-04-08 20:58:01
+  Up bricks: 10129 (50.6%), Down bricks: 9872 (49.4%)
+Loaded Renko export: 20001 bricks from 2023-02-22 00:00:00 to 2026-04-08 20:58:01
+  Up bricks: 10129 (50.6%), Down bricks: 9872 (49.4%)
+Loaded Renko export: 20001 bricks from 2023-02-22 00:00:00 to 2026-04-08 20:58:01
+  Up bricks: 10129 (50.6%), Down bricks: 9872 (49.4%)
+Loaded Renko export: 20001 bricks from 2023-02-22 00:00:00 to 2026-04-08 20:58:01
+  Up bricks: 10129 (50.6%), Down bricks: 9872 (49.4%)
+Loaded Renko export: 20001 bricks from 2023-02-22 00:00:00 to 2026-04-08 20:58:01
+  Up bricks: 10129 (50.6%), Down bricks: 9872 (49.4%)
+Loaded Renko export: 20001 bricks from 2023-02-22 00:00:00 to 2026-04-08 20:58:01
+  Up bricks: 10129 (50.6%), Down bricks: 9872 (49.4%)
+Loaded Renko export: 20001 bricks from 2023-02-22 00:00:00 to 2026-04-08 20:58:01
+  Up bricks: 10129 (50.6%), Down bricks: 9872 (49.4%)
+Loaded Renko export: 20001 bricks from 2023-02-22 00:00:00 to 2026-04-08 20:58:01
+  Up bricks: 10129 (50.6%), Down bricks: 9872 (49.4%)
+
+==============================================================================
+BRACKET A_grinder  —  49 finalists passed TRAIN→VAL filters
+  locked: tp=6b sl=1b dist=12 mk=direction
+==============================================================================
+
+--- Top 10 finalists (by R26 stability = min(TRAIN PF, VAL PF)) ---
+  [1] k1= 3 k2=18 k3=75  stability=3.183
+      TRAIN    PF= 3.183 Net= 351.87 T= 439 WR= 40.5% DD=-0.73% Exp=0.8015
+      VALIDATE PF= 3.342 Net=  26.22 T=  31 WR= 41.9% DD=-0.32% Exp=0.8457  Δwr=+1.4pp
+  [2] k1= 8 k2=18 k3=90  stability=3.181
+      TRAIN    PF= 3.589 Net= 353.44 T= 391 WR= 43.5% DD=-0.47% Exp=0.9039
+      VALIDATE PF= 3.181 Net=  21.70 T=  27 WR= 40.7% DD=-0.26% Exp=0.8038  Δwr=-2.7pp
+  [3] k1= 5 k2=25 k3=60  stability=3.166
+      TRAIN    PF= 3.176 Net= 323.85 T= 405 WR= 40.5% DD=-0.88% Exp=0.7996
+      VALIDATE PF= 3.166 Net=  25.60 T=  32 WR= 40.6% DD=-0.32% Exp=0.7999  Δwr=+0.1pp
+  [4] k1= 5 k2=18 k3=90  stability=3.160
+      TRAIN    PF= 3.160 Net= 301.42 T= 379 WR= 40.4% DD=-0.56% Exp=0.7953
+      VALIDATE PF= 3.265 Net=  23.96 T=  29 WR= 41.4% DD=-0.32% Exp=0.8262  Δwr=+1.0pp
+  [5] k1= 3 k2=18 k3=90  stability=3.099
+      TRAIN    PF= 3.099 Net= 312.34 T= 401 WR= 39.9% DD=-0.70% Exp=0.7789
+      VALIDATE PF= 3.393 Net=  22.33 T=  26 WR= 42.3% DD=-0.32% Exp=0.8588  Δwr=+2.4pp
+  [6] k1= 5 k2=25 k3=55  stability=3.066
+      TRAIN    PF= 3.066 Net= 308.82 T= 401 WR= 39.7% DD=-0.66% Exp=0.7701
+      VALIDATE PF= 3.238 Net=  27.85 T=  34 WR= 41.2% DD=-0.43% Exp=0.8191  Δwr=+1.5pp
+  [7] k1= 3 k2=13 k3=60  stability=3.050
+      TRAIN    PF= 3.050 Net= 441.66 T= 577 WR= 39.5% DD=-0.66% Exp=0.7654
+      VALIDATE PF= 3.380 Net=  38.51 T=  45 WR= 42.2% DD=-0.26% Exp=0.8557  Δwr=+2.7pp
+  [8] k1= 3 k2=10 k3=90  stability=3.034
+      TRAIN    PF= 3.034 Net= 405.79 T= 533 WR= 39.4% DD=-0.77% Exp=0.7613
+      VALIDATE PF= 3.303 Net=  30.10 T=  36 WR= 41.7% DD=-0.37% Exp=0.8361  Δwr=+2.3pp
+  [9] k1= 8 k2=18 k3=75  stability=2.994
+      TRAIN    PF= 3.680 Net= 384.14 T= 415 WR= 44.1% DD=-0.57% Exp=0.9256
+      VALIDATE PF= 2.994 Net=  21.08 T=  28 WR= 39.3% DD=-0.19% Exp=0.7530  Δwr=-4.8pp
+  [10] k1= 5 k2=10 k3=90  stability=2.976
+      TRAIN    PF= 2.976 Net= 376.99 T= 506 WR= 38.9% DD=-0.73% Exp=0.7450
+      VALIDATE PF= 3.016 Net=  28.85 T=  38 WR= 39.5% DD=-0.26% Exp=0.7593  Δwr=+0.5pp
+
+------------------------------------------------------------------------------
+HOLDOUT DEPLOY GATE  (rules: PF>=1.5, T>=8, net>0, no >30% collapse)
+------------------------------------------------------------------------------
+  [1] FAIL  k1= 3 k2=18 k3=75  [collapse 40% > 30%]
+      HOLDOUT  PF= 1.906 Net=  25.97 T=  65 WR= 29.2% DD=-0.77% Exp=0.3996
+  [2] FAIL  k1= 8 k2=18 k3=90  [collapse 59% > 30%]
+      HOLDOUT  PF= 1.318 Net=   9.71 T=  63 WR= 22.2% DD=-1.33% Exp=0.1541
+  [3] FAIL  k1= 5 k2=25 k3=60  [collapse 38% > 30%]
+      HOLDOUT  PF= 1.977 Net=  25.58 T=  60 WR= 30.0% DD=-0.92% Exp=0.4263
+  [4] FAIL  k1= 5 k2=18 k3=90  [collapse 51% > 30%]
+      HOLDOUT  PF= 1.538 Net=  16.09 T=  64 WR= 25.0% DD=-1.10% Exp=0.2514
+  [5] FAIL  k1= 3 k2=18 k3=90  [collapse 51% > 30%]
+      HOLDOUT  PF= 1.507 Net=  15.47 T=  65 WR= 24.6% DD=-1.05% Exp=0.2380
+  [6] FAIL  k1= 5 k2=25 k3=55  [collapse 41% > 30%]
+      HOLDOUT  PF= 1.824 Net=  22.08 T=  60 WR= 28.3% DD=-0.87% Exp=0.3681
+  [7] PASS  k1= 3 k2=13 k3=60
+      HOLDOUT  PF= 2.344 Net=  52.77 T=  95 WR= 33.7% DD=-0.73% Exp=0.5555
+  [8] PASS  k1= 3 k2=10 k3=90
+      HOLDOUT  PF= 2.230 Net=  46.01 T=  89 WR= 32.6% DD=-0.89% Exp=0.5170
+  [9] FAIL  k1= 8 k2=18 k3=75  [collapse 44% > 30%]
+      HOLDOUT  PF= 1.669 Net=  19.59 T=  64 WR= 26.6% DD=-1.07% Exp=0.3061
+  [10] PASS  k1= 5 k2=10 k3=90
+      HOLDOUT  PF= 2.734 Net=  58.37 T=  86 WR= 37.2% DD=-0.65% Exp=0.6788
+
+BRACKET A_grinder VERDICT: 3/10 finalists passed deploy gate.
+
+==============================================================================
+BRACKET B_highwr  —  23 finalists passed TRAIN→VAL filters
+  locked: tp=3b sl=1b dist=off mk=strong
+==============================================================================
+
+--- Top 10 finalists (by R26 stability = min(TRAIN PF, VAL PF)) ---
+  [1] k1= 8 k2=13 k3=75  stability=3.446
+      TRAIN    PF= 3.446 Net= 114.79 T= 193 WR= 60.6% DD=-0.31% Exp=0.5948
+      VALIDATE PF= 4.869 Net=  12.04 T=  16 WR= 68.8% DD=-0.07% Exp=0.7528  Δwr=+8.1pp
+  [2] k1= 3 k2=13 k3=90  stability=3.319
+      TRAIN    PF= 3.319 Net=  88.87 T= 154 WR= 59.7% DD=-0.32% Exp=0.5771
+      VALIDATE PF= 4.984 Net=   9.91 T=  13 WR= 69.2% DD=-0.13% Exp=0.7623  Δwr=+9.5pp
+  [3] k1= 8 k2=13 k3=60  stability=3.265
+      TRAIN    PF= 3.265 Net= 103.53 T= 182 WR= 59.3% DD=-0.36% Exp=0.5689
+      VALIDATE PF= 4.426 Net=  12.80 T=  18 WR= 66.7% DD=-0.12% Exp=0.7111  Δwr=+7.3pp
+  [4] k1= 3 k2=10 k3=75  stability=3.137
+      TRAIN    PF= 3.137 Net=  75.33 T= 137 WR= 58.4% DD=-0.25% Exp=0.5499
+      VALIDATE PF= 4.430 Net=   8.53 T=  12 WR= 66.7% DD=-0.13% Exp=0.7111  Δwr=+8.3pp
+  [5] k1= 8 k2=10 k3=55  stability=3.064
+      TRAIN    PF= 3.064 Net=  89.38 T= 166 WR= 57.8% DD=-0.25% Exp=0.5384
+      VALIDATE PF= 3.322 Net=   8.67 T=  15 WR= 60.0% DD=-0.07% Exp=0.5778  Δwr=+2.2pp
+  [6] k1= 3 k2=10 k3=90  stability=3.027
+      TRAIN    PF= 3.027 Net=  77.75 T= 146 WR= 57.5% DD=-0.30% Exp=0.5326
+      VALIDATE PF= 3.101 Net=   6.53 T=  12 WR= 58.3% DD=-0.19% Exp=0.5444  Δwr=+0.8pp
+  [7] k1= 5 k2=13 k3=55  stability=2.996
+      TRAIN    PF= 2.996 Net=  65.37 T= 124 WR= 57.3% DD=-0.56% Exp=0.5272
+      VALIDATE PF= 3.318 Net=   5.77 T=  10 WR= 60.0% DD=-0.13% Exp=0.5775  Δwr=+2.7pp
+  [8] k1= 3 k2=18 k3=60  stability=2.993
+      TRAIN    PF= 2.993 Net=  98.52 T= 187 WR= 57.2% DD=-0.38% Exp=0.5268
+      VALIDATE PF= 3.690 Net=  10.04 T=  16 WR= 62.5% DD=-0.13% Exp=0.6278  Δwr=+5.3pp
+  [9] k1= 8 k2=10 k3=60  stability=2.958
+      TRAIN    PF= 2.958 Net=  85.99 T= 165 WR= 57.0% DD=-0.27% Exp=0.5211
+      VALIDATE PF= 3.322 Net=   8.67 T=  15 WR= 60.0% DD=-0.07% Exp=0.5778  Δwr=+3.0pp
+  [10] k1= 8 k2=18 k3=60  stability=2.951
+      TRAIN    PF= 3.062 Net= 110.79 T= 206 WR= 57.8% DD=-0.34% Exp=0.5378
+      VALIDATE PF= 2.951 Net=   7.29 T=  14 WR= 57.1% DD=-0.13% Exp=0.5205  Δwr=-0.6pp
+
+------------------------------------------------------------------------------
+HOLDOUT DEPLOY GATE  (rules: PF>=1.5, T>=8, net>0, no >30% collapse)
+------------------------------------------------------------------------------
+  [1] FAIL  k1= 8 k2=13 k3=75  [collapse 43% > 30%]
+      HOLDOUT  PF= 1.948 Net=  10.04 T=  32 WR= 46.9% DD=-0.47% Exp=0.3139
+  [2] PASS  k1= 3 k2=13 k3=90
+      HOLDOUT  PF= 2.484 Net=  14.80 T=  34 WR= 52.9% DD=-0.25% Exp=0.4353
+  [3] FAIL  k1= 8 k2=13 k3=60  [collapse 32% > 30%]
+      HOLDOUT  PF= 2.208 Net=  13.55 T=  36 WR= 50.0% DD=-0.36% Exp=0.3764
+  [4] PASS  k1= 3 k2=10 k3=75
+      HOLDOUT  PF= 2.650 Net=  15.43 T=  33 WR= 54.5% DD=-0.27% Exp=0.4675
+  [5] FAIL  k1= 8 k2=10 k3=55  [collapse 40% > 30%]
+      HOLDOUT  PF= 1.839 Net=   9.42 T=  33 WR= 45.5% DD=-0.61% Exp=0.2854
+  [6] PASS  k1= 3 k2=10 k3=90
+      HOLDOUT  PF= 2.503 Net=  14.05 T=  32 WR= 53.1% DD=-0.40% Exp=0.4391
+  [7] PASS  k1= 5 k2=13 k3=55
+      HOLDOUT  PF= 2.549 Net=  12.55 T=  28 WR= 53.6% DD=-0.28% Exp=0.4481
+  [8] PASS  k1= 3 k2=18 k3=60
+      HOLDOUT  PF= 2.380 Net=  11.17 T=  27 WR= 51.9% DD=-0.50% Exp=0.4138
+  [9] FAIL  k1= 8 k2=10 k3=60  [collapse 44% > 30%]
+      HOLDOUT  PF= 1.655 Net=   8.17 T=  35 WR= 42.9% DD=-0.49% Exp=0.2334
+  [10] PASS  k1= 8 k2=18 k3=60
+      HOLDOUT  PF= 2.365 Net=  11.91 T=  29 WR= 51.7% DD=-0.53% Exp=0.4108
+
+BRACKET B_highwr VERDICT: 6/10 finalists passed deploy gate.
+
+==============================================================================
+CROSS-BRACKET COMPARISON — does 5/13/60 hold up vs the swept space?
+==============================================================================
+
+  A_grinder — baseline 5/13/60:
+    TRAIN      PF= 2.990 Net= 389.36 T= 520 WR= 39.0% DD=-0.78% Exp=0.7488
+    VALIDATE   PF= 2.775 Net=  27.61 T=  40 WR= 37.5% DD=-0.25% Exp=0.6904
+    HOLDOUT    PF= 3.283 Net=  74.01 T=  89 WR= 41.6% DD=-0.58% Exp=0.8315
+    Baseline 5/13/60 NOT in top 10 stability finalists.
+
+  B_highwr — baseline 5/13/60:
+    TRAIN      PF= 3.034 Net=  70.42 T= 132 WR= 57.6% DD=-0.42% Exp=0.5335
+    VALIDATE   PF= 2.654 Net=   5.15 T=  11 WR= 54.5% DD=-0.18% Exp=0.4684
+    HOLDOUT    PF= 3.499 Net=  18.68 T=  31 WR= 61.3% DD=-0.27% Exp=0.6025
+    Baseline 5/13/60 NOT in top 10 stability finalists.
+
+Results saved -> C:\Users\float\Desktop\VS code\backtester-engine\ai_context\gbpusd_kama_lengths_results.json
+Wallclock: 88.2s

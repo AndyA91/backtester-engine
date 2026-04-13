@@ -1,0 +1,765 @@
+{
+  "config": {
+    "renko_file": "CBOT_MINI_MYM1!, 1S ETH renko 30.csv",
+    "holdout_window": [
+      "2025-10-01",
+      "2026-04-08"
+    ],
+    "qty_value": 0.5,
+    "commission_pct": 0.004,
+    "finalists": [
+      {
+        "min_brick_streak": 8,
+        "cooldown": 75
+      },
+      {
+        "min_brick_streak": 13,
+        "cooldown": 30
+      },
+      {
+        "min_brick_streak": 15,
+        "cooldown": 25
+      },
+      {
+        "min_brick_streak": 13,
+        "cooldown": 40
+      },
+      {
+        "min_brick_streak": 13,
+        "cooldown": 0
+      }
+    ],
+    "daily_limits": [
+      0,
+      25,
+      50,
+      75,
+      100,
+      125,
+      150,
+      200
+    ]
+  },
+  "results": [
+    {
+      "params": {
+        "min_brick_streak": 8,
+        "cooldown": 75
+      },
+      "limit": 0,
+      "trades": 55,
+      "wr": 45.45,
+      "pf": 8.83,
+      "net_profit": 2790.76,
+      "max_dd": -83.2,
+      "worst_loss": -17.0,
+      "worst_day": -35.62,
+      "apr7_pnl": -35.62,
+      "apr7_count": 3,
+      "blocked": 0,
+      "days_blocked": 0
+    },
+    {
+      "params": {
+        "min_brick_streak": 8,
+        "cooldown": 75
+      },
+      "limit": 25,
+      "trades": 53,
+      "wr": 45.28,
+      "pf": 8.36,
+      "net_profit": 2719.51,
+      "max_dd": -131.93,
+      "worst_loss": -17.0,
+      "worst_day": -33.73,
+      "apr7_pnl": -33.73,
+      "apr7_count": 2,
+      "blocked": 3,
+      "days_blocked": 2
+    },
+    {
+      "params": {
+        "min_brick_streak": 8,
+        "cooldown": 75
+      },
+      "limit": 50,
+      "trades": 55,
+      "wr": 45.45,
+      "pf": 8.83,
+      "net_profit": 2790.76,
+      "max_dd": -83.2,
+      "worst_loss": -17.0,
+      "worst_day": -35.62,
+      "apr7_pnl": -35.62,
+      "apr7_count": 3,
+      "blocked": 0,
+      "days_blocked": 0
+    },
+    {
+      "params": {
+        "min_brick_streak": 8,
+        "cooldown": 75
+      },
+      "limit": 75,
+      "trades": 55,
+      "wr": 45.45,
+      "pf": 8.83,
+      "net_profit": 2790.76,
+      "max_dd": -83.2,
+      "worst_loss": -17.0,
+      "worst_day": -35.62,
+      "apr7_pnl": -35.62,
+      "apr7_count": 3,
+      "blocked": 0,
+      "days_blocked": 0
+    },
+    {
+      "params": {
+        "min_brick_streak": 8,
+        "cooldown": 75
+      },
+      "limit": 100,
+      "trades": 55,
+      "wr": 45.45,
+      "pf": 8.83,
+      "net_profit": 2790.76,
+      "max_dd": -83.2,
+      "worst_loss": -17.0,
+      "worst_day": -35.62,
+      "apr7_pnl": -35.62,
+      "apr7_count": 3,
+      "blocked": 0,
+      "days_blocked": 0
+    },
+    {
+      "params": {
+        "min_brick_streak": 8,
+        "cooldown": 75
+      },
+      "limit": 125,
+      "trades": 55,
+      "wr": 45.45,
+      "pf": 8.83,
+      "net_profit": 2790.76,
+      "max_dd": -83.2,
+      "worst_loss": -17.0,
+      "worst_day": -35.62,
+      "apr7_pnl": -35.62,
+      "apr7_count": 3,
+      "blocked": 0,
+      "days_blocked": 0
+    },
+    {
+      "params": {
+        "min_brick_streak": 8,
+        "cooldown": 75
+      },
+      "limit": 150,
+      "trades": 55,
+      "wr": 45.45,
+      "pf": 8.83,
+      "net_profit": 2790.76,
+      "max_dd": -83.2,
+      "worst_loss": -17.0,
+      "worst_day": -35.62,
+      "apr7_pnl": -35.62,
+      "apr7_count": 3,
+      "blocked": 0,
+      "days_blocked": 0
+    },
+    {
+      "params": {
+        "min_brick_streak": 8,
+        "cooldown": 75
+      },
+      "limit": 200,
+      "trades": 55,
+      "wr": 45.45,
+      "pf": 8.83,
+      "net_profit": 2790.76,
+      "max_dd": -83.2,
+      "worst_loss": -17.0,
+      "worst_day": -35.62,
+      "apr7_pnl": -35.62,
+      "apr7_count": 3,
+      "blocked": 0,
+      "days_blocked": 0
+    },
+    {
+      "params": {
+        "min_brick_streak": 13,
+        "cooldown": 30
+      },
+      "limit": 0,
+      "trades": 64,
+      "wr": 51.56,
+      "pf": 10.42,
+      "net_profit": 3523.15,
+      "max_dd": -73.91,
+      "worst_loss": -17.02,
+      "worst_day": -18.74,
+      "apr7_pnl": 41.23,
+      "apr7_count": 2,
+      "blocked": 0,
+      "days_blocked": 0
+    },
+    {
+      "params": {
+        "min_brick_streak": 13,
+        "cooldown": 30
+      },
+      "limit": 25,
+      "trades": 64,
+      "wr": 51.56,
+      "pf": 10.42,
+      "net_profit": 3523.15,
+      "max_dd": -73.91,
+      "worst_loss": -17.02,
+      "worst_day": -18.74,
+      "apr7_pnl": 41.23,
+      "apr7_count": 2,
+      "blocked": 0,
+      "days_blocked": 0
+    },
+    {
+      "params": {
+        "min_brick_streak": 13,
+        "cooldown": 30
+      },
+      "limit": 50,
+      "trades": 64,
+      "wr": 51.56,
+      "pf": 10.42,
+      "net_profit": 3523.15,
+      "max_dd": -73.91,
+      "worst_loss": -17.02,
+      "worst_day": -18.74,
+      "apr7_pnl": 41.23,
+      "apr7_count": 2,
+      "blocked": 0,
+      "days_blocked": 0
+    },
+    {
+      "params": {
+        "min_brick_streak": 13,
+        "cooldown": 30
+      },
+      "limit": 75,
+      "trades": 64,
+      "wr": 51.56,
+      "pf": 10.42,
+      "net_profit": 3523.15,
+      "max_dd": -73.91,
+      "worst_loss": -17.02,
+      "worst_day": -18.74,
+      "apr7_pnl": 41.23,
+      "apr7_count": 2,
+      "blocked": 0,
+      "days_blocked": 0
+    },
+    {
+      "params": {
+        "min_brick_streak": 13,
+        "cooldown": 30
+      },
+      "limit": 100,
+      "trades": 64,
+      "wr": 51.56,
+      "pf": 10.42,
+      "net_profit": 3523.15,
+      "max_dd": -73.91,
+      "worst_loss": -17.02,
+      "worst_day": -18.74,
+      "apr7_pnl": 41.23,
+      "apr7_count": 2,
+      "blocked": 0,
+      "days_blocked": 0
+    },
+    {
+      "params": {
+        "min_brick_streak": 13,
+        "cooldown": 30
+      },
+      "limit": 125,
+      "trades": 64,
+      "wr": 51.56,
+      "pf": 10.42,
+      "net_profit": 3523.15,
+      "max_dd": -73.91,
+      "worst_loss": -17.02,
+      "worst_day": -18.74,
+      "apr7_pnl": 41.23,
+      "apr7_count": 2,
+      "blocked": 0,
+      "days_blocked": 0
+    },
+    {
+      "params": {
+        "min_brick_streak": 13,
+        "cooldown": 30
+      },
+      "limit": 150,
+      "trades": 64,
+      "wr": 51.56,
+      "pf": 10.42,
+      "net_profit": 3523.15,
+      "max_dd": -73.91,
+      "worst_loss": -17.02,
+      "worst_day": -18.74,
+      "apr7_pnl": 41.23,
+      "apr7_count": 2,
+      "blocked": 0,
+      "days_blocked": 0
+    },
+    {
+      "params": {
+        "min_brick_streak": 13,
+        "cooldown": 30
+      },
+      "limit": 200,
+      "trades": 64,
+      "wr": 51.56,
+      "pf": 10.42,
+      "net_profit": 3523.15,
+      "max_dd": -73.91,
+      "worst_loss": -17.02,
+      "worst_day": -18.74,
+      "apr7_pnl": 41.23,
+      "apr7_count": 2,
+      "blocked": 0,
+      "days_blocked": 0
+    },
+    {
+      "params": {
+        "min_brick_streak": 15,
+        "cooldown": 25
+      },
+      "limit": 0,
+      "trades": 54,
+      "wr": 57.41,
+      "pf": 12.86,
+      "net_profit": 3542.02,
+      "max_dd": -68.42,
+      "worst_loss": -16.99,
+      "worst_day": -16.99,
+      "apr7_pnl": 28.12,
+      "apr7_count": 1,
+      "blocked": 0,
+      "days_blocked": 0
+    },
+    {
+      "params": {
+        "min_brick_streak": 15,
+        "cooldown": 25
+      },
+      "limit": 25,
+      "trades": 54,
+      "wr": 57.41,
+      "pf": 12.86,
+      "net_profit": 3542.02,
+      "max_dd": -68.42,
+      "worst_loss": -16.99,
+      "worst_day": -16.99,
+      "apr7_pnl": 28.12,
+      "apr7_count": 1,
+      "blocked": 0,
+      "days_blocked": 0
+    },
+    {
+      "params": {
+        "min_brick_streak": 15,
+        "cooldown": 25
+      },
+      "limit": 50,
+      "trades": 54,
+      "wr": 57.41,
+      "pf": 12.86,
+      "net_profit": 3542.02,
+      "max_dd": -68.42,
+      "worst_loss": -16.99,
+      "worst_day": -16.99,
+      "apr7_pnl": 28.12,
+      "apr7_count": 1,
+      "blocked": 0,
+      "days_blocked": 0
+    },
+    {
+      "params": {
+        "min_brick_streak": 15,
+        "cooldown": 25
+      },
+      "limit": 75,
+      "trades": 54,
+      "wr": 57.41,
+      "pf": 12.86,
+      "net_profit": 3542.02,
+      "max_dd": -68.42,
+      "worst_loss": -16.99,
+      "worst_day": -16.99,
+      "apr7_pnl": 28.12,
+      "apr7_count": 1,
+      "blocked": 0,
+      "days_blocked": 0
+    },
+    {
+      "params": {
+        "min_brick_streak": 15,
+        "cooldown": 25
+      },
+      "limit": 100,
+      "trades": 54,
+      "wr": 57.41,
+      "pf": 12.86,
+      "net_profit": 3542.02,
+      "max_dd": -68.42,
+      "worst_loss": -16.99,
+      "worst_day": -16.99,
+      "apr7_pnl": 28.12,
+      "apr7_count": 1,
+      "blocked": 0,
+      "days_blocked": 0
+    },
+    {
+      "params": {
+        "min_brick_streak": 15,
+        "cooldown": 25
+      },
+      "limit": 125,
+      "trades": 54,
+      "wr": 57.41,
+      "pf": 12.86,
+      "net_profit": 3542.02,
+      "max_dd": -68.42,
+      "worst_loss": -16.99,
+      "worst_day": -16.99,
+      "apr7_pnl": 28.12,
+      "apr7_count": 1,
+      "blocked": 0,
+      "days_blocked": 0
+    },
+    {
+      "params": {
+        "min_brick_streak": 15,
+        "cooldown": 25
+      },
+      "limit": 150,
+      "trades": 54,
+      "wr": 57.41,
+      "pf": 12.86,
+      "net_profit": 3542.02,
+      "max_dd": -68.42,
+      "worst_loss": -16.99,
+      "worst_day": -16.99,
+      "apr7_pnl": 28.12,
+      "apr7_count": 1,
+      "blocked": 0,
+      "days_blocked": 0
+    },
+    {
+      "params": {
+        "min_brick_streak": 15,
+        "cooldown": 25
+      },
+      "limit": 200,
+      "trades": 54,
+      "wr": 57.41,
+      "pf": 12.86,
+      "net_profit": 3542.02,
+      "max_dd": -68.42,
+      "worst_loss": -16.99,
+      "worst_day": -16.99,
+      "apr7_pnl": 28.12,
+      "apr7_count": 1,
+      "blocked": 0,
+      "days_blocked": 0
+    },
+    {
+      "params": {
+        "min_brick_streak": 13,
+        "cooldown": 40
+      },
+      "limit": 0,
+      "trades": 58,
+      "wr": 53.45,
+      "pf": 12.0,
+      "net_profit": 3369.67,
+      "max_dd": -73.91,
+      "worst_loss": -17.02,
+      "worst_day": -18.74,
+      "apr7_pnl": -16.89,
+      "apr7_count": 1,
+      "blocked": 0,
+      "days_blocked": 0
+    },
+    {
+      "params": {
+        "min_brick_streak": 13,
+        "cooldown": 40
+      },
+      "limit": 25,
+      "trades": 58,
+      "wr": 53.45,
+      "pf": 12.0,
+      "net_profit": 3369.67,
+      "max_dd": -73.91,
+      "worst_loss": -17.02,
+      "worst_day": -18.74,
+      "apr7_pnl": -16.89,
+      "apr7_count": 1,
+      "blocked": 0,
+      "days_blocked": 0
+    },
+    {
+      "params": {
+        "min_brick_streak": 13,
+        "cooldown": 40
+      },
+      "limit": 50,
+      "trades": 58,
+      "wr": 53.45,
+      "pf": 12.0,
+      "net_profit": 3369.67,
+      "max_dd": -73.91,
+      "worst_loss": -17.02,
+      "worst_day": -18.74,
+      "apr7_pnl": -16.89,
+      "apr7_count": 1,
+      "blocked": 0,
+      "days_blocked": 0
+    },
+    {
+      "params": {
+        "min_brick_streak": 13,
+        "cooldown": 40
+      },
+      "limit": 75,
+      "trades": 58,
+      "wr": 53.45,
+      "pf": 12.0,
+      "net_profit": 3369.67,
+      "max_dd": -73.91,
+      "worst_loss": -17.02,
+      "worst_day": -18.74,
+      "apr7_pnl": -16.89,
+      "apr7_count": 1,
+      "blocked": 0,
+      "days_blocked": 0
+    },
+    {
+      "params": {
+        "min_brick_streak": 13,
+        "cooldown": 40
+      },
+      "limit": 100,
+      "trades": 58,
+      "wr": 53.45,
+      "pf": 12.0,
+      "net_profit": 3369.67,
+      "max_dd": -73.91,
+      "worst_loss": -17.02,
+      "worst_day": -18.74,
+      "apr7_pnl": -16.89,
+      "apr7_count": 1,
+      "blocked": 0,
+      "days_blocked": 0
+    },
+    {
+      "params": {
+        "min_brick_streak": 13,
+        "cooldown": 40
+      },
+      "limit": 125,
+      "trades": 58,
+      "wr": 53.45,
+      "pf": 12.0,
+      "net_profit": 3369.67,
+      "max_dd": -73.91,
+      "worst_loss": -17.02,
+      "worst_day": -18.74,
+      "apr7_pnl": -16.89,
+      "apr7_count": 1,
+      "blocked": 0,
+      "days_blocked": 0
+    },
+    {
+      "params": {
+        "min_brick_streak": 13,
+        "cooldown": 40
+      },
+      "limit": 150,
+      "trades": 58,
+      "wr": 53.45,
+      "pf": 12.0,
+      "net_profit": 3369.67,
+      "max_dd": -73.91,
+      "worst_loss": -17.02,
+      "worst_day": -18.74,
+      "apr7_pnl": -16.89,
+      "apr7_count": 1,
+      "blocked": 0,
+      "days_blocked": 0
+    },
+    {
+      "params": {
+        "min_brick_streak": 13,
+        "cooldown": 40
+      },
+      "limit": 200,
+      "trades": 58,
+      "wr": 53.45,
+      "pf": 12.0,
+      "net_profit": 3369.67,
+      "max_dd": -73.91,
+      "worst_loss": -17.02,
+      "worst_day": -18.74,
+      "apr7_pnl": -16.89,
+      "apr7_count": 1,
+      "blocked": 0,
+      "days_blocked": 0
+    },
+    {
+      "params": {
+        "min_brick_streak": 13,
+        "cooldown": 0
+      },
+      "limit": 0,
+      "trades": 94,
+      "wr": 52.13,
+      "pf": 12.08,
+      "net_profit": 5775.44,
+      "max_dd": -90.79,
+      "worst_loss": -17.02,
+      "worst_day": -33.83,
+      "apr7_pnl": 41.23,
+      "apr7_count": 2,
+      "blocked": 0,
+      "days_blocked": 0
+    },
+    {
+      "params": {
+        "min_brick_streak": 13,
+        "cooldown": 0
+      },
+      "limit": 25,
+      "trades": 89,
+      "wr": 50.56,
+      "pf": 10.87,
+      "net_profit": 5124.91,
+      "max_dd": -90.79,
+      "worst_loss": -17.02,
+      "worst_day": -33.83,
+      "apr7_pnl": 41.23,
+      "apr7_count": 2,
+      "blocked": 5,
+      "days_blocked": 5
+    },
+    {
+      "params": {
+        "min_brick_streak": 13,
+        "cooldown": 0
+      },
+      "limit": 50,
+      "trades": 94,
+      "wr": 52.13,
+      "pf": 12.08,
+      "net_profit": 5775.44,
+      "max_dd": -90.79,
+      "worst_loss": -17.02,
+      "worst_day": -33.83,
+      "apr7_pnl": 41.23,
+      "apr7_count": 2,
+      "blocked": 0,
+      "days_blocked": 0
+    },
+    {
+      "params": {
+        "min_brick_streak": 13,
+        "cooldown": 0
+      },
+      "limit": 75,
+      "trades": 94,
+      "wr": 52.13,
+      "pf": 12.08,
+      "net_profit": 5775.44,
+      "max_dd": -90.79,
+      "worst_loss": -17.02,
+      "worst_day": -33.83,
+      "apr7_pnl": 41.23,
+      "apr7_count": 2,
+      "blocked": 0,
+      "days_blocked": 0
+    },
+    {
+      "params": {
+        "min_brick_streak": 13,
+        "cooldown": 0
+      },
+      "limit": 100,
+      "trades": 94,
+      "wr": 52.13,
+      "pf": 12.08,
+      "net_profit": 5775.44,
+      "max_dd": -90.79,
+      "worst_loss": -17.02,
+      "worst_day": -33.83,
+      "apr7_pnl": 41.23,
+      "apr7_count": 2,
+      "blocked": 0,
+      "days_blocked": 0
+    },
+    {
+      "params": {
+        "min_brick_streak": 13,
+        "cooldown": 0
+      },
+      "limit": 125,
+      "trades": 94,
+      "wr": 52.13,
+      "pf": 12.08,
+      "net_profit": 5775.44,
+      "max_dd": -90.79,
+      "worst_loss": -17.02,
+      "worst_day": -33.83,
+      "apr7_pnl": 41.23,
+      "apr7_count": 2,
+      "blocked": 0,
+      "days_blocked": 0
+    },
+    {
+      "params": {
+        "min_brick_streak": 13,
+        "cooldown": 0
+      },
+      "limit": 150,
+      "trades": 94,
+      "wr": 52.13,
+      "pf": 12.08,
+      "net_profit": 5775.44,
+      "max_dd": -90.79,
+      "worst_loss": -17.02,
+      "worst_day": -33.83,
+      "apr7_pnl": 41.23,
+      "apr7_count": 2,
+      "blocked": 0,
+      "days_blocked": 0
+    },
+    {
+      "params": {
+        "min_brick_streak": 13,
+        "cooldown": 0
+      },
+      "limit": 200,
+      "trades": 94,
+      "wr": 52.13,
+      "pf": 12.08,
+      "net_profit": 5775.44,
+      "max_dd": -90.79,
+      "worst_loss": -17.02,
+      "worst_day": -33.83,
+      "apr7_pnl": 41.23,
+      "apr7_count": 2,
+      "blocked": 0,
+      "days_blocked": 0
+    }
+  ]
+}
